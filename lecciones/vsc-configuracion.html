@@ -21,19 +21,104 @@
 
       <div class="toc">
         <ul>
-          <li><a href="#vsc-que-es">Qué es</a></li>
-          <li><a href="#vsc-conseguir">Conseguir</a></li>
-          <li><a href="#vsc-instalar-windows">Instalar en Windows</a></li>
-          <li><a href="#vsc-primera-vez">Primera ejecución</a></li>
+          <li><a href="#mostrar-espacios">Espacios en blanco</a></li>
         </ul>
       </div>
     </nav>
 
+    <section id="preferencias">
+      <h2>Preferencias de usuario y de proyecto</h2>
 
-    <p><a href="https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting">Remove telemetry</a></p>
+      <p><a href="https://code.visualstudio.com/docs/getstarted/userinterface#_settings">User and Workspace Settings</a></p>
+    </section>
+
+    <section id="ajuste-linea">
+      <h2>Ajuste de línea</h2>
+
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+    // Controla cómo se deben ajustar las líneas.
+    "editor.wordWrap": "on",
+}</code>
+        </pre>
+      </div>
+    </section>
+
+    <section id="longitud-linea">
+      <h2>Longitud de línea</h2>
+
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+    // Cantidad máxima de caracteres por línea (0 = deshabilitar).
+    "html.format.wrapLineLength": 0,
+}</code>
+        </pre>
+      </div>
+    </section>
+
+    <section id="salto-linea">
+      <h2>Salto de línea</h2>
+
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+    // Carácter predeterminado de final de línea. Utilice \n para LF y \r\n para CRLF.
+    "files.eol": "\n",
+}</code>
+        </pre>
+      </div>
+    </section>
+
+    <section id="espacios-finales">
+      <h2>Espacios al final de las líneas</h2>
+
+      <p>Para que Visual Studio Code borre los espacios en blanco situados al final de las líneas al guardar un archivo.</p>
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+    // Si se habilita, se recortará el espacio final cuando se guarde un archivo.
+    "files.trimTrailingWhitespace": true,
+}</code>
+        </pre>
+      </div>
+    </section>
+
+    <section id="mostrar-espacios">
+      <h2>Mostrar espacios en blanco</h2>
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+    // Controla cómo debe representar el editor los espacios en blanco.
+    "editor.renderWhitespace": "all",
+}</code>
+        </pre>
+      </div>
+    </section>
+
+    <section id="abrir-navegador">
+      <h2>Abrir página en navegador</h2>
+
+      <ul>
+        <li><a href="https://stackoverflow.com/questions/30039512/how-to-view-my-html-code-in-browser-with-visual-studio-code">Pregunta en Stack Overflow</a></li>
+        <li><a href="https://stackoverflow.com/questions/30057191/is-it-possible-to-assign-different-shortcuts-to-different-tasks-in-vs-code">Is it possible to assign different shortcuts to different tasks in VS Code?</a></li>
+      </ul>
+    </section>
+
+    <section id="otros">
+      <h2>Otros</h2>
+
+      <ul>
+        <li><a href="https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting">Remove telemetry</a></li>
+        <li><a href="https://code.visualstudio.com/updates/vMarch#_utf8-bom-support">UTF-8 con o sim BOM</a></li>
+        <li><a href="editorconfig.org">EditorConfig</a></li>
+        <li><a href="https://code.visualstudio.com/updates/vMarch#_languages-html">Saltos de línea antes de ciertas etiquetas</a></li>
+      </ul>
+    </section>
 
     <footer>
-      <p class="ultmod">Última modificación de esta página: 16 de septiembre de 2017</p>
+      <p class="ultmod">Última modificación de esta página: 19 de septiembre de 2017</p>
 
       <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
         Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

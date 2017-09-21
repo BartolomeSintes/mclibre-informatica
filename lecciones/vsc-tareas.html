@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tareas. Visual Studio Code. Informática. Bartolomé Sintes Marco</title>
+    <link href="../varios/informatica.css" rel="stylesheet" type="text/css" title="mclibre" />
+    <link rel="icon" href="../varios/favicon.ico" />
+</head>
+
+<body>
+    <h1>Visual Studio Code. Tareas</h1>
+
+    <nav>
+        <p>
+            <a href="../index.html"><img src="../varios/iconos/icono_informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
+            <a href="#"><img src="../varios/iconos/icono_arrow_circle_up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+        </p>
+
+        <h2>VSC Tareas</h2>
+
+        <div class="toc">
+            <ul>
+                <li><a href="#abrir-navegador">Abrir en navegador</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="abrir-navegador">
+        <h2>Abrir páginas en el navegador</h2>
+
+        <ul>
+            <li>Crear Tarea
+                <ol>
+                    <li>Elegir la opción de menú <span class="soft-menu">Tareas > Configurar tarea</span>.</li>
+                    <li>Definir la tarea en el archivo task.json:
+                        <div class="codigo">
+                            <pre>
+<code class="language-json">{
+    "version": "0.1.0",
+    "tasks": [
+        {
+            "taskName": "Abrir en Firefox",
+            "command": "explorer",
+            "windows": {
+                "command": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+            },
+            "args": [
+                "${file}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "taskName": "Abrir en Chrome",
+            "command": "explorer",
+            "windows": {
+                "command": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+            },
+            "args": [
+                "${file}"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}</code>
+</pre>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+            <li>Utilizar tarea:
+                <ol>
+                    <li>Elegir la opción de menú <span class="soft-menu">Tareas > Ejecutar tarea ...</span>.</li>
+                    <li>Elegir la tarea a aplicar.
+                </ol>
+                </li>
+        </ul>
+    </section>
+
+    <footer>
+      <p class="ultmod">Última modificación de esta página: 22 de septiembre de 2017</p>
+
+      <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
+        Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+        que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
+    </footer>
+</body>
+</html>

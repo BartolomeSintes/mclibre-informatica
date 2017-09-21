@@ -22,7 +22,9 @@
     <div class="toc">
       <ul>
         <li><a href="#temas">Temas de color</a></li>
-        <li><a href="#mostrar-espacios">Espacios en blanco</a></li>
+        <li><a href="#configuracion">Preferencias de configuración</a></li>
+        <li><a href="#preferencias-recomendadas">Preferencias recomendadas</a></li>
+        <li><a href="#cierre-automatico">Cierre automático etiquetas</a></li>
       </ul>
     </div>
   </nav>
@@ -38,7 +40,7 @@
       <img src="../img/vscode/vsc-temas-cambiar-1.png" alt="VSC. Tema Dark+ predeterminado" title="VSC. Tema Dark+ predeterminado" width="1024" height="576" />
     </p>
 
-    <p>Para cambiar el tema de color a uno de los temas instalados, elija la opción de menú <span class="soft-atajo-teclado">Archivo > Preferencias > </span></p>
+    <p>Para cambiar el tema de color a uno de los temas instalados, elija la opción de menú <span class="soft-menu">Archivo > Preferencias > Tema de color</span></p>
 
     <p class="captura">
       <img src="../img/vscode/vsc-temas-cambiar-2.png" alt="VSC. Cambiar tema de color" title="VSC. Cambiar tema de color" width="1024" height="500" />
@@ -59,7 +61,7 @@
     <p>Inmediatamente, se aplicará el tema elegido:</p>
 
     <p class="captura">
-      <img src="../img/vscode/vsc-temas-cambiar-5.png" aalt="VSC. Cambiar tema de color" title="VSC. Cambiar tema de color" width="1024" height="576" />
+      <img src="../img/vscode/vsc-temas-cambiar-5.png" alt="VSC. Tema Light+ predeterminado" title="VSC. Tema Light+ predeterminado" width="1024" height="576" />
     </p>
 
     <p>Referencias:</p>
@@ -69,75 +71,190 @@
     </ul>
   </section>
 
-  <section id="preferencias">
-    <h2>Preferencias de usuario y de proyecto</h2>
+  <section id="configuracion">
+    <h2>Preferencias de configuración</h2>
 
-    <p><a href="https://code.visualstudio.com/docs/getstarted/userinterface#_settings">User and Workspace Settings</a></p>
+    <p>Visual Studio Code permite organizar las preferencias de configuración en dos niveles.</p>
+    <ul>
+      <li>configuración de usuario: estas preferencias se aplican a cualquier documento editado</li>
+      <li>configuración de área de trabajo: estas preferencias se aplican únicamente al editar documentos contenidos en una determinada carpeta o en sus subcarpetas</li>
+    </ul>
+
+    <p>Para editar un archivo de configuración, elija la opción de menú <span class="soft-menu">Archivo > Preferencias > Configuración</span>.</p>
+
+    <p class="captura">
+      <img src="../img/vscode/vsc-pref-como-1.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="500" />
+    </p>
+
+    <p>En una nueva pestaña se muestra el archivo de configuración. La ventana se divide en dos partes:</p>
+    <ul>
+      <li>en la parte izquierda se muestra el archivo de configuración predeterminado, que no se puede modificar</li>
+      <li>en la parte derecha se muestra el archivo de configuración de usuario, que sí es editable</li>
+      <li>en la parte derecha superior se muestra un selector que permite cambiar entre el archivo de configuración del usuario y el del área de trabajo (para ello, se tiene que haber abierto primero una carpeta)</li>
+    </ul>
+
+    <p class="captura">
+      <img src="../img/vscode/vsc-pref-como-2.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="576" />
+    </p>
+
+    <p>La caja de texto superior permite filtrar las opciones de configuración:</p>
+
+    <p class="captura">
+      <img src="../img/vscode/vsc-pref-como-3.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="450" />
+    </p>
+
+    <p>Para modificar una configuración, seleccione el valor a modificar en la parte izquierda y copielo a la derecha...</p>
+
+    <p class="captura">
+      <img src="../img/vscode/vsc-pref-como-4.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="450" />
+    </p>
+
+    <p>Modifique el valor de la configuración al valor deseado. Recuerde que las configuraciones deben estar separadas por comas. Mientras no se guarde el archivo, se muestran indicadores en la pestaña y en la barra de actividades.</p>
+
+    <p class="captura">
+      <img src="../img/vscode/vsc-pref-como-5.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="450" />
+    </p>
+
+    <p>Una vez guardado el archivo, se aplicarán las configuraciones establecidas.</p>
+
+    <p class="captura">
+      <img src="../img/vscode/vsc-pref-como-6.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="450" />
+    </p>
+
+    <p>Referencias:</p>
+    <ul>
+      <li><a href="https://code.visualstudio.com/docs/getstarted/userinterface#_settings">User and Workspace Settings</a></li>
+    </ul>
   </section>
 
-  <section id="ajuste-linea">
-    <h2>Ajuste de línea</h2>
+  <section id="preferencias-recomendadas">
+    <h2>Preferencias recomendadas en este curso</h2>
 
-    <div class="codigo">
-      <pre>
-<code class="language-json">{
-    // Controla cómo se deben ajustar las líneas.
-    "editor.wordWrap": "on",
-}</code>
-        </pre>
-    </div>
-  </section>
+    <p>Estas son las preferencias de configuración que se aconseja establecer para seguir este curso, aunque no son imprescindibles.</p>
 
-  <section id="longitud-linea">
-    <h2>Longitud de línea</h2>
-
-    <div class="codigo">
-      <pre>
-<code class="language-json">{
-    // Cantidad máxima de caracteres por línea (0 = deshabilitar).
-    "html.format.wrapLineLength": 0,
-}</code>
-        </pre>
-    </div>
-  </section>
-
-  <section id="salto-linea">
-    <h2>Salto de línea</h2>
-
-    <div class="codigo">
-      <pre>
-<code class="language-json">{
-    // Carácter predeterminado de final de línea. Utilice \n para LF y \r\n para CRLF.
-    "files.eol": "\n",
-}</code>
-        </pre>
-    </div>
-  </section>
-
-  <section id="espacios-finales">
-    <h2>Espacios al final de las líneas</h2>
-
-    <p>Para que Visual Studio Code borre los espacios en blanco situados al final de las líneas al guardar un archivo.</p>
-    <div class="codigo">
-      <pre>
-<code class="language-json">{
-    // Si se habilita, se recortará el espacio final cuando se guarde un archivo.
-    "files.trimTrailingWhitespace": true,
-}</code>
-        </pre>
-    </div>
-  </section>
-
-  <section id="mostrar-espacios">
-    <h2>Mostrar espacios en blanco</h2>
-    <div class="codigo">
-      <pre>
+    <section id="mostrar-espacios">
+      <h3>Mostrar espacios en blanco</h3>
+      <div class="codigo">
+        <pre>
 <code class="language-json">{
     // Controla cómo debe representar el editor los espacios en blanco.
     "editor.renderWhitespace": "all",
 }</code>
-        </pre>
-    </div>
+</pre>
+      </div>
+    </section>
+
+    <section id="ajuste-linea">
+      <h3>Ajuste de línea</h3>
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+    // Controla cómo se deben ajustar las líneas.
+    "editor.wordWrap": "on",
+}</code>
+</pre>
+      </div>
+    </section>
+
+    <section id="salto-linea">
+      <h3>Salto de línea</h3>
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+    // Carácter predeterminado de final de línea. Utilice \n para LF y \r\n para CRLF.
+    "files.eol": "\n",
+}</code>
+</pre>
+      </div>
+    </section>
+
+    <section id="espacios-finales">
+      <h3>Espacios al final de las líneas</h3>
+      <p>Para que Visual Studio Code borre los espacios en blanco situados al final de las líneas al guardar un archivo.</p>
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+    // Si se habilita, se recortará el espacio final cuando se guarde un archivo.
+    "files.trimTrailingWhitespace": true,
+}</code>
+</pre>
+      </div>
+    </section>
+
+    <section id="linea-final">
+      <h3>Añadir línea final en blanco</h3>
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+    // Finalizar con una nueva línea.
+    "html.format.endWithNewline": true,
+}</code>
+</pre>
+      </div>
+    </section>
+
+    <section id="linea-delante">
+      <h3>Etiquetas con línea en blanco delante</h3>
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+    // Lista de etiquetas, separadas por comas, que deben tener una nueva línea adicional delante. "null" tiene como valores predeterminados "head, body, /html".
+    "html.format.extraLiners": "body",
+}</code>
+</pre>
+      </div>
+    </section>
+
+    <section id="longitud-linea">
+      <h3>Longitud de línea</h3>
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+    // Cantidad máxima de caracteres por línea (0 = deshabilitar).
+    "html.format.wrapLineLength": 0,
+}</code>
+</pre>
+      </div>
+    </section>
+
+    <section id="tamano-sangrado">
+      <h3>Tamaño del sangrado</h3>
+
+      <p>Es necesario reiniciar Visual Studio Code tras modificar esta configuración para que se aplique el tamaño del sangrado deseado en los nuevos ficheros.</p>
+
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+    // Establecer los valores de configuración que se reemplazarán para el lenguaje [html].
+    "[html]": {
+      "editor.insertSpaces": true,
+      " editor.tabSize": 2
+    },
+},</code>
+</pre>
+      </div>
+    </section>
+  </section>
+
+  <section id="cierre-automatico">
+    <h2>Cierre automático de etiquetas</h2>
+
+    <p>Cuando se crea una página web desde cero, resulta conveniente que el editor cierre automáticamente las etiquetas. Pero para hacer los ejercicios propuestos en este curso, el cierre automático complica la realización de los ejercicios.</p>
+
+    <p>En vez del cierre automático, para hacer los ejercicios de este curso se propone la siguiente configuración:
+      <ul>
+        <li>Deshabilitar el cierre automático en el archivo de configuración de usuario o de área de trabajo:
+          <div class="codigo">
+            <pre>
+<code class="language-json">{
+    // Habilita o deshabilita el cierre automático de las etiquetas HTML.
+    "html.autoClosingTags": false,
+}</code>
+</pre>
+          </div>
+        </li>
+        <li>Instalar la extensión <a href="https://marketplace.visualstudio.com/items?itemName=Compulim.compulim-vscode-closetag">Close HTML/XML tag</a></li>
+      </ul>
   </section>
 
   <section id="abrir-navegador">
@@ -154,17 +271,28 @@
 
     <ul>
       <li><a href="https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting">Remove telemetry</a></li>
-      <li><a href="https://code.visualstudio.com/updates/vMarch#_utf8-bom-support">UTF-8 con o sim BOM</a></li>
+      <li><a href="https://code.visualstudio.com/updates/vMarch#_utf8-bom-support">UTF-8 con o sin BOM</a></li>
       <li><a href="editorconfig.org">EditorConfig</a></li>
       <li><a href="https://code.visualstudio.com/updates/vMarch#_languages-html">Saltos de línea antes de ciertas etiquetas</a></li>
       <li><a href="https://code.visualstudio.com/docs/languages/html#_format-html">No formatear algunas etiquetas</a></li>
+      <li>A veces, parece que Visual Studio Code ha bloqueado los archivos (por ejemplo, si se intenta sustituir una imagen por otra). No pasa siempre, pero parece que está relaciones con una preferencia de git, que está comprobando si hay cambios y bloquea temporalmente los archivos. La preferencia es
+        <div class="codigo">
+          <pre>
+<code class="language-json">{
+    // Si la búsqueda automática está habilitada
+    "git.autofetch": true,
+}</code>
+</pre>
+        </div>
     </ul>
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 21 de septiembre de 2017</p>
+    <p class="ultmod">Última modificación de esta página: 22 de septiembre de 2017</p>
 
-    <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br /> Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br /> que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
+    <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
+      Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
   </footer>
 </body>
 </html>

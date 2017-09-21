@@ -1,78 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Extensiones. Visual Studio Code. Informática. Bartolomé Sintes Marco</title>
-    <link href="../varios/informatica.css" rel="stylesheet" type="text/css" title="mclibre" />
-    <link rel="icon" href="../varios/favicon.ico" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Extensiones. Visual Studio Code. Informática. Bartolomé Sintes Marco</title>
+  <link href="../varios/informatica.css" rel="stylesheet" type="text/css" title="mclibre" />
+  <link rel="icon" href="../varios/favicon.ico" />
+</head>
 
-  <body>
-    <h1>Visual Studio Code. Extensiones</h1>
+<body>
+  <h1>Visual Studio Code. Extensiones</h1>
 
-    <nav>
-      <p>
-        <a href="../index.html"><img src="../varios/iconos/icono_informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
-        <a href="#"><img src="../varios/iconos/icono_arrow_circle_up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
-      </p>
+  <nav>
+    <p>
+      <a href="../index.html"><img src="../varios/iconos/icono_informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
+      <a href="#"><img src="../varios/iconos/icono_arrow_circle_up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+    </p>
 
-      <h2>VSC Extensiones</h2>
+    <h2>VSC Extensiones</h2>
 
-      <div class="toc">
-        <ul>
-          <li><a href="#modificar-mensaje-commit">Modificar mensaje commit</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <section id="renombrar">
-      <h2>Path Intellisense</h2>
-    </section>
-
-    <section id="insertar-etiquetas">
-      <h2>Insertar etiquetas HTML alrededor de texto</h2>
-
-      <p><a href="https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap">htmltagwrap</a></p>
-    </section>
-
-    <section id="cerrar-etiquetas">
-      <h2>Close HTML/XML tag: cerrar etiquetas</h2>
-
-      <p><a href="https://marketplace.visualstudio.com/items?itemName=Compulim.compulim-vscode-closetag">Close HTML/XML tag en Marketlace</a></p>
-      <p><a href="https://github.com/compulim/vscode-closetag">Close HTML/XML tag en GitHub</a></p>
-    </section>
-
-    <section id="renombrar-etiquetas">
-      <h2>Auto Rename Tag: renombrar etiquetas</h2>
-
-      <p><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">Auto Rename Tag en Marketplace</a></p>
-      <p><a href="https://github.com/formulahendry/vscode-auto-rename-tag">Auto Rename Tag en GitHub</a></p>
-    </section>
-
-    <section id="ordenar-atributos">
-      <h2>Sorting HTML and Jade attributes: ordenar atributos</h2>
-
-      <p><a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-attrs-sorter">Sorting HTML and Jade attributes en Marketplace</a></p>
-      <p><a href="https://github.com/mrmlnc/vscode-attrs-sorter">Sorting HTML and Jade attributes en GitHub</a></p>
-    </section>
-
-    <section id="otros">
-      <h2>Otros</h2>
-
+    <div class="toc">
       <ul>
-        <li><a href="https://github.com/alefragnani/vscode-project-manager">Project Manager</a></li>
-        <li>Brackets Surround para VSC: <a href="https://github.com/Microsoft/vscode/issues/1307">VSC issue 1307</a></li>
-        <li>Path Intellisense, con "path-intellisense.autoSlashAfterDirectory": false,</li>
+        <li><a href="#modificar-mensaje-commit">Modificar mensaje commit</a></li>
       </ul>
-    </section>
+    </div>
+  </nav>
 
-    <footer>
-      <p class="ultmod">Última modificación de esta página: 19 de septiembre de 2017</p>
+  <section id="dimensiones-imagenes">
+    <h2>Image preview: información de imágenes</h2>
+
+    <p>Al situar el cursor sobre la ruta de una imagen, se muestra un cuadro con una miniatura de la imagen y el tamaño de la imagen. Además, haciendo
+      <span="soft-atajo-teclado">se abre la imagen en otra pestaña.</span>
+    </p>
+
+    <p><a href="https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview">Image preview en Marketplace</a></p>
+  </section>
+
+  <section id="rutas-archivos">
+    <h2>Path Intellisense: rutas de archivos</h2>
+
+    <p>Cuando se escribe una ruta relativa (en un enlace, en una imagen, etc), al escribir una barra (/), se muestra un selector con los archivos y directorios disponibles. Al seleccionar uno de ellos, el nombre se añade a la ruta.</p>
+
+    <p><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense en Marketplace</a></p>
+
+  </section>
+
+  <section id="cierre-etiquetas">
+    <h2>Close HTML/XML tag: Cierre de etiquetas</h2>
+
+    <p>Al pulsar el atajo de teclado <span class="soft-atajo-teclado">Alt+Shift+.</span>, se añade automáticamente la etiqueta de cierre de la etiqueta abierta anterior.</p>
+
+    <p><strong>Notas</strong>:</p>
+    <ul>
+      <li>La etiqueta de cierre se añade aunque la etiqueta de cierre ya esté escrita en el documento. La extensión sólo se fija en lo que hay antes de la posición del cursor, no en lo que hay después.</li>
+    </ul>
+
+    <p><a href="https://marketplace.visualstudio.com/items?itemName=Compulim.compulim-vscode-closetag">Close HTML/XML tag en Marketplace</a></p>
+  </section>
+
+  <section id="otros">
+    <h2>Otras extensiones (para probar)</h2>
+
+    <ul>
+      <li>Insertar etiquetas HTML alrededor de texto: <a href="https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap">htmltagwrap</a><br /> Teóricamente, esta extensión me vendría muy bien, pero al probarla no me ha funcionado bien.</li>
+      <li>Renombrar etiquetas: <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">Auto Rename Tag en Marketplace</a></li>
+      <li>Ordenar atributos: <a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-attrs-sorter">Sorting HTML and Jade attributes en Marketplace</a></li>
+      <li><a href="https://github.com/alefragnani/vscode-project-manager">Project Manager</a></li>
+      <li><a href="https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint">HTMLHint</a></li>
+      <li>Brackets Surround para VSC: <a href="https://github.com/Microsoft/vscode/issues/1307">VSC issue 1307</a></li>
+      <li>Validador CSS: <a href="https://marketplace.visualstudio.com/items?itemName=smelukov.vscode-csstree">CSSTree validator</a></li>
+    </ul>
+  </section>
+
+  <footer>
+      <p class="ultmod">Última modificación de esta página: 22 de septiembre de 2017</p>
 
       <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
         Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
         que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
     </footer>
-  </body>
+</body>
 </html>

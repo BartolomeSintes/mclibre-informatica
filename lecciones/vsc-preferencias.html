@@ -8,7 +8,9 @@
   <link rel="icon" href="../varios/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="../varios/highlight-informatica.css" />
   <script type="text/javascript" src="../varios/highlight.pack.js"></script>
-  <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
 </head>
 
 <body>
@@ -133,10 +135,63 @@
   <section id="preferencias-recomendadas">
     <h2>Preferencias recomendadas en este curso</h2>
 
-    <p>Estas son las preferencias de configuración que se aconseja establecer para seguir este curso, aunque no son imprescindibles.</p>
+    <p>Estas son las preferencias de configuración que se aconseja establecer para seguir los cursos de mclibre.org.</p>
+
+    <p>En primer lugar, se muestran todas las preferencias juntas, para que se puedan copiar fácilmente, y a continuación se comentan una a una cada preferencia.</p>
+
+    <p>Algunas preferencias son importantes porque corresponden a prácticas extendidas en el ámbito del desarrollo web y otras son preferencias personales que el alumno puede seguir o no.</p>
+
+    <section id="todas-preferencias">
+      <h3>Todas las preferencias</h3>
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+  // CONFIGURACIONES RECOMENDADAS EN LOS APUNTES
+  //
+  // Controla cómo debe representar el editor los espacios en blanco.
+  "editor.renderWhitespace": "all",
+  //
+  // Controla cómo se deben ajustar las líneas.
+  "editor.wordWrap": "on",
+  //
+  // Carácter predeterminado de final de línea.
+  "files.eol": "\n",
+  //
+  // Si se habilita, se recortará el espacio final cuando se guarde un archivo.
+  "files.trimTrailingWhitespace": true,
+  //
+  // Habilita o deshabilita el cierre automático de las etiquetas HTML.
+  "html.autoClosingTags": false,
+  //
+  // Finalizar con una nueva línea.
+  "html.format.endWithNewline": true,
+  //
+  // Lista de etiquetas, separadas por comas, que deben tener una nueva línea adicional delante.
+  "html.format.extraLiners": "body",
+  //
+  // Lista de etiquetas, separadas por comas, a las que no se debe volver a aplicar formato.
+  "html.format.unformatted": "a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, q, samp, select, small, span, strong, sub, sup, textarea, tt, var, footer, pre",
+  //
+  // Cantidad máxima de caracteres por línea (0 = deshabilitar).
+  "html.format.wrapLineLength": 0,
+  //
+  // Establecer los valores de configuración que se reemplazarán para el lenguaje [html].
+  "[html]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  // Tema Light+ (default light)
+  "workbench.colorTheme": "Default Light+",
+}</code>
+</pre>
+      </div>
+    </section>
 
     <section id="mostrar-espacios">
       <h3>Mostrar espacios en blanco</h3>
+
+      <p>Esta preferencia hace que VSC muestre un punto en cada espacio en blanco. Es una ayuda visual para poder contar fácilmente el número de espacios en blanco.</p>
+
       <div class="codigo">
         <pre>
 <code class="language-json">{
@@ -149,6 +204,9 @@
 
     <section id="ajuste-linea">
       <h3>Ajuste de línea</h3>
+
+      <p>Esta preferencia hace que VSC aproveche todo el ancho de pantalla para mostrar los documentos y no añada saltos de línea al formatear el documento.</p>
+
       <div class="codigo">
         <pre>
 <code class="language-json">{
@@ -161,6 +219,11 @@
 
     <section id="salto-linea">
       <h3>Salto de línea</h3>
+
+      <p>Esta preferencia fuerza a VSC a utilizar el carácter LF para los saltos de líneas (habitual en GNU/Linux) y no los caracteres habituales en Windows (CR LF). Esta es la configuración más extendida en el ámbito del desarrollo web.</p>
+
+      <p>Si se abren los documentos que utilizan el carácter LF para los saltos de línea con un programa que no entienda correctamente ese carácter, el contenido se verá todo seguido, sin saltos de línea. El Bloc de notas de Windows es uno de estos programas, por lo que este programa no se recomienda para editar los documentos creados en este curso.</p>
+
       <div class="codigo">
         <pre>
 <code class="language-json">{
@@ -173,7 +236,9 @@
 
     <section id="espacios-finales">
       <h3>Espacios al final de las líneas</h3>
-      <p>Para que Visual Studio Code borre los espacios en blanco situados al final de las líneas al guardar un archivo.</p>
+
+      <p>Esta preferencia hace que, al guardar un archivo, VSC borre los espacios en blanco situados al final de las líneas. Esos espacios son inecesarios y lo único que hacen es ocupar espacio.</p>
+
       <div class="codigo">
         <pre>
 <code class="language-json">{
@@ -186,6 +251,9 @@
 
     <section id="linea-final">
       <h3>Añadir línea final en blanco</h3>
+
+      <p>Esta preferencia hace que, al formatear un documento, VSC compruebe que el último carácter de un documento sea un único salto de línea (LF). Si se trata de documentos independientes, no es algo necesario, pero si se trata de documentos que se pueden cargar uno detrás de otro para crear un único documento, resulta conveniente para evitar que la última línea de un documento se una a la primera del documento siguiente.</p>
+
       <div class="codigo">
         <pre>
 <code class="language-json">{
@@ -198,6 +266,9 @@
 
     <section id="linea-delante">
       <h3>Etiquetas con línea en blanco delante</h3>
+
+      <p>Esta preferencia hace que, al formatear un documento, VSC compruebe que delante de determinadas etiquetas haya al menos una línea en blanco. Yo tengo las costumbre de dejar siempre una línea en blanco delante de <span class="html-eti">&lt;body></span>, pero no delante de <span class="html-eti">&lt;head></span> ni de <span class="html-eti">&lt;/html></span>.</p>
+
       <div class="codigo">
         <pre>
 <code class="language-json">{
@@ -210,6 +281,9 @@
 
     <section id="longitud-linea">
       <h3>Longitud de línea</h3>
+
+      <p>Esta preferencia hace que, al formatear un documento, VSC compruebe que ninguna línea exceda el número de caracteres indicado y añada saltos de línea cuando sea necesario. Yo tengo la costumbre de mantener los párrafos de texto en una sola línea, aunque sea muy larga, para que al modificar el texto no se queden unas líneas más largas que otras. Para ello, esta preferencia tiene que tener el valor 0.</p>
+
       <div class="codigo">
         <pre>
 <code class="language-json">{
@@ -222,6 +296,8 @@
 
     <section id="tamano-sangrado">
       <h3>Tamaño del sangrado</h3>
+
+      <p>Yo tengo la costumbre de utilizar un sangrado de dos espacios tanto en las páginas web HTML como en las hojas de estilo CSS.</p>
 
       <p>Es necesario reiniciar Visual Studio Code tras modificar esta configuración para que se aplique el tamaño del sangrado deseado en los nuevos ficheros.</p>
 

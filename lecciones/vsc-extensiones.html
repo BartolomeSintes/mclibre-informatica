@@ -11,6 +11,8 @@
 <body>
   <h1>Visual Studio Code. Extensiones</h1>
 
+  <p>Las extensiones de Visual Studio Code permiten ampliar las características del editor. Las extensiones están disponibles en la web <a href="https://marketplace.visualstudio.com/">Visual Studio Code Marketplace</a>. En esta web se pueden buscar extensiones y consultar detalles de las extensiones (características, número de instalaciones, precio, comentarios y valoraciones de los usuarios, ayuda disponible, etc.), aunque la instalación se realiza desde el propio Visual Studio Code.</p>
+
   <nav>
     <p>
       <a href="../index.html"><img src="../varios/iconos/icono_informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
@@ -21,41 +23,59 @@
 
     <div class="toc">
       <ul>
-        <li><a href="#modificar-mensaje-commit">Modificar mensaje commit</a></li>
+        <li><a href="#instalar">Instalar Extensiones</a></li>
+        <li><a href="#recomendadas-htmlcss">Recomendadas HTML/CSS</a></li>
+        <li><a href="#otros">Otras extensiones</a></li>
       </ul>
     </div>
   </nav>
 
-  <section id="dimensiones-imagenes">
-    <h2>Image preview: información de imágenes</h2>
+  <section id="instalar">
+    <h2>Instalar extensiones</h2>
 
-    <p>Al situar el cursor sobre la ruta de una imagen, se muestra un cuadro con una miniatura de la imagen y el tamaño de la imagen. Además, haciendo
-      <span="soft-atajo-teclado">se abre la imagen en otra pestaña.</span>
+    <p>Para instalar extensiones en Visual Studio Code, haga clic en el icono de Extensiones de la barra lateral. Se desplegará la barra lateral mostrando las extensiones disponibles, ordenadas por popularidad:</p>
+
+    <p class="captura">
+      <img src="../img/vscode/vsc-extensiones-1.png" alt="VSC. Instalar extensiones" width="1024" height="576" />
     </p>
-
-    <p><a href="https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview">Image preview en Marketplace</a></p>
   </section>
 
-  <section id="rutas-archivos">
-    <h2>Path Intellisense: rutas de archivos</h2>
+  <section id="recomendadas-htmlcss">
+    <h2>Extensiones recomendadas para el curso de HTML y CSS</h2>
 
-    <p>Cuando se escribe una ruta relativa (en un enlace, en una imagen, etc), al escribir una barra (/), se muestra un selector con los archivos y directorios disponibles. Al seleccionar uno de ellos, el nombre se añade a la ruta.</p>
+    <p>Estas son las extensiones que se aconseja instalar para seguir el curso de <a href="http://www.mclibre.org/consultar/htmlcss/index.html">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a>.</p>
 
-    <p><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense en Marketplace</a></p>
+    <section id="dimensiones-imagenes">
+      <h3>Image preview: información de imágenes</h3>
 
-  </section>
+      <p>Al situar el cursor sobre la ruta de una imagen, se muestra un cuadro con una miniatura de la imagen y el tamaño de la imagen. Además, haciendo
+        <span="soft-atajo-teclado">se abre la imagen en otra pestaña.</span>
+      </p>
 
-  <section id="cierre-etiquetas">
-    <h2>Close HTML/XML tag: Cierre de etiquetas</h2>
+      <p><a href="https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview">Image preview en Marketplace</a></p>
+    </section>
 
-    <p>Al pulsar el atajo de teclado <span class="soft-atajo-teclado">Alt+Shift+.</span>, se añade automáticamente la etiqueta de cierre de la etiqueta abierta anterior.</p>
+    <section id="rutas-archivos">
+      <h3>Path Intellisense: rutas de archivos</h3>
 
-    <p><strong>Notas</strong>:</p>
-    <ul>
-      <li>La etiqueta de cierre se añade aunque la etiqueta de cierre ya esté escrita en el documento. La extensión sólo se fija en lo que hay antes de la posición del cursor, no en lo que hay después.</li>
-    </ul>
+      <p>Cuando se escribe una ruta relativa (en un enlace, en una imagen, etc), al escribir una barra (/), se muestra un selector con los archivos y directorios disponibles. Al seleccionar uno de ellos, el nombre se añade a la ruta.</p>
 
-    <p><a href="https://marketplace.visualstudio.com/items?itemName=Compulim.compulim-vscode-closetag">Close HTML/XML tag en Marketplace</a></p>
+      <p><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense en Marketplace</a></p>
+
+    </section>
+
+    <section id="cierre-etiquetas">
+      <h3>Close HTML/XML tag: Cierre de etiquetas</h3>
+
+      <p>Al pulsar el atajo de teclado <span class="soft-atajo-teclado">Alt+Shift+.</span>, se añade automáticamente la etiqueta de cierre de la etiqueta abierta anterior.</p>
+
+      <p><strong>Notas</strong>:</p>
+      <ul>
+        <li>La etiqueta de cierre se añade aunque la etiqueta de cierre ya esté escrita en el documento. La extensión sólo se fija en lo que hay antes de la posición del cursor, no en lo que hay después.</li>
+      </ul>
+
+      <p><a href="https://marketplace.visualstudio.com/items?itemName=Compulim.compulim-vscode-closetag">Close HTML/XML tag en Marketplace</a></p>
+    </section>
   </section>
 
   <section id="otros">
@@ -73,11 +93,11 @@
   </section>
 
   <footer>
-      <p class="ultmod">Última modificación de esta página: 22 de septiembre de 2017</p>
+    <p class="ultmod">Última modificación de esta página: 25 de septiembre de 2017</p>
 
-      <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-        Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
-        que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
-    </footer>
+    <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
+      Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
+  </footer>
 </body>
 </html>

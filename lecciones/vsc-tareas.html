@@ -1,44 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tareas. Visual Studio Code. Informática. Bartolomé Sintes Marco</title>
-    <link href="../varios/informatica.css" rel="stylesheet" type="text/css" title="mclibre" />
-    <link rel="icon" href="../varios/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../varios/highlight-informatica.css" />
-    <script type="text/javascript" src="../varios/highlight.pack.js"></script>
-    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tareas. Visual Studio Code. Informática. Bartolomé Sintes Marco</title>
+  <link href="../varios/informatica.css" rel="stylesheet" type="text/css" title="mclibre" />
+  <link rel="icon" href="../varios/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../varios/highlight-informatica.css" />
+  <script type="text/javascript" src="../varios/highlight.pack.js"></script>
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
 </head>
 
 <body>
-    <h1>Visual Studio Code. Tareas</h1>
+  <h1>Visual Studio Code. Tareas</h1>
 
-    <nav>
-        <p>
-            <a href="../index.html"><img src="../varios/iconos/icono_informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
-            <a href="#"><img src="../varios/iconos/icono_arrow_circle_up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+  <nav>
+    <p>
+      <a href="../index.html"><img src="../varios/iconos/icono_informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
+      <a href="#"><img src="../varios/iconos/icono_arrow_circle_up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+    </p>
+
+    <h2>VSC Tareas</h2>
+
+    <div class="toc">
+      <ul>
+        <li><a href="#abrir-navegador">Abrir en navegador</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="abrir-navegador">
+    <h2>Abrir páginas en el navegador</h2>
+
+    <p>Para abrir páginas web en un navegador desde Visual Studio Code es necesario primero crear una tarea, que se podrá utilizar posteriormente cuantas veces se quiera.</p>
+
+    <h3>Crear una tarea</h3>
+
+    <p>Las capturas siguientes muestran como crear una tarea (más exactamente, se crean dos tareas simultáneamente), para poder abrir las páginas web en Firefox y en Chrome.</p>
+
+    <ol>
+      <li>Elija la opción de menú <span class="soft-menu">Tareas > Configurar tarea</span>.
+        <p class="captura">
+          <img src="../img/vscode/vsc-tareas-crear-1.png" alt="VSC. Crear tarea" width="1024" height="270" />
         </p>
-
-        <h2>VSC Tareas</h2>
-
-        <div class="toc">
-            <ul>
-                <li><a href="#abrir-navegador">Abrir en navegador</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section id="abrir-navegador">
-        <h2>Abrir páginas en el navegador</h2>
-
-        <ul>
-            <li>Crear Tarea
-                <ol>
-                    <li>Elegir la opción de menú <span class="soft-menu">Tareas > Configurar tarea</span>.</li>
-                    <li>Definir la tarea en el archivo task.json:
-                        <div class="codigo">
-                            <pre>
+      </li>
+      <li>Se mostrará un cuadro con los distintos tipos de tareas. Haga clic en Others:
+        <p class="captura">
+          <img src="../img/vscode/vsc-tareas-crear-2.png" alt="VSC. Crear tarea" width="1024" height="250" />
+        </p>
+      </li>
+      <li>Se mostrará en una pestaña el archivo de tareas tasks.json:
+        <p class="captura">
+          <img src="../img/vscode/vsc-tareas-crear-3.png" alt="VSC. Crear tarea" width="1024" height="340" />
+        </p>
+        <p>Al crearse, este fichero contiene un ejemplo de tarea:</p>
+        <div class="codigo">
+          <pre>
+<code class="language-json">{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        }
+    ]
+}</code>
+</pre>
+      </li>
+      <li>Modificar el contenido del archivo tasks.json con las tareas deseadas:
+        <p class="captura">
+          <img src="../img/vscode/vsc-tareas-crear-4.png" alt="VSC. Crear tarea" width="1024" height="340" />
+        </p>
+        <p>Estas son las tareas que abren ficheros en Firefox y Chrome (para copiar y pegar en VSC). Hay que comprobar que la ruta hasta los ejecutables de los navegadores son las correctas:</p>
+        <div class="codigo">
+          <pre>
 <code class="language-json">{
     "version": "0.1.0",
     "tasks": [
@@ -67,25 +107,50 @@
     ]
 }</code>
 </pre>
-                        </div>
-                    </li>
-                </ol>
-            </li>
-            <li>Utilizar tarea:
-                <ol>
-                    <li>Elegir la opción de menú <span class="soft-menu">Tareas > Ejecutar tarea ...</span>.</li>
-                    <li>Elegir la tarea a aplicar.
-                </ol>
-                </li>
-        </ul>
-    </section>
+        </div>
+      </li>
+      <li>
+        <p>El archivo tasks.json se crea en la carpeta .vscode que se crea en la carpeta abierta. Esto permite utilizar la tarea en todos los archivos de la carpeta abierta (y en los archivos de las subcarpetas). Pero si abrimos otra carpeta y queremos utilizar la misma tarea tendremos que crear de nuevo la tarea (o copiar la carpeta .vscode).</p>
+        <p class="captura">
+          <img src="../img/vscode/vsc-tareas-crear-5.png" alt="VSC. Crear tarea" width="1024" height="340" />
+        </p>
+      </li>
+    </ol>
 
-    <footer>
-      <p class="ultmod">Última modificación de esta página: 22 de septiembre de 2017</p>
+    <h3>Utilizar una tarea</h3>
 
-      <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-        Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
-        que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
-    </footer>
+    <p>Para utilizar alguna de las tareas creadas, siga los pasos siguientes:</p>
+
+    <ol>
+      <li>Abra en una pestaña la página web que quiera abrir en un navegador:
+        <p class="captura">
+          <img src="../img/vscode/vsc-tareas-usar-1.png" alt="VSC. Utilizar tarea" width="1024" height="380" />
+        </p>
+      </li>
+      <li>Elija la opción de menú <span class="soft-menu">Tareas > Ejecutar tarea ...</span>.
+        <p class="captura">
+          <img src="../img/vscode/vsc-tareas-usar-2.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
+        </p>
+      </li>
+      <li>Se mostrará un cuadro con las tareas disponibles. Haga clic en la tarea que quiera aplicar:
+        <p class="captura">
+          <img src="../img/vscode/vsc-tareas-usar-3.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
+        </p>
+        </li>
+        <li>Se abrirá en el navegador elegido la página abierta:
+          <p class="captura">
+            <img src="../img/vscode/vsc-tareas-usar-4.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
+          </p>
+          </li>
+      </ol>
+  </section>
+
+  <footer>
+    <p class="ultmod">Última modificación de esta página: 27 de septiembre de 2017</p>
+
+    <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
+      Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
+  </footer>
 </body>
 </html>

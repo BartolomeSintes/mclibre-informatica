@@ -37,8 +37,20 @@
       <p>Hay que hacer <i>commit</i> del cambio de nombre antes de modificar el archivo, porque si no git entiende que se ha borrado un archivo y se ha creado otro en vez de que simplemente se ha cambiado el nombre.</p>
     </section>
 
+    <section id="uncommit-unpushed">
+      <h2>Deshacer un <i>commit</i> que todavía no se ha hecho público</h2>
+
+      <p>Si se quiere deshacer un <i>commit</i> que todavía no se ha hecho público, ejecute el comando:</p>
+
+      <pre>
+        <code>git reset HEAD~1 --soft   </code>
+      </pre>
+
+      <p>Referencias: <a href="https://stackoverflow.com/questions/19859486/how-to-un-commit-last-un-pushed-git-commit-without-losing-the-changes">Pregunta en StackOverflow</p>
+    </section>
+
     <footer>
-      <p class="ultmod">Última modificación de esta página: 3 de septiembre de 2017</p>
+      <p class="ultmod">Última modificación de esta página: 26 de septiembre de 2017</p>
 
       <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
         Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

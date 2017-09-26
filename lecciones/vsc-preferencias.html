@@ -250,9 +250,11 @@
     </section>
 
     <section id="linea-final">
-      <h3>Añadir línea final en blanco</h3>
+      <h3>Añadir salto de línea en la línea final</h3>
 
-      <p>Esta preferencia hace que, al formatear un documento, VSC compruebe que el último carácter de un documento sea un único salto de línea (LF). Si se trata de documentos independientes, no es algo necesario, pero si se trata de documentos que se pueden cargar uno detrás de otro para crear un único documento, resulta conveniente para evitar que la última línea de un documento se una a la primera del documento siguiente.</p>
+      <p>Esta preferencia hace que, al formatear un documento, VSC compruebe que el último carácter de un documento sea un único salto de línea (LF). Si se trata de documentos independientes (como una página web) no es algo imprescindible, pero si se trata de documentos que se pueden cargar uno detrás de otro para crear un único documento (como un programa PHP), resulta conveniente para evitar que la última línea de un documento se una a la primera del documento siguiente.</p>
+
+      <p>Las normas <a href="https://es.wikipedia.org/wiki/POSIX">POSIX</a> especifican que en los ficheros de texto, todas las líneas deben terminar con el carácter salto de línea.</p>
 
       <div class="codigo">
         <pre>
@@ -292,14 +294,18 @@
 }</code>
 </pre>
       </div>
+
+      <p>Referencia: <a href="https://code.visualstudio.com/updates/vMarch#_languages-html">Novedades VSC 1.0: Formateador HTML</a></p>
     </section>
 
-    <section id="tamano-sangrado">
-      <h3>Tamaño del sangrado</h3>
+    <section id="sangrado">
+      <h3>Sangrado: Tabuladores y tamaño del sangrado</h3>
 
-      <p>Yo tengo la costumbre de utilizar un sangrado de dos espacios tanto en las páginas web HTML como en las hojas de estilo CSS.</p>
+      <p>Es conveniente sangrar adecuadamente los documentos para facilitar su lectura. Para sangrar un documento, se han utilizado siempre los tabuladores. Pero en los editores modernos no es necesario utilizar tabuladores porque los editores saben gestionar los espacios, de manera que cuando se pulsa la tecla <kbd>tabulador</kbd> el editor añade los espacios necesarios.</p>
 
-      <p>Es necesario reiniciar Visual Studio Code tras modificar esta configuración para que se aplique el tamaño del sangrado deseado en los nuevos ficheros.</p>
+      <p>Por otro lado, los tabuladores equivalían en principio a 8 espacios en blanco. Si sólo se necesita un nivel de sangrado, 8 espacios no es demasiado, pero si el documento necesita varios niveles de sangrado, ese valor es demasiado grande. Lo habitual es utilizar un sangrado de 4 espacios si se trata de código fuente de programas y de 2 si se trata de páginas web u hojas de estilo.</p>
+
+      <p>Esta configuración tiene una sintaxis distinta al resto porque es específica para html (páginas web y hojas de estilo). Es necesario reiniciar Visual Studio Code tras modificar esta configuración para que se aplique el tamaño del sangrado deseado en los nuevos ficheros.</p>
 
       <div class="codigo">
         <pre>
@@ -351,10 +357,9 @@
     <ul>
       <li><a href="https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting">Remove telemetry</a></li>
       <li><a href="https://code.visualstudio.com/updates/vMarch#_utf8-bom-support">UTF-8 con o sin BOM</a></li>
-      <li><a href="editorconfig.org">EditorConfig</a></li>
-      <li><a href="https://code.visualstudio.com/updates/vMarch#_languages-html">Saltos de línea antes de ciertas etiquetas</a></li>
+      <li><a href="http://editorconfig.org">EditorConfig</a></li>
       <li><a href="https://code.visualstudio.com/docs/languages/html#_format-html">No formatear algunas etiquetas</a></li>
-      <li>A veces, parece que Visual Studio Code ha bloqueado los archivos (por ejemplo, si se intenta sustituir una imagen por otra). No pasa siempre, pero parece que está relaciones con una preferencia de git, que está comprobando si hay cambios y bloquea temporalmente los archivos. La preferencia es
+      <li>A veces, parece que Visual Studio Code ha bloqueado los archivos (por ejemplo, si se intenta sustituir una imagen por otra). No pasa siempre, pero parece que está relacionado con una preferencia de git, que está comprobando si hay cambios y bloquea temporalmente los archivos. La preferencia es
         <div class="codigo">
           <pre>
 <code class="language-json">{
@@ -367,7 +372,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 22 de septiembre de 2017</p>
+    <p class="ultmod">Última modificación de esta página: 26 de septiembre de 2017</p>
 
     <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
       Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

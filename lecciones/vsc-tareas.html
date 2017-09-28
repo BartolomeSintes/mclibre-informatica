@@ -26,19 +26,29 @@
 
     <div class="toc">
       <ul>
-        <li><a href="#abrir-navegador">Abrir en navegador</a></li>
+        <li><a href="#que-es">Qué es una tarea</a></li>
+        <li><a href="#crear-tarea">Crear tarea</a></li>
+        <li><a href="#utilizar-tarea">Utilizar tarea</a></li>
+        <li><a href="#recomendadas-htmlcss">Tareas recomendadas</a></li>
       </ul>
     </div>
   </nav>
 
-  <section id="abrir-navegador">
-    <h2>Abrir páginas en el navegador</h2>
+  <section id="que-es">
+    <h2>Qué es una tarea</h2>
 
-    <p>Para abrir páginas web en un navegador desde Visual Studio Code es necesario primero crear una tarea, que se podrá utilizar posteriormente cuantas veces se quiera.</p>
+    <p>Las tareas de Visual studio Code permiten automatizar el uso de programas ajenos al propio editor. Las tareas se definen por escrito en un archivo (<i>tasks.json</i>) y se pueden invocar a través del interfaz o mediante atajos de teclado. El resultado de la ejecución de las tareas se suele mostrar en la ventana de Terminal.</p>
 
-    <h3>Crear una tarea</h3>
+    <p>Referencias:</p>
+    <ul>
+      <li>Documentación de VSC: <a href="https://code.visualstudio.com/docs/editor/tasks">Tareas</a></li>
+    </ul>
+  </section>
 
-    <p>Las capturas siguientes muestran cómo crear una tarea (más exactamente, se crean dos tareas simultáneamente), para poder abrir las páginas web en Firefox y en Chrome.</p>
+  <section id="crear-tarea">
+    <h2>Crear una tarea</h2>
+
+    <p>Estos son los pasos a realizar para crear una tarea en Visual Studio Code.</p>
 
     <ol>
       <li>Elija la opción de menú <span class="soft-menu">Tareas > Configurar tarea</span>.
@@ -55,7 +65,7 @@
         <p class="captura">
           <img src="../img/vscode/vsc-tareas-crear-3.png" alt="VSC. Crear tarea" width="1024" height="340" />
         </p>
-        <p>Al crearse, este fichero contiene un ejemplo de tarea:</p>
+        <p>Al crearse, este fichero contiene un ejemplo de tarea que simplemente muestra el mensaje "Hello" en el terminal:</p>
         <div class="codigo">
           <pre>
 <code class="language-json">{
@@ -72,63 +82,29 @@
 }</code>
 </pre>
       </li>
-      <li>Modifique el contenido del archivo <i>tasks.json</i> con las tareas deseadas:
+      <li>Modifique el contenido del archivo <i>tasks.json</i> con las tareas deseadas.:
         <p class="captura">
           <img src="../img/vscode/vsc-tareas-crear-4.png" alt="VSC. Crear tarea" width="1024" height="340" />
         </p>
-        <p>Estas son las tareas que abren ficheros en Firefox y Chrome (para copiar y pegar en VSC). Compruebe que la ruta hasta los ejecutables de los navegadores son las correctas:</p>
-        <div class="codigo">
-          <pre>
-<code class="language-json">{
-    // Tareas recomendadas para el curso Páginas web HTML y hojas de estilo CSS de www.mclibre.org
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "taskName": "Abrir en Firefox",
-            "command": "explorer",
-            "windows": {
-                "command": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
-            },
-            "args": [
-                "${file}"
-            ],
-            "presentation": {
-                "reveal": "never"
-            }
-        },
-        {
-            "taskName": "Abrir en Chrome",
-            "command": "explorer",
-            "windows": {
-                "command": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
-            },
-            "args": [
-                "${file}"
-            ],
-            "presentation": {
-                "reveal": "never"
-            }
-        }
-    ]
-}</code>
-</pre>
-        </div>
+        <p>En la captura anterior se muestra una tarea que abriría el navegador Firefox, como se comenta en el apartado <a href="#recomendadas-html-css">Tareas recomendadas en el curso  de HTML y CSS</a>.</p>
       </li>
       <li>Guarde el archivo.</li>
       <li>
-        <p>El archivo <i>tasks.json</i> se crea en la carpeta .vscode que se crea en la carpeta abierta. Esto permite utilizar la tarea en todos los archivos de la carpeta abierta (y en los archivos de las subcarpetas). Pero si abrimos otra carpeta y queremos utilizar la misma tarea tendremos que crear de nuevo la tarea (o copiar la carpeta .vscode).</p>
+        <p>El archivo <i>tasks.json</i> se crea en la carpeta .vscode que se crea en la carpeta abierta. Esto permite utilizar la tarea en todos los archivos de la carpeta abierta (y en los archivos de las subcarpetas). Pero si abrimos otra carpeta y queremos utilizar la misma tarea tendremos que crear de nuevo la tarea (o copiar el archivo <i>tasks.json</i>).</p>
         <p class="captura">
           <img src="../img/vscode/vsc-tareas-crear-5.png" alt="VSC. Crear tarea" width="1024" height="340" />
         </p>
       </li>
     </ol>
+  </section>
 
-    <h3>Utilizar una tarea</h3>
+  <section id="utilizar-tarea">
+    <h2>Utilizar una tarea</h2>
 
-    <p>Para utilizar alguna de las tareas creadas, siga los pasos siguientes:</p>
+    <p>Para utilizar cualquiera de las tareas creadas, siga los pasos siguientes:</p>
 
     <ol>
-      <li>Abra en una pestaña la página web que quiera abrir en un navegador:
+      <li>Abra en una pestaña la página web a la que quiera aplicar la tarea:
         <p class="captura">
           <img src="../img/vscode/vsc-tareas-usar-1.png" alt="VSC. Utilizar tarea" width="1024" height="380" />
         </p>
@@ -143,7 +119,7 @@
           <img src="../img/vscode/vsc-tareas-usar-3.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
         </p>
       </li>
-      <li>Se abrirá en el navegador elegido la página abierta:
+      <li>El resultado obtenido depende de la tarea elegida. En el caso de la tarea de ejemplo de las capturas, se abriría en el navegador elegido la página elegida:
         <p class="captura">
           <img src="../img/vscode/vsc-tareas-usar-4.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
         </p>
@@ -151,8 +127,60 @@
     </ol>
   </section>
 
+  <section id="recomendadas-htmlcss">
+    <h2>Tareas recomendadas para el curso de HTML y CSS</h2>
+
+    <p>Estas son las tareas que se aconseja crear para seguir el curso de <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a>.</p>
+
+    <p>Una vez definidas las tareas, se recomienda definir los atajos de teclado que ejecuten estas tareas, tal y como se comenta en la lección sobre <a href="vsc-atajos-teclado.html">Atajos de teclado de Visual Studio Code</a>.</p>
+
+    <section id="abrir-navegador">
+      <h3>Abrir páginas en el navegador</h3>
+
+      <p>Las siguientes tareas permiten abrir en los navegadores Firefox y Chrome las páginas que se están editando en Visual Studio Code. Compruebe que la ruta de los ejecutables de los navegadores que aparecen en las tareas coinciden con las rutas de los ejecutables en su ordenador:</p>
+
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+  // Tareas recomendadas para el curso Páginas web HTML y hojas de estilo CSS de www.mclibre.org
+
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "taskName": "Abrir en Firefox",
+          "command": "explorer",
+          "windows": {
+              "command": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+          },
+          "args": [
+              "${file}"
+          ],
+          "presentation": {
+              "reveal": "never"
+          }
+      },
+      {
+          "taskName": "Abrir en Chrome",
+          "command": "explorer",
+          "windows": {
+              "command": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+          },
+          "args": [
+              "${file}"
+          ],
+          "presentation": {
+              "reveal": "never"
+          }
+      }
+  ]
+}</code>
+</pre>
+      </div>
+    </section>
+  </section>
+
   <footer>
-    <p class="ultmod">Última modificación de esta página: 27 de septiembre de 2017</p>
+    <p class="ultmod">Última modificación de esta página: 28 de septiembre de 2017</p>
 
     <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
       Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

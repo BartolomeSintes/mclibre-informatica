@@ -38,7 +38,7 @@
 
     <h3>Crear una tarea</h3>
 
-    <p>Las capturas siguientes muestran como crear una tarea (más exactamente, se crean dos tareas simultáneamente), para poder abrir las páginas web en Firefox y en Chrome.</p>
+    <p>Las capturas siguientes muestran cómo crear una tarea (más exactamente, se crean dos tareas simultáneamente), para poder abrir las páginas web en Firefox y en Chrome.</p>
 
     <ol>
       <li>Elija la opción de menú <span class="soft-menu">Tareas > Configurar tarea</span>.
@@ -51,7 +51,7 @@
           <img src="../img/vscode/vsc-tareas-crear-2.png" alt="VSC. Crear tarea" width="1024" height="250" />
         </p>
       </li>
-      <li>Se mostrará en una pestaña el archivo de tareas tasks.json:
+      <li>Se mostrará en una pestaña el archivo de tareas <i>tasks.json</i>:
         <p class="captura">
           <img src="../img/vscode/vsc-tareas-crear-3.png" alt="VSC. Crear tarea" width="1024" height="340" />
         </p>
@@ -72,15 +72,16 @@
 }</code>
 </pre>
       </li>
-      <li>Modificar el contenido del archivo tasks.json con las tareas deseadas:
+      <li>Modifique el contenido del archivo <i>tasks.json</i> con las tareas deseadas:
         <p class="captura">
           <img src="../img/vscode/vsc-tareas-crear-4.png" alt="VSC. Crear tarea" width="1024" height="340" />
         </p>
-        <p>Estas son las tareas que abren ficheros en Firefox y Chrome (para copiar y pegar en VSC). Hay que comprobar que la ruta hasta los ejecutables de los navegadores son las correctas:</p>
+        <p>Estas son las tareas que abren ficheros en Firefox y Chrome (para copiar y pegar en VSC). Compruebe que la ruta hasta los ejecutables de los navegadores son las correctas:</p>
         <div class="codigo">
           <pre>
 <code class="language-json">{
-    "version": "0.1.0",
+    // Tareas recomendadas para el curso Páginas web HTML y hojas de estilo CSS de www.mclibre.org
+    "version": "2.0.0",
     "tasks": [
         {
             "taskName": "Abrir en Firefox",
@@ -91,7 +92,9 @@
             "args": [
                 "${file}"
             ],
-            "problemMatcher": []
+            "presentation": {
+                "reveal": "never"
+            }
         },
         {
             "taskName": "Abrir en Chrome",
@@ -102,15 +105,18 @@
             "args": [
                 "${file}"
             ],
-            "problemMatcher": []
+            "presentation": {
+                "reveal": "never"
+            }
         }
     ]
 }</code>
 </pre>
         </div>
       </li>
+      <li>Guarde el archivo.</li>
       <li>
-        <p>El archivo tasks.json se crea en la carpeta .vscode que se crea en la carpeta abierta. Esto permite utilizar la tarea en todos los archivos de la carpeta abierta (y en los archivos de las subcarpetas). Pero si abrimos otra carpeta y queremos utilizar la misma tarea tendremos que crear de nuevo la tarea (o copiar la carpeta .vscode).</p>
+        <p>El archivo <i>tasks.json</i> se crea en la carpeta .vscode que se crea en la carpeta abierta. Esto permite utilizar la tarea en todos los archivos de la carpeta abierta (y en los archivos de las subcarpetas). Pero si abrimos otra carpeta y queremos utilizar la misma tarea tendremos que crear de nuevo la tarea (o copiar la carpeta .vscode).</p>
         <p class="captura">
           <img src="../img/vscode/vsc-tareas-crear-5.png" alt="VSC. Crear tarea" width="1024" height="340" />
         </p>
@@ -136,13 +142,13 @@
         <p class="captura">
           <img src="../img/vscode/vsc-tareas-usar-3.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
         </p>
-        </li>
-        <li>Se abrirá en el navegador elegido la página abierta:
-          <p class="captura">
-            <img src="../img/vscode/vsc-tareas-usar-4.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
-          </p>
-          </li>
-      </ol>
+      </li>
+      <li>Se abrirá en el navegador elegido la página abierta:
+        <p class="captura">
+          <img src="../img/vscode/vsc-tareas-usar-4.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
+        </p>
+      </li>
+    </ol>
   </section>
 
   <footer>

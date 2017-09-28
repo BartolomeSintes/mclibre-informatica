@@ -78,33 +78,63 @@
     <section id="dimensiones-imagenes">
       <h3>Image preview: información de imágenes</h3>
 
-      <p>Al situar el cursor sobre la ruta de una imagen, se muestra un cuadro con una miniatura de la imagen y el tamaño de la imagen. Además, haciendo
-        <span="soft-atajo-teclado">se abre la imagen en otra pestaña.</span>
-      </p>
+      <p><img src="../img/vscode/vsc-extension-image-preview-logo.png" alt="Logotipo de Image preview" width="128" height="128" class="izquierda" /></p>
 
-      <p><a href="https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview">Image preview en Marketplace</a></p>
+      <p>Autor: Kiss Tamás</p>
+
+      <p>Marketplace: <a href="https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview">Image preview</a></p>
+
+      <p>Repositorio GitHub: <a href="https://github.com/kisstkondoros/gutter-preview">Image preview</a></p>
+
+      <hr class="corta" />
+
+      <p>Al situar el cursor sobre la ruta de una imagen, se muestra un cuadro con una miniatura de la imagen y el tamaño de la imagen. Además, haciendo
+        <span="soft-atajo-teclado">Ctrl+clic izquierdo</span> se abre la imagen en otra pestaña.</p>
+
+      <p>En este curso, utilizaremos esta extensión para ver el tamaño de las imágenes insertadas y poder rellenar los atributos <span class="html-atri">width</span> y <span class="html-atri">height</span> fácilmente.</p>
     </section>
 
     <section id="rutas-archivos">
       <h3>Path Intellisense: rutas de archivos</h3>
 
-      <p>Cuando se escribe una ruta relativa (en un enlace, en una imagen, etc), al escribir una barra (/), se muestra un selector con los archivos y directorios disponibles. Al seleccionar uno de ellos, el nombre se añade a la ruta.</p>
+      <p><img src="../img/vscode/vsc-extension-path-intellisense-logo.png" alt="Logotipo de Path Intellisense" width="128" height="128" class="izquierda" /></p>
 
-      <p><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense en Marketplace</a></p>
+      <p>Autor: Christian Kohler</p>
 
+      <p>Marketplace: <a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense</a></p>
+
+      <p>Repositorio GitHub: <a href="https://github.com/ChristianKohler/PathIntellisense">Path Intellisense</a></p>
+
+      <hr class="corta" />
+
+      <p>Cuando se escribe una ruta relativa (en un enlace, en una imagen, etc), al escribir una barra (/), se muestra un selector con los archivos y directorios disponibles. Al seleccionar uno de ellos, el nombre se añade a la ruta. Si con la lista visible escribimos uno o más caracteres, la lista muestra únicamente los archivos y directorios que comienzan por esos caracteres.</p>
+
+      <p><strong>Problemas detectados:</strong></p>
+      <ul>
+        <li>Como esta extensión sólo muestra la lista de archivos al escribir la barra (/), si el archivo al que queremos hacer referencia está en el mismo directorio del archivo que estamos editando, no podemos ver la lista de archivos. Una posible solución (que no termina de gustarme) es escribir ./ (punto barra). Como el punto hace referencia al directorio en el que estamos, al pulsar la barra después del punto sí que se muestra la barra de archivos.</li>
+      </ul>
     </section>
 
     <section id="cierre-etiquetas">
       <h3>Close HTML/XML tag: Cierre de etiquetas</h3>
 
-      <p>Al pulsar el atajo de teclado <span class="soft-atajo-teclado">Alt+Shift+.</span>, se añade automáticamente la etiqueta de cierre de la etiqueta abierta anterior.</p>
+      <p><img src="../img/vscode/vsc-extension-close-html-xhtml-tag-logo.png" alt="Logotipo de Close HTML/XML tag" width="128" height="128" class="izquierda" /></p>
 
-      <p><strong>Notas</strong>:</p>
+      <p>Autor: Compulim</p>
+
+      <p>Marketplace: <a href="https://marketplace.visualstudio.com/items?itemName=Compulim.compulim-vscode-closetag">Close HTML/XML tag</a></p>
+
+      <p>Repositorio GitHub: <a href="https://github.com/compulim/vscode-closetag">Close HTML/XML tag</a></p>
+
+      <hr class="corta" />
+
+      <p>Al pulsar el atajo de teclado <span class="soft-atajo-teclado">Alt+.</span>, se añade automáticamente la etiqueta de cierre de la etiqueta abierta anterior.</p>
+
+      <p><strong>Problemas detectados:</strong></p>
       <ul>
         <li>La etiqueta de cierre se añade aunque la etiqueta de cierre ya esté escrita en el documento. La extensión sólo se fija en lo que hay antes de la posición del cursor, no en lo que hay después.</li>
+        <li>Añade etiquetas de cierre de etiquetas vacías. Por ejemplo, si detrás una etiqueta <span class="html-eti">&lt;img ... /></span> se pulsa <span class="soft-atajo-teclado">Alt+.</span>, se añade la etiqueta de cierre <span class="html-eti">&lt;/img></span>. [<a href="https://github.com/compulim/vscode-closetag/issues/7">Bug #7 de Close HTML/XHTML tag</a>]</li>
       </ul>
-
-      <p><a href="https://marketplace.visualstudio.com/items?itemName=Compulim.compulim-vscode-closetag">Close HTML/XML tag en Marketplace</a></p>
     </section>
   </section>
 
@@ -123,7 +153,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 25 de septiembre de 2017</p>
+    <p class="ultmod">Última modificación de esta página: 28 de septiembre de 2017</p>
 
     <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
       Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

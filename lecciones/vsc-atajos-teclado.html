@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atajos de teclado. Visual Studio Code. Informática. Bartolomé Sintes Marco</title>
+  <link href="../varios/informatica.css" rel="stylesheet" type="text/css" title="mclibre" />
+  <link rel="icon" href="../varios/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../varios/highlight-informatica.css" />
+  <script type="text/javascript" src="../varios/highlight.pack.js"></script>
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body>
+  <h1>Visual Studio Code. Atajos de teclado</h1>
+
+  <nav>
+    <p>
+      <a href="../index.html"><img src="../varios/iconos/icono_informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
+      <a href="#"><img src="../varios/iconos/icono_arrow_circle_up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+    </p>
+
+    <h2>VSC Atajos de teclado</h2>
+
+    <div class="toc">
+      <ul>
+        <li><a href="#abrir-navegador">Atajo Abrir en navegador</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="abrir-navegador">
+    <h2>Atajo: Abrir páginas en el navegador</h2>
+
+    <p>Para definir un atajo de teclado que permita abrir fácilmente en un navegador web la página web que estemos editando en Visual Studio Code es necesario primero crear la tarea..</p>
+
+    <h3>Crear un atajo</h3>
+
+    <p>Las capturas siguientes muestran como crear una tarea (más exactamente, se crean dos tareas simultáneamente), para poder abrir las páginas web en Firefox y en Chrome.</p>
+
+    <ol>
+      <li>Elija la opción de menú <span class="soft-menu">Archivo > Preferencias > Métodos abreviados de teclado</span>.
+        <p class="captura">
+          <img src="../img/vscode/vsc-atajos-crear-1.png" alt="VSC. Crear atajo de teclado" width="1024" height="500" />
+        </p>
+      </li>
+      <li>Se mostrará en una pestaña el archivo de atajos de teclado predeterminados de Visual Studio Code. Haga clic en <i>keybindings.json</i>:
+        <p class="captura">
+          <img src="../img/vscode/vsc-atajos-crear-2.png" alt="VSC. Crear atajo de teclado" width="1024" height="300" />
+        </p>
+      </li>
+      <li>Se mostrará en otra pestaña el archivo de atajos de teclado personalizados:
+        <p class="captura">
+          <img src="../img/vscode/vsc-atajos-crear-3.png" alt="VSC. Crear atajo de teclado" width="1024" height="250" />
+        </p>
+        <p>Al crearse, este fichero no contiene ninguna definición:</p>
+        <div class="codigo">
+          <pre>
+<code class="language-json">// Coloque sus enlaces de teclado en este archivo para sobrescribir los valores predeterminados.
+  [
+  ]</code>
+</pre>
+      </li>
+      <li>Modifique el contenido del archivo <i>keybindings.json</i> con los atajos de teclado deseados:
+        <p class="captura">
+          <img src="../img/vscode/vsc-atajos-crear-4.png" alt="VSC. Crear atajo de teclado" width="1024" height="430" />
+        </p>
+        <p>Estas son los atajos que permiten ejecutar las tareas aconsejadas en la lección <a href="vsc-tareas.html">Tareas de Visual Studio Code</a> que abren ficheros en Firefox y Chrome. Los atajos asociados son</p>
+        <ul>
+          <li><span class="soft-atajo-teclado">Ctrl+Alt+f</span>, para Abrir en Firefox</li>
+          <li><span class="soft-atajo-teclado">Ctrl+Alt+c</span>, para Abrir en Chrome</li>
+        </ul>
+        <div class="codigo">
+          <pre>
+<code class="language-json">// Atajos de teclado aconsejados para el curso Páginas web HTML y hojas de estilo CSS de www.mclibre.org
+  [
+      {
+          "key": "ctrl+alt+f",
+          "command": "workbench.action.tasks.runTask",
+          "args": "Abrir en Firefox"
+      },
+      {
+          "key": "ctrl+alt+c",
+          "command": "workbench.action.tasks.runTask",
+          "args": "Abrir en Chrome"
+      }
+  ]</code>
+</pre>
+        </div>
+      </li>
+      <li>
+        <p>El archivo <i>keybindings.json</i> se crea en la carpeta C:\Users\<i>Usuario</i>\AppData\Roaming\Code\User.</p>
+      </li>
+    </ol>
+
+    <h3>Utilizar un atajo de teclado</h3>
+
+    <p>Para utilizar alguno de los atajos de teclado personalizados, siga los pasos siguientes:</p>
+
+    <ol>
+      <li>Abra en una pestaña la página web que quiera abrir en un navegador:
+        <p class="captura">
+          <img src="../img/vscode/vsc-atajos-usar-1.png" alt="VSC. Utilizar tarea" width="1024" height="380" />
+        </p>
+      </li>
+      <li>Pulse el atajo de teclado. Por ejemplo <span class="soft-atajo-teclado">Ctrl+Alt+f</span>.</li>
+      <li>Se abrirá en el navegador elegido la página abierta:
+          <p class="captura">
+              <img src="../img/vscode/vsc-atajos-usar-2.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
+            </p>
+          </li>
+    </ol>
+  </section>
+
+  <footer>
+    <p class="ultmod">Última modificación de esta página: 28 de septiembre de 2017</p>
+
+    <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
+      Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
+  </footer>
+</body>
+</html>

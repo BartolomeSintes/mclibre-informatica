@@ -26,6 +26,8 @@
 
     <div class="toc">
       <ul>
+        <li><a href="#temas">Temas de color</a></li>
+        <li><a href="#area-trabajo">Área de trabajo</a></li>
         <li><a href="#preferencias">Preferencias</a></li>
         <li><a href="#extensiones">Extensiones</a></li>
         <li><a href="#tareas">Tareas</a></li>
@@ -35,16 +37,67 @@
     </div>
   </nav>
 
+  <section id="temas">
+    <h2>Tema de color recomendado para el curso de HTML y CSS</h2>
+
+    <p>El tema de color es un aspecto muy personal por lo que se deja a elección del alumno el tema de color empleado.</p>
+
+    <p>En las capturas de los apuntes se empleará el Tema Light+ (default light).</p>
+
+    <p class="captura">
+      <img src="../img/vscode/vsc-tema-light.png" alt="VSC. Tema Light+ predeterminado" title="VSC. Tema Light+ predeterminado" width="1024" height="576" />
+    </p>
+  </section>
+
+  <section id="area-trabajo">
+    <h2>Área de trabajo</h2>
+
+    <p>Esta es el área de trabajo recomendada para seguir el curso de <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a>.</p>
+
+    <ol>
+      <li>Cree la carpeta Documentos > LMSGI > HTML:
+
+        <p class="captura">
+          <img src="../img/vscode/vsc-htmlcss-area-trabajo-1.png" alt="VSC. Área de trabajo" width="1024" height="170" />
+        </p>
+      </li>
+
+      <li>Cree las carpeta Documentos > LMSGI > HTML > ejercicios y Documentos > LMSGI > HTML > pruebas:
+        <p class="captura">
+          <img src="../img/vscode/vsc-htmlcss-area-trabajo-2.png" alt="VSC. Área de trabajo" width="1024" height="200" />
+        </p>
+      </li>
+
+      <li>Elija la opción de menú <span class="soft-menu">Archivo > Abrir carpeta ...</span>:
+        <p class="captura">
+          <img src="../img/vscode/vsc-htmlcss-area-trabajo-3.png" alt="VSC. Área de trabajo" width="1024" height="190" />
+        </p>
+      </li>
+
+      <li>Elija la carpeta Documentos > LMSGI > HTML:
+        <p class="captura">
+          <img src="../img/vscode/vsc-htmlcss-area-trabajo-4.png" alt="VSC. Área de trabajo" width="1024" height="576" />
+        </p>
+      </li>
+
+      <li>Haga clic en el icono Explorador en la barra de actividades para ver el contenido de la carpeta elegida:
+        <p class="captura">
+          <img src="../img/vscode/vsc-htmlcss-area-trabajo-5.png" alt="VSC. Área de trabajo" width="1024" height="210" />
+        </p>
+      </li>
+    </ol>
+  </section>
+
   <section id="preferencias">
     <h2>Preferencias de configuración recomendadas para el curso de HTML y CSS</h2>
 
-    <p>Estas son las preferencias de configuración que se aconseja establecer para seguir el curso de <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a></a>.</p>
+    <p>Estas son las preferencias de configuración que se aconseja establecer para seguir el curso de <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a>.</p>
 
     <p>En primer lugar, se muestran todas las preferencias juntas, para que se puedan copiar fácilmente, y a continuación se comentan una a una cada preferencia.</p>
 
     <p>Algunas preferencias son importantes porque corresponden a prácticas extendidas en el ámbito del desarrollo web y otras son preferencias personales que el alumno puede seguir o no.</p>
 
-    <p>La preferencia propuesta relacionada con el <a href="#cierre-automatico">cierre automático de etiquetas</a> requiere la instalación d euna extensión, como se comenta en el apartado correspondiente.</p>
+    <p>La preferencia propuesta relacionada con el <a href="#cierre-automatico">cierre automático de etiquetas</a> requiere la instalación de una extensión.</p>
 
     <section id="todas-preferencias">
       <h3>Todas las preferencias</h3>
@@ -174,7 +227,7 @@
   </pre>
             </div>
           </li>
-          <li>Instale la extensión <a href="./vsc-extensiones.html#close-html-xml-tag">Close HTML/XML tag</a> que se comenta en la lección Extensiones de VSC.</li>
+          <li>Instale la extensión <a href="#close-html-xml-tag">Close HTML/XML tag</a> que se comenta en el apartado de Extensiones recomendadas.</li>
         </ul>
         <p>De esta manera podrá combinar el cierre automática, ya que al escribir una etiqueta de apertura Visual Studio Code le da la posibilidad de cerrar las etiquetas pulsando <span class="soft-atajo-teclado">Intro</span>, y el atajo de teclado <span class="soft-atajo-teclado">Alt+.</span> que habilita la extensión Close HTML/XML tag.</p>
     </section>
@@ -196,7 +249,7 @@
       </div>
     </section>
 
-    <section id="linea-delante">
+    <section id="no-formateadas">
       <h3>Etiquetas que no se formatean</h3>
 
       <p>Esta preferencia indica las etiquetas cuyo contenido no se formatea cuando Visual Studio Code formatea automáticamente un documento (mediante el atajo de teclado <span class="soft-atajo-teclado">Alt+Shift+f</span>).</p>
@@ -287,7 +340,7 @@
       <hr class="corta" />
 
       <p>Al situar el cursor sobre la ruta de una imagen, se muestra un cuadro con una miniatura de la imagen y el tamaño de la imagen. Además, haciendo
-        <span="soft-atajo-teclado">Ctrl+clic izquierdo</span> se abre la imagen en otra pestaña.</p>
+        <span class="soft-atajo-teclado">Ctrl+clic izquierdo</span> se abre la imagen en otra pestaña.</p>
 
       <p>En este curso, utilizaremos esta extensión para ver el tamaño de las imágenes insertadas y poder rellenar los atributos <span class="html-atri">width</span> y <span class="html-atri">height</span> fácilmente.</p>
     </section>
@@ -332,6 +385,7 @@
       <ul>
         <li>La etiqueta de cierre se añade aunque la etiqueta de cierre ya esté escrita en el documento. La extensión sólo se fija en lo que hay antes de la posición del cursor, no en lo que hay después.</li>
         <li>Añade etiquetas de cierre de etiquetas vacías. Por ejemplo, si detrás una etiqueta <span class="html-eti">&lt;img ... /></span> se pulsa <span class="soft-atajo-teclado">Alt+.</span>, se añade la etiqueta de cierre <span class="html-eti">&lt;/img></span>. [<a href="https://github.com/compulim/vscode-closetag/issues/7">Bug #7 de Close HTML/XHTML tag</a>]</li>
+        <li>Si en una línea están los caracteres />, la extensión ya no es capaz de cerrar etiquetas abiertas en esa misma línea.</li>
       </ul>
     </section>
   </section>
@@ -341,7 +395,7 @@
 
     <p>Estas son las tareas que se aconseja crear para seguir el curso de <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a>.</p>
 
-    <p>Una vez definidas las tareas, se recomienda definir los atajos de teclado que ejecuten estas tareas, tal y como se comenta en la lección sobre <a href="vsc-atajos-teclado.html">Atajos de teclado de Visual Studio Code</a>.</p>
+    <p>Una vez definidas las tareas, se recomienda definir los atajos de teclado que ejecuten estas tareas, tal y como se comenta en el apartado sobre <a href="#atajos-teclado">Atajos de teclado recomendados</a>.</p>
 
     <section id="abrir-navegador">
       <h3>Abrir páginas en el navegador</h3>
@@ -395,7 +449,7 @@
 
     <p>Estos dos atajos permiten abrir en los navegadores Firefox o Google Chrome las páginas web que se están editando en Visual Studio Code.</p>
 
-    <p>Antes de definir estos atajos de teclado es necesario crear las tareas correspondientes. Las tareas son las tareas recomendadas para seguir el curso de <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a> que se comentan en la lección <a href="vsc-tareas.html">tareas en Visual Studio Code</a>.</p>
+    <p>Antes de definir estos atajos de teclado es necesario crear las tareas correspondientes. Las tareas recomendadas para el curso de HTML y CSS se comentan en el apartado <a href="#tareas">Tareas recomendadas</a>.</p>
 
     <p>Este es el contenido del archivo <i>keybindings.json</i>:</p>
 
@@ -425,13 +479,13 @@
       <ol>
         <li>Abra en una pestaña la página web que quiera abrir en un navegador:
           <p class="captura">
-            <img src="../img/vscode/vsc-atajos-usar-1.png" alt="VSC. Utilizar tarea" width="1024" height="380" />
+            <img src="../img/vscode/vsc-htmlcss-atajos-usar-1.png" alt="VSC. Utilizar tarea" width="1024" height="380" />
           </p>
         </li>
-        <li>Pulse el atajo de teclado. Por ejemplo, <span class="soft-atajo-teclado">Ctrl+Alt+f</span>, uno de los atajos de teclado que se recomienda en el apartado siguiente.</li>
+        <li>Pulse el atajo de teclado. Por ejemplo, <span class="soft-atajo-teclado">Ctrl+Alt+f</span>, uno de los atajos de teclado recomendados para el curso de HTML y CSS.</li>
         <li>En el ejemplo de las capturas, la página abierta en Visual Studio Code se abriría en el navegador:
           <p class="captura">
-            <img src="../img/vscode/vsc-atajos-usar-2.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
+            <img src="../img/vscode/vsc-htmlcss-atajos-usar-2.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
           </p>
         </li>
       </ol>
@@ -439,38 +493,40 @@
   </section>
 
   <section id="otros">
-      <h2>Otros (en elaboración)</h2>
+    <h2>Otros (en elaboración)</h2>
 
-      <ul>
-        <li>Extensiones
-          <ul>
-            <li>Insertar etiquetas HTML alrededor de texto: <a href="https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap">htmltagwrap</a><br /> Teóricamente, esta extensión me vendría muy bien, pero al probarla no me ha funcionado bien.</li>
-            <li>Renombrar etiquetas: <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">Auto Rename Tag en Marketplace</a></li>
-            <li>Ordenar atributos: <a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-attrs-sorter">Sorting HTML and Jade attributes en Marketplace</a></li>
-            <li><a href="https://github.com/alefragnani/vscode-project-manager">Project Manager</a></li>
-            <li><a href="https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint">HTMLHint</a></li>
-            <li>Brackets Surround para VSC: <a href="https://github.com/Microsoft/vscode/issues/1307">VSC issue 1307</a></li>
-            <li>Validador CSS: <a href="https://marketplace.visualstudio.com/items?itemName=smelukov.vscode-csstree">CSSTree validator</a></li>
-          </ul>
-        </li>
-        <li><a href="https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting">Remove telemetry</a></li>
-        <li><a href="https://code.visualstudio.com/updates/vMarch#_utf8-bom-support">UTF-8 con o sin BOM</a></li>
-        <li><a href="http://editorconfig.org">EditorConfig</a></li>
-        <li><a href="https://code.visualstudio.com/docs/languages/html#_format-html">No formatear algunas etiquetas</a></li>
-        <li>A veces, parece que Visual Studio Code ha bloqueado los archivos (por ejemplo, si se intenta sustituir una imagen por otra). No pasa siempre, pero parece que está relacionado con una preferencia de git, que está comprobando si hay cambios y bloquea temporalmente los archivos. La preferencia es
-          <div class="codigo">
-            <pre>
+    <ul>
+      <li>Extensiones
+        <ul>
+          <li>Insertar etiquetas HTML alrededor de texto: <a href="https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap">htmltagwrap</a><br /> Teóricamente, esta extensión me vendría muy bien, pero al probarla no me ha funcionado bien.</li>
+          <li>Renombrar etiquetas: <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">Auto Rename Tag en Marketplace</a></li>
+          <li>Ordenar atributos: <a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-attrs-sorter">Sorting HTML and Jade attributes en Marketplace</a></li>
+          <li><a href="https://github.com/alefragnani/vscode-project-manager">Project Manager</a></li>
+          <li><a href="https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint">HTMLHint</a></li>
+          <li>Brackets Surround para VSC: <a href="https://github.com/Microsoft/vscode/issues/1307">VSC issue 1307</a></li>
+          <li>Validador CSS: <a href="https://marketplace.visualstudio.com/items?itemName=smelukov.vscode-csstree">CSSTree validator</a></li>
+          <li>Formatear CSS: <a href="https://marketplace.visualstudio.com/items?itemName=aeschli.vscode-css-formatter">CSS Formatter</a></li>
+          <li>Ordenar propiedades en CSS: <a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-postcss-sorting">PostCSS sorting</a></li>
+        </ul>
+      </li>
+      <li><a href="https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting">Remove telemetry</a></li>
+      <li><a href="https://code.visualstudio.com/updates/vMarch#_utf8-bom-support">UTF-8 con o sin BOM</a></li>
+      <li><a href="http://editorconfig.org">EditorConfig</a></li>
+      <li><a href="https://code.visualstudio.com/docs/languages/html#_format-html">No formatear algunas etiquetas</a></li>
+      <li>A veces, parece que Visual Studio Code ha bloqueado los archivos (por ejemplo, si se intenta sustituir una imagen por otra). No pasa siempre, pero parece que está relacionado con una preferencia de git, que está comprobando si hay cambios y bloquea temporalmente los archivos. La preferencia es
+        <div class="codigo">
+          <pre>
     <code class="language-json">{
       // Si la búsqueda automática está habilitada
       "git.autofetch": true,
     }</code>
     </pre>
-          </div>
-      </ul>
-    </section>
+        </div>
+    </ul>
+  </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 3 de octubre de 2017</p>
+    <p class="ultmod">Última modificación de esta página: 9 de octubre de 2017</p>
 
     <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
       Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

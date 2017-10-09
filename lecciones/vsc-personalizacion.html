@@ -31,6 +31,7 @@
             <li><a href="#temas-cambiar">Cambiar tema de color</a></li>
           </ul>
         </li>
+        <li><a href="#area-trabajo">Áreas de trabajo</a></li>
         <li><a href="#configuracion">Preferencias de configuración</a>
           <ul>
             <li><a href="#configuracion-cambiar">Cambiar preferencias</a></li>
@@ -53,20 +54,19 @@
           </ul>
         </li>
       </ul>
-      <ul>
-      </ul>
     </div>
   </nav>
 
   <p>Visual Studio Code puede ser personalizado en muchos aspectos: el aspecto estético, los procesos de trabajo, las herramientas de desarrollo específicas, etc. En esta lección se comenta cómo están organizadas las opciones de personalización, que se encuentran separadas en cinco áreas:</p>
 
   <ul>
-      <li>los <a href="#temas">Temas de color</a> permiten personalizar el color y color de fondo de todos los elementos del interfaz</li>
-      <li>las <a href="#configuracion">Preferencias de configuración</a> permiten especificar de forma detallada el comportamiento de las funciones y herramientas</li>
-      <li>las <a href="#extensiones">Extensiones</a> permiten ampliar las funciones y herramientas disponibles</li>
-      <li>las <a href="#tareas">Tareas</a> permiten conectar Visual Studio Code con otros programas instalados en el ordenador y automatizar operaciones</li>
-      <li>los <a href="#atajos">Atajos de teclado</a> permiten acceder fácilmente a las herramientas</li>
-    </ul>
+    <li>los <a href="#temas">Temas de color</a> permiten personalizar el color y color de fondo de todos los elementos del interfaz</li>
+    <li>las <a href="#area-trabajo">Áreas de trabajo</a> contienen los archivos con los que trabaja VSC</li>
+    <li>las <a href="#configuracion">Preferencias de configuración</a> permiten especificar de forma detallada el comportamiento de las funciones y herramientas</li>
+    <li>las <a href="#extensiones">Extensiones</a> permiten ampliar las funciones y herramientas disponibles</li>
+    <li>las <a href="#tareas">Tareas</a> permiten conectar Visual Studio Code con otros programas instalados en el ordenador y automatizar operaciones</li>
+    <li>los <a href="#atajos">Atajos de teclado</a> permiten acceder fácilmente a las herramientas</li>
+  </ul>
 
   <p>En la lección <a href="vsc-curso-htmlcss.html">Configuración recomendada para el curso de HTML y CSS</a> se resumen las opciones de configuración recomendadas para seguir el curso de <a href="http://www.mclibre.org/consultar/htmlcss/index.html">Páginas web HTML y hojas de estilo CSS</a>.</p>
 
@@ -78,7 +78,7 @@
     <p>El tema de color predeterminado es el tema oscuro llamado Dark+.</p>
 
     <p class="captura">
-      <img src="../img/vscode/vsc-temas-cambiar-1.png" alt="VSC. Tema Dark+ predeterminado" title="VSC. Tema Dark+ predeterminado" width="1024" height="576" />
+      <img src="../img/vscode/vsc-perso-temas-cambiar-1.png" alt="VSC. Tema Dark+ predeterminado" title="VSC. Tema Dark+ predeterminado" width="1024" height="576" />
     </p>
 
     <hr class="corta" />
@@ -97,29 +97,41 @@
       <ol>
         <li>Elija la opción de menú <span class="soft-menu">Archivo > Preferencias > Tema de color</span>
           <p class="captura">
-            <img src="../img/vscode/vsc-temas-cambiar-2.png" alt="VSC. Cambiar tema de color" title="VSC. Cambiar tema de color" width="1024" height="500" />
+            <img src="../img/vscode/vsc-perso-temas-cambiar-2.png" alt="VSC. Cambiar tema de color" title="VSC. Cambiar tema de color" width="1024" height="500" />
           </p>
         </li>
         <li>Se mostrará la lista de temas instalados, con el tema actual resaltado con una franja azul oscura. En esta lista se puede escribir texto para filtrar la lista.
 
           <p class="captura">
-            <img src="../img/vscode/vsc-temas-cambiar-3.png" alt="VSC. Cambiar tema de color" title="VSC. Cambiar tema de color" width="1024" height="300" />
+            <img src="../img/vscode/vsc-perso-temas-cambiar-3.png" alt="VSC. Cambiar tema de color" title="VSC. Cambiar tema de color" width="1024" height="300" />
           </p>
         </li>
         <li>Haga clic en el tema que quiera aplicar. En estos apuntes se utiliza el tema claro Light+:
 
           <p class="captura">
-            <img src="../img/vscode/vsc-temas-cambiar-4.png" alt="VSC. Cambiar tema de color" title="VSC. Cambiar tema de color" width="1024" height="300" />
+            <img src="../img/vscode/vsc-perso-temas-cambiar-4.png" alt="VSC. Cambiar tema de color" title="VSC. Cambiar tema de color" width="1024" height="300" />
           </p>
         </li>
         <li>Inmediatamente, se aplicará el tema elegido:
 
           <p class="captura">
-            <img src="../img/vscode/vsc-temas-cambiar-5.png" alt="VSC. Tema Light+ predeterminado" title="VSC. Tema Light+ predeterminado" width="1024" height="576" />
+            <img src="../img/vscode/vsc-perso-temas-cambiar-5.png" alt="VSC. Tema Light+ predeterminado" title="VSC. Tema Light+ predeterminado" width="1024" height="576" />
           </p>
         </li>
       </ol>
     </section>
+  </section>
+
+  <section id="area-trabajo">
+    <h2>Áreas de trabajo de Visual Studio Code</h2>
+
+    <p>El área de trabajo de Visual Studio Code es una carpeta y todo su contenido (incluidas subcarpetas). Esa carpeta es la carpeta raíz del área de trabajo.</p>
+
+    <p>Para abrir una carpeta (es decir, un área de trabajo), elija la opción de menú <span class="soft-menu">Archivo > Abrir carpeta ...</span> y la carpeta que desea como carpeta raíz del área de trabajo.</p>
+
+    <p>Actualmente (octubre de 2017), Visual Studio Code permite cambiar de área de trabajo (abriendo la carpeta raíz correspondiente), pero sólo puede mostrar un área de trabajo. Los desarrolladores están trabajando para que el interfaz de Visual Studio Code permita mostrar y trabajar con varias áreas de trabajo simultáneamente.</p>
+
+    <p>Gran parte de la personalización de Visual Studio Code no requiere definir el área de trabajo, excepto en el caso de las preferencias de configuración de área de trabajo o las tareas, cuya información se guarda en una carpeta oculta <i>.vscode</i> que se crea en la carpeta raíz del área de trabajado.</p>
   </section>
 
   <section id="configuracion">
@@ -146,7 +158,7 @@
       <ol>
         <li>Elija la opción de menú <span class="soft-menu">Archivo > Preferencias > Configuración</span>.
           <p class="captura">
-            <img src="../img/vscode/vsc-pref-como-1.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="500" />
+            <img src="../img/vscode/vsc-perso-pref-como-1.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="500" />
           </p>
         </li>
 
@@ -157,25 +169,25 @@
             <li>en la parte derecha superior se muestra un selector que permite cambiar entre el archivo de configuración del usuario y el del área de trabajo (para ello, se tiene que haber abierto primero una carpeta)</li>
           </ul>
           <p class="captura">
-            <img src="../img/vscode/vsc-pref-como-2.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="576" />
+            <img src="../img/vscode/vsc-perso-pref-como-2.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="576" />
           </p>
         </li>
 
         <li>La caja de texto superior permite filtrar las opciones de configuración:
           <p class="captura">
-            <img src="../img/vscode/vsc-pref-como-3.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="450" />
+            <img src="../img/vscode/vsc-perso-pref-como-3.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="450" />
           </p>
         </li>
 
         <li>Para modificar una configuración, seleccione el valor a modificar en la pestaña izquierda y cópielo en la pestaña derecha...
           <p class="captura">
-            <img src="../img/vscode/vsc-pref-como-4.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="450" />
+            <img src="../img/vscode/vsc-perso-pref-como-4.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="450" />
           </p>
         </li>
 
         <li>Modifique el valor de la configuración al valor deseado. Recuerde que las configuraciones deben estar separadas por comas. Mientras no se guarde el archivo, se muestran indicadores en la pestaña y en la barra de actividades.
           <p class="captura">
-            <img src="../img/vscode/vsc-pref-como-5.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="450" />
+            <img src="../img/vscode/vsc-perso-pref-como-5.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="450" />
           </p>
         </li>
 
@@ -183,7 +195,7 @@
 
         <li>Una vez guardado el archivo, se aplicarán las configuraciones establecidas.
           <p class="captura">
-            <img src="../img/vscode/vsc-pref-como-6.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="450" />
+            <img src="../img/vscode/vsc-perso-pref-como-6.png" alt="VSC. Modificar preferencias" title="VSC. Modificar preferencias" width="1024" height="450" />
           </p>
         </li>
       </ol>
@@ -203,37 +215,37 @@
       <ol>
         <li>Haga clic en el icono de Extensiones de la barra lateral. Se desplegará la barra lateral mostrando las extensiones disponibles, ordenadas por popularidad:
           <p class="captura">
-            <img src="../img/vscode/vsc-extensiones-instalar-1.png" alt="VSC. Instalar extensiones" width="1024" height="576" />
+            <img src="../img/vscode/vsc-perso-extensiones-instalar-1.png" alt="VSC. Instalar extensiones" width="1024" height="576" />
           </p>
         </li>
 
         <li>Escribiendo un término o varios en la caja de texto de búsqueda, se filtrarán las extensiones y se mostrarán las extensiones relacionadas.
           <p class="captura">
-            <img src="../img/vscode/vsc-extensiones-instalar-2.png" alt="VSC. Instalar extensiones" width="1024" height="576" />
+            <img src="../img/vscode/vsc-perso-extensiones-instalar-2.png" alt="VSC. Instalar extensiones" width="1024" height="576" />
           </p>
         </li>
 
         <li>Para instalar una extensión, haga clic en el botón Instalar correspondiente.
           <p class="captura">
-            <img src="../img/vscode/vsc-extensiones-instalar-3.png" alt="VSC. Instalar extensiones" width="1024" height="290" />
+            <img src="../img/vscode/vsc-perso-extensiones-instalar-3.png" alt="VSC. Instalar extensiones" width="1024" height="290" />
           </p>
         </li>
 
         <li>Tras unos segundos, se descargará e instalará la extensión. Haga clic en el botón Recargar para activar la extensión.
           <p class="captura">
-            <img src="../img/vscode/vsc-extensiones-instalar-4.png" alt="VSC. Instalar extensiones" width="1024" height="290" />
+            <img src="../img/vscode/vsc-perso-extensiones-instalar-4.png" alt="VSC. Instalar extensiones" width="1024" height="290" />
           </p>
         </li>
 
         <li>Se mostrará una ventana de confirmación. Haga clic en Volver a cargar la ventana para recargarla.
           <p class="captura">
-            <img src="../img/vscode/vsc-extensiones-instalar-5.png" alt="VSC. Instalar extensiones" width="1024" height="330" />
+            <img src="../img/vscode/vsc-perso-extensiones-instalar-5.png" alt="VSC. Instalar extensiones" width="1024" height="330" />
           </p>
         </li>
 
         <li>Tras reiniciarse, Visual Studio Code mostrará la extensión en la lista de extensiones instaladas.
           <p class="captura">
-            <img src="../img/vscode/vsc-extensiones-instalar-6.png" alt="VSC. Instalar extensiones" width="1024" height="290" />
+            <img src="../img/vscode/vsc-perso-extensiones-instalar-6.png" alt="VSC. Instalar extensiones" width="1024" height="290" />
           </p>
         </li>
       </ol>
@@ -260,17 +272,17 @@
       <ol>
         <li>Elija la opción de menú <span class="soft-menu">Tareas > Configurar tarea</span>.
           <p class="captura">
-            <img src="../img/vscode/vsc-tareas-crear-1.png" alt="VSC. Crear tarea" width="1024" height="270" />
+            <img src="../img/vscode/vsc-perso-tareas-crear-1.png" alt="VSC. Crear tarea" width="1024" height="270" />
           </p>
         </li>
         <li>Se mostrará un cuadro con los distintos tipos de tareas. Haga clic en Others:
           <p class="captura">
-            <img src="../img/vscode/vsc-tareas-crear-2.png" alt="VSC. Crear tarea" width="1024" height="250" />
+            <img src="../img/vscode/vsc-perso-tareas-crear-2.png" alt="VSC. Crear tarea" width="1024" height="250" />
           </p>
         </li>
         <li>Se mostrará en una pestaña el archivo de tareas <i>tasks.json</i>:
           <p class="captura">
-            <img src="../img/vscode/vsc-tareas-crear-3.png" alt="VSC. Crear tarea" width="1024" height="340" />
+            <img src="../img/vscode/vsc-perso-tareas-crear-3.png" alt="VSC. Crear tarea" width="1024" height="340" />
           </p>
           <p>Al crearse, este fichero contiene un ejemplo de tarea que simplemente muestra el mensaje "Hello" en el terminal:</p>
           <div class="codigo">
@@ -288,10 +300,11 @@
     ]
 }</code>
 </pre>
+          </div>
         </li>
         <li>Modifique el contenido del archivo <i>tasks.json</i> con las tareas deseadas.:
           <p class="captura">
-            <img src="../img/vscode/vsc-tareas-crear-4.png" alt="VSC. Crear tarea" width="1024" height="340" />
+            <img src="../img/vscode/vsc-perso-tareas-crear-4.png" alt="VSC. Crear tarea" width="1024" height="340" />
           </p>
           <p>En la captura anterior se muestra una tarea que abriría el navegador Firefox, como se comenta en el apartado <a href="#recomendadas-html-css">Tareas recomendadas en el curso  de HTML y CSS</a>.</p>
         </li>
@@ -299,7 +312,7 @@
         <li>
           <p>El archivo <i>tasks.json</i> se crea en la carpeta .vscode que se crea en la carpeta abierta. Esto permite utilizar la tarea en todos los archivos de la carpeta abierta (y en los archivos de las subcarpetas). Pero si abrimos otra carpeta y queremos utilizar la misma tarea tendremos que crear de nuevo la tarea (o copiar el archivo <i>tasks.json</i>).</p>
           <p class="captura">
-            <img src="../img/vscode/vsc-tareas-crear-5.png" alt="VSC. Crear tarea" width="1024" height="340" />
+            <img src="../img/vscode/vsc-perso-tareas-crear-5.png" alt="VSC. Crear tarea" width="1024" height="340" />
           </p>
         </li>
       </ol>
@@ -313,22 +326,22 @@
       <ol>
         <li>Abra en una pestaña la página web a la que quiera aplicar la tarea:
           <p class="captura">
-            <img src="../img/vscode/vsc-tareas-usar-1.png" alt="VSC. Utilizar tarea" width="1024" height="380" />
+            <img src="../img/vscode/vsc-perso-tareas-usar-1.png" alt="VSC. Utilizar tarea" width="1024" height="380" />
           </p>
         </li>
         <li>Elija la opción de menú <span class="soft-menu">Tareas > Ejecutar tarea ...</span>.
           <p class="captura">
-            <img src="../img/vscode/vsc-tareas-usar-2.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
+            <img src="../img/vscode/vsc-perso-tareas-usar-2.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
           </p>
         </li>
         <li>Se mostrará un cuadro con las tareas disponibles. Haga clic en la tarea que quiera aplicar:
           <p class="captura">
-            <img src="../img/vscode/vsc-tareas-usar-3.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
+            <img src="../img/vscode/vsc-perso-tareas-usar-3.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
           </p>
         </li>
         <li>El resultado obtenido depende de la tarea elegida. En el caso de la tarea de ejemplo de las capturas, se abriría en el navegador elegido la página elegida:
           <p class="captura">
-            <img src="../img/vscode/vsc-tareas-usar-4.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
+            <img src="../img/vscode/vsc-perso-tareas-usar-4.png" alt="VSC. Utilizar tarea" width="1024" height="260" />
           </p>
         </li>
       </ol>
@@ -356,12 +369,12 @@
       <ol>
         <li>Elija la opción de menú <span class="soft-menu">Archivo > Preferencias > Métodos abreviados de teclado</span>.
           <p class="captura">
-            <img src="../img/vscode/vsc-atajos-crear-1.png" alt="VSC. Crear atajo de teclado" width="1024" height="500" />
+            <img src="../img/vscode/vsc-perso-atajos-crear-1.png" alt="VSC. Crear atajo de teclado" width="1024" height="500" />
           </p>
         </li>
         <li>Se mostrará en una pestaña el archivo de atajos de teclado predeterminados de Visual Studio Code. Haga clic en el enlace <i>keybindings.json</i> para abrir el archivo de atajos de teclado de usuario:
           <p class="captura">
-            <img src="../img/vscode/vsc-atajos-crear-2.png" alt="VSC. Crear atajo de teclado" width="1024" height="300" />
+            <img src="../img/vscode/vsc-perso-atajos-crear-2.png" alt="VSC. Crear atajo de teclado" width="1024" height="300" />
           </p>
         </li>
         <li>Como en el caso de las configuraciones, la ventana se dividirá en dos partes:
@@ -370,7 +383,7 @@
             <li>en la parte derecha se muestra el archivo de atajos de teclado, que sí es editable</li>
           </ul>
           <p class="captura">
-            <img src="../img/vscode/vsc-atajos-crear-3.png" alt="VSC. Crear atajo de teclado" width="1024" height="576" />
+            <img src="../img/vscode/vsc-perso-atajos-crear-3.png" alt="VSC. Crear atajo de teclado" width="1024" height="576" />
           </p>
           <p>Al crearse, este fichero no contiene ninguna definición:</p>
           <div class="codigo">
@@ -379,24 +392,25 @@
 [
 ]</code>
 </pre>
+          </div>
         </li>
         <li>Modifique el contenido del archivo <i>keybindings.json</i> con los atajos de teclado deseados (nuevos o ya existentes):
           <p class="captura">
-            <img src="../img/vscode/vsc-atajos-crear-4.png" alt="VSC. Crear atajo de teclado" width="1024" height="430" />
+            <img src="../img/vscode/vsc-perso-atajos-crear-4.png" alt="VSC. Crear atajo de teclado" width="1024" height="430" />
           </p>
-          <p>En la captura anterior se muestran los atajos de teclado que permiten ejecutar las tareas aconsejadas en la lección <a href="vsc-tareas.html">Tareas de Visual Studio Code</a> que abren ficheros en Firefox y Chrome. Los atajos asociados serían:</p>
+          <p>En la captura anterior se muestran los atajos de teclado que permiten ejecutar las tareas aconsejadas en la lección <a href="vsc-curso-htmlcss.html#tareas">Configuración recomendada para el curso de HTML y CSS</a> que abren ficheros en Firefox y Chrome. Los atajos asociados serían:</p>
           <ul>
             <li><span class="soft-atajo-teclado">Ctrl+Alt+f</span>, para Abrir en Firefox</li>
             <li><span class="soft-atajo-teclado">Ctrl+Alt+c</span>, para Abrir en Chrome</li>
           </ul>
         </li>
-        <li>Tenga en cuenta que el archivo <i>keybindings.json</i> se crea en la carpeta C:\Users\<i>Usuario</i>\AppData\Roaming\Code\User. Por tanto, los atajos de teclados en todos las áreas de trabajo (carpetas). Pero si los atajos ejecutan tareas, como las tareas están definidas en cada área de trabajo, será necesario crear las tareas en las áreas de trabajo en las que se quieran utilizar.</li>
+        <li>Tenga en cuenta que el archivo <i>keybindings.json</i> se crea en la carpeta C:\Users\<i>Usuario</i>\AppData\Roaming\Code\User. Por tanto, los atajos de teclados en todas las áreas de trabajo (carpetas). Pero si los atajos ejecutan tareas, como las tareas están definidas en cada área de trabajo, será necesario crear las tareas en las áreas de trabajo en las que se quieran utilizar.</li>
       </ol>
     </section>
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 3 de octubre de 2017</p>
+    <p class="ultmod">Última modificación de esta página: 10 de octubre de 2017</p>
 
     <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
       Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

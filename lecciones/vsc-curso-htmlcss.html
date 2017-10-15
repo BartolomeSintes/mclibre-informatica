@@ -37,6 +37,8 @@
     </div>
   </nav>
 
+  <p>Esta es la configuración de Visual Studio Code que se recomienda para seguir el curso <a href="http://www.mclibre.org/consultar/htmlcss/index.html">Páginas web HTML y hojas de estilo CSS</a>.</p>
+
   <section id="temas">
     <h2>Tema de color recomendado para el curso de HTML y CSS</h2>
 
@@ -55,26 +57,26 @@
     <p>Esta es el área de trabajo recomendada para seguir el curso de <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a>.</p>
 
     <ol>
-      <li>Cree la carpeta Documentos > LMSGI > HTML:
+      <li>Cree la carpeta Documentos &gt; LMSGI &gt; HTML:
 
         <p class="captura">
           <img src="../img/vscode/vsc-htmlcss-area-trabajo-1.png" alt="VSC. Área de trabajo" width="1024" height="170" />
         </p>
       </li>
 
-      <li>Cree las carpeta Documentos > LMSGI > HTML > ejercicios y Documentos > LMSGI > HTML > pruebas:
+      <li>Cree las carpeta Documentos &gt; LMSGI &gt; HTML &gt; ejercicios y Documentos &gt; LMSGI &gt; HTML &gt; pruebas:
         <p class="captura">
           <img src="../img/vscode/vsc-htmlcss-area-trabajo-2.png" alt="VSC. Área de trabajo" width="1024" height="200" />
         </p>
       </li>
 
-      <li>Elija la opción de menú <span class="soft-menu">Archivo > Abrir carpeta ...</span>:
+      <li>Elija la opción de menú <span class="soft-menu">Archivo &gt; Abrir carpeta ...</span>:
         <p class="captura">
           <img src="../img/vscode/vsc-htmlcss-area-trabajo-3.png" alt="VSC. Área de trabajo" width="1024" height="190" />
         </p>
       </li>
 
-      <li>Elija la carpeta Documentos > LMSGI > HTML:
+      <li>Elija la carpeta Documentos &gt; LMSGI &gt; HTML:
         <p class="captura">
           <img src="../img/vscode/vsc-htmlcss-area-trabajo-4.png" alt="VSC. Área de trabajo" width="1024" height="576" />
         </p>
@@ -215,21 +217,21 @@
 
       <p>Pero para hacer los ejercicios propuestos en este curso, el cierre automático complica la realización de los ejercicios. En los ejericios se propiorciona siempre el texto de la página web, para ahorrar al alumno el trabajo de copiarlo. Hacer un ejercicio es añadir las etiquetas de apertura al principio de los fragmentos de texto y etiquetas de cierre al final. En esta situación, el cierre automático de las etiquetas es un inconveniente, ya que el cierre se crea al principio del fragmento de texto, no al final.</p>
 
-      <p>Por ello, para hacer los ejercicios de este curso, en vez del cierre automático se propone la siguiente configuración:
-        <ul>
-          <li>Deshabilite el cierre automático en el archivo de configuración de usuario o de área de trabajo:
-            <div class="codigo">
-              <pre>
+      <p>Por ello, para hacer los ejercicios de este curso, en vez del cierre automático se propone la siguiente configuración:</p>
+      <ul>
+        <li>Deshabilite el cierre automático en el archivo de configuración de usuario o de área de trabajo:
+          <div class="codigo">
+            <pre>
   <code class="language-json">{
     // Habilita o deshabilita el cierre automático de las etiquetas HTML.
     "html.autoClosingTags": false,
   }</code>
   </pre>
-            </div>
-          </li>
-          <li>Instale la extensión <a href="#close-html-xml-tag">Close HTML/XML tag</a> que se comenta en el apartado de Extensiones recomendadas.</li>
-        </ul>
-        <p>De esta manera podrá combinar el cierre automática, ya que al escribir una etiqueta de apertura Visual Studio Code le da la posibilidad de cerrar las etiquetas pulsando <span class="soft-atajo-teclado">Intro</span>, y el atajo de teclado <span class="soft-atajo-teclado">Alt+.</span> que habilita la extensión Close HTML/XML tag.</p>
+          </div>
+        </li>
+        <li>Instale la extensión <a href="#close-html-xml-tag">Close HTML/XML tag</a> que se comenta en el apartado de Extensiones recomendadas.</li>
+      </ul>
+      <p>De esta manera podrá combinar el cierre automática, ya que al escribir una etiqueta de apertura Visual Studio Code le da la posibilidad de cerrar las etiquetas pulsando <span class="soft-atajo-teclado">Intro</span>, y el atajo de teclado <span class="soft-atajo-teclado">Alt+.</span> que habilita la extensión Close HTML/XML tag.</p>
     </section>
 
     <section id="linea-final">
@@ -269,7 +271,7 @@
     <section id="linea-delante">
       <h3>Etiquetas con línea en blanco delante</h3>
 
-      <p>Esta preferencia hace que, al formatear automáticamente un documento (mediante el atajo de teclado <span class="soft-atajo-teclado">Alt+Shift+f</span>), VSC compruebe que delante de determinadas etiquetas haya al menos una línea en blanco. Yo tengo las costumbre de dejar siempre una línea en blanco delante de <span class="html-eti">&lt;body></span>, pero no delante de <span class="html-eti">&lt;head></span> ni de <span class="html-eti">&lt;/html></span>.</p>
+      <p>Esta preferencia hace que, al formatear automáticamente un documento (mediante el atajo de teclado <span class="soft-atajo-teclado">Alt+Shift+f</span>), VSC compruebe que delante de determinadas etiquetas haya al menos una línea en blanco. Yo tengo las costumbre de dejar siempre una línea en blanco delante de <span class="html-eti">&lt;body&gt;</span>, pero no delante de <span class="html-eti">&lt;head&gt;</span> ni de <span class="html-eti">&lt;/html&gt;</span>.</p>
 
       <div class="codigo">
         <pre>
@@ -384,8 +386,8 @@
       <p><strong>Problemas detectados:</strong></p>
       <ul>
         <li>La etiqueta de cierre se añade aunque la etiqueta de cierre ya esté escrita en el documento. La extensión sólo se fija en lo que hay antes de la posición del cursor, no en lo que hay después.</li>
-        <li>Añade etiquetas de cierre de etiquetas vacías. Por ejemplo, si detrás una etiqueta <span class="html-eti">&lt;img ... /></span> se pulsa <span class="soft-atajo-teclado">Alt+.</span>, se añade la etiqueta de cierre <span class="html-eti">&lt;/img></span>. [<a href="https://github.com/compulim/vscode-closetag/issues/7">Bug #7 de Close HTML/XHTML tag</a>]</li>
-        <li>Si en una línea están los caracteres />, la extensión ya no es capaz de cerrar etiquetas abiertas en esa misma línea.</li>
+        <li>Añade etiquetas de cierre de etiquetas vacías. Por ejemplo, si detrás una etiqueta <span class="html-eti">&lt;img ... /&gt;</span> se pulsa <span class="soft-atajo-teclado">Alt+.</span>, se añade la etiqueta de cierre <span class="html-eti">&lt;/img&gt;</span>. [<a href="https://github.com/compulim/vscode-closetag/issues/7">Bug #7 de Close HTML/XHTML tag</a>]</li>
+        <li>Si en una línea están los caracteres /&gt;, la extensión ya no es capaz de cerrar etiquetas abiertas en esa misma línea.</li>
       </ul>
     </section>
   </section>
@@ -522,6 +524,7 @@
     }</code>
     </pre>
         </div>
+      </li>
     </ul>
   </section>
 

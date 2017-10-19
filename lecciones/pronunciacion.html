@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,6 +31,10 @@
     </div>
   </nav>
 
+  <div class="aviso-antiguo">
+      <p><img src="../varios/iconos/icono_warning.svg" alt="¡Atención!" title="¡Atención!" width="55" height="48" />Esta lección está en elaboración. En Firefox de escritorio, lee las palabras en inglés, pero en Chrome lee las palabras en español.</p>
+    </div>
+
   <p><img src="../varios/iconos/icono-altavoz.svg" alt="Altavoz" width="36" height="36" />Haga clic en los términos para escuchar su pronunciación.</p>
 
   <section id="css">
@@ -49,7 +53,8 @@
         <li>Texto
           <ul>
             <li onclick="habla('color')">color</li>
-            <li onclick="habla('direction')">direction</li>
+            <li onclick="habla('direction', 'es')">direction</li>
+            <li onclick="habla('direction', 'en-gb')">direction</li>
             <li onclick="habla('letter-spacing')">letter-spacing</li>
             <li onclick="habla('line-height')">line-height</li>
             <li onclick="habla('text-align')">text-align</li>
@@ -67,8 +72,21 @@
 
   </section>
   <script type="text/javascript">
-    function habla(texto) {
+    function habla(texto, idioma) {
       var msg = new SpeechSynthesisUtterance(texto);
+      window.speechSynthesis.speak(msg);
+    }
+  </script>
+
+  <script>
+    function _habla(texto, idioma) {
+      var msg = new SpeechSynthesisUtterance(texto);
+      var voices = speechSynthesis.getVoices();
+      if (idioma == undefined) {
+        idioma = 'en-gb';
+      }
+      msg.voice = voices.filter(function (voice) { return voice.lang == idioma; })[0];
+      //alert(idioma);
       window.speechSynthesis.speak(msg);
     }
   </script>

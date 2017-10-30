@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cómo hacer. Git. Informática. Bartolomé Sintes Marco</title>
-    <link href="../varios/informatica.css" rel="stylesheet" type="text/css" title="mclibre" />
-    <link rel="icon" href="../varios/favicon.ico" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cómo hacer. Git. Informática. Bartolomé Sintes Marco</title>
+  <link href="../varios/informatica.css" rel="stylesheet" type="text/css" title="mclibre" />
+  <link rel="icon" href="../varios/favicon.ico" />
+</head>
 
-  <body>
-    <h1>Git. Cómo hacer ...</h1>
+<body>
+  <h1>Git. Cómo hacer ...</h1>
 
-    <nav>
-      <p>
-        <a href="../index.html"><img src="../varios/iconos/icono_informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
-        <a href="#"><img src="../varios/iconos/icono_arrow_circle_up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
-      </p>
+  <nav>
+    <p>
+      <a href="../index.html"><img src="../varios/iconos/icono_informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
+      <a href="#"><img src="../varios/iconos/icono_arrow_circle_up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+    </p>
 
-      <h2>Cómo hacer ...</h2>
+    <h2>Cómo hacer ...</h2>
 
-      <div class="toc">
-        <ul>
-          <li><a href="#renombrar">Renombrar archivos</a></li>
-          <li><a href="#modificar-mensaje-commit">Modificar mensaje commit</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="toc">
+      <ul>
+        <li><a href="#renombrar">Renombrar archivos</a></li>
+        <li><a href="#deshacer-commit">Deshacer commit</a></li>
+        <li><a href="#modificar-mensaje-commit">Modificar mensaje commit</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <section id="renombrar">
-      <h2>Renombrar archivos</h2>
+  <section id="renombrar">
+    <h2>Renombrar archivos</h2>
 
-      <p>Para renombrar un archivo hay que ejecutar el comando</p>
+    <p>Para renombrar un archivo hay que ejecutar el comando</p>
 
-      <p>git mv camino-destino/archivo-origen camino-destino/archivo-origen</p>
+    <p>git mv camino-destino/archivo-origen camino-destino/archivo-origen</p>
 
-      <p>Hay que hacer <i>commit</i> del cambio de nombre antes de modificar el archivo, porque si no git entiende que se ha borrado un archivo y se ha creado otro en vez de que simplemente se ha cambiado el nombre.</p>
-    </section>
+    <p>Hay que hacer <i>commit</i> del cambio de nombre antes de modificar el archivo, porque si no git entiende que se ha borrado un archivo y se ha creado otro en vez de que simplemente se ha cambiado el nombre.</p>
+  </section>
 
-    <section id="uncommit-unpushed">
-      <h2>Deshacer un <i>commit</i> que todavía no se ha hecho público</h2>
+  <section id="deshacer-commit">
+    <h2>Deshacer un <i>commit</i> que todavía no se ha hecho público</h2>
 
-      <p>Si se quiere deshacer un <i>commit</i> que todavía no se ha hecho público, ejecute el comando:</p>
+    <p>Si se quiere deshacer un <i>commit</i> que todavía no se ha hecho público, ejecute el comando:</p>
 
-      <pre>
+    <pre>
         <code>git reset HEAD~1 --soft   </code>
       </pre>
 
-      <p>Referencias: <a href="https://stackoverflow.com/questions/19859486/how-to-un-commit-last-un-pushed-git-commit-without-losing-the-changes">Pregunta en StackOverflow</a></p>
-    </section>
+    <p>Referencias: <a href="https://stackoverflow.com/questions/19859486/how-to-un-commit-last-un-pushed-git-commit-without-losing-the-changes">Pregunta en StackOverflow</a></p>
+  </section>
 
-    <footer>
-      <p class="ultmod">Última modificación de esta página: 26 de septiembre de 2017</p>
+  <section id="modificar-mensaje-commit">
+    <h2>Modificar mensaje de un commit</h2>
 
-      <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-        Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
-        que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
-    </footer>
-  </body>
+    <p>git commit --amend</p>
+
+    <p>Se abre un editor parecido al vi. Modificar el mensaje, guardarlo y salir</p>
+
+    <p>Si ya se había subido el commit, hay que subir la modificación:</p>
+
+    <p>git push --force</p>
+
+    <p>Referencia: <a href="https://help.github.com/articles/changing-a-commit-message/">Changing a commit message</a></p>
+  </section>
+
+  <footer>
+    <p class="ultmod">Última modificación de esta página: 26 de septiembre de 2017</p>
+
+    <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
+      Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
+  </footer>
+</body>
 </html>

@@ -24,6 +24,7 @@
       <h2>VSC: validación</h2>
 
       <ul>
+        <li><a href="#interfaz">Interfaz de validación</a></li>
         <li><a href="#validacion-html">Validación HTML</a></li>
         <li><a href="#validacion-css">Validación CSS</a>
           <ul>
@@ -38,10 +39,96 @@
 
   <p><img src="../varios/iconos/icono_warning.svg" alt="¡Atención!" title="¡Atención!" width="55" height="48" />Esta lección está en elaboración.</p>
 
+  <section id="interfaz">
+    <h2>Interfaz de validación en Visual Studio Code</h2>
+
+    <p>En la barra lateral se muestran dos iconos acompañados de dos números que corresponden al número de errores y avisos detectados por Visual Studio Code en los archivos abiertos. Si no se ha detectado ningún error ni problema, se muestran ceros. Visual Studio Code detecta por él mismo algunos tipos de errores y avisos detectados, pero se pueden instalar extensiones que detectan errores y avisos adicionales, como se explica más adelante en esta lección.</p>
+
+    <p class="captura">
+      <img src="../img/vscode/vsc-validacion-1.png" alt="Visual Studio Code. Validación" width="1024" height="375" />
+    </p>
+
+    <p>Si Visual Studio Code detecta un error, se muestra el valor distinto de cero.</p>
+    <p class="captura">
+      <img src="../img/vscode/vsc-validacion-2.png" alt="Visual Studio Code. Validación" width="1024" height="375" />
+    </p>
+
+    <p>Haga clic en los iconos para abrir el panel, que mostrará los errores detectados, ordenados por ficheros.</p>
+    <p class="captura">
+      <img src="../img/vscode/vsc-validacion-3.png" alt="Visual Studio Code. Validación" width="1024" height="387" />
+    </p>
+
+    <p>Haga clic en el error para mostrar en el editor el documento correspondiente y la línea en la que se ha identificado el problema. Tenga en cuenta que Visual Studio Code muestra la línea en la que ha identificado el problema, pero el origen del problema puede estar en esa línea o en una línea anterior.</p>
+
+    <p>El icono de la derecha (triángulo con exclamación) corresponde a avisos de todo tipo, que en general se aconseja corregir, pero que a menudo no impiden que el documento se muestre correctamente. Por ejemplo, la captura siguiente muestra un aviso (regla vacía) que corresponde más a una buena práctica y no provoca ningún problema real.(</p>
+    <p class="captura">
+      <img src="../img/vscode/vsc-validacion-4.png" alt="Visual Studio Code. Validación" width="1024" height="375" />
+    </p>
+
+    <p>El icono de la izquierda (círculo con cruz) corresponde a los errores de sintaxis que deben corregirse para que el documento sea válido y se pueda mostrar correctamente. A veces un error provoca que Visual Studio Code detecte más errores que realmente no existen. Por eso se aconseja resolver los problemas en orden, para que al corregir uno, desaparezcan los siguientes errores que provocaba el anterior.</p>
+    <p class="captura">
+      <img src="../img/vscode/vsc-validacion-5.png" alt="Visual Studio Code. Validación" width="1024" height="375" />
+    </p>
+
+    <p>Cuando se corrigen los errores y avisos, la pestaña Problemas del panel indica que no hay problemas en los archivos abiertos. Puede cerrar el panel haciendo clic en los iconos de la barra lateral o en el icono en forma de cruz situado en la parte superior derecha del panel.</p>
+    <p class="captura">
+      <img src="../img/vscode/vsc-validacion-6.png" alt="Visual Studio Code. Validación" width="1024" height="375" />
+    </p>
+  </section>
+
   <section id="validacion-html">
     <h2>Validación de HTML en Visual Studio Code</h2>
 
-    <p>Las páginas web se pueden validar en Visual Studio Code mediante la extensión <a href="vsc-personalizacion.html#htmlhint">HTMLHint</a>. Esta extensión instala y utiliza el analizador de código estático <a href="http://htmlhint.com/">HTMLHint</a>.</p>
+    <p>Las páginas web se pueden validar en Visual Studio Code mediante la extensión <a href="vsc-curso-htmlcss.html#htmlhint">HTMLHint</a>. Esta extensión instala y utiliza el analizador de código estático <a href="http://htmlhint.com/">HTMLHint</a>. Este validador no detecta todos los posibles errores, pero sí los más importantes.</p>
+
+    <p>Al instalar la extensión HTMLHint, el validador de páginas web está activado de forma predeterminada. En el archivo de <a href="vsc-personalizacion.html#configuracion">Preferencias de configuración</a> se encuentran las preferencias de esta extensión:</p>
+
+    <div class="codigo">
+      <pre>
+<code class="language-json">// Control whether htmlhint is enabled for HTML files or not.
+"htmlhint.enable": true,
+
+// The associated document types to be linted.
+"htmlhint.documentSelector": [
+  "html",
+  "htm"
+],
+
+// The htmlhint options object to provide args to the htmlhint command.
+"htmlhint.options": {},</code>
+</pre>
+    </div>
+
+    <p>La extensión HTMLHint detecta de forma predeterminada diez tipos de errores que se pueden desactivar o activar de forma individual:</p>
+    <div class="codigo">
+      <pre>
+<code class="language-json">{
+  "tagname-lowercase": true,
+  "attr-lowercase": true,
+  "attr-value-double-quotes": true,
+  "doctype-first": true,
+  "tag-pair": true,
+  "spec-char-escape": true,
+  "id-unique": true,
+  "src-not-empty": true,
+  "attr-no-duplication": true,
+  "title-require": true
+}</code>
+</pre>
+    </div>
+
+    <p>Los tipos de errores detectados son los siguientes:</p>
+      <ul>
+        <li>"tagname-lowercase": los nombres de las etiquetas están escritas en minúsculas</li>
+        <li>"attr-lowercase": los nombres de los atributos están escritos en minúsculas</li>
+        <li>"attr-value-double-quotes": los valores de los atributos están escritos entre comillas</li>
+        <li>"doctype-first": el documento contiene el prámbulo DOCTYPE</li>
+        <li>"tag-pair": las etiquetas están emparejadas correctamente</li>
+        <li>"spec-char-escape": los caracteres especiales están escritos como entidades de carácter</li>
+        <li>"id-unique": los atributos <span class="html-atri">id</span> no están repetidos</li>
+        <li>"src-not-empty": el documento no está vacío</li>
+        <li>"attr-no-duplication": los atributos no están duplicados</li>
+        <li>"title-require": el documento contiene el elemento <span class="html-eti">&lt;title&gt;</li>
   </section>
 
   <section id="validacion-css">
@@ -260,7 +347,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 23 de octubre de 2017</p>
+    <p class="ultmod">Última modificación de esta página: 2 de noviembre de 2017</p>
 
     <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono_cc_by_sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
       Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

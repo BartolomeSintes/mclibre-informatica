@@ -233,7 +233,7 @@
         </li>
         <li>Instale la extensión <a href="#close-html-xml-tag">Close HTML/XML tag</a> que se comenta en el apartado de Extensiones recomendadas.</li>
       </ul>
-      <p>De esta manera podrá combinar el cierre automática, ya que al escribir una etiqueta de apertura Visual Studio Code le da la posibilidad de cerrar las etiquetas pulsando <span class="soft-atajo-teclado">Intro</span>, y el atajo de teclado <span class="soft-atajo-teclado">Alt+.</span> que habilita la extensión Close HTML/XML tag.</p>
+      <p>De esta manera podrá combinar el cierre automático, ya que al escribir una etiqueta de apertura Visual Studio Code le da la posibilidad de cerrar las etiquetas pulsando <span class="soft-atajo-teclado">Intro</span>, y el atajo de teclado <span class="soft-atajo-teclado">Alt+.</span> que habilita la extensión Close HTML/XML tag.</p>
     </section>
 
     <section id="linea-final">
@@ -415,6 +415,61 @@
 
       <p>El uso de esta extensión se comenta en la lección <a href="vsc-validacion.html">Validación de HTML y CSS en Visual Studio Code</a>.</p>
     </section>
+
+    <section id="csscomb">
+      <h3>CSScomb: Formateador de CSS</h3>
+
+      <p><img src="../img/vscode/vsc-extension-csscomb.png" alt="Logotipo de CSScomb" width="128" height="128" class="izquierda" /></p>
+
+      <p>Autor: Denis Malinochkin</p>
+
+      <p>Marketplace: <a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-csscomb">CSScomb</a></p>
+
+      <p>Repositorio GitHub: <a href="https://github.com/mrmlnc/vscode-csscomb">CSScomb</a></p>
+
+      <hr class="corta" />
+
+      <p>La extensión CSScomb permite que Visual Studio Code utilice el formateador de código CSS <a href="http://csscomb.com/">CSScomb</a>.</p>
+
+      <p>Para que CSScomb formatee el código de la hoja de estilo, hay que pulsar la tecla <span class="soft-atajo-teclado">F1</span> y escribir el comando <span class="soft-atajo-teclado">csscomb</span>.</p>
+
+      <hr class="corta" />
+
+      <p>El estilo de formato concreto que aplica CSScomb se configura en el archivo de configuración de usuario o en el del espacio de trabajo mediante la configuración csscomb.preset.</p>
+
+      <p>El ejemplo siguiente muestra la configuración seguida en las hojas de estilo del curso <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a>.
+
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+  // Configuración de CSScomb
+  "csscomb.preset": {
+    "always-semicolon": true,               // Añade punto y coma (;) tras las propiedades
+    "color-case": "lower",                  // Escribe los códigos de color en minúsculas
+    "block-indent": "  ",                   // Sangrado de dos espacios
+    "element-case": "lower",                // Escribe los selectores en minúsculas
+    "eof-newline": true,                    // Añade un espacio al final del archivo
+    "leading-zero": true,                   // Añade un cero antes de un punto decimal
+    "quotes": "double",                     // Añade comillas dobles
+    "space-before-colon": "",               // Elimina los espacios en blanco antes de los dos puntos (:)
+    "space-after-colon": " ",               // Añade un espacio en blanco después de los dos puntos (:)
+    "space-before-combinator": " ",         // Añade un espacio en blanco antes de un combinador de selectores
+    "space-after-combinator": " ",          // Añade un espacio en blanco después de un combinador de selectores
+    "space-between-declarations": "\n",     // Cada propiedad ocupa un línea
+    "space-before-opening-brace": " ",      // El selector y la llave de apertura ({) están separados por un espacio
+    "space-after-opening-brace": "\n",      // Tras la llave de apertura ({) hay un salto de línea
+    "space-after-selector-delimiter": " ",  // Las comas (,) en los selectores están seguidas por un espacio en blanco
+    "space-before-selector-delimiter": "",  // Las comas (,) en los selectores no están precedidas de un espacio en blanco
+    "space-before-closing-brace": "\n",     // Antes de la llave de cierr (}) hay un salto de línea
+    "strip-spaces": true,                   // Se eliminan los espacios en blanco situados al final de las líneas
+    "tab-size": true,                       // El tabulador se convierte a espacios en blanco (el número de espacios definido para el sangrado)
+    "unitless-zero": true,                  // Elimina las unidades de los valores nulos (0)
+    "vendor-prefix-align": true             // Alinea las propiedades específicas de cada navegador para facilitar la lectura
+  }
+}</code>
+</pre>
+      </div>
+        </section>
   </section>
 
   <section id="tareas">
@@ -554,7 +609,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 20 de noviembre de 2017</p>
+    <p class="ultmod">Última modificación de esta página: 1 de diciembre de 2017</p>
 
     <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
       Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

@@ -63,31 +63,31 @@
       <li>Cree la carpeta Documentos &gt; IAW &gt; PHP:
 
         <p class="captura">
-          <img src="../img/vscode/vsc-htmlcss-area-trabajo-1.png" alt="VSC. Área de trabajo" width="1024" height="170" />
+          <img src="../img/vscode/vsc-php-area-trabajo-1.png" alt="VSC. Área de trabajo" width="1024" height="170" />
         </p>
       </li>
 
       <li>Cree las carpeta Documentos &gt; IAW &gt; PHP &gt; ejercicios y Documentos &gt; IAW &gt; PHP &gt; pruebas:
         <p class="captura">
-          <img src="../img/vscode/vsc-htmlcss-area-trabajo-2.png" alt="VSC. Área de trabajo" width="1024" height="200" />
+          <img src="../img/vscode/vsc-php-area-trabajo-2.png" alt="VSC. Área de trabajo" width="1024" height="200" />
         </p>
       </li>
 
       <li>Elija la opción de menú <span class="soft-menu">Archivo &gt; Abrir carpeta ...</span>:
         <p class="captura">
-          <img src="../img/vscode/vsc-htmlcss-area-trabajo-3.png" alt="VSC. Área de trabajo" width="1024" height="190" />
+          <img src="../img/vscode/vsc-php-area-trabajo-3.png" alt="VSC. Área de trabajo" width="1024" height="190" />
         </p>
       </li>
 
       <li>Elija la carpeta Documentos &gt; IAW &gt; PHP:
         <p class="captura">
-          <img src="../img/vscode/vsc-htmlcss-area-trabajo-4.png" alt="VSC. Área de trabajo" width="1024" height="576" />
+          <img src="../img/vscode/vsc-php-area-trabajo-4.png" alt="VSC. Área de trabajo" width="1024" height="576" />
         </p>
       </li>
 
       <li>Haga clic en el icono Explorador en la barra de actividades para ver el contenido de la carpeta elegida:
         <p class="captura">
-          <img src="../img/vscode/vsc-htmlcss-area-trabajo-5.png" alt="VSC. Área de trabajo" width="1024" height="210" />
+          <img src="../img/vscode/vsc-php-area-trabajo-5.png" alt="VSC. Área de trabajo" width="1024" height="210" />
         </p>
       </li>
     </ol>
@@ -96,7 +96,7 @@
   <section id="preferencias">
     <h2>Preferencias de configuración recomendadas para el curso de PHP</h2>
 
-    <p>Estas son las preferencias de configuración que se aconseja establecer para seguir el curso <a href="http://www.mclibre.org/consultar/php/index.html">Iniciación a la programación de páginas web en PHP</a> de <a href="http://www.mclibre.org/">mclibre.org</a>.</p>
+    <p>Estas son las preferencias de configuración que se aconseja establecer para seguir el curso <a href="http://www.mclibre.org/consultar/php/index.html">Iniciación a la programación de páginas web en PHP</a> de <a href="http://www.mclibre.org/">mclibre.org</a>.</p>´
 
     <div class="codigo">
       <pre>
@@ -169,6 +169,16 @@
     }</code>
 </pre>
     </div>
+
+    <p>En las tareas, los valores de "args" deberá adaptarse a la instalación realizada de Apache y en su caso, al alias que permite acceder a los ficheros. Por ejemplo:</p>
+
+    <div class="codigo">
+      <pre>
+<code class="language-json">      "args": [
+        "localhost/nombre-alumno/iaw-php/${relativeFile}"
+      ],</code>
+</pre>
+    </div>
   </section>
 
   <section id="atajos-teclado">
@@ -179,14 +189,14 @@
     <div class="codigo">
       <pre>
 <code class="language-json">  {
-    "key": "ctrl+alt+f",
+    "key": "ctrl+alt+l ctrl+alt+f",
     "command": "workbench.action.tasks.runTask",
-    "args": "Abrir en Firefox"
+    "args": "Abrir en localhost (Firefox)"
   },
   {
-    "key": "ctrl+alt+c",
+    "key": "ctrl+alt+l ctrl+alt+c",
     "command": "workbench.action.tasks.runTask",
-    "args": "Abrir en Chrome"
+    "args": "Abrir en localhost (Chrome)"
   }</code>
 </pre>
     </div>
@@ -215,7 +225,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 16 de enero de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 18 de enero de 2018</p>
 
     <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
       Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

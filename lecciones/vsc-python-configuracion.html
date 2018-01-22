@@ -116,6 +116,8 @@
 
       <hr class="corta" />
 
+      <h4>Instalación de pylint</h4>
+
       <p>Al recargar Visual Studio tras instalar la extensión, se mostrará un aviso indicando que se debe instalar el paquete <a href="https://www.pylint.org/">pylint</a>. Haga clic en "Install pylint" para instalarlo.</p>
 
       <p class="captura">
@@ -133,6 +135,31 @@
       <p class="captura">
         <img src="../img/vscode/vsc-python-pylint-3.png" alt="VSC. Instalación de pylint" width="1024" height="310" />
       </p>
+
+      <hr class="corta" />
+
+      <h4>Configuración de pylint</h4>
+
+      <p>La lista de mensajes de error y avisos de Pylint se encuentra en el apartado <a href="https://pylint.readthedocs.io/en/latest/technical_reference/features.html">Pylint Features de la documentación de Pylint.</a> En <a href="http://pylint-messages.wikidot.com/all-codes">Wikidot</a> hay también una lista ordenada por código de error, pero no sé si está actualizada.</p>
+
+      <p>Algunos avisos de Pylint no son relevantes para un curso de iniciación a la programación y prefiero que estén desactivados. Por ejemplo:</p>
+
+      <ul>
+        <li><strong>C0111</strong>: algún módulo, función, clase o método no tiene docstring</li>
+      </ul>
+
+      <p>Para que la desactivación de avisos afecte únicamente a los programas de este curso (ejercicios y pruebas), cree un archivo .pylintrc en la carpeta Python, con el contenido siguiente:</p>
+
+      <div class="codigo">
+        <pre>
+<code>disable=C0111</code>
+</pre>
+      </div>
+
+      <p class="captura">
+        <img src="../img/vscode/vsc-python-pylintrc-1.png" alt="VSC. Configuración de pylint" width="1024" height="240" />
+      </p>
+
     </section>
   </section>
 

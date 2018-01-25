@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1>Visual Studio Code. Repositorios git</h1>
+  <h1>Visual Studio Code. Trabajar con repositorios git</h1>
 
   <nav>
     <p>
@@ -21,60 +21,144 @@
 
     <div class="toc">
       <ul>
-        <li><a href="#vsc-que-es">Qué es</a></li>
+        <li><a href="#requisitos">Requisitos</a></li>
+        <li><a href="#clonar-repositorio">Clonar repositorio</a></li>
       </ul>
     </div>
   </nav>
 
   <p class="incompleto"><img src="../varios/iconos/icono-en-construccion.svg" alt="En construcción" title="En construcción" width="55" height="48" />Esta lección está por completar.</p>
 
-  <p>En esta lección se explica cómo empezar a trabajar en un repositorio git desde Visual Studio Code.</p>
+  <p>En esta lección se explica cómo empezar a trabajar en un repositorio git desde Visual Studio Code. Aunque podemos crear el repositorio con Visual Studio Code en nuestro ordenador y después subirlo a GitHub, en esta lección se explica cómo clonar en nuestro ordenador un repositorio ya existente en GitHub.</p>
 
   <section id="requisitos">
     <h2>Requisitos</h2>
 
-    <p>Se supone que:</p>
+    <p>Para poder trabajar repositorios en GitHub con Visual Studio Code necesitamos:</p>
     <ul>
-      <li>Visual Studio Code está instalado y configurado.</li>
-      <li>Disponemos de cuenta en GiitHub</li>
+      <li>Haber instalado y configurado Visual Studio Code (lecciones <a href="vsc-instalacion.html">Instalación de VSC</a>, <a href="vsc-personalizacion.html">Personalización de VSC</a> y configuraciones recomendadas para <a href="vsc-curso-htmlcss.html">HTML/CSS</a>, <a href="vsc-python-configuracion.html">Python</a> o <a href="vsc-php-configuracion.html">PHP</a>).</li>
+      <li>Haber instalado Git (lección <a href="git-instalacion.html">Instalación de Git</a>)</li>
+      <li>Disponer de una cuenta en GitHub (lección <a href="github-cuenta.html">Crear cuenta en GitHub</a>).</li>
+      <li>Disponer de un repositorio en GitHub (lección <a href="github-repositorios.html#crear">Repositorios en GitHub</a>.)</li>
     </ul>
   </section>
 
-  <section id="crear-repositorio">
-    <h2>Crear el repositorio en GitHub</h2>
+  <section id="clonar-repositorio">
+    <h2>Clonar un repositorio de GitHub localmente</h2>
 
-    <p>Aunque podríamos crear el repositorio en nuestro ordenador y después subirlo a GitHub, aquí lo haremos al revés: primero crearemos el repositorio en GitHub y después lo clonaremos en nuestro ordenador.</p>
+    <p>Para clonar localmente con Visual Studio Code un repositorio de GitHub:</p>
 
     <ol>
-      <li>Para crear un nuevo repositorio en GitHub, haga clic en el icono en forma de cruz situado arriba a la derecha y elija la opción "New repository". Si no ha creado todavía ningún repositorio, en la página web se puede mostrar un botón "Start a project", que también permite crear un nuevo repositorio.
+      <li>Cree un directorio donde se guardarán los repositorios:
         <p class="captura">
-          <img src="../img/git/github-repositorios-crear-01.png" alt="GitHub - Crear repositorio" width="1007" height="340" />
+          <img src="../img/vscode/vsc-repos-clonar-01.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="200" />
         </p>
       </li>
 
-      <li>Indique el nombre del repositorio, su descripción, si es público o privado. Se recomienda incluir en el repositorio un fichero README, pero por el momento no crear ni el fichero .gitignore ni elegir Licencia. haga clic en Create repository:
+      <li>Abra el directorio en Visual Studio Code (menú <span class="soft-menu">Archivo &gt; Abrir carpeta ...</span>):
         <p class="captura">
-          <img src="../img/git/github-repositorios-crear-02.png" alt="GitHub - Crear repositorio" width="1024" height="600" />
+          <img src="../img/vscode/vsc-repos-clonar-02.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="180" />
         </p>
       </li>
 
-      <li>Inmediatamente se mostrará el repositorio recién creado. Únicamente contiene el fichero Readme.md:
+      <li>Para clonar el repositorio necesitará dos rutas (el origen y el destino):
+        <ul>
+          <li>La URL de repositorio, que se puede copiar desde el propio repositorio haciendo clic en el botón "Clone or download".
+            <p>Esta URL es la misma URL que aparece en el navegador pero terminada en .git.</p>
+            <p>En la captura de ejemplo, la URL de origen es <strong>https://github.com/NumaNigerio/test-01.git</strong></p>
+            <p class="captura">
+              <img src="../img/vscode/vsc-repos-clonar-03.png" alt="Clonar repositorio GitHub con VSC" width="1039" height="590" />
+            </p>
+          </li>
+          <li>El directorio de destino, que se puede copiar en el Explorador de Windows (más exactamente, se trata del directorio en el cual se va a crear la carpeta que contendrá la copia del repositorio.
+            <p>En la captura de ejemplo, el directorio de destino es <strong>https://github.com/NumaNigerio/test-01.git</strong></p>
+            <p class="captura">
+              <img src="../img/vscode/vsc-repos-clonar-04.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="200" />
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>En Visual Studio abra la ventana de comandos con <span class="soft-atajo-teclado">Ctrl+Alt+p</span>
         <p class="captura">
-          <img src="../img/git/github-repositorios-crear-03.png" alt="GitHub - Crear repositorio" width="1020" height="610" />
+          <img src="../img/vscode/vsc-repos-clonar-05.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="430" />
+        </p>
+      </li>
+      <li>Escriba el comando <strong>git:clone</strong> y pulse Intro:
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-clonar-06.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="180" />
+        </p>
+      </li>
+      <li>Escriba la URL del repositorio de origen y pulse Intro:
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-clonar-07.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="170" />
+        </p>
+      </li>
+      <li>Escriba la ruta del directorio que contendrá la copia y pulse Intro:
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-clonar-08.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="170" />
+        </p>
+      </li>
+      <li>En unos segundos se mostrará la carpeta del repositorio clonado en la barra dle explorador y se ofrecerá la posibilidad de abrir la carpeta del repositorio clonado. Haga clic en "Abrir repositorio".
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-clonar-09.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="180" />
+        </p>
+      </li>
+      <li>Visual Studio Code abrirá la carpeta del repsositorio clonado, mostrando su contenido (en el ejemplo, el repositorio contiene únicamente el fichero README.md.
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-clonar-10.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="200" />
         </p>
       </li>
     </ol>
   </section>
 
-  <section id="clonar-repositorio">
-    <h2>Clonar el repositorio localmente</h2>
+  <section id="commit">
+    <h2>Realizar commits en el repositorio remoto</h2>
 
-    <p>Haremos la clonación con Visual Studio Code</p>
+    <p>En git, un commit es un conjunto de cambios que se realizan en los ficheros del repositorio.</p>
 
+    <p>En Visual Studio Code podemos realizar commits, que se guardan en el repositorio local. Para sincronizar nuestros cambios en el repositorio, debemos identificarnos como usuario del repositorio.</p>
+
+    <p><img src="../varios/iconos/icono-warning.svg" alt="¡Atención!" title="¡Atención!" width="55" height="48" />Esa identificación se guarda como credencial de Windows, por lo que si estamos utilizando un ordenador al que tienen acceso otras personas, es muy importante que eliminemos la credencial antes de abandonar el ordenador o nos arriesgamos a que otro usuario nos suplante y acceda a los repositorios remotos.</p>
+
+    <hr class="corta" />
+
+    <p>El proceso en Visual Studio Code sería el siguiente:</p>
+
+    <ul>
+      <li>Modifique los archivos del repositorio o añada nuevos archivos</li>
+      <li>Abra la barra lateral de Control de código fuente</li>
+      <li>Seleccione los ficheros cuyos cambios formarán parte del commit (puede elegir todos los ficheros modificados o sólo una parte) haciendo clic en el icono +</li>
+      <li>Escriba el mensaje descriptivo del commit y pulse <span class="soft-atajo-teclado">Ctrl+Intro</span></li>
+      <li>El commit realizado localmente se indicará en la barra lateral inferior</li>
+      <li>Puede realizar varios commits</li>
+      <li>Haga clic en el icono de la barra lateral inferior para sincronizar el repositorio remoto con el local</li>
+      <li>La primera vez que lo hagamos, deberemos introducir el usuario y contraseña de GitHub.</li>
+      <li>Una vez realizada la sincronización, el contador se mostrará a cero.</li>
+      <li>Puede comprobar visitando el repositorio remoto en el navegador que se han realizado los cambios.</li>
+    </ul>
+  </section>
+
+  <section id="borrar-credencial">
+    <h2>Borrar credencial de Windows</h2>
+
+    <p><img src="../varios/iconos/icono-warning.svg" alt="¡Atención!" title="¡Atención!" width="55" height="48" />la identificación en GitHub que utiliza Visual Studio Code se guarda como credencial de Windows, por lo que si estamos utilizando un ordenador al que tienen acceso otras personas, es muy importante que eliminemos la credencial antes de abandonar el ordenador o nos arriesgamos a que otro usuario nos suplante y acceda a los repositorios remotos.</p>
+
+    <p>Para borrar la credencial:</p>
+
+    <ul>
+      <li>Abra el panel de control clásico (Menú de inicio &gt; panel de control)</li>
+      <li>Haga clic en el icono de cuentas de usuario</li>
+      <li>Haga clic en el enlace "Administrar credenciales"</li>
+      <li>Haga clic en el icono "Credenciales de Windows"</li>
+      <li>Haga clic en la credencial genérica de github</li>
+      <li>Haga clic en el enlace "Quitar"</li>
+      <li>Confirme la eliminación</li>
+      <li>Compruebe que la credencial ha sido eliminada</li>
+    </ul>
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 24 de enero de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 26 de enero de 2018</p>
 
     <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
       Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

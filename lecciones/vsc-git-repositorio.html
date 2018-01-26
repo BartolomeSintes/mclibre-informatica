@@ -125,35 +125,129 @@
     <p>El proceso en Visual Studio Code sería el siguiente:</p>
 
     <ul>
-      <li>Modifique los archivos del repositorio o añada nuevos archivos</li>
-      <li>Abra la barra lateral de Control de código fuente</li>
-      <li>Seleccione los ficheros cuyos cambios formarán parte del commit (puede elegir todos los ficheros modificados o sólo una parte) haciendo clic en el icono +</li>
-      <li>Escriba el mensaje descriptivo del commit y pulse <span class="soft-atajo-teclado">Ctrl+Intro</span></li>
-      <li>El commit realizado localmente se indicará en la barra lateral inferior</li>
-      <li>Puede realizar varios commits</li>
-      <li>Haga clic en el icono de la barra lateral inferior para sincronizar el repositorio remoto con el local</li>
-      <li>La primera vez que lo hagamos, deberemos introducir el usuario y contraseña de GitHub.</li>
-      <li>Una vez realizada la sincronización, el contador se mostrará a cero.</li>
-      <li>Puede comprobar visitando el repositorio remoto en el navegador que se han realizado los cambios.</li>
+      <li>Abra una ventana de Terminal e indique a git la dirección de correo del usuario (la dirección de correo vinculada a su cuenta en GitHub):
+        <div class="codigo">
+          <pre><code class="language-configuracion">git config --global user.email SU-CORREO-ELECTRONICO</code></pre>
+        </div>
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-01.png" alt="Realizar commits en GitHub con VSC" width="1024" height="140" />
+        </p>
+      </li>
+      <li>Modifique los archivos del repositorio o añada nuevos archivos
+        <p>En la captura del ejemplo, en el icono Control de código fuente se nos indica el número de ficheros con cambios (3). En la barra del Explorador se indica qué ficheros son nuevos (con la letra U) o se han modificado (con la letra M).</p>
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-02.png" alt="Realizar commits en GitHub con VSC" width="1024" height="340" />
+        </p>
+      </li>
+      <li>Abra la barra lateral de Control de código fuente haciendo clic en el icono correspondiente. Se mostrará la lista de ficheros con cambios:
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-03.png" alt="Realizar commits en GitHub con VSC" width="1024" height="250" />
+        </p>
+      </li>
+      <li>Seleccione los ficheros cuyos cambios formarán parte del commit (puede elegir todos los ficheros modificados o sólo una parte) haciendo clic en el icono +:
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-04.png" alt="Realizar commits en GitHub con VSC" width="1024" height="240" />
+        </p>
+      </li>
+      <li>Los ficheros seleccionados se muestran en un apartado "Cambios almacenados provisionalmente". Escriba el mensaje descriptivo del commit en la caja superior y pulse <span class="soft-atajo-teclado">Ctrl+Intro</span>
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-05.png" alt="Realizar commits en GitHub con VSC" width="1024" height="240" />
+        </p>
+      </li>
+      <li>Los ficheros incluidos en el commit dejan de mostrarse en la parte superior y en el contador del icono Control de código fuente:
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-06-a.png" alt="Realizar commits en GitHub con VSC" width="1024" height="220" />
+        </p>
+      </li>
+      <li>En la barra inferior, Visual Studio Code nos avisa que el repositorio local ya no está sincronizado con el repositorio remoto y nos indica el número de commits de diferencia:
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-06-b.png" alt="Realizar commits en GitHub con VSC" width="1024" height="70" />
+        </p>
+      </li>
+      <li>Podemos hacer nuevos commits hasta que no queden cambios pendientes.
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-07-a.png" alt="Realizar commits en GitHub con VSC" width="1024" height="230" />
+        </p>
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-07-b.png" alt="Realizar commits en GitHub con VSC" width="1024" height="70" />
+        </p>
+      </li>
+      <li>Haga clic en el icono de la barra lateral inferior para sincronizar el repositorio remoto con el local
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-08.png" alt="Realizar commits en GitHub con VSC" width="1024" height="80" />
+        </p>
+      </li>
+      <li>Visual Studio Code mostrará un aviso indicando que al sincronizar se producirán cambios en el repositorio remoto. Para no volver a ver este aviso, haga clic en "De acuerdo, no volver a ver este mensaje":
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-09.png" alt="Realizar commits en GitHub con VSC" width="1024" height="280" />
+        </p>
+      </li>
+      <li>La primera vez que sincronicemos, deberemos introducir el usuario y contraseña de GitHub.
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-10.png" alt="Realizar commits en GitHub con VSC" width="1024" height="460" />
+        </p>
+      </li>
+      <li>Una vez realizada la sincronización, el contador deja de mostrarse.
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-11.png" alt="Realizar commits en GitHub con VSC" width="1024" height="70" />
+        </p>
+      </li>
+      <li>Puede comprobar visitando el repositorio remoto en el navegador que se han realizado los cambios.
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-11.png" alt="Realizar commits en GitHub con VSC" width="1024" height="70" />
+        </p>
+      </li>
     </ul>
   </section>
 
   <section id="borrar-credencial">
     <h2>Borrar credencial de Windows</h2>
 
-    <p><img src="../varios/iconos/icono-warning.svg" alt="¡Atención!" title="¡Atención!" width="55" height="48" />la identificación en GitHub que utiliza Visual Studio Code se guarda como credencial de Windows, por lo que si estamos utilizando un ordenador al que tienen acceso otras personas, es muy importante que eliminemos la credencial antes de abandonar el ordenador o nos arriesgamos a que otro usuario nos suplante y acceda a los repositorios remotos.</p>
+    <p><img src="../varios/iconos/icono-warning.svg" alt="¡Atención!" title="¡Atención!" width="55" height="48" />La identificación en GitHub que utiliza Visual Studio Code se guarda como credencial de Windows, por lo que si estamos utilizando un ordenador al que tienen acceso otras personas, es muy importante que eliminemos la credencial antes de abandonar el ordenador o nos arriesgamos a que otro usuario nos suplante y acceda a los repositorios remotos.</p>
 
     <p>Para borrar la credencial:</p>
 
     <ul>
-      <li>Abra el panel de control clásico (Menú de inicio &gt; panel de control)</li>
-      <li>Haga clic en el icono de cuentas de usuario</li>
-      <li>Haga clic en el enlace "Administrar credenciales"</li>
-      <li>Haga clic en el icono "Credenciales de Windows"</li>
-      <li>Haga clic en la credencial genérica de github</li>
-      <li>Haga clic en el enlace "Quitar"</li>
-      <li>Confirme la eliminación</li>
-      <li>Compruebe que la credencial ha sido eliminada</li>
+      <li>Abra el panel de control clásico (Menú de inicio &gt; panel de control)
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-credencial-1.png" alt="Borrar credencial de Windows" width="500" height="400" />
+        </p>
+      </li>
+      <li>Haga clic en el icono de Cuentas de usuario
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-credencial-2.png" alt="Borrar credencial de Windows" width="1024" height="260" />
+        </p>
+      </li>
+      <li>Haga clic en el enlace "Administrar credenciales"
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-credencial-3.png" alt="Borrar credencial de Windows" width="1024" height="225" />
+        </p>
+      </li>
+      <li>Haga clic en el icono "Credenciales de Windows"
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-credencial-4.png" alt="Borrar credencial de Windows" width="1024" height="280" />
+        </p>
+      </li>
+      <li>Haga clic en la credencial genérica de github
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-credencial-5.png" alt="Borrar credencial de Windows" width="1024" height="340" />
+        </p>
+      </li>
+      <li>Haga clic en el enlace "Quitar"
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-credencial-6.png" alt="Borrar credencial de Windows" width="1024" height="210" />
+        </p>
+      </li>
+      <li>Confirme la eliminación
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-credencial-7.png" alt="Borrar credencial de Windows" width="502" height="185" />
+        </p>
+      </li>
+      <li>Compruebe que la credencial ha sido eliminada
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-credencial-8.png" alt="Borrar credencial de Windows" width="1024" height="400" />
+        </p>
+      </li>
     </ul>
   </section>
 

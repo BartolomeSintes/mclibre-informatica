@@ -6,7 +6,7 @@
 /*                                          */
 /* CSS curso: Temas de informática          */
 /*                                          */
-/* 26 de enero de 2018                      */
+/* 28 de enero de 2018                      */
 /*                                          */
 
 /* CSS comun */
@@ -151,6 +151,12 @@ img.vmedio {
 
 .captura {
   text-align: center;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .captura img, .captura svg, .captura iframe {

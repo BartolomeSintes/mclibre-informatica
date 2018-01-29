@@ -18,7 +18,7 @@
     </p>
 
     <div class="toc">
-      <h2>FF: Complementos</h2>
+      <h2>FF: Desarrollador web</h2>
 
       <ul>
         <li><a href="#ff-selector-color">Selector de color</a></li>
@@ -34,49 +34,51 @@
     </div>
   </nav>
 
+  <p>En esta lección se comentan las herramientas de desarrollador web incluidas en la versión estándar de Firefox. Existe también una versión especial de Firefox llamada <a href="https://www.mozilla.org/es-ES/firefox/developer/">Developer Edition</a>, que está basada en Firefox Beta y que tiene además una configuración optimizada para las herramientas de desarrolladores (y alguna herramienta experimental todavía no disponible en la versión estándar de Firefox).</p>
+
   <section id="ff-selector-color">
     <h2>Selector de color</h2>
 
     <p>Un selector de color permite obtener el código RGB de los píxeles de la pantalla. En Firefox 31 (publicado en julio de 2014) se añadió un selector de color a las herramientas para desarrollador web .</p>
 
-    <p><strong>Nota</strong>s:</p>
+    <ul>
+      <li>Para abrir el selector de color, abra el menú de heramientas y seleccione la opción Desarrollador web ...
+        <p class="captura">
+          <img src="../img/firefox/ff-desarrollador-color-1.png" alt="Menú Herramientas &gt; Desarrollador Web &gt; Selector de color" width="1024" height="630" />
+        </p>
+      </li>
+      <li>... en la lista de herramientas, seleccione la opción Recogecolor:
+        <p class="captura">
+          <img src="../img/firefox/ff-desarrollador-color-2.png" alt="Menú Herramientas &gt; Desarrollador Web &gt; Selector de color" width="1024" height="640" />
+        </p>
+      </li>
+      <li>El cursor se convierte en una lupa que muestra el color del píxel central:
+        <p class="captura">
+          <img src="../img/firefox/ff-desarrollador-color-3.png" alt="Menú Herramientas &gt; Desarrollador Web &gt; Selector de color" width="1024" height="300" />
+        </p>
+      </li>
+      <li>Al hacer clic, el valor del color en formato RGB se copia en el portapapeles y se cierra el selector de color.
+        <p class="captura">
+          <img src="../img/firefox/ff-desarrollador-color-4.png" alt="Menú Herramientas &gt; Desarrollador Web &gt; Selector de color" width="1024" height="300" />
+        </p>
+      </li>
+    </ul>
 
+    <p><strong>Notas</strong>:</p>
     <ul>
       <li>Más información sobre el selector de color en la página dedicada al <a href="https://developer.mozilla.org/en-US/docs/Tools/Eyedropper">Selector de color en Mozilla Developer Network</a>.</li>
       <li>La extensión ColorZilla incluye también un <a href="ff-extensiones.html#ff-colorzilla">selector de color</a> más sofisticado.</li>
+      <li>El selector de color (eyedropper) no tiene un atajo de teclado asociado: <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1177108">bug 1177108</a>.</li>
+      <li>El selector de color no permmite copiar los códigos de color en otros formatos que no sea RGB.</li>
     </ul>
-
-    <hr class="corta" />
-
-    <p>Para abrir el selector de color hay que abrir el menú de heramientas y seleccionar la opción Selector de color:</p>
-
-    <p class="captura">
-      <img src="../img/firefox/ff-desarrollador-color-1.png" alt="Menú Herramientas &gt; Desarrollador Web &gt; Selector de color" title="Menú Herramientas &gt; Desarrollador Web &gt; Selector de color" width="800" height="600" />
-    </p>
-
-    <p>El cursor se convierte en una lupa que muestra el color del píxel central:</p>
-
-    <p class="captura">
-      <img src="../img/firefox/ff-desarrollador-color-2.png" alt="Menú Herramientas &gt; Desarrollador Web &gt; Selector de color" title="Menú Herramientas &gt; Desarrollador Web &gt; Selector de color" width="800" height="325" />
-    </p>
-
-    <p>Al hacer clic, el valor de color se copia en el portapapeles y se cierra el selector de color.</p>
-
-    <p class="captura">
-      <img src="../img/firefox/ff-desarrollador-color-3.png" alt="Menú Herramientas &gt; Desarrollador Web &gt; Selector de color" title="Menú Herramientas &gt; Desarrollador Web &gt; Selector de color" width="800" height="325" />
-    </p>
   </section>
 
   <section id="ff-desarrollador-web">
     <h2>Herramientas para Desarrollador Web</h2>
 
-    <p>Seguramente la extensión de Firefox más popular para desarrolladores web ha sido siempre <a href="https://addons.mozilla.org/es/firefox/addon/firebug/">Firebug</a>, que permite analizar en profundidad muchos aspectos de una página web.</p>
+    <p>Desde Firefox 16 (publicado en octubre de 2012), Firefox incluye una ventana de <strong>Herramientas para Desarrollador Web</strong> que facilita el análisis técnico de las páginas web. Estas herramientas son similares a las que ofrecen Chrome y Edge. Estas herramientas son herederas de una extensión de Firefox llamada <a href="https://addons.mozilla.org/es/firefox/addon/firebug/">Firebug</a>, que ya no está en desarrollo.</p>
 
-    <p>En 2010, Firefox decidió incluir sus propias herramientas para desarrolladores web, basándose sobre todo en Firebug (y contratando a algunos de los autores de Firebug). Desde 2011 se han ido incluyendo nuevas herramientas y el desarrollo sigue a buen ritmo.</p>
-
-    <p>A partir de Firefox 16 (publicado en octubre de 2012), Firefox incluye una ventana de <strong>Herramientas para Desarrollador Web</strong> que unifica su acceso.</p>
-
-    <p>En el blog Mozilla Hacks se pueden consultar las <a href="https://hacks.mozilla.org/category/developer-tools/">novedades sobre estas herramientas</a>. Uno de los objetivos es que las herramientas de desarrollador incorporen todo lo que hace Firebug.</p>
+    <p>En el blog Mozilla Hacks se pueden consultar las <a href="https://hacks.mozilla.org/category/developer-tools/">novedades sobre estas herramientas</a>, que se van incorporando en cada nueva versión de Firefox.</p>
 
     <section id="ff-desarrollador-web-abrir">
       <h3>Abrir la ventana de Herramientas para desarrollador web</h3>
@@ -84,27 +86,29 @@
       <p>La ventana de Herramientas para desarrollador web se puede abrir de varias maneras:</p>
 
       <ul>
-        <li>el atajo de teclado <span class="soft-atajo-teclado">Ctrl+May+I</span></li>
-        <li>mediante el menú <span class="soft-menu">Herramientas &gt; Desarrollador web</span> (para mostrar el menú hay que pulsar la tecla <span class="soft-atajo-teclado">Alt</span>) podemos abrir tanto la ventana de herramientas como herramientas individuales:
+        <li>mediante el atajo de teclado <span class="soft-atajo-teclado">Ctrl+May+I</span> o la tecla <span class="soft-atajo-teclado">F12</span></li>
+        <li>mediante el menú <span class="soft-menu">Herramientas &gt; Desarrollador web &gt; Alternar herramientas</span> (para mostrar el menú hay que pulsar la tecla <span class="soft-atajo-teclado">Alt</span>) podemos abrir tanto la ventana de herramientas como herramientas individuales:
           <p class="captura">
-            <img src="../img/firefox/ff-desarrollador-2.png" alt="Herramientas para Desarrolador Web" title="Herramientas para Desarrolador Web" width="800" height="600" />
+            <img src="../img/firefox/ff-desarrollador-abrir-1.png" alt="Herramientas para Desarrolador Web" width="1024" height="210" />
           </p>
         </li>
-        <li>el botón "Abrir menú" de la barra de dirección y eligiendo la opción Desarrollador ...
+        <li>mediante el botón "Abrir menú" de la barra de dirección y eligiendo la opción "Desarrollador web" ...
           <p class="captura">
-            <img src="../img/firefox/ff-desarrollador-3.png" alt="Menú Herramientas &gt; Desarrollador Web" title="Menú Herramientas &gt; Desarrollador Web" width="800" height="600" />
+            <img src="../img/firefox/ff-desarrollador-abrir-2.png" alt="Herramientas para Desarrolador Web" width="1024" height="570" />
           </p>
-          <p>... se abrirá un menú de opciones similar al menú <span class="soft-menu">Herramientas &gt; Desarrollador web</span>:</p>
+          <p>... se abrirá un menú de opciones similar al menú <span class="soft-menu">Herramientas &gt; Desarrollador web</span> en el que debe elegir la opción "Alternar herramientas":</p>
           <p class="captura">
-            <img src="../img/firefox/ff-desarrollador-4.png" alt="Menú Herramientas &gt; Desarrollador Web" title="Menú Herramientas &gt; Desarrollador Web" width="800" height="600" />
+            <img src="../img/firefox/ff-desarrollador-abrir-3.png" alt="Herramientas para Desarrolador Web" width="1024" height="190" />
           </p>
         </li>
       </ul>
 
+      <hr class="corta" />
+
       <p>La ventana de Herramientas para desarrollador web se abre en la parte inferior de Firefox. Esta ventana personalizable da acceso directo a casi todas las herramientas disponibles (y se pueden incluir el resto en caso necesario).</p>
 
       <p class="captura">
-        <img src="../img/firefox/ff-desarrollador-1.png" alt="Herramientas para Desarrolador Web" title="Herramientas para Desarrolador Web" width="800" height="600" />
+        <img src="../img/firefox/ff-desarrollador-1.png" alt="Herramientas para Desarrolador Web" width="1024" height="576" />
       </p>
     </section>
 
@@ -113,10 +117,10 @@
 
       <p>La ventana de herramientas para Desarrollador Web se puede cerrar de varias maneras:</p>
       <ul>
-        <li>el atajo de teclado <span class="soft-atajo-teclado">Ctrl+May+i</span></li>
+        <li>mediante el atajo de teclado <span class="soft-atajo-teclado">Ctrl+May+I</span> o la tecla <span class="soft-atajo-teclado">F12</span></li>
         <li>haciendo clic en el icono Cerrar situado en la parte superior derecha de la ventana de Herramientas de desarrollador web
           <p class="captura">
-            <img src="../img/firefox/ff-desarrollador-5.png" alt="Herramientas para Desarrolador Web" title="Herramientas para Desarrolador Web" width="800" height="600" />
+            <img src="../img/firefox/ff-desarrollador-cerrar.png" alt="Herramientas para Desarrolador Web" width="1024" height="576" />
           </p>
         </li>
       </ul>
@@ -125,16 +129,10 @@
     <section id="ff-desarrollador-web-elementos">
       <h3>Elementos de la ventana de Herramientas para desarrollador web</h3>
 
-      <p>La ventana de Herramientas para desarrollador web contiene tres partes. De arriba a abajo:</p>
-
-      <ul>
-        <li>menú de herramientas, que permite elegir las distintas herramientas y configurarlas.</li>
-        <li>herramienta propiamente dicha (en la captura siguiente se muestra el resultado de la herramienta Inspector)</li>
-        <li>consola, que permite ejecutar comandos de JavaScript sobre los elementos de la página</li>
-      </ul>
+      <p>La ventana de Herramientas para desarrollador web contiene su propio menú, que da acceso a cada una de las herramientas.</p>
 
       <p class="captura">
-        <img src="../img/firefox/ff-desarrollador-6.png" alt="Herramientas para Desarrolador Web" title="Herramientas para Desarrolador Web" width="800" height="600" />
+        <img src="../img/firefox/ff-desarrollador-2.png" alt="Herramientas para Desarrolador Web" width="1024" height="576" />
       </p>
     </section>
   </section>
@@ -147,48 +145,73 @@
     <ul>
       <li>Para seleccionar elementos, hay que hacer clic en el selector situado en el extermo izquierdo de la barra de menú:
         <p class="captura">
-          <img src="../img/firefox/ff-desarrollador-inspector-1.png" alt="Herramientas para Desarrolador Web. Inspector" title="Herramientas para Desarrolador Web" width="800" height="646" />
+          <img src="../img/firefox/ff-desarrollador-inspector-1.png" alt="Herramientas para Desarrolador Web. Inspector" width="1024" height="370" />
         </p>
       </li>
       <li>El icono cambia a color azul
         <p class="captura">
-          <img src="../img/firefox/ff-desarrollador-inspector-2.png" alt="Herramientas para Desarrolador Web. Inspector" title="Herramientas para Desarrolador Web" width="800" height="100" />
+          <img src="../img/firefox/ff-desarrollador-inspector-2.png" alt="Herramientas para Desarrolador Web. Inspector" width="1024" height="150" />
         </p>
       </li>
-      <li>A partir de ese momento, al pasar el cursor sobre los elementos de la página, se van resaltando sus límites y mostrando la etiqueta correspondiente (en un bocadillo negro). Además en la parte inferior se resalta con un fondo azul el código html correspondiente al elemento.
+      <li>A partir de ese momento, al pasar el cursor sobre los elementos de la página, se van resaltando sus límites y mostrando la etiqueta correspondiente (en un bocadillo negro). Además en la parte inferior se resalta con un fondo azul claro el código html correspondiente al elemento.
         <p class="captura">
-          <img src="../img/firefox/ff-desarrollador-inspector-3.png" alt="Herramientas para Desarrolador Web. Inspector" title="Herramientas para Desarrolador Web" width="800" height="646" />
+          <img src="../img/firefox/ff-desarrollador-inspector-3.png" alt="Herramientas para Desarrolador Web. Inspector" width="1024" height="480" />
         </p>
       </li>
-      <li>Al hacer clic en un elemento, el selector se desactiva y en la parte inferior se muestra el código html y la información de estilo:
+      <li>Al hacer clic en un elemento, el selector se desactiva y en la parte inferior se muestra:
+        <ul>
+          <li>en la parte izquierda, el código html y la jerarquía de etiquetas</li>
+          <li>en la parte derecha, las reglas de estilo que se aplican al elemento</li>
+        </ul>
         <p class="captura">
-          <img src="../img/firefox/ff-desarrollador-inspector-4.png" alt="Herramientas para Desarrolador Web. Inspector" title="Herramientas para Desarrolador Web" width="800" height="646" />
-        </p>
-      </li>
-      <li>En la parte del html, se puede ver la jerarquía de elementos. En el ejemplo siguiente, la jerarquía es <span class="html-eti">html</span> &gt; <span class="html-eti">body</span> &gt; <span class="html-eti">div</span>#<span class="html-atri-valor">topSection</span> &gt; <span class="html-eti">div</span>#<span class="html-atri-valor">brandLogo</span>:
-        <p class="captura">
-          <img src="../img/firefox/ff-desarrollador-inspector-5.png" alt="Herramientas para Desarrolador Web. Inspector" title="Herramientas para Desarrolador Web" width="1010" height="490" />
+          <img src="../img/firefox/ff-desarrollador-inspector-4.png" alt="Herramientas para Desarrolador Web. Inspector" width="1024" height="576" />
         </p>
       </li>
       <li>En la parte del css, la información se puede ver de diferentes formas.
         <ul>
-          <li>En la vista <strong>Reglas</strong>, se muestran los fragmentos de la hoja de estilo que define las propiedades que se aplican al elemento. En el ejemplo siguiente, se muestra tanto el selector (#<span class="html-atri-valor">brandLogo</span>) como los selectores que también se aplican al elemento. Para cada uno de ellos se muestra el nombre de la hoja de estilo (aboutHome.css) y el número de línea (37) y las propiedades.
+          <li>En la pestaña <strong>Reglas</strong>, se muestran los fragmentos de la hoja de estilo que define las propiedades que se aplican al elemento.
+            <p>En el ejemplo siguiente, en el que se ha seleccionado un párrafo <span class="html-eti">&lt;p&gt;</span>, se muestran todas las propiedades que afecta al párrafo ordenadas por reglas. Para cada regla se muestra el selector, el nombre de la hoja de estilo y el número de línea en la que se encuentra y las propiedades.</p>
             <p class="captura">
-              <img src="../img/firefox/ff-desarrollador-inspector-6.png" alt="Herramientas para Desarrolador Web. Inspector" title="Herramientas para Desarrolador Web" width="1010" height="490" />
+              <img src="../img/firefox/ff-desarrollador-inspector-5.png" alt="Herramientas para Desarrolador Web. Inspector" width="1024" height="387" />
+            </p>
+            <p>Si una misma propiedad se establece en diferentes reglas, las propiedades que no se aplican por tener la regla menos prioridad se muestran tachadas.</p>
+            <p class="captura">
+              <img src="../img/firefox/ff-desarrollador-inspector-6.png" alt="Herramientas para Desarrolador Web. Inspector" width="1024" height="387" />
             </p>
           </li>
-          <li>En la vista <strong>Computada</strong>, se muestra la misma información, pero ordenada por propiedades. Haciendo clic en los triángulos laterales, se detalla la hoja de estilo y regla que ha establecido la propiedad.
+          <li>En la pestala <strong>Calculado</strong>, se muestra la misma información, pero ordenada por propiedades. Haciendo clic en los triángulos laterales, se detalla la hoja de estilo y regla que ha establecido la propiedad.
             <p class="captura">
-              <img src="../img/firefox/ff-desarrollador-inspector-7.png" alt="Herramientas para Desarrolador Web. Inspector" title="Herramientas para Desarrolador Web" width="1008" height="490" />
+              <img src="../img/firefox/ff-desarrollador-inspector-7.png" alt="Herramientas para Desarrolador Web. Inspector" width="1008" height="490" />
             </p>
           </li>
         </ul>
       </li>
     </ul>
+
+    <hr class="corta" />
+
+    <p>En la pestaña <strong>Reglas</strong>, se pueden modificar las hojas de estilo y ver el resultado inmediatamente. Estas modificaciones son "virtuales" y al actualizar la página se vuelve a la vista original.</p>
+    <ul>
+      <li>Puede modificar el valor de una propiedad haciendo doble clic en el valor y escribiendo el nuevo valor:
+        <p class="captura">
+          <img src="../img/firefox/ff-desarrollador-modificar-css-1.png" alt="Herramientas para Desarrolador Web. Inspector" width="1024" height="576" />
+        </p>
+      </li>
+      <li>Puede añadir nuevas propiedades:
+        <p class="captura">
+          <img src="../img/firefox/ff-desarrollador-modificar-css-2.png" alt="Herramientas para Desarrolador Web. Inspector" width="1024" height="576" />
+        </p>
+      </li>
+      <li>Puede desactivar propiedades haciendo clic en las casillas situadas a la izquierda de la propiedad:
+        <p class="captura">
+          <img src="../img/firefox/ff-desarrollador-modificar-css-1.png" alt="Herramientas para Desarrolador Web. Inspector" width="1024" height="576" />
+        </p>
+      </li>
+    </ul>
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 27 de enero de 2016</p>
+    <p class="ultmod">Última modificación de esta página: 29 de enero de 2016</p>
 
     <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
       Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

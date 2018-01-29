@@ -114,8 +114,10 @@ p.inline-con-borde {
   text-align: center;
 }
 
-a img {
-  border: none;
+.captura img, .captura svg {
+  width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 img.derecha {
@@ -132,6 +134,10 @@ img.izquierda {
 
 img.vmedio {
   vertical-align: middle;
+}
+
+a img {
+  border: none;
 }
 
 .soft-atajo-teclado {
@@ -151,12 +157,6 @@ img.vmedio {
 
 .captura {
   text-align: center;
-}
-
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
 }
 
 .captura img, .captura svg, .captura iframe {

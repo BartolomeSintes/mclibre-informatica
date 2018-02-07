@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repositorios git (2). Visual Studio Code. Informática. Bartolomé Sintes Marco</title>
+  <link href="../varios/informatica.css" rel="stylesheet" type="text/css" title="mclibre" />
+  <link rel="icon" href="../varios/favicon.ico" />
+</head>
+
+<body>
+  <h1>Visual Studio Code. Trabajar con repositorios git (2)</h1>
+
+  <nav>
+    <p>
+      <a href="../index.html"><img src="../varios/iconos/icono-informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
+      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+    </p>
+
+    <div class="toc">
+      <h2>VSC: Repositorios git</h2>
+
+      <ul>
+        <li><a href="#requisitos">Requisitos</a></li>
+        <li><a href="#clonar-repositorio">Clonar repositorio</a></li>
+        <li><a href="#commit">Realizar commits</a></li>
+        <li><a href="#borrar-credencial">Borrar credencial</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section>
+    <h2>Fichero .gitignore</h2>
+
+    <p>Escribir los directorios que no forman parte del repositorio</p>
+
+    <div class="codigo">
+      <pre>
+<code class="">/.vscode/</code>
+</pre>
+    </div>
+  </section>
+
+  <section>
+    <h2>Directorio .git en otro directorio</h2>
+
+    <div class="codigo">
+      <pre>
+<code class="">gitdir: C:/Users/BLJ/Documents/_GIT/mclibre-htmlcss</code>
+</pre>
+    </div>
+  </section>
+
+  <section>
+    <h2>Que Visual Studio Code siga repositorio origin</h2>
+
+    <div class="codigo">
+      <pre>
+<code class="">  // CONFIGURACIÓN PARA GITHUB
+    // Búsqueda automática
+    "git.autofetch": true,</code>
+</pre>
+    </div>
+  </section>
+
+  <section>
+    <h2>Colaborar en otro proyecto</h2>
+
+    <ul>
+      <li>Ir a la página del repositorio de otro y hacer clic en fork (arriba a la derecha)</li>
+      <li>Clonar el repositorio en nuestro ordenador (ver lección 1)</li>
+      <li>Hacer cambios y subirlos</li>
+      <li>Hacer pull request.
+        <ul>
+          <li>sin conflictos</li>
+          <li>con conflictos</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p class="ultmod">Última modificación de esta página: 30 de enero de 2018</p>
+
+    <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
+      Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
+  </footer>
+</body>
+</html>

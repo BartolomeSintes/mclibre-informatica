@@ -99,28 +99,10 @@
 </pre>
     </div>
 
-    <p>La extensión HTMLHint detecta de forma predeterminada diez tipos de errores que se pueden desactivar o activar de forma individual:</p>
-    <div class="codigo">
-      <pre>
-<code class="language-json">{
-  "tagname-lowercase": true,
-  "attr-lowercase": true,
-  "attr-value-double-quotes": true,
-  "doctype-first": true,
-  "tag-pair": true,
-  "spec-char-escape": true,
-  "id-unique": true,
-  "src-not-empty": true,
-  "attr-no-duplication": true,
-  "title-require": true
-}</code>
-</pre>
-    </div>
-
-    <p>Los tipos de errores detectados son los siguientes:</p>
+    <p>Los tipos de errores detectados de forma predeterminada por la extensión HTMLHint son los siguientes:</p>
     <ul>
       <li>"tagname-lowercase": los nombres de las etiquetas están escritas en minúsculas</li>
-      <li>"attr-lowercase": los nombres de los atributos están escritos en minúsculas</li>
+      <li>"attr-lowercase": los nombres de los atributos están escritos en minúsculas. Se puede indicar una lista de atributos que contienen mayúsculas (por ejemplo, algunos atributos de las etiquetas SVG), escribiéndola entre corchetes</li>
       <li>"attr-value-double-quotes": los valores de los atributos están escritos entre comillas</li>
       <li>"doctype-first": el documento contiene el prámbulo DOCTYPE</li>
       <li>"tag-pair": las etiquetas están emparejadas correctamente</li>
@@ -130,6 +112,51 @@
       <li>"attr-no-duplication": los atributos no están duplicados</li>
       <li>"title-require": el documento contiene el elemento <span class="html-eti">&lt;title&gt;</span></li>
     </ul>
+
+    <p>Además, HTMLHint permite detectar otro tipos de errores:</p>
+
+    <ul>
+      <li>"attr-value-not-empty": los atributos tienen un valor establecido</li>
+      <li>"tag-self-close": las etiquetas vacías están incluyen el carácter /</li>
+      <li>"head-script-disabled": no hay etiquetas <span class="html-eti">&lt;script&gt;</span> en <span class="html-eti">&lt;head&gt;</span>class</li>
+      <li>"alt-require": las imágenes contienen el atributo <span class="html-atri">alt</span></li>
+      <li>"doctype-html5": los documentos son html5</li>
+      <li>"id-class-value": los valores de los atributos <span class="html-atri">id</span> y <span class="html-atri">class</span> utilizan guiones bajos (underline), guiones (dash) o camelCase (hump)</li>
+      <li>"style-disabled": no se incluyen bloques <span class="html-eti">&lt;style&gt;</span></li>
+      <li>"inline-style-disabled": no se utiliza el atributo <span class="html-atri">style</span></li>
+      <li>"inline-script-disabled": no se utilizan atributos que puedan cotnener scripts</li>
+      <li>"space-tab-mixed-disabled": el sangrado contiene únciamente espacios (space), cuatro espacios (space4), tabuladores (tab)</li>
+      <li>"id-class-ad-disabled": los valores de los atributos <span class="html-atri">id</span> y <span class="html-atri">class</span> no contienen la palabra "ad" (que bloquean los bloqueadores de publicidad)</li>
+      <li>"href-abs-or-rel": las direcciones son absolutas (abs) o relativas (rel)</li>
+      <li>"attr-unsafe-chars": los atributos no contienen caracteres "inseguros"</li>
+    </ul>
+
+    <p>El valor de cada propiedad suele true (activada) o false (desactivada), salvo en los casos en que ofrece más posibilidades (en la explicación anterior los valores se han indicado entre paréntesis).</p>
+
+    <hr class="corta" />
+
+    <p>Para modificar la configuración predeterminada de HTMLHint se debe crear un fichero <strong>.htmlhintrc</strong> en la raíz del proyecto. La configuración recomendada para seguir el curso <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a> es la siguiente:</p>
+    <div class="codigo">
+      <pre>
+<code class="language-json">{
+  "tagname-lowercase": true,
+  "attr-lowercase": ["allowReorder", "attributeName", "attributeType", "autoReverse", "baseFrequency", "baseProfile", "calcMode", "clipPathUnits", "contentScriptType", "contentStyleType", "diffuseConstant", "edgeMode", "externalResourcesRequired", "filterRes", "filterUnits", "glyphRef", "gradientTransform", "gradientUnits", "kernelMatrix", "kernelUnitLength", "keyPoints", "keySplines", "keyTimes", "lengthAdjust", "limitingConeAngle", "markerHeight", "markerUnits", "markerWidth", "maskContentUnits", "maskUnits", "numOctaves", "pathLength", "patternContentUnits", "patternTransform", "patternUnits", "pointsAtX", "pointsAtY", "pointsAtZ", "preserveAlpha", "preserveAspectRatio", "primitiveUnits", "refX", "refY", "repeatCount", "repeatDur", "requiredExtensions", "requiredFeatures", "specularConstant", "specularExponent", "spreadMethod", "startOffset", "stdDeviation", "stitchTiles", "surfaceScale", "systemLanguage", "tableValues", "targetX", "targetY", "textLength", "viewBox", "viewTarget", "xChannelSelector", "yChannelSelector", "zoomAndPan"],
+  "attr-value-double-quotes": true,
+  "doctype-first": true,
+  "tag-pair": true,
+  "spec-char-escape": true,
+  "id-unique": true,
+  "src-not-empty": true,
+  "attr-no-duplication": true,
+  "title-require": true,
+
+  "alt-require": true,
+  "tag-self-close": true,
+  "attr-value-not-empty": true,
+  "id-class-ad-disabled": true
+}</code>
+</pre>
+    </div>
   </section>
 
   <section id="validacion-css">
@@ -348,7 +375,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 2 de noviembre de 2017</p>
+    <p class="ultmod">Última modificación de esta página: 12 de abril de 2018</p>
 
     <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
       Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

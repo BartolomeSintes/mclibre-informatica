@@ -411,7 +411,30 @@
 
       <p>La extensión HTMLHint permite que Visual Studio Code utilice el analizador de código estático <a href="http://htmlhint.com/">HTMLHint</a>.</p>
 
-      <p>El uso de esta extensión se comenta en la lección <a href="vsc-validacion.html">Validación de HTML y CSS en Visual Studio Code</a>.</p>
+      <p>El uso de esta extensión se comenta en la lección <a href="vsc-validacion.html#validacion-html">Validación de HTML y CSS en Visual Studio Code</a>.</p>
+
+      <p>Para modificar la configuración predeterminada de HTMLHint se debe crear un fichero <strong>.htmlhintrc</strong> en la raíz del proyecto. La configuración recomendada para seguir el curso <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a> es la siguiente:</p>
+      <div class="codigo">
+        <pre>
+<code class="language-json">{
+  "tagname-lowercase": true,
+  "attr-lowercase": ["allowReorder", "attributeName", "attributeType", "autoReverse", "baseFrequency", "baseProfile", "calcMode", "clipPathUnits", "contentScriptType", "contentStyleType", "diffuseConstant", "edgeMode", "externalResourcesRequired", "filterRes", "filterUnits", "glyphRef", "gradientTransform", "gradientUnits", "kernelMatrix", "kernelUnitLength", "keyPoints", "keySplines", "keyTimes", "lengthAdjust", "limitingConeAngle", "markerHeight", "markerUnits", "markerWidth", "maskContentUnits", "maskUnits", "numOctaves", "pathLength", "patternContentUnits", "patternTransform", "patternUnits", "pointsAtX", "pointsAtY", "pointsAtZ", "preserveAlpha", "preserveAspectRatio", "primitiveUnits", "refX", "refY", "repeatCount", "repeatDur", "requiredExtensions", "requiredFeatures", "specularConstant", "specularExponent", "spreadMethod", "startOffset", "stdDeviation", "stitchTiles", "surfaceScale", "systemLanguage", "tableValues", "targetX", "targetY", "textLength", "viewBox", "viewTarget", "xChannelSelector", "yChannelSelector", "zoomAndPan"],
+  "attr-value-double-quotes": true,
+  "doctype-first": true,
+  "tag-pair": true,
+  "spec-char-escape": true,
+  "id-unique": true,
+  "src-not-empty": true,
+  "attr-no-duplication": true,
+  "title-require": true,
+
+  "alt-require": true,
+  "tag-self-close": true,
+  "attr-value-not-empty": true,
+  "id-class-ad-disabled": true
+}</code>
+</pre>
+      </div>
     </section>
 
     <section id="csscomb">
@@ -603,7 +626,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 16 de enero de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 12 de abril de 2018</p>
 
     <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
       Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />

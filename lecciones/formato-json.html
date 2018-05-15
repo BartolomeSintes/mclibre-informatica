@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSON. Formatos. Informática. Bartolomé Sintes Marco</title>
+  <link href="../varios/informatica.css" rel="stylesheet" type="text/css" title="mclibre" />
+  <link rel="icon" href="../varios/favicon.ico" />
+</head>
+
+<body>
+  <h1>JSON</h1>
+
+  <nav>
+    <p>
+      <a href="../index.html"><img src="../varios/iconos/icono-informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
+      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+    </p>
+
+    <div class="toc">
+      <h2>JSON</h2>
+
+      <ul>
+        <li><a href="#vsc-que-es">Qué es</a></li>
+        <li><a href="#sintaxis">Sintaxis</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="que-es">
+    <h2>Qué es JSON</h2>
+
+    <p><img src="../img/formatos/json_logo.svg" alt="logtipo de JSON" width="160" height "160" class="izquierda" /><a href="http://json.org/">JSON</a> (JavaScript Object Notation) es un formato de texto pensado para el intercambio de datos. Su sintaxis está basada originalmente en la sintaxis de JavaScript, pero realmente es independiente de cualquier lenguaje de programación.</p>
+
+    <p>El formato JSON fue definido por Douglas Crockford a finales de 2002 y dado a conocer a través de su página web <a href="http://json.org/">http://json.org/</a>. Esta página contenía la definición del formato y una implementación en Java. En poco tiempo el uso del formato se extendió y aparecieron implementaciones para todos los lenguajes de programación. El motivo de su éxito es su sencillez y facilidad de uso.</p>
+
+    <hr class="corta" />
+
+    <p>El formato JSON se ha publicado además en forma de norma, tanto por la <a href="https://www.ietf.org/">IETF</a> como por <a href="http://www.ecma-international.org/">ECMA</a>, que también han definido otros formatos derivados como I-JSON.</p>
+
+    <ul>
+      <li>julio de 2006: <a href="https://tools.ietf.org/html/rfc4627">RFC 4627</a>, escrita por David Crockford</li>
+      <li>marzo de 2013: <a href="https://tools.ietf.org/html/rfc7158">RFC 7158</a>, escrita por Tim Bray</li>
+      <li>octubre de 2013: <a href="http://www.mclibre.org/descargar/docs/normas/json/ECMA-404-v1-1310.pdf">ECMA 404 (1º ed)</a></li>
+      <li>marzo de 2014: <a href="https://tools.ietf.org/html/rfc7159">RFC 7159</a>, escrita por Tim Bray</li>
+      <li>marzo de 2015: <a href="https://tools.ietf.org/html/rfc7493">RFC 7493</a> (I-JSON), escrita por Tim Bray</li>
+      <li>diciembre de 2017: <a href="https://tools.ietf.org/html/rfc8259">RFC 8259</a>, escrita por Tim Bray</li>
+      <li>diciembre de 2017: <a href="http://www.mclibre.org/descargar/docs/normas/json/ECMA-404-v2-1712.pdf">ECMA 404 (2º ed)</a></li>
+
+    </ul>
+
+    <p class="mcl-centrado">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="820" viewBox="-50 -70 820 130">
+        <title>Fechas de publicación de normas del formato JSON</title>
+        <line x1="-50" y1="0" x2="820" y2="0" stroke-width="3" stroke="black" />
+        <line x1="0" y1="-30" x2="0" y2="30" stroke-width="2" stroke-dasharray="5,5" stroke="black" />
+        <text x="0" y="-40" text-anchor="middle" style="font-size: 100%">2000</text>
+        <line x1="180" y1="-30" x2="180" y2="30" stroke-width="2" stroke-dasharray="5,5" stroke="black" />
+        <text x="180" y="-40" text-anchor="middle" style="font-size: 100%">2005</text>
+        <line x1="360" y1="-30" x2="360" y2="30" stroke-width="2" stroke-dasharray="5,5" stroke="black" />
+        <text x="360" y="-40" text-anchor="middle" style="font-size: 100%">2010</text>
+        <line x1="540" y1="-30" x2="540" y2="30" stroke-width="2" stroke-dasharray="5,5" stroke="black" />
+        <text x="540" y="-40" text-anchor="middle" style="font-size: 100%">2015</text>
+        <line x1="720" y1="-30" x2="720" y2="30" stroke-width="2" stroke-dasharray="5,5" stroke="black" />
+        <text x="720" y="-40" text-anchor="middle" style="font-size: 100%">2020</text>
+
+        <circle cx="103" cy="0" r="7" fill="black" />
+        <text x="103" y="25" text-anchor="middle" fill="black" style="font-size: 90%; font-weight: bold">json.org</text>
+        <circle cx="235" cy="0" r="7" fill="black" />
+        <text x="235" y="25" text-anchor="middle" fill="black" style="font-size: 90%; font-weight: bold">RFC</text>
+        <text x="235" y="45" text-anchor="middle" fill="black" style="font-size: 90%; font-weight: bold">4627</text>
+        <circle cx="476" cy="0" r="7" fill="black" />
+        <text x="476" y="25" text-anchor="middle" fill="black" style="font-size: 90%; font-weight: bold">RFC</text>
+        <text x="476" y="45" text-anchor="middle" fill="black" style="font-size: 90%; font-weight: bold">7158</text>
+        <circle cx="497" cy="0" r="7" fill="hsl(36, 100%, 50%)" />
+        <text x="497" y="-35" text-anchor="middle" fill="hsl(36, 100%, 50%)" style="font-size: 90%; font-weight: bold">ECMA</text>
+        <text x="497" y="-15" text-anchor="middle" fill="hsl(36, 100%, 50%)" style="font-size: 90%; font-weight: bold">404</text>
+        <circle cx="512" cy="0" r="7" fill="black" />
+        <text x="512" y="25" text-anchor="middle" fill="black" style="font-size: 90%; font-weight: bold">RFC</text>
+        <text x="512" y="45" text-anchor="middle" fill="black" style="font-size: 90%; font-weight: bold">7159</text>
+        <circle cx="647" cy="0" r="7" fill="black" />
+        <text x="647" y="25" text-anchor="middle" fill="black" style="font-size: 90%; font-weight: bold">RFC</text>
+        <text x="647" y="45" text-anchor="middle" fill="black" style="font-size: 90%; font-weight: bold">8259</text>
+        <circle cx="647" cy="0" r="7" fill="hsl(36, 100%, 50%)" />
+        <text x="647" y="-55" text-anchor="middle" fill="hsl(36, 100%, 50%)" style="font-size: 90%; font-weight: bold">ECMA</text>
+        <text x="647" y="-35" text-anchor="middle" fill="hsl(36, 100%, 50%)" style="font-size: 90%; font-weight: bold">404</text>
+        <text x="647" y="-15" text-anchor="middle" fill="hsl(36, 100%, 50%)" style="font-size: 90%; font-weight: bold">(2º ed)</text>
+      </svg>
+    </p>
+  </section>
+
+  <section id="sintaxis">
+    <h2>Sintaxis de JSON</h2>
+
+    <p>En JSON existen dos tipos de elementos:</p>
+    <ul>
+      <li>matrices (<i>arrays</i>): Las matrices son listas de valores separados por comas. Las matrices se escriben entre corchetes [ ]</li>
+      <li>objetos (<i>objects</i>). Los objetos son listas de parejas nombre / valor. El nombre y el valor están separados por dos puntos : y las parejas están separadas por comas. Los objetos se escriben entre llaves { } y los nombres de las parejas se escriben siempre entre comillas dobles</li>
+    </ul>
+
+    <p>Tanto en los objetos como en las matrices, el último elemento no puede ir seguido de una coma.</p>
+
+    <p>Los valores (tanto en los objetos como en las matrices) pueden ser:</p>
+    <ul>
+      <li>números: enteros, decimales o en notación exponencial. El separador decimal es el punto ., un número negativo empieza por el signo menos - y el indicador de la notación exponencial es e o E. Los números positivos no pueden empezar por el signo +, los números no pueden empezar por varios ceros o por un cero seguido de otra cifra.</li>
+      <li>cadenas. Las cadenas se escriben entre comillas dobles. Los caracteres especiales y los valores Unicode se escriben con contrabarra \delante. Los caracteres que deben escribirse siempre como caracteres especiales son \" (comillas), \\ (contrabarra), \b (retroceso), \f (salto de página), \n (salto de línea), \r (retorno de carro), \t (tabulador) y los caracteres unicode (\u...). El carácter / (barra) puede escribirse como cáracter / o como carácter especial \/.</li>
+      <li>los valores true, false y null (se escriben sin comillas)</li>
+      <li>objetos y matrices</li>
+    </ul>
+
+    <p>Un documento JSON está formado por un único elemento (objeto o matriz).</p>
+  </section>
+
+  <footer>
+    <p class="ultmod">Última modificación de esta página: 15 de mayo de 2018</p>
+
+    <p class="licencia"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
+      Esta página forma parte del curso <a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>
+  </footer>
+</body>
+</html>

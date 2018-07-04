@@ -36,7 +36,7 @@
   <section id="que-es">
     <h2>Qué es JSON</h2>
 
-    <p><img src="../img/formatos/json_logo.svg" alt="logtipo de JSON" width="160" height="160" class="izquierda" /><a href="http://json.org/">JSON</a> (JavaScript Object Notation) es un formato de texto pensado para el intercambio de datos. Su sintaxis está basada originalmente en la sintaxis de JavaScript, pero realmente es independiente de cualquier lenguaje de programación.</p>
+    <p><img src="../img/formatos/json-logo.svg" alt="logotipo de JSON" width="160" height="160" class="izquierda" /><a href="http://json.org/">JSON</a> (JavaScript Object Notation) es un formato de texto pensado para el intercambio de datos. Su sintaxis está basada originalmente en la sintaxis de JavaScript, pero realmente es independiente de cualquier lenguaje de programación.</p>
 
     <p>El formato JSON fue definido por Douglas Crockford a finales de 2002 y dado a conocer a través de su página web <a href="http://json.org/">http://json.org/</a>. Esta página contenía la definición del formato y una implementación en Java. En poco tiempo el uso del formato se extendió y aparecieron implementaciones para todos los lenguajes de programación. El motivo de su éxito es su sencillez y facilidad de uso.</p>
 
@@ -123,7 +123,7 @@
         </ul>
       </li>
 
-      <li>Un documento JSON está formado por un único elemento (objeto o matriz).
+      <li>Un documento JSON está formado por un único elemento (un objeto o una matriz).
         <div class="filaflex">
           <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
           <div class="codigo">
@@ -143,6 +143,14 @@
       </li>
 
       <li>Tanto en los objetos como en las matrices, el último elemento no puede ir seguido de una coma.
+        <div class="filaflex">
+          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
+          <div class="codigo">
+            <pre>
+<code class="language-json">{"nombre": "Pepito Conejo",}</code>
+</pre>
+          </div>
+        </div>
         <div class="filaflex">
           <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
           <div class="codigo">
@@ -183,6 +191,8 @@
           <li>objetos y matrices. Puede haber objetos y matrices dentro de objetos y de matrices, sin límite de anidamiento.</li>
         </ul>
       </li>
+
+      <li>Los ficheros JSON no pueden contener comentarios.</li>
     </ul>
   </section>
 

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YAML. Formatos. Informática. Bartolomé Sintes Marco</title>
+  <link href="../varios/informatica.css" rel="stylesheet" type="text/css" title="mclibre" />
+  <link rel="icon" href="../varios/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../varios/highlight-informatica.css" />
+  <script src="../varios/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body>
+  <h1>YAML</h1>
+
+  <nav>
+    <p>
+      <a href="../index.html"><img src="../varios/iconos/icono-informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
+      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+    </p>
+
+    <div class="toc">
+      <h2>YAML</h2>
+
+      <ul>
+        <li><a href="#que-es">Qué es</a></li>
+        <li><a href="#sintaxis">Sintaxis</a></li>
+        <li><a href="#otros">Otros</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="que-es">
+    <h2>Qué es YAML</h2>
+
+    <p><img src="../img/formatos/yaml-logo.svg" alt="logotipo de YAML" width="160" height="55" class="izquierda" /><a href="http://yaml.org/">YAML</a> (YAML Ain't Markup Language) es un formato de texto pensado para la serialización de datos, propuesto como alternativa a XML. Su sintaxis combina conceptos de varios lenguajes (HTML, C, Perl y Python).</p>
+
+    <p>El formato YAML fue propuesto por Clark Evans a principios de 2001 y dado a conocer a través de su página web <a href="http://yaml.org/">http://yaml.org/</a>.</p>
+
+    <hr class="corta" />
+
+    <p>El formato YAML no se ha publicado como norma por ningún organismo de normalización.</p>
+
+    <p class="mcl-centrado">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="820" viewBox="-50 -70 820 130">
+        <title>Fechas de publicación de normas del formato JSON</title>
+        <line x1="-50" y1="0" x2="820" y2="0" stroke-width="3" stroke="#e98814" />
+        <line x1="0" y1="-30" x2="0" y2="30" stroke-width="2" stroke-dasharray="5,5" stroke="black" />
+        <text x="0" y="-40" text-anchor="middle" style="font-size: 100%">2000</text>
+        <line x1="180" y1="-30" x2="180" y2="30" stroke-width="2" stroke-dasharray="5,5" stroke="black" />
+        <text x="180" y="-40" text-anchor="middle" style="font-size: 100%">2005</text>
+        <line x1="360" y1="-30" x2="360" y2="30" stroke-width="2" stroke-dasharray="5,5" stroke="black" />
+        <text x="360" y="-40" text-anchor="middle" style="font-size: 100%">2010</text>
+        <line x1="540" y1="-30" x2="540" y2="30" stroke-width="2" stroke-dasharray="5,5" stroke="black" />
+        <text x="540" y="-40" text-anchor="middle" style="font-size: 100%">2015</text>
+        <line x1="720" y1="-30" x2="720" y2="30" stroke-width="2" stroke-dasharray="5,5" stroke="black" />
+        <text x="720" y="-40" text-anchor="middle" style="font-size: 100%">2020</text>
+
+        <circle cx="147" cy="0" r="7" fill="#e98814" />
+        <text x="147" y="-15" text-anchor="middle" fill="#e98814" style="font-weight: bold">1.0</text>
+        <circle cx="182" cy="0" r="7" fill="#e98814" />
+        <text x="182" y="-15" text-anchor="middle" fill="#e98814" style="font-weight: bold">1.1</text>
+        <circle cx="351" cy="0" r="7" fill="#e98814" />
+        <text x="351" y="-15" text-anchor="middle" fill="#e98814" style="font-weight: bold">1.2</text>
+      </svg>
+    </p>
+
+    <p> Las tres versiones publicadas:</p>
+    <ul>
+      <li>enero de 2004: <a href="http://yaml.org/spec/1.0/index.html">YAML 1.0</a></li>
+      <li>diciembre de 2004: <a href="http://yaml.org/spec/1.1/index.html">YAML 1.1</a></li>
+      <li>octubre de 2009: <a href="http://yaml.org/spec/1.2/index.html">YAML 1.2</a></li>
+    </ul>
+  </section>
+
+  <section id="sintaxis">
+    <h2>Sintaxis de JSON</h2>
+
+    <p>Las reglas sintáctica de JSON son bastante sencillas:</p>
+
+    <ul>
+      <li>En JSON existen dos tipos de elementos
+        <ul>
+          <li>matrices (<i>arrays</i>): Las matrices son listas de valores separados por comas. Las matrices se escriben entre corchetes [ ]
+            <div class="filaflex">
+              <div class="icono-ok"><img src="../varios/iconos/icono-oksi.svg" alt="Correcto" title="Correcto" width="40" height="40" /></div>
+              <div class="codigo">
+                <pre>
+<code class="language-json">[1, "pepe", 3.14, "Pepito Conejo"]</code>
+</pre>
+              </div>
+            </div>
+          </li>
+
+          <li>objetos (<i>objects</i>). Los objetos son listas de parejas nombre / valor. El nombre y el valor están separados por dos puntos : y las parejas están separadas por comas. Los objetos se escriben entre llaves { } y los nombres de las parejas se escriben siempre entre comillas dobles.
+            <div class="filaflex">
+              <div class="icono-ok"><img src="../varios/iconos/icono-oksi.svg" alt="Correcto" title="Correcto" width="40" height="40" /></div>
+              <div class="codigo">
+                <pre>
+<code class="language-json">{"nombre": "Pepito Conejo", "edad": 25, "carnet de conducir": true}</code>
+</pre>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li>Un documento JSON está formado por un único elemento (objeto o matriz).
+        <div class="filaflex">
+          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
+          <div class="codigo">
+            <pre>
+<code class="language-json">[1, 2, 3], ["a", "b", "c"]</code>
+</pre>
+          </div>
+        </div>
+        <div class="filaflex">
+          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
+          <div class="codigo">
+            <pre>
+<code class="language-json">"nombre": "Pepito Conejo"</code>
+</pre>
+          </div>
+        </div>
+      </li>
+
+      <li>Tanto en los objetos como en las matrices, el último elemento no puede ir seguido de una coma.
+        <div class="filaflex">
+          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
+          <div class="codigo">
+            <pre>
+  <code class="language-json">{"nombre": "Pepito Conejo",}</code>
+  </pre>
+          </div>
+        </div>
+        <div class="filaflex">
+          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
+          <div class="codigo">
+            <pre>
+<code class="language-json">["nombre": "Pepito Conejo", "edad": 25, "carnet de conducir": true, ]</code>
+</pre>
+          </div>
+        </div>
+      </li>
+
+      <li>Los espacios en blanco y los saltos de línea no son significativos, es decir, puede haber cualquier número de espacios en blanco o saltos de línea separando cualquier elemento o símbolo del documento.
+        <div class="filaflex">
+          <div class="icono-ok"><img src="../varios/iconos/icono-oksi.svg" alt="Correcto" title="Correcto" width="40" height="40" /></div>
+          <div class="codigo">
+            <pre>
+<code class="language-json">[
+  {
+    "nombre": "Pepito Conejo",
+    "edad": 25,
+    "carnet de conducir": true
+  },
+  {
+    "nombre": "Ana Barberá",
+    "edad": 90,
+    "carnet de conducir": false
+  }
+]</code>
+</pre>
+          </div>
+        </div>
+      </li>
+
+      <li>Los valores (tanto en los objetos como en las matrices) pueden ser:
+        <ul>
+          <li>números: enteros, decimales o en notación exponencial. El separador decimal es el punto ., un número negativo empieza por el signo menos - y el indicador de la notación exponencial es e o E. Los números positivos no pueden empezar por el signo +, los números no pueden empezar por varios ceros o por un cero seguido de otra cifra.</li>
+          <li>cadenas. Las cadenas se escriben entre comillas dobles. Los caracteres especiales y los valores Unicode se escriben con una contrabarra \ delante. Los caracteres que deben escribirse siempre como caracteres especiales son \" (comillas), \\ (contrabarra), \b (retroceso), \f (salto de página), \n (salto de línea), \r (retorno de carro), \t (tabulador) y los caracteres unicode (\u...). El carácter / (barra) puede escribirse como cáracter / o como carácter especial \/ (suele ser necesario cuando el contenido es código html y la barra indica un cierre de etiquetas).</li>
+          <li>los valores true, false y null. Estos valores se escriben sin comillas.</li>
+          <li>objetos y matrices. Puede haber objetos y matrices dentro de objetos y de matrices, sin límite de anidamiento.</li>
+        </ul>
+      </li>
+
+      <li>Los ficheros JSON no pueden contener comentarios.</li>
+    </ul>
+  </section>
+
+  <section id="otros">
+    <h2>Otros</h2>
+    <p>Las versiones obsoletas de las normas sobre JSON son las siguientes:</p>
+    <ul>
+      <li>marzo de 2015: <a href="https://tools.ietf.org/html/rfc7493">RFC 7493</a> (I-JSON), escrita por Tim Bray</li>
+      <li>diciembre de 2017: <a href="https://tools.ietf.org/html/rfc8259">RFC 8259</a>, escrita por Tim Bray</li>
+      <li>diciembre de 2017: <a href="http://www.mclibre.org/descargar/docs/normas/json/ECMA-404-v2-1712.pdf">ECMA 404 (2º ed)</a></li>
+    </ul>
+
+    <p>Referencias:</p>
+    <ul>
+      <li>Conferencia de Douglas Cockcroft, <a href="https://www.youtube.com/watch?v=-C-JoyNuQJs">The JSON saga</a>, agosto de 2011</li>
+      <li><a href="https://jsonlint.com/">JSONLint</a>, validador de JSON</li>
+      <li><a href="http://jsonapi.org/">JSON API</a>, especificación para construir APIs en JSON</li>
+    </ul>
+  </section>
+
+
+  <footer>
+    <p class="ultmod">Última modificación de esta página: 21 de mayo de 2018</p>
+
+    <p class="licencia">
+      <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
+      Esta página forma parte del curso <strong><a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a></strong> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
+    </p>
+  </footer>
+</body>
+</html>

@@ -23,15 +23,15 @@
       <ul>
         <li><a href="#ff-about-about">about:about</a></li>
         <li><a href="#ff-about-config">about: config</a></li>
-        <li><a href="#ff-familias-fuentes">Familias de fuentes</a></li>
+        <li><a href="#ff-familias-fuentes">Familias <span class="css-valor">cursive</span> y <span class="css-valor">fantasy</span></a></li>
         <li><a href="#ff-zoom-maxpercent">zoom.maxPercent</a></li>
       </ul>
     </div>
   </nav>
 
-  <p>Firefox admite muchísimas más opciones de configuración que las que están disponibles mediante el menú <span class="soft-menu">Herramientas &gt; Opciones</span>. En esta página se explica cómo acceder a ellas y algunos ejemplos.</p>
+  <p>Firefox admite muchísimas más opciones de configuración que las que están disponibles mediante el menú <span class="soft-menu">Herramientas &gt; Opciones</span> (que se explican en la lección <a href="ff-configuracion.html">Configuración básica de Firefox</a>). En esta página se explica cómo acceder al resto de opciones y algunos ejemplos.</p>
 
-  <p><img src="../varios/iconos/icono-warning.svg" alt="¡Atención!" title="¡Atención!" width="55" height="48" />No he terminado de actualizar las capturas a la última versión de Firefox. Algunas capturas de esta página están tomadas de versiones anteriores, por lo que pueden ser ligeramente distintas de lo que se ve en la última versión.</p>
+  <p><img src="../varios/iconos/icono-warning.svg" alt="¡Atención!" title="¡Atención!" width="55" height="48" />Las capturas de esta lección no están actualizadas, por lo que seguramente serán distintas de lo que se ve en la última versión.</p>
 
   <section id="ff-about-about">
     <h2>about:about</h2>
@@ -234,68 +234,42 @@
     <p class="captura">
       <img src="../img/firefox/ff-about-config-3.png" alt="Firefox. Configuración avanzada. about: config" title="Firefox. Configuración avanzada. about: config" width="800" height="200" />
     </p>
+
+    <hr class="corta" />
+
+    <p class="incompleto">Falta contar que las preferencias modificadas y añadidas se añaden al archivo prefs.js que está en C:\Documents and Settings\nombre_de_usuario\Datos de programa\Mozilla\Firefox\Profiles\loquesea.default.</p>
   </section>
 
   <section id="ff-familias-fuentes">
-    <h2>Familias de fuentes</h2>
+    <h2>Familias de fuentes <span class="css-valor">cursive</span> y <span class="css-valor">fantasy</span></h2>
 
-    <p>Las familias de fuentes genéricas (<span class="css-valor">serif</span>, <span class="css-valor">sans-serif</span>, <span class="css-valor">cursive</span>, <span class="css-valor">fantasy</span> y <span class="css-valor">monospace</span>) se muestran en Firefox con alguna de las fuentes instaladas en el ordenador.</p>
-
-    <hr class="corta" />
-
-    <p>En el menú <span class="soft-menu">Herramientas &gt; Opciones &gt; Contenido &gt; Avanzadas...</span> se pueden especificar las fuentes correspondientes a las familias genéricas <span class="css-valor">serif</span>, <span class="css-valor">sans-serif</span> y <span class="css-valor">monospace</span>, que en Windows suelen ser, respectivamente, Times New Roman, Arial y Courier New.</p>
-
-    <p class="captura"><img src="../img/firefox/ff-config-fuentes-01.png" alt="Firefox - Menú Herramientas &gt; Opciones &gt; Contenido &gt; Avanzadas..." title="Firefox - Menú Herramientas &gt; Opciones &gt; Contenido &gt; Avanzadas..." width="573" height="487" /></p>
-
-    <hr class="corta" />
-
-    <p>Para especificar las fuentes correspondientes a las familias genéricas <span class="css-valor">cursive</span> y <span class="css-valor">fantasy</span>, hay que abrir la página about:config.</p>
+    <p>Para especificar la fuente correspondiente a la familia genérica <span class="css-valor">cursive</span>, hay que abrir la página about:config.</p>
 
     <p>La fuente <span class="css-valor">cursive</span> está definida en la preferencia font.name.cursive.x-western. Para modificar la fuente empleada, hay que hacer clic derecho sobre la preferencia y elegir la opción Modificar.</p>
 
-    <p class="captura"><img src="../img/firefox/ff-config-fuentes-02.png" alt="Firefox - Familias de fuentes 1" title="Firefox - Familias de fuentes 1" width="625" height="365" /></p>
+    <p class="captura"><img src="../img/firefox/ff-config-fuentes-02.png" alt="Firefox - Familias de fuentes 1" width="625" height="365" /></p>
 
     <p>Se abrirá una ventana en la que aparece el nombre de la fuente que se emplea actualmente:</p>
 
-    <p class="captura"><img src="../img/firefox/ff-config-fuentes-03.png" alt="Firefox - Familias de fuentes 2" title="Firefox - Familias de fuentes 2" width="326" height="138" /></p>
+    <p class="captura"><img src="../img/firefox/ff-config-fuentes-03.png" alt="Firefox - Familias de fuentes 2" width="326" height="138" /></p>
 
     <p>En esta ventana debe introducirse el nombre de la fuente que se desea emplear en su lugar y pulsar el botón Aceptar. En este ejemplo se ha sustituido la fuente Comic Sans MS por la fuente Verdana.</p>
 
-    <p class="captura"><img src="../img/firefox/ff-config-fuentes-04.png" alt="Firefox - Familias de fuentes 3" title="Firefox - Familias de fuentes 3" width="326" height="138" /></p>
+    <p class="captura"><img src="../img/firefox/ff-config-fuentes-04.png" alt="Firefox - Familias de fuentes 3" width="326" height="138" /></p>
 
     <p>El cambio se muestra inmediatamente en la ventana about:config. A partir de ese momento, la familia <span class="css-valor">cursive</span> se mostrará utilizando la nueva fuente (en este caso Verdana).</p>
 
-    <p class="captura"><img src="../img/firefox/ff-config-fuentes-05.png" alt="Firefox - Familias de fuentes 4" title="Firefox - Familias de fuentes 4" width="625" height="365" /></p>
+    <p class="captura"><img src="../img/firefox/ff-config-fuentes-05.png" alt="Firefox - Familias de fuentes 4" width="625" height="365" /></p>
 
     <hr class="corta" />
 
-    <p>La preferencia correspondiente a la fuente <span class="css-valor">fantasy</span> es font.name.fantasy.x-western. Si está preferencia no se encuentra en about:config, hay que hacer clic derecho sobre cualquier preferencia y elegir la opción Nuevo &gt; Cadena.</p>
-
-    <p class="captura"><img src="../img/firefox/ff-config-fuentes-06.png" alt="Firefox - Familias de fuentes 5" title="Firefox - Familias de fuentes 5" width="625" height="365" /></p>
-
-    <p>Se abrirá una ventana en la que hay que escribir el nombre de la preferencia (en este caso, font.name.fantasy.x-western) y pulsar Aceptar.</p>
-
-    <p class="captura"><img src="../img/firefox/ff-config-fuentes-07.png" alt="Firefox - Familias de fuentes 6" title="Firefox - Familias de fuentes 6" width="326" height="138" /></p>
-
-    <p>Se abrirá otra ventana en la que hay que escribir el nombre de la fuente (por ejemplo, Verdana) y pulsar Aceptar.</p>
-
-    <p class="captura"><img src="../img/firefox/ff-config-fuentes-08.png" alt="Firefox - Familias de fuentes 7" title="Firefox - Familias de fuentes 7" width="326" height="138" /></p>
-
-    <p>El cambio se muestra inmediatamente en la ventana about:config. A partir de ese momento, la familia <span class="css-valor">fantasy</span> se mostrará utilizando la nueva fuente (en este caso Verdana).</p>
-
-    <p class="captura"><img src="../img/firefox/ff-config-fuentes-09.png" alt="Firefox - Familias de fuentes 8" title="Firefox - Familias de fuentes 8" width="625" height="365" /></p>
+    <p>Firefox no permite elegir la fuente correspondiente a la familia genérica <span class="css-valor">fantasy</span></p>
 
     <hr class="corta" />
 
     <p>Para eliminar una preferencia, hay que hacer clic derecho sobre ella y elegir la opción Reiniciar. Al reiniciar Firefox, la preferencia habrá desaparecido de about:config.</p>
 
-    <p class="captura"><img src="../img/firefox/ff-config-fuentes-10.png" alt="Firefox - Familias de fuentes 9" title="Firefox - Familias de fuentes 9" width="625" height="365" /></p>
-
-    <hr class="corta" />
-
-    <p class="incompleto">Falta contar que las preferencias modificadas y añadidas se añaden al archivo prefs.js que está en C:\Documents and Settings\nombre_de_usuario\Datos de programa\Mozilla\Firefox\Profiles\loquesea.default.</p>
-
-    <p class="incompleto">Falta contar cómo se pueden elegir las fuentes genéricas en Internet Explorer (si se puede hacer, que no lo sé).</p>
+    <p class="captura"><img src="../img/firefox/ff-config-fuentes-10.png" alt="Firefox - Familias de fuentes 9" width="625" height="365" /></p>
   </section>
 
   <section id="ff-zoom-maxpercent">
@@ -353,7 +327,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 24 de septiembre de 2015</p>
+    <p class="ultmod">Última modificación de esta página: 13 de septiembre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />

@@ -40,7 +40,7 @@
 
     <p>Una vez decargado el instalador, haga doble clic enél para iniciar el proceso de instalación. Se recomienda cambiar un par de opciones predeterminadas: que Git busque actualizaciones diariamente y que utilice Visual Studio Code como editor.</p>
 
-    <ul>
+    <ol>
       <li>La primera pantalla muestra la licencia de Git (<a href="https://opensource.org/licenses/GPL-2.0">GPL 2</a>, como el kernel Linux):
         <p class="captura">
           <img src="../img/git/git-instalacion-01.png" alt="Git - Instalación en Windows" width="499" height="387" />
@@ -51,7 +51,7 @@
           <img src="../img/git/git-instalacion-02.png" alt="Git - Instalación en Windows" width="499" height="387" />
         </p>
       </li>
-      <li>La siguiente pantalla indica los componentes a instalar. Se recomienda marcar la casilla de comprobación de actualizaciones:
+      <li>La siguiente pantalla indica los componentes a instalar:
         <p class="captura">
           <img src="../img/git/git-instalacion-03.png" alt="Git - Instalación en Windows" width="499" height="387" />
         </p>
@@ -61,56 +61,76 @@
           <img src="../img/git/git-instalacion-04.png" alt="Git - Instalación en Windows" width="499" height="387" />
         </p>
       </li>
-      <li>La siguiente pantalla permite elegir el editor predeterminado (la lista dependerá de los editores instalados). Se recomienda elegir Visual Studio Code.
+      <li>La siguiente pantalla permite elegir el editor predeterminado. De forma predeterminada Git oferece Vim, pero el propio instalador recomienda elegir un navegador gráfico. Despliegue la caja de lista para elegir otro editor.
         <p class="captura">
           <img src="../img/git/git-instalacion-05.png" alt="Git - Instalación en Windows" width="499" height="387" />
         </p>
       </li>
-      <li>La siguiente pantalla permite elegir el tipo de ventanas de terminal desde las que se podrá usar Git.
+      <li>Otro de los editores que ofrece Git es VS Code, editor que se recomienda en estos apuntes. Pero por desgracia, debidos a cambios en el instalador de VS Code a partir de VS Code 1.26, el instalador de Git no detecta VS Code. Los programadores de Git for Windows conocen este problema (<a href="https://github.com/git-for-windows/git/issues/1741">Git issue 1741: Installer: Use Visual Studio Code as Git's default editor disables "Next &gt;" button]</a>), pero actualmente (septiembre de 2018), el problema no ha sido corregido
         <p class="captura">
           <img src="../img/git/git-instalacion-06.png" alt="Git - Instalación en Windows" width="499" height="387" />
         </p>
       </li>
-      <li>La siguiente pantalla permite elegir la biblioteca SSL/TLS:
+      <li>Otro de los editores que ofrece y detecta Git es <a href="https://notepad-plus-plus.org/">Notepad++</a>, otro editor de texto plano muy recomendable. En cualquier caso, elija uno de los editores ofrecidos que permitan continuar la instalación:
         <p class="captura">
           <img src="../img/git/git-instalacion-07.png" alt="Git - Instalación en Windows" width="499" height="387" />
         </p>
       </li>
-      <li>La siguiente pantalla permite elegir el carácter de final de línea:
+      <li>La siguiente pantalla permite elegir el tipo de ventanas de terminal desde las que se podrá usar Git:
         <p class="captura">
           <img src="../img/git/git-instalacion-08.png" alt="Git - Instalación en Windows" width="499" height="387" />
         </p>
       </li>
-      <li>La siguiente pantalla permite elegir el tipo de terminal bash de Git:
+      <li>La siguiente pantalla permite elegir el ejecutable de SSH:
         <p class="captura">
           <img src="../img/git/git-instalacion-09.png" alt="Git - Instalación en Windows" width="499" height="387" />
         </p>
       </li>
-      <li>La siguiente pantalla permite elegir algunas características extra:
+      <li>La siguiente pantalla permite elegir la biblioteca SSL/TLS:
         <p class="captura">
           <img src="../img/git/git-instalacion-10.png" alt="Git - Instalación en Windows" width="499" height="387" />
         </p>
       </li>
-      <li>A continuaciónse realizará la instalación, que durará unos segundos:
+      <li>La siguiente pantalla permite elegir el carácter de final de línea:
         <p class="captura">
           <img src="../img/git/git-instalacion-11.png" alt="Git - Instalación en Windows" width="499" height="387" />
         </p>
       </li>
-      <li>Cuando termine la instalación se mostrará la pantalla final. Haga clic en Finish para cerrar el programa de instalación:
+      <li>La siguiente pantalla permite elegir el tipo de terminal bash de Git:
         <p class="captura">
           <img src="../img/git/git-instalacion-12.png" alt="Git - Instalación en Windows" width="499" height="387" />
         </p>
       </li>
-      <li>Al cerrarse el programa de instalación, si se ha dejado marcada la casilla correspondiente en la última pantalla, se mostrarán en el navegador las notas de la versión:
+      <li>La siguiente pantalla permite elegir algunas características extra:
         <p class="captura">
-          <img src="../img/git/git-instalacion-13.png" alt="Git - Instalación en Windows" width="1024" height="230" />
+          <img src="../img/git/git-instalacion-13.png" alt="Git - Instalación en Windows" width="499" height="387" />
         </p>
       </li>
-    </ul>
+      <li>La siguiente pantalla permite elegir algunas características experimentales:
+        <p class="captura">
+          <img src="../img/git/git-instalacion-14.png" alt="Git - Instalación en Windows" width="499" height="387" />
+        </p>
+      </li>
+      <li>A continuación se realizará la instalación, que durará unos segundos:
+        <p class="captura">
+          <img src="../img/git/git-instalacion-15.png" alt="Git - Instalación en Windows" width="499" height="387" />
+        </p>
+      </li>
+      <li>Cuando termine la instalación se mostrará la pantalla final. Haga clic en Finish para cerrar el programa de instalación:
+        <p class="captura">
+          <img src="../img/git/git-instalacion-16.png" alt="Git - Instalación en Windows" width="499" height="387" />
+        </p>
+      </li>
+      <li>Al cerrarse el programa de instalación, si se ha dejado marcada la casilla "View Release Notes" en la pantalla final, se mostrarán en el navegador las notas de la versión:
+        <p class="captura">
+          <img src="../img/git/git-instalacion-17.png" alt="Git - Instalación en Windows" width="1024" height="200" />
+        </p>
+      </li>
+    </ol>
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 25 de enero de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 14 de septiembre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />

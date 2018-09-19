@@ -27,19 +27,17 @@
         <li><a href="#ff-complementos-instalar">Instalar</a>
           <ul>
             <li><a href="#ff-complementos-instalar-seguridad">Seguridad</a></li>
-            <li><a href="#ff-complementos-instalar-administrador">Administrador compl.</a></li>
-            <li><a href="#ff-complementos-instalar-sitio-permitido">Webs permitidas</a></li>
-            <li><a href="#ff-complementos-instalar-sitio-no-permitido">Webs no permitidas</a></li>
+            <li><a href="#ff-complementos-instalar-administrador">Ejemplo instalación</a></li>
           </ul>
         </li>
         <li><a href="#ff-complementos-recomendados">Recomendados</a>
           <ul>
+            <li><a href="#ff-colorzilla">ColorZilla</a></li>
             <li><a href="#ff-web-developer">Web Developer</a>
               <ul>
                 <li><a href="#ff-web-developer-validacion">Validación</a></li>
               </ul>
             </li>
-            <li><a href="#ff-colorzilla">ColorZilla</a></li>
             <li><a href="#ff-complementos-otros">Otras</a></li>
           </ul>
         </li>
@@ -49,21 +47,23 @@
 
   <p>En esta página se explica la instalación y uso de los complementos de Firefox.</p>
 
-  <p><img src="../varios/iconos/icono-warning.svg" alt="¡Atención!" title="¡Atención!" width="55" height="48" />No he terminado de actualizar las capturas a la última versión de Firefox. Algunas capturas de esta página están tomadas de versiones anteriores, por lo que pueden ser ligeramente distintas de lo que se ve en la última versión.</p>
-
   <section id="ff-extensiones">
     <h2>Complementos: plug-ins, temas y extensiones</h2>
 
-    <p>Una de las características que ayuda a explicar la popularidad de Firefox es la gran cantidad de <strong>complementos</strong> que permiten ampliar y personalizar Firefox y que pueden ser creados y distribuidos por cualquiera. Existen diferentes tipos de complementos:</p>
-
+    <p>Una de las características que destacó a Firefox por encima del resto de navegadores es la gran cantidad de <strong>complementos</strong> disponibles, que permitían ampliar y personalizar Firefox. En Firefox siempre han existido diferentes tipos de complementos:</p>
     <ul>
       <li><strong>plug-ins</strong>, que permiten reproducir en el navegador más formatos de archivos (pdf, flash, java, etc.).</li>
       <li><strong>temas</strong>, que permiten cambiar completamente la apariencia de Firefox.</li>
       <li><strong>extensiones</strong>, que amplian las funcionalidades del navegador.</li>
     </ul>
 
-    <p>Los complementos se pueden conseguir:</p>
+    <p>La razón por la que las extensiones de Firefox podían ser tan potentes era que las extensiones podían acceder a cualquier componente interno de Firefox. Pero en agosto de 2015, Firefox <a href="https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/">anunció</a> que en noviembre de 2017 (como así fue, con la publicación de Firefox 57) cambiaría completamente la gestión de las extensiones, eliminando el acceso al interior de Firefox y obligando a las extensiones a acceder únicamente a través de la <a href="https://wiki.mozilla.org/WebExtensions/FAQ">API WebExtensions</a>. El objetivo era doble: por un lado, permitir que Firefox pudiera sufrir grandes cambios internos sin afectar a las extensiones y, por otro lado, facilitar el desarrollo de extensiones, puesto que la API WebExtensions es muy similar a la <a href="https://developer.chrome.com/extensions">API de extensiones de Google Chrome</a>.</p>
 
+    <p>Por ello, a partir de Firefox 57, el número y potencia de las extensiones de Firefox se ha reducido enormemente, pero también es cierto que poco a poco, la API WebExtensions va ampliándose y dando nuevas posiblidades a los creadores de extensiones, como se comenta periódicamente en el <a href="https://blog.mozilla.org/addons/">blog de complementos de Mozilla</a>. El tiempo dirá si valió la pena el sacrificio realizado.</p>
+
+    <hr class="corta" />
+
+    <p>Los complementos se pueden conseguir:</p>
     <ul>
       <li>desde el propio Firefox, mediante el Administrador de complementos.</li>
       <li>desde el sitio web <a href="https://addons.mozilla.org/es/firefox/">Firefox Add-ons</a>, mantenida por la Fundación Mozilla.</li>
@@ -85,20 +85,19 @@
       <li>el atajo de teclado <span class="soft-atajo-teclado">Alt+May+A</span></li>
       <li>el menú <span class="soft-menu">Herramientas &gt; Complementos</span> (para mostrar el menú hay que pulsar la tecla <span class="soft-atajo-teclado">Alt</span>):
         <p class="captura">
-          <img src="../img/firefox/ff-extensiones-11.png" alt="Menú Herramientas &gt; Complementos" title="Menú Herramientas &gt; Complementos" width="800" height="180" />
+          <img src="../img/firefox/ff-extensiones-abrir-1.png" alt="Menú Herramientas &gt; Complementos" width="1024" height="210" />
         </p>
       </li>
       <li>el botón "Abrir menú" de la barra de dirección y eligiendo la opción Complementos:
         <p class="captura">
-          <img src="../img/firefox/ff-extensiones-12.png" alt="Menú Herramientas &gt; Complementos" title="Menú Herramientas &gt; Complementos" width="800" height="420" />
+          <img src="../img/firefox/ff-extensiones-abrir-2.png" alt="Menú Herramientas &gt; Complementos" width="1024" height="410" />
         </p>
       </li>
     </ul>
 
     <p>El Administrador de complementos se abre en una nueva pestaña:</p>
-
     <p class="captura">
-      <img src="../img/firefox/ff-extensiones-13.png" alt="Pestaña Administrador de complementos" title="Pestaña Administrador de complementos" width="800" height="210" />
+      <img src="../img/firefox/ff-extensiones-abrir-3.png" alt="Pestaña Administrador de complementos" width="1024" height="205" />
     </p>
 
     <hr class="corta" />
@@ -109,10 +108,9 @@
       <li>Obtener complementos: para buscar y conocer nuevos complementos e iniciar su instalación.</li>
       <li>Extensiones: para ver las extensiones ya instaladas, configurarlas, desactivarlas o desinstalarlas.</li>
       <li>Temas: para ver los temas ya instalados, configurarlos, desactivarlos o desinstalarlos.</li>
-      <li>Plug-ins: para ver los plug-ins ya instalados, configurarlos, desactivarlos o desinstalarlos.</li>
-      <li>Servicios: para ver los servicios ya instalados, configurarlos, desactivarlos o desinstalarlos. Firefox llama servicios a unas extensiones ligadas a servicios que se ofrecen en la web (pueden consultarse los existentes en la web <a href="https://activations.cdn.mozilla.net/es/">Servicios para Firefox</a>).
+      <li>Plug-ins: para ver los plug-ins ya instalados, configurarlos, desactivarlos o desinstalarlos.
         <p class="captura">
-          <img src="../img/firefox/ff-extensiones-14.png" alt="Administrador de complementos" title="Administrador de complementos" width="800" height="440" />
+          <img src="../img/firefox/ff-extensiones-abrir-4.png" alt="Administrador de complementos" width="1024" height="320" />
         </p>
       </li>
     </ul>
@@ -121,19 +119,24 @@
   <section id="ff-complementos-encontrar">
     <h2>Encontrar complementos</h2>
 
-    <p>Si no conocemos el nombre del complemento o simplemente queremos informarnos de los complementos existentes, yo personalmente aconsejo utilizar el sitio web <a href="https://addons.mozilla.org/es/firefox/">Firefox Add-ons</a>. En esa página podemos encontrar los complementos clasificados por muchos criterios (categorías, popularidad, valoraciones de los usuarios, novedades, colecciones temáticas, etc.) y mucha información sobre cada complemento.</p>
+    <p>El blog de complementos de Mozilla ofrece cada mes una <a href="https://blog.mozilla.org/addons/category/featured-addons/">selección de extensiones recomendadas</a>.</p>
+
+    <p>El mejor sitio para encontrar complementos es el sitio web <a href="https://addons.mozilla.org/es/firefox/">Firefox Add-ons</a>, donde podemos encontrar los complementos clasificados por muchos criterios (categorías, popularidad, valoraciones de los usuarios, novedades, colecciones temáticas, etc.) y mucha información sobre cada complemento.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-extensiones-21.png" alt="Obtener complementos" title="Obtener complementos" width="800" height="450" />
+      <img src="../img/firefox/ff-extensiones-encontrar-1.png" alt="Obtener complementos" width="1024" height="530" />
     </p>
 
     <p>Pero si <strong>ya conocemos el nombre exacto del complemento</strong> y simplemente queremos instalarlo, la forma más cómoda es utilizar el Administrador de complementos, como se explica en el apartado <a href="#ff-complementos-instalar-administrador">Instalar extensiones desde el Administrador de complementos</a>.</p>
 
-    <p>La sección "Obtener complementos" del Administrador de complementos también muestra información sobre los complementos disponibles y esa información la obtiene de la web <a href="https://addons.mozilla.org/es/firefox/">Firefox Add-ons</a>, pero en el Administrador de complementos se ofrece menos información que en la web.</p>
+    <hr class="corta" />
+
+    <p>Actualmente (septiembre de 2018), la sección "Obtener complementos" del Administrador de complementos muestra una información muy breve sobre unos cuantos complementos.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-extensiones-22.png" alt="Obtener complementos" title="Obtener complementos" width="800" height="600" />
+      <img src="../img/firefox/ff-extensiones-encontrar-2.png" alt="Obtener complementos" width="1024" height="300" />
     </p>
+
   </section>
 
   <section id="ff-complementos-instalar">
@@ -152,114 +155,67 @@
 
       <p>Por motivos obvios de seguridad, la instalación de extensiones en Firefox debe estar controlada.</p>
 
-      <p>Por ello, en el menú <span class="soft-menu">Herramientas &gt; Opciones &gt; Seguridad</span> debe mantenerse marcada la opción "Advertir cuando algún sitio intente instalar complementos". En ese caso, Firefox sólo permitirá la instalación de extensiones si el usuario autoriza previamente al sitio web.</p>
+      <p>Por ello, en el menú <span class="soft-menu">Herramientas &gt; Opciones &gt; Privacidad y Seguridad</span> debe mantener marcada la opción "Advertirle cuando algún sitio intente instalar complementos". En ese caso, Firefox sólo permitirá la instalación de extensiones si el usuario autoriza previamente al sitio web.</p>
 
-      <p class="captura"><img src="../img/firefox/ff-extensiones-1.png" alt="Menú Herramientas &gt; Opciones &gt; Seguridad" title="Menú Herramientas &gt; Opciones &gt; Seguridad" width="606" height="190" /></p>
+      <p class="captura">
+        <img src="../img/firefox/ff-extensiones-seguridad-1.png" alt="Menú Herramientas &gt; Opciones &gt; Privacidad y Seguridad" width="1024" height="150" />
+      </p>
 
-      <p>Haciendo clic en el botón "Excepciones..." puede consultarse la lista de sitios desde los que está permitido instalar excepciones.</p>
+      <p>Haga clic en el botón "Excepciones..." puede consultar la lista de sitios desde los que está permitido instalar excepciones.</p>
 
-      <p class="captura"><img src="../img/firefox/ff-extensiones-2.png" alt="Menú Herramientas &gt; Opciones &gt; Seguridad" title="Menú Herramientas &gt; Opciones &gt; Seguridad" width="606" height="190" /></p>
+      <p class="captura">
+        <img src="../img/firefox/ff-extensiones-seguridad-2.png" alt="Menú Herramientas &gt; Opciones &gt; Privacidad y Seguridad" width="1024" height="150" />
+      </p>
 
-      <p>Los sitios web oficiales <a href="https://addons.mozilla.org/es/firefox/">addons.mozilla.org</a>, <a href="https://addons.mozilla.org/es/firefox/themes/">getpersonas.com</a> y marketplace.firefox.com [cerrado en abril de 2018] ya están incluidos.</p>
+      <p>Los sitios web oficiales incluidos de forma predeterminada son <a href="https://addons.mozilla.org/es/firefox/">Firefox Add-ons</a> y <a href="https://testpilot.firefox.com">Firefox Test Pilot</a> .</p>
 
-      <p class="captura"><img src="../img/firefox/ff-extensiones-3.png" alt="Menú Herramientas &gt; Opciones &gt; Seguridad &gt; Excepciones..." title="Menú Herramientas &gt; Opciones &gt; Seguridad &gt; Excepciones..." width="405" height="366" /></p>
+      <p class="captura">
+        <img src="../img/firefox/ff-extensiones-seguridad-3.png" alt="Menú Herramientas &gt; Opciones &gt; Privacidad y Seguridad" width="779" height="442" />
+      </p>
     </section>
 
     <section id="ff-complementos-instalar-administrador">
-      <h3>Instalar complementos desde el Administrador de complementos (Web Developer)</h3>
+      <h3>Instalar complementos desde el Administrador de complementos (ColorZilla)</h3>
 
-      <p>La instalación de un complemento desde el Administrador de complementos se ilustra a continuación con la extensión Web Developer (más adelante en esta misma lección, se comenta el <a href="#ff-web-developer">uso de la extensión Web Developer</a>).</p>
+      <p>La instalación de un complemento desde el Administrador de complementos se ilustra a continuación con la extensión ColorZilla (más adelante en esta misma lección, se comenta el <a href="#ff-colorzilla">uso de la extensión ColorZilla</a>).</p>
 
       <ul>
-        <li>En el Administrador de complementos hay que escribir el nombre del complemento, en este caso "web developer", en el cuadro de búsqueda:
+        <li>En el cuadro de búsqueda del Administrador de complementos, escriba el nombre del complemento, en este caso "colorzilla":
           <p class="captura">
-            <img src="../img/firefox/ff-extensiones-31.png" alt="Instalación desde Administrador de complementos. Web Developer" title="Instalación desde Administrador de complementos. Web Developer" width="800" height="230" />
+            <img src="../img/firefox/ff-extensiones-instalar-1.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="230" />
           </p>
         </li>
-        <li>Se mostrará la lista de resultados de la búsqueda. Si se encuentra entre ellos la extensión deseada, hay que hacer clic en el botón instalar correspondiente:
+        <li>Se mostrará la lista de resultados de la búsqueda. Haga clic en la ficha de la extensión deseada:
           <p class="captura">
-            <img src="../img/firefox/ff-extensiones-32.png" alt="Instalación desde Administrador de complementos. Web Developer" title="Instalación desde Administrador de complementos. Web Developer" width="800" height="290" />
+            <img src="../img/firefox/ff-extensiones-instalar-2.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="490" />
           </p>
         </li>
-        <li>Tras unos segundos se confirmará la descarga de la extensión. La instalación se realizará cuando se reinicie Firefox, por lo que se debe hacer clic en el enlace "Reiniciar ahora".<br />
+        <li>Se mostrará información detallada sobre la extensión. Para instalarla, haga clic en el botón "Agregar a Firefox":
           <p class="captura">
-            <img src="../img/firefox/ff-extensiones-33.png" alt="Instalación desde Administrador de complementos. Web Developer" title="Instalación desde Administrador de complementos. Web Developer" width="800" height="305" />
+            <img src="../img/firefox/ff-extensiones-instalar-3.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="530" />
           </p>
         </li>
-        <li>Tras reiniciar, Firefox mostrará la pestaña del Administrador de complementos, sección de extensiones, en la que podrán verse todas las extensiones instaladas
+        <li>Una vez descargada la extensión, Firefox pedirá permiso para instalar la extensión, indicando los requisitos de la extensión. Haga clic en "Añadir" para instalar la extensión:
           <p class="captura">
-            <img src="../img/firefox/ff-extensiones-34.png" alt="Instalación desde Administrador de complementos. Web Developer" title="Instalación desde Administrador de complementos. Web Developer" width="800" height="290" />
+            <img src="../img/firefox/ff-extensiones-instalar-4.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="380" />
+          </p>
+        </li>
+        <li>Una vez instalada, se abrirá una nueva pestaña con información sobre la nueva extensión.
+          <p class="captura">
+            <img src="../img/firefox/ff-extensiones-instalar-5.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="240" />
+          </p>
+        </li>
+        <li>En la pestaña de Firefox Add-ons se muestra un aviso indicando que la extensión ha sido instalada:
+          <p class="captura">
+            <img src="../img/firefox/ff-extensiones-instalar-6.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="220" />
+          </p>
+        </li>
+        <li>En el Administrador de Complementos, se muestran todas las extensiones instaladas:
+          <p class="captura">
+            <img src="../img/firefox/ff-extensiones-instalar-7.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="240" />
           </p>
         </li>
       </ul>
-    </section>
-
-    <section id="ff-complementos-instalar-sitio-permitido">
-      <h3>Instalar complementos desde un sitio permitido (ColorZilla desde Firefox Add-ons)</h3>
-
-      <p>Todos los procesos de instalación de complementos son similares. los complementos suelen ser archivos con extensión .xpi. Desde la página web de la extensión en <a href="https://addons.mozilla.org/es/firefox/">Firefox Add-ons</a> hay que hacer clic en el enlace al archivo .xpi.</p>
-
-      <p>En el caso de Colorzilla habría que ir a la página <a href="https://addons.mozilla.org/es/firefox/addon/colorzilla/">https://addons.mozilla.org/es/firefox/addon/colorzilla/</a> y hacer clic en el botón "Añadir a Firefox".</p>
-
-      <p class="captura">
-        <img src="../img/firefox/ff-extensiones-51.png" alt="Instalación desde sitio permitido. ColorZilla" title="Instalación desde sitio permitido. ColorZilla" width="800" height="420" />
-      </p>
-
-      <p>El proceso de instalación comienza pidiendo autorización para proceder a la instalación. Se debe hacer clic en el "Instalar ahora" para instalar la extensión o en "Cancelar" para no instalarla.</p>
-
-      <p class="captura">
-        <img src="../img/firefox/ff-extensiones-52.png" alt="Instalación desde sitio permitido. ColorZilla" title="Instalación desde sitio permitido. ColorZilla" width="570" height="369" />
-      </p>
-
-      <p>Tras unos segundos, aparece un aviso indicando que la instalación se ha completado y que es necesario reiniciar Firefox.</p>
-
-      <p class="captura">
-        <img src="../img/firefox/ff-extensiones-53.png" alt="Instalación desde sitio permitido. ColorZilla" title="Instalación desde sitio permitido. ColorZilla" width="800" height="250" />
-      </p>
-
-      <p>Al reiniciar Firefox, el Administrador de complementos muestra la extensión ya instalada.</p>
-
-      <p class="captura">
-        <img src="../img/firefox/ff-extensiones-54.png" alt="Instalación desde sitio permitido. ColorZilla" title="Instalación desde sitio permitido. ColorZilla" width="800" height="230" />
-      </p>
-
-      <p>Haciendo clic en el botón "Opciones" de la ventana de extensiones, se muestra información sobre la extensión instalada.</p>
-    </section>
-
-    <section id="ff-complementos-instalar-sitio-no-permitido">
-      <h3>Instalar complementos desde un sitio no permitido (ColorZilla)</h3>
-
-      <p>El proceso de instalación de complementos desde un sitio no permitido es idéntico al de instalación desde sitios permitidos, excepto en que al intentar instalar el complemento, Firefox muestra en la parte superior de la página web un letrero de aviso.</p>
-
-      <p>Desde la página web del complemento hay que hacer clic en el enlace al archivo .xpi. En el caso de Colorzilla habría que ir a la página <a href="http://colorzilla.com/firefox/">http://colorzilla.com/firefox/</a> y hacer clic en el botón "install ColorZilla".</p>
-
-      <p class="captura">
-        <img src="../img/firefox/ff-extensiones-61.png" alt="Instalación desde sitio no permitido. ColorZilla" title="Instalación desde sitio no permitido. ColorZilla" width="934" height="360" />
-      </p>
-
-      <p>Firefox muestra una ventana de aviso que avisa de que un sitio web solicita instalar software en el equipo:</p>
-
-      <p class="captura">
-        <img src="../img/firefox/ff-extensiones-62.png" alt="Instalación desde sitio no permitido. ColorZilla" title="Instalación desde sitio no permitido. ColorZilla" width="934" height="230" />
-      </p>
-
-      <p>Haciendo clic en el botón Aceptar de la ventana y haciendo clic en el botón "Permitir", el proceso de instalación prosigue como en el caso anterior. El proceso de instalación comienza pidiendo autorización para proceder a la instalación. Se debe hacer clic en el "Instalar ahora" para instalar la extensión o en "Cancelar" para no instalarla.</p>
-
-      <p class="captura">
-        <img src="../img/firefox/ff-extensiones-63.png" alt="Instalación desde sitio no permitido. ColorZilla" title="Instalación desde sitio no permitido. ColorZilla" width="570" height="369" />
-      </p>
-
-      <p>Tras unos segundos, aparece un aviso indicando que la instalación se ha completado y que es necesario reiniciar Firefox.</p>
-
-      <p class="captura">
-        <img src="../img/firefox/ff-extensiones-64.png" alt="Instalación desde sitio no permitido. ColorZilla" title="Instalación desde sitio no permitido. ColorZilla" width="934" height="240" />
-      </p>
-
-      <p>Al reiniciar Firefox, se muestra una página de bienvenida que confirma la instalación de Colorzilla.</p>
-
-      <p class="captura">
-        <img src="../img/firefox/ff-extensiones-65.png" alt="Instalación desde sitio no permitido. ColorZilla" title="Instalación desde sitio no permitido. ColorZilla" width="934" height="250" />
-      </p>
     </section>
   </section>
 
@@ -269,111 +225,133 @@
     <p>En este curso se recomienda la instalación y uso de los siguientes complementos:</p>
 
     <ul>
-      <li>extensión Web Developer</li>
       <li>extensión ColorZilla</li>
+      <li>extensión Web Developer</li>
     </ul>
+
+    <section id="ff-colorzilla">
+      <h3>Extensión ColorZilla</h3>
+
+      <p><a href="http://www.colorzilla.com/firefox/">ColorZilla</a> es un selector de colores que permite obtener el código de color de los píxeles de la pantalla. ColorZilla está incluida en <a href="https://addons.mozilla.org/es/firefox/addon/colorzilla/">Firefox Add-ons</a>.</p>
+
+      <p>Actualmente (septiembre de 2018), la versión más reciente de ColorZilla para Firefox es la versión 3.3, publicada el 7 de marzo de 2017. También está disponible para Chrome la versión 2.0, publicada el 24 de diciembre de 2016.</p>
+
+      <p><strong>Notas</strong>:</p>
+      <ul>
+        <li>ColorZilla en Firefox tiene un problema importante y es que no permite copiar colores de una imagen si el navegador está abriendo únicamente la imagen (si la imagen está insertada en una página web, entonces sí que puede copiar un color de la imagen). ColorZilla en Chrome no tiene ese problema, aunque para ello se tiene que marcar la opción "Permitir acceso a URL de archivo" en el menú <span class="soft-menu">Más herramientas &gt; Extensiones &gt; ColorZilla</span></li>
+        <li>Firefox incluye un <a href="ff-desarrollador-web.html#ff-selector-color">selector de color más simple en las herramientas de desarrollador web</a>.</li>
+      </ul>
+
+      <hr class="corta" />
+
+      <p>ColorZilla se instala en el extremo derecho de la barra de navegación de Firefox y de Chrome:</p>
+
+      <p class="captura">
+        <img src="../img/firefox/ff-extensiones-colorzilla-1.png" alt="Firefox. Extensión ColorZilla" width="1024" height="180" />
+      </p>
+
+      <hr class="corta" />
+
+      <p>Para elegir el formato del código de color:</p>
+
+      <ul>
+        <li>Haga clic en el icono de ColorZilla y en el menú que se abrirá, elija la opción Options:
+          <p class="captura">
+            <img src="../img/firefox/ff-extensiones-colorzilla-2.png" alt="Firefox. Extensión ColorZilla" width="1024" height="430" />
+          </p>
+        </li>
+        <li>Se abrirá una nueva pestaña mostrando las opciones de ColorZilla. Despliegue el menú "Auto-copy color format", elija el formato del código de color deseado (en este curso se recomienda elegir el <a href="http://www.mclibre.org/consultar/htmlcss/css/css-color.html#hsl">formato hsl</a>) y haga clic en el botón Save. A continuación, puede cerrar la pestaña.
+          <p class="captura">
+            <img src="../img/firefox/ff-extensiones-colorzilla-3.png" alt="Firefox. Extensión ColorZilla" width="1024" height="576" />
+          </p>
+        </li>
+      </ul>
+
+      <hr class="corta" />
+
+      <p>Para copiar un color de la pantalla:</p>
+      <ul>
+        <li>Haga clic en el icono de ColorZilla. Al mover el ratón a la página, el cursor se convierte en una cruz y se mostrará una ventana flotante:
+          <p class="captura">
+            <img src="../img/firefox/ff-extensiones-colorzilla-4.png" alt="Firefox. Extensión ColorZilla" width="1024" height="265" />
+          </p>
+        </li>
+        <li>Sitúe el cursor sobre el píxel cuyo color se quiere averiguar. La barra flotante de ColorZilla muestra en todo momento el color y el código de color del píxel sobre el que se encuentra el cursor (en formato RGB).
+          <p class="captura">
+            <img src="../img/firefox/ff-extensiones-colorzilla-5.png" alt="Firefox. Extensión ColorZilla" width="1024" height="265" />
+          </p>
+        </li>
+        <li>Haga clic en el píxel. El valor del color se mostrará durante unos segundos y después ColorZilla se cerrará. El valor del color estará copiado en el portapapeles de Windows.
+          <p class="captura">
+            <img src="../img/firefox/ff-extensiones-colorzilla-6.png" alt="Firefox. Extensión ColorZilla" width="1024" height="265" />
+          </p>
+        </li>
+        <li>A continuación, ese valor se puede pegar en la hoja de estilo que estemos editando.</li>
+      </ul>
+    </section>
 
     <section id="ff-web-developer">
       <h3>Extensión Web Developer</h3>
 
-      <p>Web Developer añade a Firefox una barra de herramientas con herramientas útiles para el desarrollo de páginas web. Web Developer está incluida en <a href="https://addons.mozilla.org/es/firefox/addon/web-developer/">Firefox Add-ons</a>, pero en la página web de <a href="https://chrispederick.com/work/web-developer/">Web Developer</a> puede haber una versión más actual.</p>
+      <p><a href="https://chrispederick.com/work/web-developer/">Web Developer</a> añade a Firefox una barra de herramientas con herramientas útiles para el desarrollo de páginas web. Web Developer está incluida en <a href="https://addons.mozilla.org/es/firefox/addon/web-developer/">Firefox Add-ons</a>.</p>
 
-      <p>Actualmente (noviembre de 2017), la versión más reciente de Web Developer para Firefox es la versión 2.0, publicada el 11 de noviembre de 2017. También está <a href="gc-extensiones.html#gc-extensiones-webdeveloper">disponible para Chrome</a>.</p>
+      <p>Actualmente (septiembre de 2018), la versión más reciente de Web Developer para Firefox es la versión 2.0.1, publicada el 15 de noviembre de 2017. También está <a href="gc-extensiones.html#gc-extensiones-webdeveloper">disponible para Chrome</a>.</p>
 
       <p>En <a href="http://www.cdlibre.org/">cdlibre.org</a> hay una sección dedicada a <a href="http://www.cdlibre.org/consultar/catalogo/Desarrollo-Web_Otros.html">Desarrollo web &gt; Otros</a>, con información detallada sobre la última versión estable publicada.</p>
 
-      <p class="incompleto"><img src="../varios/iconos/icono-en-construccion.svg" alt="En construcción" title="En construcción" width="55" height="48" />Las capturas siguientes y la explicación correspondiente no están actualizadas..</p>
-
       <hr class="corta" />
 
-      <p>Web Developer dispone de una barra de herramientas propia. Para activarla o desactivarla, hay que marcar o desmarcar la opción de menú <span class="soft-menu">Ver &gt; Barras de herramientas &gt; Web Developer Toolbar</span>.</p>
+      <p>Web Developer se instala en el extremo derecho de la barra de navegación de Firefox y de Chrome:</p>
 
       <p class="captura">
-        <img src="../img/firefox/ff-webdeveloper-1.png" alt="Firefox. Extensión Web Developer" title="Firefox. Extensión Web Developer" width="800" height="200" />
+        <img src="../img/firefox/ff-extensiones-web-developer-1.png" alt="Firefox. Extensión Web Developer" width="1024" height="180" />
       </p>
 
-      <p>La barra de herramientas de Web Developer se muestra en la parte superior de la pantalla.</p>
+      <p>Al hacer clic en el icono de Web Developer, se despliega una ventana con todas las herramientas, organizadas en pestañas.</p>
 
       <p class="captura">
-        <img src="../img/firefox/ff-webdeveloper-2.png" alt="Firefox. Extensión Web Developer" title="Firefox. Extensión Web Developer" width="1024" height="200" />
+        <img src="../img/firefox/ff-extensiones-web-developer-2.png" alt="Firefox. Extensión Web Developer" width="1024" height="245" />
       </p>
 
-      <p>Si no se quiere tener la barra de herramientas visible, se puede acceder a todas las funciones de Web Developper mediante el menú <span class="soft-menu">Herramientas &gt; Web Developer Extension</span></p>
+      <p>Al hacer clic en cada pestaña, se muestra las herramientas correspondientes. Haga clic en la herramienta que quiera aplicar.</p>
 
       <p class="captura">
-        <img src="../img/firefox/ff-webdeveloper-3.png" alt="Firefox. Extensión Web Developer" title="Firefox. Extensión Web Developer" width="800" height="405" />
+        <img src="../img/firefox/ff-extensiones-web-developer-3.png" alt="Firefox. Extensión Web Developer" width="1024" height="245" />
+      </p>
+
+      <p>Dependiendo de la herramienta, Web Developer puede mantener la pestaña actual o abrir una nueva pestaña. Por ejemplo, si se elige la herramienta CSS &gt; Disable All Styles, la página se mostrará sin las propiedades de estilo. En el icono de la barra de herramientas se mostrará un número indicando el número de herramientas activas y en el menú de Web Developer se marcará la herramienta activa.</p>
+
+      <p class="captura">
+        <img src="../img/firefox/ff-extensiones-web-developer-4.png" alt="Firefox. Extensión Web Developer" width="1024" height="310" />
+      </p>
+
+      <p>Para desactivar una herramienta, haga clic de nuevo en ella.</p>
+
+      <p class="captura">
+        <img src="../img/firefox/ff-extensiones-web-developer-5.png" alt="Firefox. Extensión Web Developer" width="1024" height="245" />
       </p>
 
       <section id="ff-web-developer-validacion">
         <h4>Validación con Web Developer</h4>
 
-        <p>Web Developer permite la validación de varios tipos de documentos, con algunas limitaciones, mediante el menú <span class="soft-menu">Herramientas &gt; Web Developer Extension &gt; Tools</span>:</p>
+        <p>Web Developer permite la validación de varios tipos de documentos, con algunas limitaciones. Las herramientas disponibles se encuentran en l apestaña Tools del menú de Web Developer. Abra primero en Firefox la página que quiera validar y elija a continuación la herramienta correspondiente.</p>
 
         <p class="captura">
-          <img src="../img/firefox/ff-webdeveloper-11.png" alt="Firefox. Extensión Web Developer" title="Firefox. Extensión Web Developer" width="885" height="610" />
+          <img src="../img/firefox/ff-extensiones-web-developer-validacion-1.png" alt="Firefox. Extensión Web Developer" width="1024" height="270" />
         </p>
 
         <p>Las primeras opciones del menú permiten validar páginas web disponibles en Internet (http://....), mientras que las dos últimas permiten validar páginas web locales (que se abren en el navegador con la dirección file:///...).</p>
+
+        <p>El resultado de la validación se mostrará en una ventana aparte:</p>
+
+        <p class="captura">
+          <img src="../img/firefox/ff-extensiones-web-developer-validacion-2.png" alt="Firefox. Extensión Web Developer" width="1024" height="576" />
+        </p>
       </section>
 
       <hr class="corta" />
 
       <p class="incompleto">Por completar: Atajos de teclado + Crear atajos de teclado </p>
-    </section>
-
-    <section id="ff-colorzilla">
-      <h3>Extensión ColorZilla</h3>
-
-      <p>ColorZilla es un selector de colores que permite obtener el código RGB de los píxeles de la pantalla. Colorzilla está incluida en <a href="https://addons.mozilla.org/es/firefox/addon/colorzilla/">Firefox Add-ons</a>, pero en la página web de <a href="http://www.colorzilla.com/firefox/">ColorZilla</a> puede haber una versión más actual.</p>
-
-      <p>Actualmente (marzo de 2017), la versión más reciente de Colorzilla para Firefox es la versión 3.3, publicada el 7 de marzo de 2017. También está disponible para Chrome la versión 2.0, publicada el 24 de diciembre de 2016.</p>
-
-      <p><strong>Notas</strong>:</p>
-      <ul>
-        <li>Colorzilla en Firefox tiene un problema y es que no permite copiar colores de una imagen si el navegador está abriendo únicamente la imagen (si la imagen está insertada en una página web, entonces sí que puede copiar un color de la imagen). Colorzilla en Chrome no tiene ese problema, aunque para ello se tiene que marcar la opción "Permitir acceso a URL de archivo" en el menú <span class="soft-menu">Más herramientas &gt; Extensiones &gt; Colorzilla</span></li>
-        <li>Firefox incluye un <a href="ff-desarrollador-web.html#ff-selector-color">selector de color más simple en las herramientas de desarrollador web</a>.</li>
-      </ul>
-
-      <p>Colorzilla se instala en el extremo derecho de la barra de navegación de Firefox y de Chrome:</p>
-
-      <p class="captura">
-        <img src="../img/firefox/ff-extensiones-71.png" alt="Firefox. Extensión ColorZilla" title="Firefox. Extensión ColorZilla" width="1024" height="190" />
-      </p>
-
-      <p>Para elegir el formato del código de color:</p>
-
-      <ul>
-        <li>Haga clic en el icono de Colorzilla y elija la opción Options:
-          <p class="captura">
-            <img src="../img/firefox/ff-extensiones-72.png" alt="Firefox. Extensión ColorZilla" title="Firefox. Extensión ColorZilla" width="1024" height="355" />
-          </p>
-        </li>
-        <li>Despliegue el menú "Auto-copy color format", elija el formato del código de color deseado (en este curso se recomienda elegir el <a href="http://www.mclibre.org/consultar/htmlcss/css/css-color.html#hsl">formato hsl</a>) y haga clic en el botón Save. A continuación, la pestaña se puede cerrar haciendo clic en el icono de aspa.
-          <p class="captura">
-            <img src="../img/firefox/ff-extensiones-73.png" alt="Firefox. Extensión ColorZilla" title="Firefox. Extensión ColorZilla" width="1024" height="615" />
-          </p>
-        </li>
-      </ul>
-
-      <p>Para copiar un color de la pantalla:</p>
-      <ul>
-        <li>Haga clic en el icono de Colorzilla. Al mover el ratón a la página, el cursor se convierte en una cruz:
-          <p class="captura">
-            <img src="../img/firefox/ff-extensiones-74.png" alt="Firefox. Extensión ColorZilla" title="Firefox. Extensión ColorZilla" width="1024" height="250" />
-          </p>
-        </li>
-        <li>Sitúe el cursor sobre el píxel cuyo color se quiere averiguar. La barra flotante de Colorzilla muestra en todo momento el color y el código de color del píxel sobre el que se encuentra el cursor.
-          <p class="captura">
-            <img src="../img/firefox/ff-extensiones-75.png" alt="Firefox. Extensión ColorZilla" title="Firefox. Extensión ColorZilla" width="1024" height="260" />
-          </p>
-        </li>
-        <li>Haga clic en el píxel. El valor del color se guardará en el portapapeles de Windows.
-          <p class="captura">
-            <img src="../img/firefox/ff-extensiones-76.png" alt="Firefox. Extensión ColorZilla" title="Firefox. Extensión ColorZilla" width="1024" height="260" />
-          </p>
-        </li>
-        <li>A continuación ese valor se puede pegar en la hoja de estilo que estemos editando.</li>
-      </ul>
     </section>
 
     <section id="ff-complementos-otros">
@@ -384,7 +362,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 16 de junio de 2017</p>
+    <p class="ultmod">Última modificación de esta página: 19 de septiembre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />

@@ -33,13 +33,17 @@
   <section id="vsc-conseguir">
     <h2>Conseguir Visual Studio Code</h2>
 
-    <p>La página oficial de Visual Studio Code es <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>. Desde la página principal se puede descargar la última versión estable o acceder a la página de descargas:</p>
+    <p>La página oficial de Visual Studio Code es <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>. Desde la página principal se puede descargar la última versión estable (mediante el cuadro verde grande situado a la izquierda) o acceder a la <a href="https://code.visualstudio.com/Download">página de descargas</a> (mediante el cuadro verde más pequeño situado arriba a la derecha):</p>
 
     <p class="captura">
       <img src="../img/vscode/vsc-descargar-1.png" alt="Visual Studio Code. Descargar" title="Visual Studio Code. Descargar" width="800" height="450" />
     </p>
 
-    <p>La página de descarga es <a href="https://code.visualstudio.com/Download">https://code.visualstudio.com/Download</a>. Desde ella se pueden descargar las versiones para diferentes versiones operativos (32 / 64 bits, Windows / GNU/Linux / Mac).</p>
+    <hr class="corta" />
+
+    <p>Desde <a href="https://code.visualstudio.com/Download">la página de descargas</a> se pueden descargar las versiones para diferentes sistemas operativos (32 / 64 bits, Windows / GNU/Linux / Mac). En Windows hay además disponibles versiones <i>System installer</i>, que se instalan en la carpeta de Archivos de programa, y versiones <i>User installer</i>, que se instalan en la carpeta de usuario. Desde el verano de 2018, Microsoft recomienda la versión <i>User installer</i>.</p>
+
+    <p>Enlaces de descarga para Windows: <a href="https://code.visualstudio.com/docs/?dv=win64user">Visual Studio Code (64 bits, recomendado)</a> - <a href="https://code.visualstudio.com/docs/?dv=win32user">Visual Studio Code (32 bits)</a></p>
 
     <p class="captura">
       <img src="../img/vscode/vsc-descargar-2.png" alt="Visual Studio Code. Descargar" title="Visual Studio Code. Descargar" width="800" height="450" />
@@ -53,10 +57,10 @@
   <section id="vsc-instalar-windows">
     <h2>Instalar Visual Studio Code en Windows</h2>
 
-    <p><strong>Nota</strong>: Las capturas siguientes corresponden a Visual Studio Code 1.19 en Windows 10 de 64 bits. Versiones posteriores pueden ser ligeramente diferentes.</p>
+    <p><strong>Nota</strong>: Las capturas siguientes corresponden a Visual Studio Code 1.27 (<i>User installer</i>) en Windows 10 de 64 bits. Versiones posteriores pueden ser ligeramente diferentes.</p>
 
     <ol>
-      <li>Haga doble clic sobre el instalador de Visual Studio Code, para poner en marcha el asistente de instalación.</li>
+      <li>Haga doble clic sobre el instalador de Visual Studio Code para poner en marcha el asistente de instalación.</li>
 
       <li>La primera pantalla anuncia que se va a instalar Visual Studio Code. Haga clic en Siguiente para instalar el programa o en Cancelar para salir del programa de instalación.
         <p class="captura">
@@ -70,7 +74,7 @@
         </p>
       </li>
 
-      <li>La tercera pantalla permite elegir el directorio de instalación:
+      <li>La tercera pantalla permite elegir el directorio de instalación (por tratarse de la versión <i>User installer</i>, el directorio de instalación está en la carpeta de usuario, no en Archivos de programa):
         <p class="captura">
           <img src="../img/vscode/vsc-instalacion-3.png" alt="Visual Studio Code - Instalación 3" title="Visual Studio Code - Instalación 3" width="499" height="387" />
         </p>
@@ -82,7 +86,7 @@
         </p>
       </li>
 
-      <li>La quinta pantalla permite elegir algunas tareas adicionales tras la instalación:
+      <li>La quinta pantalla permite elegir algunas tareas adicionales tras la instalación. Personalmente, aconsejo marcar las casillas "Agragar la acción ...":
         <p class="captura">
           <img src="../img/vscode/vsc-instalacion-5.png" alt="Visual Studio Code - Instalación 5" title="Visual Studio Code - Instalación 5" width="499" height="387" />
         </p>
@@ -114,99 +118,48 @@
     <p>La primera vez que se abre Visual Studio Code tras la instalación, se muestra una página de bienvenida al programa:</p>
 
     <p class="captura">
-      <img src="../img/vscode/vsc-interfaz-1.png" alt="Visual Studio Code. Interfaz inicial" title="Visual Studio Code. Interfaz inicial" width="800" height="450" />
+      <img src="../img/vscode/vsc-interfaz-1.png" alt="Visual Studio Code. Interfaz inicial" title="Visual Studio Code. Interfaz inicial" width="1024" height="576" />
     </p>
 
-    <p>Si no está instalado Git, se muestra un mensaje de aviso. Si no se va a utilizar Git, se puede cerrar el aviso. Pero si se quiere utilizar Git, se deber instalar como se explica en la lección <a href="git-instalacion.html">Instalación de Git</a>.</p>
-
-    <p class="captura">
-      <img src="../img/vscode/vsc-interfaz-git-no-instalado.png" alt="Visual Studio Code. Interfaz inicial" title="Visual Studio Code. Interfaz inicial" width="1024" height="150" />
-    </p>
-
+    <p><strong>Nota</strong>: Si <a href="git.html">Git</a> no está instalado, es posible que Visual Studio Code muestre un aviso. Si no se va a utilizar Git, se puede cerrar el aviso. Pero si se quiere utilizar Git, se deber instalar como se explica en la lección <a href="git-instalacion.html">Instalación de Git</a>.</p>
   </section>
 
   <section id="actualizar">
     <h2>Actualizar Visual Studio Code</h2>
 
-    <p><strong>Nota</strong>: Las capturas siguientes corresponden a la actualización de Visual Studio Code 1.22 a Visual Studio Code 1.23 en Windows 10 de 64 bits. Versiones posteriores pueden ser ligeramente diferentes.</p>
+    <p>Visual Studio Code se actualiza automáticamente cada vez que se publica una nueva versión. Visual Studio Code muesra un aviso cuando la actualización se ha descargado y podemos aplicar la actualización inmediatamente, como se muestra en las capturas de pantalla siguientes. En cualquier caso, hayamos pedido o no aplicar la actualización, si cerramos Visual Studio Code, la actualización se aplicará al volver a abrirlo.</p>
+
+    <p><strong>Nota</strong>: Las capturas siguientes corresponden a la actualización de Visual Studio Code 1.27 a Visual Studio Code 1.27.2 en Windows 10 de 64 bits. Versiones posteriores pueden ser ligeramente diferentes.</p>
 
     <ol>
-      <li>Cuando hay una actualización disponible, Visual Studio Code muestra un aviso en la parte inferior derecha. Haga clic en "Instalar la actualización" para instalarla:
+      <li>Cuando hay una actualización disponible, Visual Studio Code muestra un número en el icono de la rueda dentada situado en la parte inferior izquierda:
         <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-11.png" alt="Visual Studio Code - Actualización 11" width="1024" height="150" />
+          <img src="../img/vscode/vsc-actualizar-automatica-1.png" alt="Visual Studio Code - Actualización automática" width="1024" height="150" />
         </p>
       </li>
 
-      <li>La instalación tarda unos minutos. Mientras se realiza se muestra un aviso en la parte inferior derecha:
+      <li>Haga clic en el icono de la ruda dentada y elija la opción "restart to Update...":
         <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-12.png" alt="Visual Studio Code - Actualización 12" width="1024" height="150" />
+          <img src="../img/vscode/vsc-actualizar-automatica-2.png" alt="Visual Studio Code - Actualización automática" width="1024" height="330" />
         </p>
       </li>
 
-      <li>Al terminar La primera parte de la instalación, se muestra un aviso en la parte inferior derecha. Haga clic en "Actualizar ahora" para completar la instalación:
+      <li>Visual Studio Code instalará la actualización:
         <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-13.png" alt="Visual Studio Code - Actualización 13" width="1024" height="150" />
+          <img src="../img/vscode/vsc-actualizar-automatica-3.png" alt="Visual Studio Code - Actualización automática" width="283" height="121" />
         </p>
       </li>
 
-      <li>Una vez completada la actualización, se abrirá Visual Studio Code mostrando en una pestaña las notas de la versión, que comentan las novedades más importantes:
+      <li>Al reiniciarse, se mostrarán en una nueva pestaña las notas de la versión instalada y el icono de la rueda dentada ya no mostrará el número:
         <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-14.png" alt="Visual Studio Code - Actualización 14" width="1024" height="300" />
-        </p>
-      </li>
-    </ol>
-
-    <hr class="corta" />
-
-    <p><strong>Nota</strong>: Las capturas siguientes corresponden a Visual Studio Code 1.17 en Windows 10 de 64 bits. Versiones posteriores pueden ser ligeramente diferentes.</p>
-
-    <ol>
-      <li>Para comprobar si existen actualizaciones disponibles de Visual Studio Code, abra el menú <span class="soft-menu">Ayuda &gt; Buscar actualizaciones ...</span>.
-        <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-1.png" alt="Visual Studio Code - Actualización 1" width="1024" height="500" />
-        </p>
-      </li>
-
-      <li>Si no hay actualizaciones disponibles se mostrará una ventana de aviso:
-        <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-7.png" alt="Visual Studio Code - Actualización 7" width="1024" height="270" />
-        </p>
-      </li>
-
-      <li>Pero si hay actualizaciones disponibles, mientras Visual Studio Code descarga la actualización el menú se mostrará desactivado:
-        <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-2.png" alt="Visual Studio Code - Actualización 2" width="1024" height="500" />
-        </p>
-      </li>
-
-      <li>Tras unos segundos, el menú mostrará la opción <span class="soft-menu">Reiniciar para actualizar ...</span>. Seleccione dicha opción de menú para actualizar.
-        <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-3.png" alt="Visual Studio Code - Actualización 3" width="1024" height="500" />
-        </p>
-      </li>
-
-      <li>Al reiniciar, se iniciará el instalador de Visual Studio Code ...
-        <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-4.png" alt="Visual Studio Code - Actualización 4" width="499" height="387" />
-        </p>
-      </li>
-
-      <li>... que instalará la actualización:
-        <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-5.png" alt="Visual Studio Code - Actualización 5" width="499" height="387" />
-        </p>
-      </li>
-
-      <li>Una vez completada la actualización, se abrirá Visual Studio Code mostrando en una pestaña las notas de la versión, que comentan las novedades más importantes:
-        <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-6.png" alt="Visual Studio Code - Actualización 6" width="1024" height="300" />
+          <img src="../img/vscode/vsc-actualizar-automatica-4.png" alt="Visual Studio Code - Actualización automática" width="1024" height="576" />
         </p>
       </li>
     </ol>
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 11 de septiembre de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 20 de septiembre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />

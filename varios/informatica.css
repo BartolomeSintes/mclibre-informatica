@@ -19,6 +19,7 @@
 html {
   background-color: white;
   font-family: sans-serif;
+  line-height: 130%;
   text-align: justify;
 }
 
@@ -39,6 +40,7 @@ footer {
 
 h1 {
   font-size: 200%;
+  line-height: 120%;
   text-align: center;
 }
 
@@ -77,7 +79,7 @@ hr.corta {
 }
 
 p {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 p.aviso {
@@ -122,12 +124,6 @@ p.inline-con-borde {
   text-align: center;
 }
 
-.captura img, .captura svg {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-}
-
 img.derecha {
   float: right;
   margin-left: 10px;
@@ -165,6 +161,12 @@ a img {
 
 .captura {
   text-align: center;
+}
+
+.captura img, .captura svg {
+  width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .captura img, .captura svg, .captura iframe {
@@ -293,6 +295,7 @@ div.filaflex div.icono-enlace {
 
 div.filaflex pre {
   margin: 5px 0;
+  white-space: pre-wrap;
 }
 
 div.codigo, div[class^="resultado"], div[class^="enunciado"] {
@@ -387,6 +390,7 @@ ul ul {
 
 li {
   clear: both;
+  margin-top: 3px;
 }
 
 /* Para ejemplos de ejecucion de codigo */
@@ -602,6 +606,10 @@ h2.con-aside, h3.con-aside, h4-con-aside {
     font-size: 100% !important;
   }
 
+  pre {
+    white-space: pre-wrap !important;
+  }
+
   tr {
     page-break-inside: avoid;
   }
@@ -665,14 +673,14 @@ code.language-sql {
 .xsl-i       { color: #0000FF; }
 .xsl-atri    { color: #FC0204; }
 
-/* Estilo para PHP imitando a Eclipse PDT */
+/* Estilo para PHP imitando a Eclipse for PHP developers */
 
 .php-con { font-weight: bold; } /* Constante                    */
 .php-del { font-weight: bold; } /* Delimitador de fragmento php */
 .php-dir { font-weight: bold; } /* Directiva de php.ini         */
 .php-fun { font-weight: bold; } /* Funcion                      */
 .php-ope { font-weight: bold; } /* Operador                     */
-.php-res { font-weight: bold; } /* Palabra reservada            */
+.php-res { font-weight: bold; color: rgb(127,  0, 85) } /* Palabra reservada            */
 .php-var { font-weight: bold; } /* Variable                     */
 
 /* CSS especifico apuntes Temas de informática */
@@ -697,7 +705,7 @@ div.portada section {
 
 div.portada section h2 {
   margin: 0;
-  padding-left: 5px;
+  padding: 5px 0 10px 5px;
   background-color: green;
   color: white;
   text-align: left;
@@ -716,7 +724,7 @@ div.portada img {
 }
 
 div.portada ul {
-  padding-top: 1em;
+  padding-top: 0.5em;
   text-align: left;
 }
 
@@ -727,9 +735,15 @@ div.portada ol {
 
 div.portada li {
   clear: none;
-  margin-bottom: 0em;
+  margin-bottom: 0;
 }
 
 div.portada ul ul {
-  padding-top: 0em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+div.portada ul li:first-child {
+  margin-top: 0;
+  padding-top: 0;
 }

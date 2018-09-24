@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="../varios/informatica.css" title="mclibre" />
   <link rel="icon" href="../varios/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="../varios/highlight-informatica.css" />
-  <script src="../varios/highlight.pack.js" async="async"></script>
+  <script src="../varios/highlight.pack.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
   </script>
@@ -510,32 +510,34 @@
 
   "version": "2.0.0",
   "tasks": [
-  {
-    "label": "Abrir en Firefox",
-    "command": "explorer",
-    "windows": {
+    {
+      "label": "Abrir en Firefox",
+      "command": "explorer",
+      "windows": {
         "command": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
-    },
-    "args": [
-        "${file}"
-    ],
-    "presentation": {
+      },
+      "args": [
+          "${file}"
+      ],
+      "presentation": {
         "reveal": "never"
-    }
-  },
-  {
-    "label": "Abrir en Chrome",
-    "command": "explorer",
-    "windows": {
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Abrir en Chrome",
+      "command": "explorer",
+      "windows": {
         "command": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
-    },
-    "args": [
+      },
+      "args": [
         "${file}"
-    ],
-    "presentation": {
+      ],
+      "presentation": {
         "reveal": "never"
-    }
-    }
+      },
+      "problemMatcher": []
+      }
   ]
 }</code>
 </pre>

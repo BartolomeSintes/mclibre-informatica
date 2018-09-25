@@ -308,12 +308,14 @@
   <section id="extensiones">
     <h2>Extensiones recomendadas para el curso de HTML y CSS</h2>
 
-    <p>Para seguir el curso de <a href="http://www.mclibre.org/consultar/htmlcss/index.html">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a> se aconseja instalar las extensiones Image Preview, Path Intellisense, Close HTML/XML tag, HTMLHint y CSScomb.</p>
+    <p>Para seguir el curso de <a href="http://www.mclibre.org/consultar/htmlcss/index.html">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a> se aconseja instalar las extensiones Image Preview, Close HTML/XML tag, HTMLHint y CSScomb.</p>
 
     <p>Estas extensiones, que se comentan a continuación, se pueden instalar de forma indivdual, o de forma conjunta mediante el mclibre.org HTML+CSS Extension Pack. Aunque instale el Extension Pack, lea los apartados correspondientes a cada extensión y la lección <a href="vsc-htmlcss-extensiones.html">Uso de extensiones</a>.</p>
 
     <section id="mclibre-html-css">
       <h3>mclibre.org HTML+CSS Extension Pack: paquete de extensiones</h3>
+
+      <p><img src="../varios/iconos/icono-en-construccion.svg" alt="En construcción" title="En construcción" width="55" height="48" />La extensión mclibre.org HTML+CSS Extension Pack está pendiente de actualizar.</p>
 
       <p><img src="../img/vscode/vsc-extension-mclibre-html-css-logo.png" alt="Logotipo de mclibre.org HTML+CSS Extension Pack" width="128" height="128" class="izquierda" /></p>
 
@@ -350,29 +352,6 @@
 
     </section>
 
-    <section id="path-intellisense">
-      <h3>Path Intellisense: Rutas de archivos</h3>
-
-      <p><img src="../img/vscode/vsc-extension-path-intellisense-logo.png" alt="Logotipo de Path Intellisense" width="128" height="128" class="izquierda" /></p>
-
-      <p>Autor: Christian Kohler</p>
-
-      <p>Marketplace: <a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense</a></p>
-
-      <p>Repositorio GitHub: <a href="https://github.com/ChristianKohler/PathIntellisense">Path Intellisense</a></p>
-
-      <hr class="corta" />
-
-      <p>En la lección <a href="vsc-htmlcss-extensiones.html#extension-path-intellisense">Extensiones de Visual Studio Code para HTML/CSS</a> se comenta con más detalle y capturas de pantalla el uso de esta extensión</p>
-
-      <p>Cuando se escribe una ruta relativa (en un enlace, en una imagen, etc), al escribir una barra (/), se muestra un selector con los archivos y directorios disponibles. Al seleccionar uno de ellos, el nombre se añade a la ruta. Si con la lista visible escribimos uno o más caracteres, la lista muestra únicamente los archivos y directorios que comienzan por esos caracteres.</p>
-
-      <p><strong>Problemas detectados:</strong></p>
-      <ul>
-        <li>Como esta extensión sólo muestra la lista de archivos al escribir la barra (/), si el archivo al que queremos hacer referencia está en el mismo directorio del archivo que estamos editando, no podemos ver la lista de archivos. Una posible solución (que no termina de gustarme) es escribir ./ (punto barra). Como el punto hace referencia al directorio en el que estamos, al pulsar la barra después del punto sí que se muestra la barra de archivos.</li>
-      </ul>
-    </section>
-
     <section id="close-html-xml-tag">
       <h3>Close HTML/XML tag: Cierre de etiquetas</h3>
 
@@ -391,9 +370,17 @@
       <p><strong>Problemas detectados:</strong></p>
       <ul>
         <li>La etiqueta de cierre se añade aunque la etiqueta de cierre ya esté escrita en el documento. La extensión sólo se fija en lo que hay antes de la posición del cursor, no en lo que hay después.</li>
-        <li>Añade etiquetas de cierre de etiquetas vacías. Por ejemplo, si detrás una etiqueta <span class="html-eti">&lt;img ... /&gt;</span> se pulsa <span class="soft-atajo-teclado">Alt+.</span>, se añade la etiqueta de cierre <span class="html-eti">&lt;/img&gt;</span>. [<a href="https://github.com/compulim/vscode-closetag/issues/7">Bug #7 de Close HTML/XHTML tag</a>]</li>
         <li>Si en una línea están los caracteres /&gt;, la extensión ya no es capaz de cerrar etiquetas abiertas en esa misma línea.</li>
       </ul>
+
+      <p>El ejemplo siguiente muestra la configuración seguida en las hojas de estilo del curso <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a>.</p>
+
+      <div class="codigo">
+        <pre>
+<code class="language-json">  // Configuración de Close HTML/XML tag
+  "closeTag.ignoreTags": "html"    // Tiene en cuenta las etiquetas vacías de HTML para no cerrarlas</code>
+</pre>
+      </div>
     </section>
 
     <section id="htmlhint">
@@ -413,7 +400,9 @@
 
       <p>El uso de esta extensión se comenta en la lección <a href="vsc-htmlcss-validacion.html#validacion-html">Validación de HTML y CSS en Visual Studio Code</a>.</p>
 
-      <p>Para modificar la configuración predeterminada de HTMLHint se debe crear un fichero <strong>.htmlhintrc</strong> en la raíz del proyecto. La configuración recomendada para seguir el curso <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a> es la siguiente:</p>
+      <p>Para modificar la configuración predeterminada de HTMLHint se debe crear un fichero <strong>.htmlhintrc</strong> en la raíz del proyecto.</p>
+
+      <p>La configuración recomendada para seguir el curso <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a> es la siguiente:</p>
       <div class="codigo">
         <pre>
 <code class="language-json">{

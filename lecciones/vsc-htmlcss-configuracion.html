@@ -138,6 +138,7 @@
   "html.format.wrapLineLength": 0,
   //
   // Establecer los valores de configuración que se reemplazarán para el lenguaje [html].
+  // Sangrado de dos espacios
   "[html]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2
@@ -158,7 +159,8 @@
       <div class="codigo">
         <pre>
 <code class="language-json">  // Controla cómo debe representar el editor los espacios en blanco.
-  "editor.renderWhitespace": "all"</code>
+  "editor.renderWhitespace": "all",
+  //</code>
 </pre>
       </div>
     </section>
@@ -171,7 +173,8 @@
       <div class="codigo">
         <pre>
 <code class="language-json">  // Controla cómo se deben ajustar las líneas.
-  "editor.wordWrap": "on"</code>
+  "editor.wordWrap": "on",
+  //</code>
 </pre>
       </div>
     </section>
@@ -186,7 +189,8 @@
       <div class="codigo">
         <pre>
 <code class="language-json">  // Carácter predeterminado de final de línea. Utilice \n para LF y \r\n para CRLF.
-  "files.eol": "\n"</code>
+  "files.eol": "\n",
+  //</code>
 </pre>
       </div>
     </section>
@@ -199,7 +203,8 @@
       <div class="codigo">
         <pre>
 <code class="language-json">  // Si se habilita, se recortará el espacio final cuando se guarde un archivo.
-  "files.trimTrailingWhitespace": true}</code>
+  "files.trimTrailingWhitespace": true,
+  //</code>
 </pre>
       </div>
     </section>
@@ -217,7 +222,8 @@
           <div class="codigo">
             <pre>
 <code class="language-json">  // Habilita o deshabilita el cierre automático de las etiquetas HTML.
-  "html.autoClosingTags": false</code>
+  "html.autoClosingTags": false,
+  //</code>
 </pre>
           </div>
         </li>
@@ -236,7 +242,8 @@
       <div class="codigo">
         <pre>
 <code class="language-json">  // Finalizar con una nueva línea.
-  "html.format.endWithNewline": true</code>
+  "html.format.endWithNewline": true,
+  //</code>
 </pre>
       </div>
     </section>
@@ -251,7 +258,8 @@
       <div class="codigo">
         <pre>
 <code class="language-json">  // Lista de etiquetas, separadas por comas, a las que no se debe volver a aplicar formato.
-  "html.format.unformatted": "a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, q, samp, select, small, span, strong, sub, sup, textarea, tt, var, footer, pre"</code>
+  "html.format.unformatted": "a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, q, samp, select, small, span, strong, sub, sup, textarea, tt, var, footer, pre",
+  //</code>
 </pre>
       </div>
     </section>
@@ -264,7 +272,8 @@
       <div class="codigo">
         <pre>
 <code class="language-json">  // Lista de etiquetas, separadas por comas, que deben tener una nueva línea adicional delante. "null" tiene como valores predeterminados "head, body, /html".
-  "html.format.extraLiners": "body"</code>
+  "html.format.extraLiners": "body",
+  //</code>
 </pre>
       </div>
     </section>
@@ -277,7 +286,8 @@
       <div class="codigo">
         <pre>
 <code class="language-json">  // Cantidad máxima de caracteres por línea (0 = deshabilitar).
-  "html.format.wrapLineLength": 0</code>
+  "html.format.wrapLineLength": 0,
+  //</code>
 </pre>
       </div>
 
@@ -296,10 +306,12 @@
       <div class="codigo">
         <pre>
 <code class="language-json">  // Establecer los valores de configuración que se reemplazarán para el lenguaje [html].
+  // Sangrado de dos espacios
   "[html]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
-  }</code>
+  },
+  //</code>
 </pre>
       </div>
     </section>
@@ -367,20 +379,45 @@
 
       <p>Al pulsar el atajo de teclado <span class="soft-atajo-teclado">Alt+.</span>, se añade automáticamente la etiqueta de cierre de la etiqueta abierta anterior.</p>
 
-      <p><strong>Problemas detectados:</strong></p>
-      <ul>
-        <li>La etiqueta de cierre se añade aunque la etiqueta de cierre ya esté escrita en el documento. La extensión sólo se fija en lo que hay antes de la posición del cursor, no en lo que hay después.</li>
-        <li>Si en una línea están los caracteres /&gt;, la extensión ya no es capaz de cerrar etiquetas abiertas en esa misma línea.</li>
-      </ul>
-
       <p>El ejemplo siguiente muestra la configuración seguida en las hojas de estilo del curso <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a>.</p>
 
       <div class="codigo">
         <pre>
 <code class="language-json">  // Configuración de Close HTML/XML tag
-  "closeTag.ignoreTags": "html"    // Tiene en cuenta las etiquetas vacías de HTML para no cerrarlas</code>
+  // Tiene en cuenta las etiquetas vacías de HTML para no cerrarlas
+  "closeTag.ignoreTags": "html",
+  //</code>
 </pre>
       </div>
+
+      <hr class="corta" />
+
+      <p><strong>Problemas detectados:</strong></p>
+      <ul>
+        <li>La etiqueta de cierre se añade aunque la etiqueta de cierre ya esté escrita en el documento. La extensión sólo se fija en lo que hay antes de la posición del cursor, no en lo que hay después.</li>
+      </ul>
+    </section>
+
+    <section id="tag-inserter">
+      <h3>Tag Inserter: Añade etiquetas alrededor del texto seleccionado</h3>
+
+      <p><img src="../img/vscode/vsc-extension-no-logo.png" alt="Logotipo genérico" width="128" height="128" class="izquierda" /></p>
+
+      <p>Autor: l7ssha</p>
+
+      <p>Marketplace: <a href="https://marketplace.visualstudio.com/items?itemName=l7ssha.tag-inserter">Tag Inserter</a></p>
+
+      <p>Repositorio GitHub: <a href="https://github.com/l7ssha/TagInserter">Tag Inserter</a></p>
+
+      <hr class="corta" />
+
+      <p>Para añadir una etiqueta alrededor de un texto:</p>
+      <ul>
+        <li>seleccione con el ratón el texto alrededor del cual se quiere añadir una etiqueta</li>
+        <li>pulse el atajo de teclado <span class="soft-atajo-teclado">Alt+Shift+i</span></li>
+        <li>se abrirá en la parte superior la paleta de comandos</li>
+        <li>escriba en ella la etiqueta deseada (puede incluir atributos) y pulse <kbd>Intro</kbd></li>
+      </ul>
     </section>
 
     <section id="htmlhint">
@@ -400,7 +437,7 @@
 
       <p>El uso de esta extensión se comenta en la lección <a href="vsc-htmlcss-validacion.html#validacion-html">Validación de HTML y CSS en Visual Studio Code</a>.</p>
 
-      <p>Para modificar la configuración predeterminada de HTMLHint se debe crear un fichero <strong>.htmlhintrc</strong> en la raíz del proyecto.</p>
+      <p>Para modificar la configuración predeterminada de HTMLHint se debe crear un fichero <strong>.htmlhintrc</strong> en la raíz del área de trabajo.</p>
 
       <p>La configuración recomendada para seguir el curso <a href="http://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="http://www.mclibre.org/">mclibre.org</a> es la siguiente:</p>
       <div class="codigo">
@@ -418,7 +455,7 @@
   "title-require": true,
 
   "alt-require": true,
-  "tag-self-close": true,
+  "tag-self-close": false,
   "attr-value-not-empty": true,
   "id-class-ad-disabled": true
 }</code>
@@ -474,7 +511,8 @@
     "tab-size": true,                       // El tabulador se convierte a espacios en blanco (el número de espacios definido para el sangrado)
     "unitless-zero": true,                  // Elimina las unidades de los valores nulos (0)
     "vendor-prefix-align": true             // Alinea las propiedades específicas de cada navegador para facilitar la lectura
-  }</code>
+  },
+  //</code>
 </pre>
       </div>
     </section>
@@ -590,7 +628,6 @@
     <ul>
       <li>Extensiones
         <ul>
-          <li>Insertar etiquetas HTML alrededor de texto: <a href="https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap">htmltagwrap</a><br /> Teóricamente, esta extensión me vendría muy bien, pero al probarla no me ha funcionado bien.</li>
           <li>Renombrar etiquetas: <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">Auto Rename Tag en Marketplace</a></li>
           <li>Ordenar atributos: <a href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-attrs-sorter">Sorting HTML and Jade attributes en Marketplace</a></li>
           <li><a href="https://github.com/alefragnani/vscode-project-manager">Project Manager</a></li>
@@ -616,7 +653,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 12 de abril de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 15 de octubre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />

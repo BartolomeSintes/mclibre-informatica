@@ -23,7 +23,6 @@
       <ul>
         <li><a href="#extension-image-preview">Image preview</a></li>
         <li><a href="#extension-tag-inserter">Tag Inserter</a></li>
-        <li><a href="#extension-path-intellisense">Path Intellisense</a></li>
       </ul>
     </div>
   </nav>
@@ -52,17 +51,17 @@
     <ol>
       <li>Cree la etiqueta <span class="html-eti">&lt;img&gt;</span> con los atributos <span class="css-prop">src</span> y <span class="css-prop">alt</span>:
         <p class="captura">
-          <img src="../img/vscode/vsc-ext-image-preview-1.png" alt="VSC. Extensión Imagen preview" width="1024" height="340" />
+          <img src="../img/vscode/vsc-ext-image-preview-1.png" alt="VSC. Extensión Imagen preview" width="1024" height="315" />
         </p>
       </li>
       <li>Sitúe el cursor sobre el atributo <span class="css-prop">src</span> y se mostrará un cuadro con una miniatura de la imagen y el tamaño de la imagen:
         <p class="captura">
-          <img src="../img/vscode/vsc-ext-image-preview-2.png" alt="VSC. Extensión Imagen preview" width="1024" height="340" />
+          <img src="../img/vscode/vsc-ext-image-preview-2.png" alt="VSC. Extensión Imagen preview" width="1024" height="315" />
         </p>
       </li>
       <li>Añada los atributos <span class="css-prop">width</span> y <span class="css-prop">height</span> con los valores indicados en el cuadro:
         <p class="captura">
-          <img src="../img/vscode/vsc-ext-image-preview-3.png" alt="VSC. Extensión Imagen preview" width="1024" height="340" />
+          <img src="../img/vscode/vsc-ext-image-preview-3.png" alt="VSC. Extensión Imagen preview" width="1024" height="315" />
         </p>
       </li>
     </ol>
@@ -143,87 +142,8 @@
     </ol>
   </section>
 
-  <section id="extension-path-intellisense">
-    <h3>Extensión Path Intellisense: Rutas de archivos</h3>
-
-    <p>La información sobre esta extensión se encuentra en la lección <a href="vsc-htmlcss-configuracion.html#path-intellisense">Configuración recomendada para el curso Páginas web HTML y hojas de estilo CSS</a>.</p>
-
-    <hr class="corta" />
-
-    <p>Cuando se escribe una ruta relativa (en un enlace, en una imagen, etc), al escribir una barra (/), se muestra un selector con los archivos y directorios disponibles. Al seleccionar uno de ellos, el nombre se añade a la ruta. Si con la lista visible escribimos uno o más caracteres, la lista muestra únicamente los archivos y directorios que comienzan por esos caracteres.</p>
-
-    <p><strong>Problemas detectados:</strong></p>
-    <ul>
-      <li>Como esta extensión sólo muestra la lista de archivos al escribir la barra (/), si el archivo al que queremos hacer referencia está en el mismo directorio del archivo que estamos editando, no podemos ver la lista de archivos. Una posible solución (que no termina de gustarme) es escribir ./ (punto barra). Como el punto hace referencia al directorio en el que estamos, al pulsar la barra después del punto sí que se muestra la barra de archivos.</li>
-    </ul>
-
-    <hr class="corta" />
-
-    <p>Si las imágenes se encuentran en un subdirectorio del directorio actual:</p>
-    <ol>
-      <li>Empiece a escribir el camino hasta las imágenes en el atributo <span class="css-prop">src</span>:
-        <p class="captura">
-          <img src="../img/vscode/vsc-ext-path-intellisense-1.png" alt="VSC. Extensión Path Intellisense" width="1024" height="190" />
-        </p>
-      </li>
-      <li>Al escribir el carácter / (barra) se mostrará un cuadro con el contenido del directorio:
-        <p class="captura">
-          <img src="../img/vscode/vsc-ext-path-intellisense-2.png" alt="VSC. Extensión Path Intellisense" width="1024" height="330" />
-        </p>
-      </li>
-      <li>Si sigue escribiendo, el cuadro mostrará únicamente los ficheros cuyo nombre coincida con lo escrito:
-        <p class="captura">
-          <img src="../img/vscode/vsc-ext-path-intellisense-3.png" alt="VSC. Extensión Path Intellisense" width="1024" height="220" />
-        </p>
-      </li>
-      <li>En vez de escribir el nombre completo, en cualquier momento puede desplazar con las teclas de flecha arria o abajo la franja azul hasta el nombre deseado:
-        <p class="captura">
-          <img src="../img/vscode/vsc-ext-path-intellisense-4.png" alt="VSC. Extensión Path Intellisense" width="1024" height="220" />
-        </p>
-      </li>
-      <li>y pulsar <span class="soft-teclado">Intro</span> para que se escriba en la página el nombre seleccionado en azul:
-        <p class="captura">
-          <img src="../img/vscode/vsc-ext-path-intellisense-5.png" alt="VSC. Extensión Path Intellisense" width="1024" height="190" />
-        </p>
-      </li>
-    </ol>
-
-    <p>Si las imágenes se encuentran en un directorio que no es un subdirectorio del directorio actual:</p>
-    <ol>
-      <li>Escriba ../ para indicar que el camino empieza subiendo al directorio superior y se mostrarán los directorios y ficheros contenidos en el directorio superior:
-        <p class="captura">
-          <img src="../img/vscode/vsc-ext-path-intellisense-11.png" alt="VSC. Extensión Path Intellisense" width="1024" height="220" />
-        </p>
-      </li>
-      <li>A partir de ahí elija o escriba el nombre del directorio (o ../ si fuera necesario subir otro directorio) y se mostrará su contenido como en el ejemplo anterior:
-        <p class="captura">
-          <img src="../img/vscode/vsc-ext-path-intellisense-12.png" alt="VSC. Extensión Path Intellisense" width="1024" height="330" />
-        </p>
-      </li>
-    </ol>
-
-    <p>Si las imágenes se encuentran en el mismo directorio que la página web:</p>
-    <ol>
-      <li>Escriba ./ para indicar que el camino empieza en el mismo directorio y se mostrarán los directorios y ficheros contenidos en el directorio actual:
-        <p class="captura">
-          <img src="../img/vscode/vsc-ext-path-intellisense-21.png" alt="VSC. Extensión Path Intellisense" width="1024" height="350" />
-        </p>
-      </li>
-      <li>Elija la imagen deseada, como en los ejemplos anteriores:
-        <p class="captura">
-          <img src="../img/vscode/vsc-ext-path-intellisense-22.png" alt="VSC. Extensión Path Intellisense" width="1024" height="180" />
-        </p>
-      </li>
-      <li>Por último, borre los caracteres ./ iniciales (no son incorrectos, pero sí innecesarios):
-        <p class="captura">
-          <img src="../img/vscode/vsc-ext-path-intellisense-23.png" alt="VSC. Extensión Path Intellisense" width="1024" height="180" />
-        </p>
-      </li>
-    </ol>
-  </section>
-
   <footer>
-    <p class="ultmod">Última modificación de esta página: 18 de octubre de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 22 de octubre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />

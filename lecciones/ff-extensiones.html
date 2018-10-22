@@ -238,11 +238,12 @@
 
       <p><a href="http://www.colorzilla.com/firefox/">ColorZilla</a> es un selector de colores que permite obtener el código de color de los píxeles de la pantalla. ColorZilla está incluida en <a href="https://addons.mozilla.org/es/firefox/addon/colorzilla/">Firefox Add-ons</a>.</p>
 
-      <p>Actualmente (septiembre de 2018), la versión más reciente de ColorZilla para Firefox es la versión 3.3, publicada el 7 de marzo de 2017. También está disponible para Chrome la versión 2.0, publicada el 24 de diciembre de 2016.</p>
+      <p>Actualmente (octubre de 2018), la versión más reciente de ColorZilla para Firefox es la versión 3.3, publicada el 7 de marzo de 2017. También está disponible para Chrome la versión 2.0, publicada el 24 de diciembre de 2016.</p>
 
       <p><strong>Notas</strong>:</p>
       <ul>
         <li>ColorZilla en Firefox tiene un problema importante y es que no permite copiar colores de una imagen si el navegador está abriendo únicamente la imagen (si la imagen está insertada en una página web, entonces sí que puede copiar un color de la imagen). ColorZilla en Chrome no tiene ese problema, aunque para ello se tiene que marcar la opción "Permitir acceso a URL de archivo" en el menú <span class="soft-menu">Más herramientas &gt; Extensiones &gt; ColorZilla</span></li>
+        <li>Colorzilla añade a las páginas el atributo <span class="html-atri">cz-shortcut-listen</span>="<span class="html-atri-valor">true</span>" que da problemas al validar páginas abiertas en localhost con la extensión <a href="https://addons.mozilla.org/en-US/firefox/addon/html-validator/">HTML Validator</a>. El 21/10/2018 he enviado un mensaje al autor a través del formulario de su página web diciendo que podrían utilizar un atributo <span class="html-atri">data-</span>.</li>
         <li>Firefox incluye un <a href="ff-desarrollador-web.html#ff-selector-color">selector de color más simple en las herramientas de desarrollador web</a>.</li>
       </ul>
 
@@ -366,7 +367,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 19 de septiembre de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 21 de octubre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />

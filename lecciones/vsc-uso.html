@@ -32,6 +32,7 @@
         <li><a href="#formatear-codigo">Formatear código</a></li>
         <li><a href="#pegar-codigo">Pegar código</a></li>
         <li><a href="#sangrado-incorrecto">Sangrado incorrecto</a></li>
+        <li><a href="#rutas-archivos">Insertar rutas de archivos</a></li>
       </ul>
     </div>
   </nav>
@@ -147,8 +148,66 @@
     <p>Referencia: <a href="https://stackoverflow.com/questions/36251820/visual-studio-code-format-is-not-using-indent-settings">Pregunta en Stack Overflow</a></p>
   </section>
 
+  <section id="rutas-archivos">
+    <h3>Insertar rutas de archivos</h3>
+
+    <p>Cuando se escribe una ruta relativa en algún atributo (en una imagen, en un enlace, etc), se muestra un selector con los archivos y directorios disponibles. Al seleccionar uno de ellos, el nombre se añade a la ruta. Si con la lista visible escribimos uno o más caracteres, la lista muestra únicamente los archivos y directorios que comienzan por esos caracteres.</p>
+
+    <hr class="corta" />
+
+    <p>Si las imágenes se encuentran en un subdirectorio del directorio actual:</p>
+    <ol>
+      <li>Al escribir las comillas en el atributo <span class="css-prop">src</span> ...:
+        <p class="captura">
+          <img src="../img/vscode/vsc-insertar-rutas-01.png" alt="VSC. Insertar rutas de archivos" width="1024" height="170" />
+        </p>
+      </li>
+      <li>... se mostrará un cuadro con el contenido del directorio actual con uno de los elementos resaltado en azul claro:
+        <p class="captura">
+          <img src="../img/vscode/vsc-insertar-rutas-02.png" alt="VSC. Insertar rutas de archivos" width="1024" height="180" />
+        </p>
+      </li>
+      <li>Si la ruta que desea escribir es precisamente la que está resaltada en azul claro, pulse <kbd class="soft-atajo-teclado">Intro</kbd>. La ruta se añadirá automáticamente y si se trata de un directorio (como en el ejemplo), se mostrará el contenido:
+        <p class="captura">
+          <img src="../img/vscode/vsc-insertar-rutas-03.png" alt="VSC. Insertar rutas de archivos" width="1024" height="290" />
+        </p>
+      </li>
+      <li>Si escribe carácteres, el cuadro mostrará únicamente los ficheros cuyo nombre coincida con lo escrito:
+        <p class="captura">
+          <img src="../img/vscode/vsc-insertar-rutas-04.png" alt="VSC. Insertar rutas de archivos" width="1024" height="200" />
+        </p>
+      </li>
+      <li>En vez de escribir el nombre completo, en cualquier momento puede desplazar con las teclas de flecha arria o abajo la franja azul hasta el nombre deseado ...:
+        <p class="captura">
+          <img src="../img/vscode/vsc-insertar-rutas-05.png" alt="VSC. Insertar rutas de archivos" width="1024" height="200" />
+        </p>
+      </li>
+      <li>... y pulsar <kbd class="soft-teclado">Intro</kbd> para que se escriba en la página el nombre seleccionado en azul:
+        <p class="captura">
+          <img src="../img/vscode/vsc-insertar-rutas-06.png" alt="VSC. Insertar rutas de archivos" width="1024" height="180" />
+        </p>
+      </li>
+    </ol>
+
+    <p>Si en algún momento no se muestra el cuadro con los nombres de los ficheros, pulse <kbd class="soft-atajo-teclado">Ctrl+Espacio</kbd> para mostrarlo.</p>
+
+    <p>Si las imágenes se encuentran en un directorio superior al directorio actual:</p>
+    <ol>
+      <li>Escriba ../ para indicar que el camino empieza subiendo al directorio superior y se mostrarán los directorios y ficheros contenidos en el directorio superior:
+        <p class="captura">
+          <img src="../img/vscode/vsc-insertar-rutas-07.png" alt="VSC. Insertar rutas de archivos" width="1024" height="220" />
+        </p>
+      </li>
+      <li>A partir de ahí elija o escriba el nombre del directorio (o ../ si fuera necesario subir otro directorio) y se mostrará su contenido como en el ejemplo anterior:
+        <p class="captura">
+          <img src="../img/vscode/vsc-insertar-rutas-08.png" alt="VSC. Insertar rutas de archivos" width="1024" height="290" />
+        </p>
+      </li>
+    </ol>
+  </section>
+
   <footer>
-    <p class="ultmod">Última modificación de esta página: 19 de octubre de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 22 de octubre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />

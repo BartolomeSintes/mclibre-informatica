@@ -26,8 +26,8 @@
 
       <ul>
         <li><a href="#renombrar">Renombrar archivos</a></li>
-        <li><a href="#deshacer-commit">Deshacer commit</a></li>
-        <li><a href="#modificar-mensaje-commit">Modificar mensaje commit</a></li>
+        <li><a href="#deshacer-commit">Deshacer <i>commit</i></a></li>
+        <li><a href="#modificar-mensaje-commit">Modificar mensaje <i>commit</i></a></li>
         <li><a href="#otros">Otros</a></li>
       </ul>
     </div>
@@ -38,7 +38,9 @@
 
     <p>Para renombrar un archivo hay que ejecutar el comando</p>
 
-    <p>git mv camino-destino/archivo-origen camino-destino/archivo-origen</p>
+    <pre>
+<code>git mv camino-destino/archivo-origen camino-destino/archivo-origen</code>
+</pre>
 
     <p>Hay que hacer <i>commit</i> del cambio de nombre antes de modificar el archivo, porque si no git entiende que se ha borrado un archivo y se ha creado otro en vez de que simplemente se ha cambiado el nombre.</p>
   </section>
@@ -49,22 +51,41 @@
     <p>Si se quiere deshacer un <i>commit</i> que todavía no se ha hecho público, ejecute el comando:</p>
 
     <pre>
-        <code>git reset HEAD~1 --soft   </code>
-      </pre>
+<code>git reset HEAD~1 --soft   </code>
+</pre>
 
     <p>Referencias: <a href="https://stackoverflow.com/questions/19859486/how-to-un-commit-last-un-pushed-git-commit-without-losing-the-changes">Pregunta en StackOverflow</a></p>
   </section>
 
-  <section id="modificar-mensaje-commit">
-    <h2>Modificar mensaje de un commit</h2>
+  <section id="anadir-fichero-a-commit">
+    <h2>Añadir fichero al último <i>commit</i></h2>
 
-    <p>git commit --amend</p>
+    <p>Para añadir un fichero al último <i>commit</i>, ejectue los comandos:</p>
+
+    <pre>
+<code>git add camino/fichero
+git commit --amend --no-edit</code>
+</pre>
+
+    <p><strong>Nota</strong>: en Visual Studio Code el fichero añadido se sigue mostrando en la lista de cambios pendientes, pero si se cierra y abre el programa deja de mostrarse.</p>
+
+    <p>Referencias: <a href="https://stackoverflow.com/questions/40503417/how-to-add-a-file-to-the-last-commit-in-git">Pregunta en StackOverflow</a></p>
+  </section>
+
+  <section id="modificar-mensaje-commit">
+    <h2>Modificar mensaje de un <i>commit</i></h2>
+
+    <pre>
+<code>git commit --amend</code>
+</pre>
 
     <p>Se abre un editor parecido al vi. Modificar el mensaje, guardarlo y salir</p>
 
-    <p>Si ya se había subido el commit, hay que subir la modificación:</p>
+    <p>Si ya se había subido el <i>commit</i>, hay que subir la modificación:</p>
 
-    <p>git push --force</p>
+    <pre>
+<code>git push --force</code>
+</pre>
 
     <p>Referencia: <a href="https://help.github.com/articles/changing-a-commit-message/">Changing a commit message</a></p>
   </section>
@@ -78,7 +99,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 26 de octubre de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 30 de octubre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />

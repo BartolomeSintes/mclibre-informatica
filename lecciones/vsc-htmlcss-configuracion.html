@@ -131,9 +131,6 @@
   // Lista de etiquetas, separadas por comas, que deben tener una nueva línea adicional delante.
   "html.format.extraLiners": "body",
   //
-  // Lista de etiquetas, separadas por comas, a las que no se debe volver a aplicar formato.
-  "html.format.unformatted": "a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, q, samp, select, small, span, strong, sub, sup, textarea, tt, var, footer, pre, time",
-  //
   // Cantidad máxima de caracteres por línea (0 = deshabilitar).
   "html.format.wrapLineLength": 0,
   //
@@ -145,7 +142,14 @@
   },
   //
   // Tema Light+ (default light)
-  "workbench.colorTheme": "Default Light+"
+  "workbench.colorTheme": "Default Light+",
+  //
+  // Configuración de extensiones recomendadas
+  //
+  // Configuración de Close HTML/XML tag
+  // Tiene en cuenta las etiquetas vacías de HTML para no cerrarlas
+  "closeTag.ignoreTags": "html",
+  //
 }</code>
 </pre>
       </div>
@@ -243,22 +247,6 @@
         <pre>
 <code class="language-json">  // Finalizar con una nueva línea.
   "html.format.endWithNewline": true,
-  //</code>
-</pre>
-      </div>
-    </section>
-
-    <section id="no-formateadas">
-      <h3>Etiquetas que no se formatean</h3>
-
-      <p>Esta preferencia indica las etiquetas cuyo contenido no se formatea cuando Visual Studio Code formatea automáticamente un documento (mediante el atajo de teclado <span class="soft-atajo-teclado">Alt+Shift+f</span>).</p>
-
-      <p>En la configuración recomendada, se ha añadido la etiqueta <span class="html-eti">pre</span> a la lista de etiquetas predeterminadas.</p>
-
-      <div class="codigo">
-        <pre>
-<code class="language-json">  // Lista de etiquetas, separadas por comas, a las que no se debe volver a aplicar formato.
-  "html.format.unformatted": "a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, q, samp, select, small, span, strong, sub, sup, textarea, tt, var, footer, pre",
   //</code>
 </pre>
       </div>
@@ -655,7 +643,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 18 de octubre de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 21 de noviembre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />

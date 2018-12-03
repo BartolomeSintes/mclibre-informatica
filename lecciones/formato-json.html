@@ -28,6 +28,11 @@
       <ul>
         <li><a href="#que-es">Qué es</a></li>
         <li><a href="#sintaxis">Sintaxis</a></li>
+        <li><a href="#usos">Usos de JSON</a>
+          <ul>
+            <li><a href="#json-ld">JSON-LD</a></li>
+          </ul>
+        </li>
         <li><a href="#otros">Otros</a></li>
       </ul>
     </div>
@@ -85,9 +90,9 @@
 
     <p>Las últimas versiones de las normas son las siguientes:</p>
     <ul>
-      <li>marzo de 2015: <a href="https://tools.ietf.org/html/rfc7493">RFC 7493</a> (I-JSON), escrita por Tim Bray</li>
-      <li>diciembre de 2017: <a href="https://tools.ietf.org/html/rfc8259">RFC 8259</a>, escrita por Tim Bray</li>
-      <li>diciembre de 2017: <a href="http://www.mclibre.org/descargar/docs/normas/json/ECMA-404-v2-1712.pdf">ECMA 404 (2º ed)</a></li>
+      <li>marzo de 2015: <a href="https://tools.ietf.org/html/rfc7493">RFC 7493</a>: The I-JSON Message Format, editada por Tim Bray</li>
+      <li>diciembre de 2017: <a href="https://tools.ietf.org/html/rfc8259">RFC 8259</a>: The JavaScript Object Notation (JSON) Data Interchange Format, editada por Tim Bray</li>
+      <li>diciembre de 2017: <a href="http://www.mclibre.org/descargar/docs/normas/json/ECMA-404-v2-1712.pdf">ECMA 404 (2º ed)</a>: The JSON Data Interchange Syntax</li>
     </ul>
   </section>
 
@@ -196,33 +201,137 @@
     </ul>
   </section>
 
-  <section ij="json-dl">
-    <h2>JSON-LD</h2>
+  <section id="usos">
+    <h2>Usos de JSON</h2>
 
-    <p>Recomendaciones publicadas:</p>
-    <ul>
-      <li>enero de 2014: <a href="https://www.w3.org/TR/2014/REC-json-ld-20140116/">JSON-LD 1.0 - A JSON-based Serialization for Linked Data</a>, editada por Manu Sporny y otros.</li>
-      <li>enero de 2014: <a href="https://www.w3.org/TR/2014/REC-json-ld-api-20140116/">JSON-LD 1.0 Processing Algorithms and API</a>, editada por Dave Longley y otros.</li>
-    </ul>
+    <p>JSON se utiliza cada vez más en la web como sintaxis para usos concretos.</p>
 
-    <p>Borradores:</p>
-    <ul>
-      <li><a href="https://www.w3.org/TR/json-ld11/">JSON-LD 1.1. A JSON-based Serialization for Linked Data</a></li>
-      <li><a href="https://www.w3.org/TR/json-ld11-framing/">JSON-LD 1.1 Framing. An Extension to the Application Programming Interface for the JSON-LD Syntax</a></li>
-      <li><a href="https://www.w3.org/TR/json-ld11-api/">JSON-LD 1.1 Processing Algorithms and API</a></li>
-    </ul>
+    <section id="json-rpc">
+      <h3>JSON-RPC: JSON Remote Procedure Call</h3>
+
+      <p>En informática, los procedimientos remotos son una característica de los sistemas distribuidos. En un programa está distribuido entre varios ordenadores, los procedimientos remotos permiten que una parte del programa ejecute otra parte del programa situada en otro ordenador de forma transparente, es decir, sin que el programador se tenga que preocupar de dónde está situada cada parte.</p>
+
+      <p>En general, cuando que un programa solicita información a otro programa situado en otro ordenador podemos decir que se trata de una llamada a un procedimiento remoto, aunque los dos programas sean completamente independientes.</p>
+
+      <p>JSON-RPC es un formato para el intercambio de información entre dos programas. Utiliza la notación JSON y define una estructura y unos campos mínimos útiles para dar formato tanto a la petición como a la respuesta.</p>
+
+      <p>Existen dos versiones de JSON-RPC, pero se recomienda utilizar la segunda versión:</p>
+      <ul>
+        <li>2005: <a href="https://www.jsonrpc.org/specification_v1">JSON-RPC 1.0</a>. Reemplazada por JSON-RPC 2.0 en marzo de 2010.</li>
+        <li>marzo de 2010: <a href="https://www.jsonrpc.org/specification">JSON-RPC 2.0</a></li>
+      </ul>
+
+      <p>Una llamada RPC tiene que seguir la sintaxis de JSON y contener los siguientes campos:</p>
+      <ul>
+        <li>jsonrpc: una cadena que indica la versión ("2.0")</li>
+        <li>method: una cadena que indica el método invocado.</li>
+        <li>params: (optativo) una matriz o una lista de valores</li>
+        <li>id: un número o cadena establecido por el cliente</li>
+      </ul>
+
+      <p>Si una llamada no incluye identificador id, se considera que es una notificación y no requiere respuesta, ni siquiera en caso de error.</p>
+
+      <p>La respuesta RPC tiene que seguir también la sintaxis de JSON y contener los siguientes campos:</p>
+      <ul>
+        <li>jsonrpc: una cadena que indica la versión ("2.0")</li>
+        <li>uno de estos dos campos:
+          <ul>
+            <li>result: (optativo) el resultado de la consulta, en forma de valor, matriz o lista.</li>
+            <li>error: (optativo) una matriz o una lista de errores, con la estructura siguiente:
+              <ul>
+                <li>code: código de error (número entero)</li>
+                <li>message: descripción breve del error</li>
+                <li>data: (optativo) matriz o lista de valores con información adicional sobre el error</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>id: el número o cadena establecido por el cliente</li>
+      </ul>
+
+      <p>Una llamada JSON-RPC puede contener varias peticiones en forma de matriz y se debe contestar con una matriz de respuestas (salvo que todas las llamadas sean notificaciones, en cuyo caso no habría respuesta).</p>
+
+      <p>Ejemplos de llamada y respuesta:</p>
+      <ul>
+        <li>Petición:
+          <div class="codigo">
+            <pre>
+<code class="language-json">{
+  "jsonrpc": "2.0",
+  "method": "suma",
+  "params": [3, 4, 5],
+  "id": 181203
+}</code>
+</pre>
+          </div>
+        </li>
+        <li>Respuesta:
+          <div class="codigo">
+            <pre>
+<code class="language-json">{
+  "jsonrpc": "2.0",
+  "method": "suma",
+  "result": 12,
+  "id": 181203
+}</code>
+</pre>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="json-ld">
+      <h3>JSON-LD: JSON Linked Data</h3>
+
+      <p>JSON-LD es un formato desarrollado por el W3C y que utiliza la sintaxis de JSON para representar información referida a un elemento (un objeto, una persona, etc.). La información que se ofrece en un bloque de datos JSON-LD sobre un elemento consiste en una lista de características de ese elemento.</p>
+      <ul>
+        <li>Las características del elemento se enumeran en forma de clave : valor.</li>
+        <li>las características del elemento se pueden agrupar en unos bloques predefinidos: @context, @id, @value, @language, @type, @container, @list, @set, @reverse, @index, @base, @vocab, @graph.</li>
+      </ul>
+
+      <p>Grupo de trabajo <strong>JSON-LD</strong> en el W3C: <a href="https://www.w3.org/2018/json-ld-wg/">Homepage</a> - Charter: <a href="https://www.w3.org/2018/03/jsonld-wg-charter.html">2018-2020</a></p>
+
+      <p>Recomendaciones publicadas:</p>
+      <ul>
+        <li>enero de 2014: <a href="https://www.w3.org/TR/2014/REC-json-ld-20140116/">JSON-LD 1.0 - A JSON-based Serialization for Linked Data</a>, editada por Manu Sporny y otros.</li>
+        <li>enero de 2014: <a href="https://www.w3.org/TR/2014/REC-json-ld-api-20140116/">JSON-LD 1.0 Processing Algorithms and API</a>, editada por Dave Longley y otros.</li>
+      </ul>
+
+      <p>Borradores:</p>
+      <ul>
+        <li><a href="https://www.w3.org/TR/json-ld11/">JSON-LD 1.1. A JSON-based Serialization for Linked Data</a></li>
+        <li><a href="https://www.w3.org/TR/json-ld11-framing/">JSON-LD 1.1 Framing. An Extension to the Application Programming Interface for the JSON-LD Syntax</a></li>
+        <li><a href="https://www.w3.org/TR/json-ld11-api/">JSON-LD 1.1 Processing Algorithms and API</a></li>
+      </ul>
+    </section>
   </section>
 
   <section id="otros">
     <h2>Otros</h2>
+
+    <h3>Versiones obsoletas</h3>
+
     <p>Las versiones obsoletas de las normas sobre JSON son las siguientes:</p>
     <ul>
-      <li>marzo de 2015: <a href="https://tools.ietf.org/html/rfc7493">RFC 7493</a> (I-JSON), escrita por Tim Bray</li>
-      <li>diciembre de 2017: <a href="https://tools.ietf.org/html/rfc8259">RFC 8259</a>, escrita por Tim Bray</li>
-      <li>diciembre de 2017: <a href="http://www.mclibre.org/descargar/docs/normas/json/ECMA-404-v2-1712.pdf">ECMA 404 (2º ed)</a></li>
+      <li>julio de 2006: <a href="https://tools.ietf.org/html/rfc4627">RFC 4627</a>: The application/json Media Type for JavaScript Object Notation, escrita por D. Crockford. Reemplazada en marzo de 2014 por la RFC7159.</li>
+      <li>marzo de 2013: <a href="https://tools.ietf.org/html/rfc7158">RFC 7158</a>: The JavaScript Object Notation (JSON) Data Interchange Format, editada por Tim Bray. Reemplazada en marzo de 2014 por la RFC7159.</li>
+      <li>octubre de 2013: <a href="http://www.mclibre.org/descargar/docs/normas/json/ECMA-404-v1-1310.pdf">ECMA 404 (1º ed)</a>: The JSON Data Interchange Format. Reemplazada en diciembre de 2017 por la segunda versión.</li>
+      <li>marzo de 2014: <a href="https://tools.ietf.org/html/rfc7159">RFC 7159</a>: The JavaScript Object Notation (JSON) Data Interchange Format, editada por Tim Bray. Reemplazada en diciembre de 2017 por la RFC8259.</li>
     </ul>
 
-    <p>Referencias:</p>
+    <hr class="corta" />
+
+    <h3>Otros usos de JSON</h3>
+    <ul>
+      <li><a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a>.
+        <p>Si un editor o IDE de programación quiere permitir trabajar con un lenguaje de programación específico y ofrecer asistentes avanzados (completado de código, sugerencias, etc.), el editor tiene que "entender" ese lenguaje. En vez de que cada editor tenga que implementar su propio servidor de lenguaje, el protocolo LSP permite que el editor y el servidor de lenguaje sean independientes, comunicándose de acuerdo con el formato. Así, un mismo servidor de lenguaje se puede aprovechar en cualquier IDE que admita LSP y un mismo editor o IDE puede utilizarse para programar en cualquier lenguaje que disponga de un servidor de lenguaje.</p>
+        <p>Este protocolo fue desarrollado para el editor Visual Studio Code. Fue <a href="https://code.visualstudio.com/blogs/2016/06/27/common-language-protocol">presentado</a> en junio de 2016.</p>
+      </li>
+    </ul>
+
+    <hr class="corta" />
+
+    <h3>Referencias</h3>
     <ul>
       <li>Conferencia de Douglas Cockcroft, <a href="https://www.youtube.com/watch?v=-C-JoyNuQJs">The JSON saga</a>, agosto de 2011</li>
       <li><a href="https://jsonlint.com/">JSONLint</a>, validador de JSON</li>
@@ -231,9 +340,8 @@
     </ul>
   </section>
 
-
   <footer>
-    <p class="ultmod">Última modificación de esta página: 13 de octubre de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 3 de diciembre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />

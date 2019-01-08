@@ -30,6 +30,7 @@
         <li><a href="#sintaxis">Sintaxis</a></li>
         <li><a href="#usos">Usos de JSON</a>
           <ul>
+            <li><a href="#json-rpc">JSON-RPC</a></li>
             <li><a href="#json-ld">JSON-LD</a></li>
           </ul>
         </li>
@@ -223,30 +224,30 @@
 
       <p>Una llamada RPC tiene que seguir la sintaxis de JSON y contener los siguientes campos:</p>
       <ul>
-        <li>jsonrpc: una cadena que indica la versión ("2.0")</li>
-        <li>method: una cadena que indica el método invocado.</li>
-        <li>params: (optativo) una matriz o una lista de valores</li>
-        <li>id: un número o cadena establecido por el cliente</li>
+        <li><strong>jsonrpc</strong>: una cadena que indica la versión ("2.0")</li>
+        <li><strong>method</strong>: una cadena que indica el método invocado.</li>
+        <li><strong>params</strong>: (optativo) una matriz o una lista de valores</li>
+        <li><strong>id</strong>: un número o cadena establecido por el cliente</li>
       </ul>
 
       <p>Si una llamada no incluye identificador id, se considera que es una notificación y no requiere respuesta, ni siquiera en caso de error.</p>
 
       <p>La respuesta RPC tiene que seguir también la sintaxis de JSON y contener los siguientes campos:</p>
       <ul>
-        <li>jsonrpc: una cadena que indica la versión ("2.0")</li>
+        <li><strong>jsonrpc</strong>: una cadena que indica la versión ("2.0")</li>
         <li>uno de estos dos campos:
           <ul>
-            <li>result: (optativo) el resultado de la consulta, en forma de valor, matriz o lista.</li>
-            <li>error: (optativo) una matriz o una lista de errores, con la estructura siguiente:
+            <li><strong>result</strong>: (optativo) el resultado de la consulta, en forma de valor, matriz o lista.</li>
+            <li><strong>error</strong>: (optativo) una matriz o una lista de errores, con la estructura siguiente:
               <ul>
-                <li>code: código de error (número entero)</li>
-                <li>message: descripción breve del error</li>
-                <li>data: (optativo) matriz o lista de valores con información adicional sobre el error</li>
+                <li><strong>code</strong>: código de error (número entero)</li>
+                <li><strong>message</strong>: descripción breve del error</li>
+                <li><strong>data</strong>: (optativo) matriz o lista de valores con información adicional sobre el error</li>
               </ul>
             </li>
           </ul>
         </li>
-        <li>id: el número o cadena establecido por el cliente</li>
+        <li><strong>id</strong>: el número o cadena establecido por el cliente</li>
       </ul>
 
       <p>Una llamada JSON-RPC puede contener varias peticiones en forma de matriz y se debe contestar con una matriz de respuestas (salvo que todas las llamadas sean notificaciones, en cuyo caso no habría respuesta).</p>
@@ -270,7 +271,6 @@
             <pre>
 <code class="language-json">{
   "jsonrpc": "2.0",
-  "method": "suma",
   "result": 12,
   "id": 181203
 }</code>
@@ -341,7 +341,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 3 de diciembre de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 4 de diciembre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />

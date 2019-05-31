@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YAML. Formatos. Informática. Bartolomé Sintes Marco. www.mclibre.org</title>
-  <link rel="stylesheet" type="text/css" href="../varios/informatica.css" title="mclibre" />
-  <link rel="icon" href="../varios/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="../varios/highlight-informatica.css" />
+  <link rel="stylesheet" href="../varios/informatica.css" title="mclibre">
+  <link rel="icon" href="../varios/favicon.ico">
+  <link rel="stylesheet" href="../varios/highlight-informatica.css">
   <script src="../varios/highlight.pack.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
@@ -18,8 +18,8 @@
 
   <nav>
     <p>
-      <a href="../index.html"><img src="../varios/iconos/icono-informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48" /></a>
-      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36" /></a>
+      <a href="../index.html"><img src="../varios/iconos/icono-informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48"></a>
+      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36"></a>
     </p>
 
     <div class="toc">
@@ -36,11 +36,11 @@
   <section id="que-es">
     <h2>Qué es YAML</h2>
 
-    <p><img src="../img/formatos/yaml-logo.svg" alt="logotipo de YAML" width="160" height="55" class="izquierda" /><a href="http://yaml.org/">YAML</a> (YAML Ain't Markup Language) es un formato de texto pensado para la serialización de datos, propuesto como alternativa a XML. Su sintaxis combina conceptos de varios lenguajes (HTML, C, Perl y Python).</p>
+    <p><img src="../img/formatos/yaml-logo.svg" alt="logotipo de YAML" width="160" height="55" class="izquierda"><a href="http://yaml.org/">YAML</a> (YAML Ain't Markup Language) es un formato de texto pensado para la serialización de datos, propuesto como alternativa a XML. Su sintaxis combina conceptos de varios lenguajes (HTML, C, Perl y Python).</p>
 
     <p>El formato YAML fue propuesto por Clark Evans a principios de 2001 y dado a conocer a través de su página web <a href="http://yaml.org/">http://yaml.org/</a>.</p>
 
-    <hr class="corta" />
+    <hr class="corta">
 
     <p>El formato YAML no se ha publicado como norma por ningún organismo de normalización.</p>
 
@@ -86,7 +86,7 @@
         <ul>
           <li>matrices (<i>arrays</i>): Las matrices son listas de valores separados por comas. Las matrices se escriben entre corchetes [ ]
             <div class="filaflex">
-              <div class="icono-ok"><img src="../varios/iconos/icono-oksi.svg" alt="Correcto" title="Correcto" width="40" height="40" /></div>
+              <div class="icono-ok"><img src="../varios/iconos/icono-oksi.svg" alt="Correcto" title="Correcto" width="40" height="40"></div>
               <div class="codigo">
                 <pre>
 <code class="language-json">[1, "pepe", 3.14, "Pepito Conejo"]</code>
@@ -97,7 +97,7 @@
 
           <li>objetos (<i>objects</i>). Los objetos son listas de parejas nombre / valor. El nombre y el valor están separados por dos puntos : y las parejas están separadas por comas. Los objetos se escriben entre llaves { } y los nombres de las parejas se escriben siempre entre comillas dobles.
             <div class="filaflex">
-              <div class="icono-ok"><img src="../varios/iconos/icono-oksi.svg" alt="Correcto" title="Correcto" width="40" height="40" /></div>
+              <div class="icono-ok"><img src="../varios/iconos/icono-oksi.svg" alt="Correcto" title="Correcto" width="40" height="40"></div>
               <div class="codigo">
                 <pre>
 <code class="language-json">{"nombre": "Pepito Conejo", "edad": 25, "carnet de conducir": true}</code>
@@ -110,7 +110,7 @@
 
       <li>Un documento JSON está formado por un único elemento (objeto o matriz).
         <div class="filaflex">
-          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
+          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40"></div>
           <div class="codigo">
             <pre>
 <code class="language-json">[1, 2, 3], ["a", "b", "c"]</code>
@@ -118,7 +118,7 @@
           </div>
         </div>
         <div class="filaflex">
-          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
+          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40"></div>
           <div class="codigo">
             <pre>
 <code class="language-json">"nombre": "Pepito Conejo"</code>
@@ -129,7 +129,7 @@
 
       <li>Tanto en los objetos como en las matrices, el último elemento no puede ir seguido de una coma.
         <div class="filaflex">
-          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
+          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40"></div>
           <div class="codigo">
             <pre>
   <code class="language-json">{"nombre": "Pepito Conejo",}</code>
@@ -137,7 +137,7 @@
           </div>
         </div>
         <div class="filaflex">
-          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40" /></div>
+          <div class="icono-ok"><img src="../varios/iconos/icono-okno.svg" alt="Incorrecto" title="Incorrecto" width="40" height="40"></div>
           <div class="codigo">
             <pre>
 <code class="language-json">["nombre": "Pepito Conejo", "edad": 25, "carnet de conducir": true, ]</code>
@@ -148,7 +148,7 @@
 
       <li>Los espacios en blanco y los saltos de línea no son significativos, es decir, puede haber cualquier número de espacios en blanco o saltos de línea separando cualquier elemento o símbolo del documento.
         <div class="filaflex">
-          <div class="icono-ok"><img src="../varios/iconos/icono-oksi.svg" alt="Correcto" title="Correcto" width="40" height="40" /></div>
+          <div class="icono-ok"><img src="../varios/iconos/icono-oksi.svg" alt="Correcto" title="Correcto" width="40" height="40"></div>
           <div class="codigo">
             <pre>
 <code class="language-json">[
@@ -203,8 +203,8 @@
     <p class="ultmod">Última modificación de esta página: 21 de mayo de 2018</p>
 
     <p class="licencia">
-      <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42" /></a><br />
-      Esta página forma parte del curso <strong><a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a></strong> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br />
+      <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>
+      Esta página forma parte del curso <strong><a href="http://www.mclibre.org/consultar/informatica/">Temas de Informática</a></strong> por <a href="http://www.mclibre.org/">Bartolomé Sintes Marco</a><br>
       que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
     </p>
   </footer>

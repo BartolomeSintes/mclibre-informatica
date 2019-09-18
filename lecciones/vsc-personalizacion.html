@@ -176,7 +176,7 @@
   <section id="area-trabajo">
     <h2>Áreas de de trabajo de Visual Studio Code</h2>
 
-    <p><strong>Nota</strong>: El término inglés <i>Workspace</i> está traducido al español en Visual Studio Code de dos formas distintas: Espacio de trabajo o Área de trabajo. En estos apuntes se utilizará la denominación de Área de trabajo, salvo cuando se haga referencia al interfaz de Visual Studio Code en el que aparezaca el término Espacio de trabajo (por ejemplo, opciones de menús).</p>
+    <p><strong>Nota</strong>: El término inglés <i>Workspace</i> está traducido al español en Visual Studio Code de dos formas distintas: Espacio de trabajo o Área de trabajo. En estos apuntes se utilizará la denominación de Área de trabajo, salvo cuando se haga referencia al interfaz de Visual Studio Code en el que aparezca el término Espacio de trabajo (por ejemplo, opciones de menús).</p>
 
     <p>Visual Studio Code permite trabajar con dos tipos de áreas de trabajo:</p>
 
@@ -249,14 +249,14 @@
           </p>
         </li>
 
-        <li>Se abrirá una pestaña con las opciones de configuración. Si no hemos abierto ninguna carpeta ni área de trabajo, esta ventana muestra únicamente las opciones globales (Usuario):
+        <li>Se abrirá una pestaña con las preferencias de configuración. Si no hemos abierto ninguna carpeta ni área de trabajo, esta ventana muestra únicamente las preferencias globales (Usuario):
           <p class="captura">
             <img src="../img/vscode/vsc-perso-pref-como-2.png" alt="VSC. Modificar preferencias" width="1024" height="576">
           </p>
-          <p><strong>Nota</strong>. En las primeras versiones de Visual Studio Code esta ventana mostraba el contenido del fichero settings.json. Desde la <a href="https://code.visualstudio.com/updates/v1_27#_settings-editor">versión 1.27</a> (septiembre de 2018), esta ventana muestra las opciones con el aspecto de una página web.</p>
+          <p><strong>Nota</strong>. En las primeras versiones de Visual Studio Code esta ventana mostraba el contenido del fichero settings.json. Desde la <a href="https://code.visualstudio.com/updates/v1_27#_settings-editor">versión 1.27</a> (septiembre de 2018), esta ventana muestra las preferencias con el aspecto de una página web.</p>
         </li>
 
-        <li>Si hemos abierto una carpeta o un área de trabajo, la pestaña permite elegir entre mostrar únicamente las opciones globales (Usuario) o incluyendo las opciones de la carpeta (Área de trabajo):
+        <li>Si hemos abierto una carpeta o un área de trabajo, la pestaña permite elegir entre mostrar únicamente las preferencias globales (Usuario) o incluyendo las preferencias del área de trabajo o de la carpeta abierta (Área de trabajo):
           <p class="captura">
             <img src="../img/vscode/vsc-perso-pref-como-3.png" alt="VSC. Modificar preferencias" width="1024" height="250">
             <img src="../img/vscode/vsc-perso-pref-como-4.png" alt="VSC. Modificar preferencias" width="1024" height="250">
@@ -266,14 +266,14 @@
 
       <hr class="corta">
 
-      <p>Para cambiar una opción de configuración ...</p>
+      <p>Para cambiar una preferencia de configuración ...</p>
       <ol>
-        <li>Despliegue el menú correspondiente a la opción:
+        <li>Despliegue el menú correspondiente a la preferencia:
           <p class="captura">
             <img src="../img/vscode/vsc-perso-pref-como-11.png" alt="VSC. Modificar preferencias" width="1024" height="350">
           </p>
         </li>
-        <li>y elija la opción deseada (en otros parámetros de configuración basta con marcar o desmarcar una casilla)
+        <li>y elija la opción de menú deseada (en otras preferencias de configuración basta con marcar o desmarcar una casilla)
           <p class="captura">
             <img src="../img/vscode/vsc-perso-pref-como-12.png" alt="VSC. Modificar preferencias" width="1024" height="460">
           </p>
@@ -287,7 +287,7 @@
 
       <hr class="corta">
 
-      <p>Para ver únicamente las opciones modificadas</p>
+      <p>Para ver únicamente las preferencias modificadas</p>
       <ol>
         <li>Haga clic en el icono de tres puntos situado en la parte superior derecha y elija la opción <span class="soft-menu">"Mostrar la configuración modificada"</span>:
           <p class="captura">
@@ -295,7 +295,7 @@
           </p>
         </li>
 
-        <li>De esta manera se mostrarán únicamente las opciones modificadas:
+        <li>De esta manera se mostrarán únicamente las preferencias modificadas:
           <p class="captura">
             <img src="../img/vscode/vsc-perso-pref-como-22.png" alt="VSC. Modificar preferencias" width="1024" height="350">
           </p>
@@ -306,10 +306,10 @@
 
       <p>Las modificaciones realizadas se guardan en dos ficheros settings.json, </p>
       <ul>
-        <li>uno para las modificaciones globales (Usuario), que en Windows 10 se guarda en la carpeta C:\Users\NombreDeUsuario\AppData\Roaming\Code\User\</li>
-        <li>otro para las modificaciones de la carpeta o área de trabajo (Área de trabajo), que se guarda en una carpeta .vscode que se crea en la raíz del área de trabajo.</li>
+        <li>uno para las preferencias globales (Usuario), que en Windows 10 se guarda en la carpeta C:\Users\NombreDeUsuario\AppData\Roaming\Code\User\</li>
+        <li>otro para las preferencias de la carpeta o área de trabajo (Área de trabajo), que se guarda en una carpeta .vscode que se crea en la raíz del área de trabajo.</li>
       </ul>
-      <p>Si se van a realizar muchas modificaciones o se quiere aplicar un conjunto de modificaciones ya definido (por ejejmplo, las modificaciones que se proponen en los cursos de HTML/CSS, Python o PHP de estos apuntes), es más cómodo trabajar directamente con los archivos settings.json, aunque se debe tener cuidado en no cometer errores sintácticos (olvidar alguna comilla, coma, o llave, por ejemplo). Si edita un archivo settings.json, debe guardar el archivo explícitamente, las modificaciones no se guardan automáticamente.</p>
+      <p>Si se van a realizar muchas modificaciones o se quiere aplicar un conjunto de modificaciones ya definido (por ejemplo, las modificaciones que se proponen en los cursos de HTML/CSS, Python o PHP de estos apuntes), es más cómodo trabajar directamente con los archivos settings.json, aunque se debe tener cuidado en no cometer errores sintácticos (olvidar alguna comilla, coma, o llave, por ejemplo). Si edita un archivo settings.json, debe guardar el archivo explícitamente, las modificaciones no se guardan automáticamente.</p>
 
       <ol>
         <li>Para abrir el archivo settings.json global (Usuario), asegúrese de que está viendo las preferencias globales (Usuario) y haga clic en el icono de documento situado en la parte superior derecha
@@ -394,7 +394,7 @@
           </p>
         </li>
 
-        <li>TVisual Studio Code mostrará la extensión recién instalada en la lista de extensiones instaladas.
+        <li>Visual Studio Code mostrará la extensión recién instalada en la lista de extensiones instaladas.
           <p class="captura">
             <img src="../img/vscode/vsc-perso-extensiones-instalar-7.png" alt="VSC. Instalar extensiones" width="1024" height="340">
           </p>
@@ -572,7 +572,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 12 de septiembre de 2019</p>
+    <p class="ultmod">Última modificación de esta página: 15 de septiembre de 2019</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

@@ -33,12 +33,15 @@
     </div>
   </nav>
 
+  <div class="aviso-antiguo">
+    <p><img src="../varios/iconos/icono-warning.svg" alt="¡Atención!" title="¡Atención!" width="55" height="48">Utilicé Eclipse en mis clases hasta el curso 2018-19. Desde entonces no he actualizado esta lección, por lo esta información puede haberse quedado obsoleta.</p>
+  </div>
+
   <p>En esta página se explica cómo conseguir e instalar Java y Eclipse for PHP developers (Eclipse PHP) en Windows:</p>
 
   <p>Eclipse PHP es un programa Java por lo que se se necesita tener instalado Java Runtime Environment. Tanto Eclipse como Java están disponibles en versiones de 32 bits y de 64 bits, pero tenga en cuenta que se deben instalar versiones del mismo tamaño de bits (ambas de 32 bits o ambas de 64 bits).</p>
 
   <p>Si está utilizando Windows de 64 bits, se recomienda instalar las versiones de 64 bits. Pero si está utilizando un Windows de 32 bits, necesita instalar las versiones de 32 bits.</p>
-
 
   <section id="jre">
     <h2>Conseguir Java Runtime Environment para Windows</h2>
@@ -60,18 +63,23 @@
 
     <hr class="corta">
 
-    <p>Si necesita instalar Java Runtime, tenga en cuenta que la última versión de Java 10 (actualmente, septiembre de 2018, la última versión publicada) sólo está disponible en 64 bits. La última versión de Java disponible en 32 bits es Java 8. Tenga en cuenta que Oracle dejará de publicar actualizaciones de Java 8 en enero de 2019.</p>
+    <p>Si necesita instalar Java Runtime, tenga en cuenta que Oracle ya no distribuye versiones posteriores a Java 8 y que Oracle dejará de publicar actualizaciones de Java 8 en diciembre de 2020 [<a href="https://www.oracle.com/technetwork/java/java-se-support-roadmap.html">Oracle Support Roadmap</a>].</p>
 
-    <p>Las páginas de descarga de Java son las siguientes:</p>
+    <p>Para instalar Java:</p>
     <ul>
-      <li><a href="https://www.oracle.com/technetwork/articles/java/index-jsp-135444.html">Página de descarga de Java Runtime Environment 10 (64 bits)</a>
+      <li>Abra la <a href="https://java.com/es/download/manual.jsp">página de descarga de Java Runtime Environment 8</a>
         <p class="captura">
-          <img src="../img/eclipse/eclipse-jre-64-descarga.png" alt="Java Runtime Environment 10 - Descarga" width="1010" height="560">
+          <img src="../img/eclipse/eclipse-jre-descarga.png" alt="Java Runtime Environment 8 - Descarga" width="790" height="200">
         </p>
       </li>
-      <li><a href="https://java.com/es/download/manual.jsp">Página de descarga de Java Runtime Environment 8 (32 bits)</a>
+      <li>En esta página está disponible tanto la versión de 64 bits ...
         <p class="captura">
-          <img src="../img/eclipse/eclipse-jre-32-descarga.png" alt="Java Runtime Environment 8 - Descarga" width="779" height="590">
+          <img src="../img/eclipse/eclipse-jre-64-descarga.png" alt="Java Runtime Environment 10 - Descarga" width="790" height="250">
+        </p>
+      </li>
+      <li>... como la de 32 bits:
+        <p class="captura">
+          <img src="../img/eclipse/eclipse-jre-32-descarga.png" alt="Java Runtime Environment 8 - Descarga" width="790" height="250">
         </p>
       </li>
     </ul>
@@ -84,29 +92,17 @@
 
     <p>En este curso se aconseja utilizar el editor <strong>Eclipse for PHP Developers</strong> (Eclipse PHP).</p>
 
-    <p>La última versión disponible actualmente (junio de 2019) en la <a href="https://www.eclipse.org/downloads/packages/">web de Eclipse</a> es la versión Eclipse for PHP developers 2019-06, publicada el 19 de junio de 2019, basada en la plataforma Eclipse 4.12 y el plug-in Eclipse PDT 6.2.</p>
-
-    <p>Este es el enlace de descarga de Eclipse PHP 2019-06 para Windows:</p>
-    <ul>
-      <li><a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2019-06/R/eclipse-php-2019-06-R-win32-x86_64.zip">Eclipse for PHP developers 2019-06 (Windows, 64 bits, 219 MB)</a></li>
-    </ul>
-
-    <p>Si se necesita instalar la versión de 32 bits porque se está utilizando Windows de 32 bits, la última versión disponible es la versión <a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-09/R/eclipse-php-2018-09-win32.zip">Eclipse for PHP developers 2018-09 (Windows, 32 bits, 204 MB)</a>, publicada en septiembre de 2018.</p>
+    <p>Puede descargar la última versión disponible en la <a href="https://www.eclipse.org/downloads/packages/">página de descargas de Eclipse</a>, eligiendo <strong>Eclipse IDE for PHP Developers</strong>. En <a href="http://www.cdlibre.org/">cdlibre.org</a> hay una sección dedicada a <a href="http://www.cdlibre.org/consultar/catalogo/Desarrollo-Web_PHP-Editores.html">editores específicos para PHP</a>, desde la que se puede descargar la última versión disponible de Eclipse PHP para Windows (64 bits).</p>
 
     <hr class="corta">
 
-    <p>Al empezar el curso 2018/19 la última versión disponible era la versión Eclipse for PHP developers Photon, publicada el 27 de junio de 2018, basada en la plataforma Eclipse 4.8 y el plug-in Eclipse PDT 6.0.</p>
+    <p>Al empezar el curso 2018/19, el último curso en que utilicé Eclipse en mis clases, la versión disponible era la versión Eclipse for PHP developers Photon, publicada el 27 de junio de 2018, basada en la plataforma Eclipse 4.8 y el plug-in Eclipse PDT 6.0.</p>
 
     <p>Estos son los enlaces de descarga de Eclipse PHP Photon:</p>
     <ul>
       <li><a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-php-photon-R-win32-x86_64.zip">Eclipse for PHP developers Photon (Windows, 64 bits, 206 MB)</a></li>
       <li><a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-php-photon-R-win32.zip">Eclipse for PHP developers Photon (Windows, 32 bits, 205 MB)</a></li>
     </ul>
-
-    <hr class="corta">
-
-    <p>En <a href="http://www.cdlibre.org/">cdlibre.org</a> hay una sección dedicada a <a href="http://www.cdlibre.org/consultar/catalogo/Desarrollo-Web_PHP-Editores.html">editores específicos para PHP</a>, desde la que se puede descargar la última versión disponible de Eclipse PHP para Windows (64 bits).</p>
-
   </section>
 
   <section id="instalacion">
@@ -159,7 +155,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 23 de junio de 2019</p>
+    <p class="ultmod">Última modificación de esta página: 19 de septiembre de 2019</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

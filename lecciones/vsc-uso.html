@@ -34,6 +34,7 @@
         <li><a href="#sangrado-incorrecto">Sangrado incorrecto</a></li>
         <li><a href="#rutas-archivos">Insertar rutas de archivos</a></li>
         <li><a href="#seleccionar-bloques">Seleccionar bloques</a></li>
+        <li><a href="#modificar-juego-caracteres">Modificar juego caracteres</a></li>
       </ul>
     </div>
   </nav>
@@ -215,8 +216,37 @@
     <p>Cada vez que se pulsa <span class="soft-atajo-teclado">Alt+Shift+FlechaDerecha</span> se van seleccionando los elementos de nivel superior a la selección actual. Cada vez que se pulsa <span class="soft-atajo-teclado">Alt+Shift+FlechaIzquierda</span> se vuelve a la selección de nivel inferior anterior.</p>
   </section>
 
+  <section id="modificar-juego-caracteres">
+    <h2>Modificar el juego de caracteres</h2>
+
+    <p>Visual Studio Code permite modificar el juego de caracteres de un documento. El ejemplo siguiente muestra cómo cambiar el juego de caracteres de UTF-8 con BOM a UTF (es decir, eliminar la marca de orden de bytes de UTF-8):</p>
+
+    <ol>
+      <li>Visual Studio Code detecta el juego de caracteres de un documento y muestra el juego de caracteres en la barra de estado:
+        <p class="captura">
+          <img src="../img/vscode/vsc-uso-modificar-juego-caracteres-1.png" alt="VSC. Modificar juego de caracteres" width="1024" height="100">
+        </p>
+      </li>
+      <li>Haga clic en el nombre del juego de caracteres de la barra de estado y se abrirá un menú en la ventana de comandos. Elija la opción Guardar con Encoding:
+        <p class="captura">
+          <img src="../img/vscode/vsc-uso-modificar-juego-caracteres-2.png" alt="VSC. Modificar juego de caracteres" width="1024" height="200">
+        </p>
+      </li>
+      <li>Se abrirá un menú con los juegos de caracteres disponibles. El juego de caracteres actual del documento se mostrará el primero de la lista. Si quiere cambiar el juego de caracteres a UT-8 (sin BOM), haga clic en la opción UTF-8:
+        <p class="captura">
+          <img src="../img/vscode/vsc-uso-modificar-juego-caracteres-3.png" alt="VSC. Modificar juego de caracteres" width="1024" height="250">
+        </p>
+      </li>
+      <li>Automáticamente el documento se guardará en el juego de caracteres elegido. El nuevo juego de caracteres se mostrará en la barra de estado:
+        <p class="captura">
+          <img src="../img/vscode/vsc-uso-modificar-juego-caracteres-4.png" alt="VSC. Modificar juego de caracteres" width="1024" height="100">
+        </p>
+      </li>
+    </ol>
+  </section>
+
   <footer>
-    <p class="ultmod">Última modificación de esta página: 22 de octubre de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 8 de noviembre de 2018</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

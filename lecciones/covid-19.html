@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>La evolución del Covid-19. Informática. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../varios/informatica.css" title="mclibre">
+  <link rel="icon" href="../varios/favicon.ico">
+</head>
+
+<body>
+  <h1>La evolución del coronavirus Covid-19</h1>
+
+  <nav>
+    <p>
+      <a href="../index.html"><img src="../varios/iconos/icono-informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48"></a>
+      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36"></a>
+    </p>
+
+    <div class="toc">
+      <h2>Evolución del Covid-19</h2>
+
+      <ul>
+        <li><a href="#casos-declarados">Casos declarados</a></li>
+        <li><a href="#muertes">Muertes</a></li>
+        <li><a href="#muertes-casos">% muertes sobre casos</a></li>
+        <li><a href="#preguntas">Preguntas</a></li>
+        <li><a href="#fuentes">Fuentes</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <p>La lección <a href="hardware.html">Evolución del hardware</a> muestra varios ejemplos de evolución exponencial "artificial", es decir, producida de forma intencionada (en ese caso por la industria informática) y que acaba inevitablemente llegando a sus límites físicos. En esta lección se muestra un ejemplo de evolución exponencial "natural", en el que esperamos que la intervención humana adelante su también inevitable final.</p>
+
+  <p>Se trata de la evolución de la epidemia del coronavirus Covid-19 que estamos sufriendo actualmente. Esta página no pretende ofrecer información ni sobre la enfermedad, ni sobre su tratamiento, ni predicciones sobre su evolución futura. Simplemente pretende mostrar los datos oficiales de una forma comprensible y analizable gracias a la representación logarítmica de los datos oficiales.</p>
+
+  <section id="casos-declarados">
+    <h2>Casos declarados</h2>
+
+    <p>La gráfica siguiente muestra los casos declarados de afectados por Covid-19 en Italia, España, Francia y Alemania en las últimas semanas:</p>
+
+    <p><img src="../img/covid-19/covid-19-casos-1.svg" alt="Casos declarados de Covid-19" height="400" width="600"></p>
+
+    <p>La gráfica anterior no tiene en cuenta que cada país tiene un número de habitantes distinto, lo que distorsiona la comparación. Para corregir este problema, la gráfica siguiente muestra los casos declarados de afectados por Covid-19 en Italia, España, Francia y Alemania en las últimas semanas por cada millón de habitantes:</p>
+
+    <p><img src="../img/covid-19/covid-19-casos-2.svg" alt="Casos declarados de Covid-19 por millón de habitantes" height="400" width="600"></p>
+  </section>
+
+  <section id="muertes">
+    <h2>Muertes declaradas</h2>
+
+    <p>La gráfica siguiente muestra las muertes declaradas por Covid-19 en Italia, España, Francia y Alemania en las últimas semanas:</p>
+
+    <p><img src="../img/covid-19/covid-19-muertes-1.svg" alt="Muertes declaradas por Covid-19" height="400" width="600"></p>
+
+    <p>Como en el caso anterior, la gráfica no tiene en cuenta que cada país tiene un número de habitantes distinto. Además, por el momento parece que las muertes se concentran en los mayores de 60 años. Por ello, la gráfica siguiente muestra las muertes declaradas por Covid-19 en Italia, España, Francia y Alemania en las últimas semanas por cada millón de habitantes mayor de 65 años, para que las comparaciones sean más significativas:</p>
+
+    <p><img src="../img/covid-19/covid-19-muertes-2.svg" alt="Muertes declaradas por Coviid-19 por millón de habitantes mayor de 65 años" height="400" width="600"></p>
+  </section>
+
+  <section id="muertes-casos">
+    <h2>Relación entre muertes y casos</h2>
+
+    <p>La gráfica siguiente muestra el porcentaje de muertes con respecto al número de casos declarados por Covd-19 en Italia, España, Francia y Alemania en las últimas semanas. En este caso, no es necesario corregir los datos con respecto a la población y los datos pueden compararse directamente.</p>
+
+    <p>En este caso la relación no es exponencial, por lo que la escala vertical no es logarítmica, sino lineal</p>
+
+    <p><img src="../img/covid-19/covid-19-muertes-casos.svg" alt="Porcentaje de muertes por Covid-19 sobre casos declarados" height="400" width="600"></p>
+  </section>
+
+  <section id="preguntas">
+    <h2>Preguntas</h2>
+
+    <p>Estas gráficas sugieren muchas preguntas. Algunas de ellas se dejan aquí para la reflexión del lector:</p>
+
+    <ul>
+      <li>¿La evolución de la enfermedad en España permite afirmar que se han vivido cambios cualitativos en la evolución de la enfermedad?</li>
+      <li>¿Cómo se puede explicar el descenso abrupto de la relación entre muertes y casos en España y Francia en la primera semana de eclosión pública de la enfermedad en esos países?</li>
+      <li>¿Cómo se puede explicar el aumento del porcentaje de muertes en Italia en los últimos días que no se está produciendo en Francia y España? ¿Se producirá ese aumento también en España y Francia en los próximos días?</li>
+      <li>¿Con qué retraso sobre Italia se tomarán en España y Francia las mismas medidas que se están tomando en Italia si la evolución de la enfermedad continúa como hasta ahora?</li>
+    </ul>
+  </section>
+
+  <section id="datos">
+    <h2>Fuentes</h2>
+
+    <p>Los datos utilizados para la creación de estas gráficas se encuentran disponibles en la <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a> y proceden a su vez de fuentes públicas y verificables. Espero no haber cometido errores traspasando los datos ni efectuando los cálculos, porque no es mi intención manipular los datos para demostrar ninguna tesis.</p>
+
+    <p>Puede descargar los datos y las gráficas en forma de hoja de cálculo de <a href="https://www.libreoffice.org/">LibreOffice</a>: <a href="covid.ods">covid-19.ods</a>.</p>
+  </section>
+
+  <footer>
+    <p class="ultmod">Última modificación de esta página: 11 de marzo de 2020</p>
+
+    <p class="licencia">
+      <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>
+      Esta página forma parte del curso <strong><a href="https://www.mclibre.org/consultar/informatica/">Temas de Informática</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br>
+      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
+    </p>
+  </footer>
+</body>
+</html>

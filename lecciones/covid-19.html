@@ -24,6 +24,7 @@
         <li><a href="#casos-declarados">Casos declarados</a></li>
         <li><a href="#muertes">Muertes</a></li>
         <li><a href="#muertes-casos">% muertes sobre casos</a></li>
+        <li><a href="#otras-enfermedades">Otras enfermedades</a></li>
         <li><a href="#preguntas">Preguntas</a></li>
         <li><a href="#fuentes">Fuentes</a></li>
       </ul>
@@ -61,11 +62,25 @@
   <section id="muertes-casos">
     <h2>Relación entre muertes y casos</h2>
 
-    <p>La gráfica siguiente muestra el porcentaje de muertes con respecto al número de casos declarados por Covd-19 en Italia, España, Francia y Alemania en las últimas semanas. En este caso, no es necesario corregir los datos con respecto a la población y los datos pueden compararse directamente.</p>
+    <p>La gráfica siguiente muestra el porcentaje de muertes con respecto al número de casos declarados por Covid-19 en Italia, España, Francia y Alemania en las últimas semanas. En este caso, no es necesario corregir los datos con respecto a la población y los datos pueden compararse directamente.</p>
 
-    <p>En este caso la relación no es exponencial, por lo que la escala vertical no es logarítmica, sino lineal</p>
+    <p>En este caso la relación no es exponencial, por lo que la escala vertical no es logarítmica, sino lineal.</p>
 
     <p><img src="../img/covid-19/covid-19-muertes-casos.svg" alt="Porcentaje de muertes por Covid-19 sobre casos declarados" height="400" width="600"></p>
+  </section>
+
+  <section id="otras-enfermedades">
+    <h2>Comparación con otras enfermedades</h2>
+
+    <p>El Covid-19 es un desafío tremendo a nuestros sistemas de salud. En este apartado se pretende comparar el número de muertes por Covid-19 con los muertos producidos por otras enfermedades.</p>
+
+    <p>La gráfica siguiente muestra el número de muertes por Covid-19 en España en diferentes fechas, comparándolo con el total de muertes de mayores de 65 años ocurridas en 2018 (último año para el que en INE ofrece datos). Las enfermedades están agrupadas por categorías.</p>
+
+    <p>Para mostrar la evolución del Covid-19, se muestra el número de muertes por Covid-19 en diferentes fechas (lunes 1 de marzo, lunes 8 de marzo y el último día para los que se dispone de datos oficiales).</p>
+
+    <p>En este caso la escala horizontal es logarítmica. De esta manera se pueden representar tanto números grandes como números pequeños.</p>
+
+    <p><img src="../img/covid-19/covid-19-otras-enfermedades.svg" alt="Muertes por Covid-19 frente a otras causas de muerte en mayores de 65 años" height="720" width="960"></p>
   </section>
 
   <section id="preguntas">
@@ -74,23 +89,38 @@
     <p>Estas gráficas sugieren muchas preguntas. Algunas de ellas se dejan aquí para la reflexión del lector:</p>
 
     <ul>
-      <li>¿La evolución de la enfermedad en España permite afirmar que se han vivido cambios cualitativos en la evolución de la enfermedad?</li>
-      <li>¿Cómo se puede explicar el descenso abrupto de la relación entre muertes y casos en España y Francia en la primera semana de eclosión pública de la enfermedad en esos países?</li>
-      <li>¿Cómo se puede explicar el aumento del porcentaje de muertes en Italia en los últimos días que no se está produciendo en Francia y España? ¿Se producirá ese aumento también en España y Francia en los próximos días?</li>
-      <li>¿Con qué retraso sobre Italia se tomarán en España y Francia las mismas medidas que se están tomando en Italia si la evolución de la enfermedad continúa como hasta ahora?</li>
+      <li>Casos declarados y muertes:
+        <ul>
+          <li>¿La evolución de la enfermedad en España permite afirmar que se han vivido cambios cualitativos en la evolución de la enfermedad? ¿O en Italia?</li>
+        </ul>
+      </li>
+      <li>Relación entre muertes y casos
+        <ul>
+          <li>¿Cómo se puede explicar el descenso abrupto de la relación entre muertes y casos en España y Francia en la primera semana de eclosión pública de la enfermedad en esos países?</li>
+          <li>¿Cómo se puede explicar el aumento del porcentaje de muertes en Italia en los últimos días que no se está produciendo en Francia y España? ¿Se producirá ese aumento también en España y Francia en los próximos días?</li>
+          <li>¿Con qué retraso sobre Italia se tomarán en España y Francia las mismas medidas que se están tomando en Italia si la evolución de la enfermedad continúa como hasta ahora?</li>
+        </ul>
+      </li>
+      <li>Comparación con otras enfermedades
+        <ul>
+          <li>¿Cuánto tiempo podría seguir aumentando el número de muertes por Covid-19?</li>
+        </ul>
+      </li>
     </ul>
   </section>
 
   <section id="datos">
     <h2>Fuentes</h2>
 
-    <p>Los datos utilizados para la creación de estas gráficas se encuentran disponibles en la <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a> y proceden a su vez de fuentes públicas y verificables. Espero no haber cometido errores traspasando los datos ni efectuando los cálculos, porque no es mi intención manipular los datos para demostrar ninguna tesis.</p>
+    <p>Los datos de casos y muertes por Covid-19 utilizados para la creación de estas gráficas se encuentran disponibles en la <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a> y proceden a su vez de fuentes públicas y verificables. Espero no haber cometido errores traspasando los datos ni efectuando los cálculos, porque no es mi intención manipular los datos para demostrar ninguna tesis.</p>
 
-    <p>Puede descargar los datos y las gráficas en forma de hoja de cálculo de <a href="https://www.libreoffice.org/">LibreOffice</a>: <a href="covid.ods">covid-19.ods</a>.</p>
+    <p>Los datos de otras enfermedades se encuentran disponibles en el <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=7947">Instituto Nacional de Estadística</a>.</p>
+
+    <p>Puede descargar todos los datos y las gráficas en forma de hoja de cálculo de <a href="https://www.libreoffice.org/">LibreOffice</a>: <a href="covid.ods">covid-19.ods</a>.</p>
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 11 de marzo de 2020</p>
+    <p class="ultmod">Última modificación de esta página: 12 de marzo de 2020</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

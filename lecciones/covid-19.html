@@ -37,57 +37,73 @@
 
   <p>Se trata de la evolución de la epidemia del coronavirus Covid-19 que estamos sufriendo actualmente. Esta página no pretende ofrecer información sobre la enfermedad, ni sobre su tratamiento, ni predicciones sobre su evolución futura. Simplemente pretende mostrar los datos oficiales de una forma comprensible y analizable gracias a la representación logarítmica de los datos oficiales.</p>
 
+  <p>La epidemia de Covid-19 está ocurriendo ya en la mayoría de países, pero no simultáneamente, por lo que las muertes empiezan a producirse, aumentar, estabilizarse y reducirse en momentos diferentes en cada uno de los países afectados. Esa situación también ocurre en el interior de cada país, en el que cada región sufre la expansión de la epidemia con desfases y alcances distintos.</p>
+
+  <p>La cuarentena estricta de la población se está imponiendo como única medida a nuestra disposición ante la expansión de la epidemia. Pero hay que tener en cuenta que algunas regiones deberán imponer la cuarentena porque regiones vecinas la necesitan y posteriormente otras regiones deberán mantener la cuarentena porque regiones vecinas seguirán necesitándola. Este hecho afectará inevitablemente a la duración de las cuarentenas.</p>
+
   <p><img src="../varios/iconos/icono-warning.svg" alt="¡Atención!" title="¡Atención!" width="55" height="48">España publica sus datos de una forma peculiar. El Ministerio de Sanidad publica datos a mediodía y a lo largo de la tarde las Comunidades Autónomas publicaban cada una por su lado sus propios datos. La Wikipedia recogía al final de cada día toda esa información y con esa información se elaboraba esta página. El 16 y 17 de marzo se publicaron datos que cabría calificar de "extraños". Por ejemplo la Comunidad de Madrid declaró no haber tenido muertes del 15 al 16 de marzo, algo sorprendente dado el número de muertes que se estaban produciendo en Madrid estos días. Estas anomalías explican la mejoría brusca que se aprecía en la gráfica de muertos a partir del 16 de marzo, que en principio no podría vincularse con el comienzo de la cuarentena declarada el 15 de marzo. Esperemos que esta anomalía se deba a cambios de criterios en la recopilación de datos y no sea una señal de manipulación o retención de información, porque para tomar decisiones correctas tanto las autoridades como los ciudadanos necesitamos y tenemos derecho a conocer los datos reales.</p>
 
-  <section id="casos-declarados">
-    <h2>Casos declarados en Italia, España, Francia y Alemania</h2>
+<section id="datos-en-bruto">
+  <h2>La evolución de la epidemia (datos no ajustados a la población)</h2>
 
-    <p>La gráfica siguiente muestra los casos declarados de afectados por Covid-19 en Italia, España, Francia y Alemania en las últimas semanas:</p>
+  <p>Las gráficas siguientes muestran la evolución de los casos de afectados y muertes por Covid-19, día a día o acumulados, en algunos países o en algunas Comunidades Autónomas españolas. Estas gráficas utilizan los datos globales, sin tener cuenta el tamaño de la población de cada país o comunidad autonóma española.</p>
 
-    <p><img src="../img/covid-19/covid-19-casos-1.svg" alt="Casos declarados de Covid-19" height="480" width="600"></p>
+  <p>Las gráficas siguientes muestran el número diario y acumulado de afectados por Covid-19 en Italia, España, Francia y Alemania:</p>
 
-    <p>La gráfica anterior no tiene en cuenta que cada país tiene un número de habitantes distinto, lo que distorsiona la comparación. Para corregir este problema, la gráfica siguiente muestra los casos declarados de afectados por Covid-19 en Italia, España, Francia y Alemania en las últimas semanas por cada millón de habitantes:</p>
+  <p>
+    <img src="../img/covid-19/covid-19-11-na-casos-diarios-paises.svg" alt="Casos diarios de Covid-19 en países" height="480" width="600">
+    <img src="../img/covid-19/covid-19-12-na-casos-acumulados-paises.svg" alt="Casos acumulados de Covid-19 en países" height="480" width="600">
+  </p>
 
-    <p><img src="../img/covid-19/covid-19-casos-2.svg" alt="Casos declarados de Covid-19 por millón de habitantes" height="480" width="600"></p>
-  </section>
+  <p>Las gráficas siguientes muestran el número diario y acumulado de muertes por Covid-19 en Italia, España, Francia y Alemania:</p>
 
-  <section id="muertes">
-    <h2>Muertes declaradas en Italia, España, Francia y Alemania</h2>
+  <p>
+    <img src="../img/covid-19/covid-19-13-na-muertes-diarios-paises.svg" alt="Muertes diarias por Covid-19 en países" height="480" width="600">
+    <img src="../img/covid-19/covid-19-14-na-muertes-acumulados-paises.svg" alt="Muertes acumuladas por Covid-19 en países" height="480" width="600">
+  </p>
 
-    <p>La gráfica siguiente muestra las muertes declaradas por Covid-19 en Italia, España, Francia y Alemania en las últimas semanas:</p>
+  <p>Las gráficas siguientes muestran el número diario y acumulado de muertes por Covid-19 en las Comunidades Autónomas españolas más afectadas:</p>
 
-    <p><img src="../img/covid-19/covid-19-muertes-1.svg" alt="Muertes declaradas por Covid-19" height="480" width="600"></p>
+  <p>
+    <img src="../img/covid-19/covid-19-15-na-muertes-diarios-ccaa.svg" alt="Muertes diarias por Covid-19 en comunidades autónomas españolas" height="480" width="600">
+    <img src="../img/covid-19/covid-19-16-na-muertes-acumulados-ccaa.svg" alt="Muertes acumuladas por Covid-19 en comunidades autónomas españolas" height="480" width="600">
+  </p>
 
-    <p>Como en el caso anterior, la gráfica no tiene en cuenta que cada país tiene un número de habitantes distinto. Además, por el momento parece que las muertes se concentran en los mayores de 60 años. Por ello, la gráfica siguiente muestra las muertes declaradas por Covid-19 en Italia, España, Francia y Alemania en las últimas semanas por cada millón de habitantes mayor de 65 años, para que las comparaciones sean más significativas:</p>
+  <p>La gráfica siguiente muestra en porcentaje el número total de muertes declaradas por Covid-19 en las comunidades autónomas:</p>
 
-    <p><img src="../img/covid-19/covid-19-muertes-2.svg" alt="Muertes declaradas por Covid-19 por millón de habitantes mayor de 65 años" height="480" width="600"></p>
+  <p>
+    <img src="../img/covid-19/covid-19-17-na-muertes-diarios-ccaa-porcentaje.svg" alt="Porcentaje de muertes diarias por Covid-19 en comunidades autónomas españolas" height="480" width="720">
+    <img src="../img/covid-19/covid-19-18-na-muertes-acumulados-ccaa-porcentaje.svg" alt="Porcentaje de muertes acumuladas por Covid-19 en comunidades autónomas españolas" height="480" width="720">
+  </p>
+</section>
 
-    <p>Las gráficas de esta página son acumulativas, lo que tiende a suavizar el aspecto de las curvas. Sin embargo, la gráfica siguiente muestra el número de muertes declaradas diariamente por Covid-19 en Italia, España, Francia y Alemnia en las últimas semanas por cada millón de habitantes mayor de 65 años. Esta gráfica presenta oscilaciones importantes, lo que hace más difícil hacer comparaciones. La anomalía de los datos de España de mediados de marzo se traduce en grandes oscilaciones.</p>
+<section id="datos-ajustados">
+  <h2>La evolución de la epidemia (datos ajustados a la población)</h2>
 
-    <p><img src="../img/covid-19/covid-19-muertes-3.svg" alt="Muertes diarias declaradas por Covid-19 por millón de habitantes mayor de 65 años" height="480" width="600"></p>
-  </section>
+  <p>Las gráficas siguientes muestran la evolución de los casos de afectados y muertes por Covid-19, día a día o acumulados, en algunos países o en algunas Comunidades Autónomas españolas. Estas gráficas ajustan los datos al tamaño de la población de cada país o comunidad autonóma española.</p>
 
-  <section id="muertes-ccaa">
-    <h2>Muertes declaradas en Comunidades Autónomas en España</h2>
+  <p>Para facilitar la comparación de la situación entre países o comunidades autónomas es conveniente tener en cuenta la población de cada uno de ellos. Puesto que la enfermedad ataca a gran parte de la población mientras que las muertes se ceban en los más mayores, en las gráficas siguientes el número de afectados se ajusta a la población total del país o comunidad autónoma y el número de muertes se ajusta a la población total de mayores de 65 años del país o comunidad autónoma. Los datos de población utilizados son los de 2018 en todos los casos.</p>
 
-    <p>La epidemia de Covid-19 no está ocurriendo simultáneamente en todos los países, por lo que las muertes empiezan a producirse, aumentar, estabilizarse y reducirse en momentos diferentes en cada uno de los países afectados. Esa situación también ocurre en el interior de cada país, en el que cada región sufre la expansión de la epidemia con desfases y alcances distintos.</p>
+  <p>Las gráficas siguientes muestran el número diario y acumulado de afectados por Covid-19 en Italia, España, Francia y Alemania:</p>
 
-    <p>La cuarentena estricta de la población se está imponiendo como última medida posible ante la expansión de la epidemia. Pero hay que tener en cuenta que algunas regiones deberán imponer la cuarentena porque regiones vecinas la necesitan y posteriormente otras regiones deberán mantener la cuarentena porque regiones vecinas seguirán necesitándola. Este hecho afectará inevitablemente a la duración de las cuarentenas.</p>
+  <p>
+    <img src="../img/covid-19/covid-19-21-a-casos-diarios-paises.svg" alt="Casos diarios de Covid-19 en países" height="480" width="600">
+    <img src="../img/covid-19/covid-19-22-a-casos-acumulados-paises.svg" alt="Casos acumulados de Covid-19 en países" height="480" width="600">
+  </p>
 
-    <p>Para intentar entender este proceso en España, se ofrecen tres gráficos que solo incluyen las comunidades más afectadas por la epidemia.</p>
+  <p>Las gráficas siguientes muestran el número diario y acumulado de muertes por Covid-19 en Italia, España, Francia y Alemania:</p>
 
-    <p>La gráfica siguiente muestra las muertes declaradas por Covid-19 en las comunidades autónomas que actualmente tienen un número de muertos por Covid-19 superior a la media nacional:</p>
+  <p>
+    <img src="../img/covid-19/covid-19-23-a-muertes-diarios-paises.svg" alt="Muertes diarias por Covid-19 en países" height="480" width="600">
+    <img src="../img/covid-19/covid-19-24-a-muertes-acumulados-paises.svg" alt="Muertes acumuladas por Covid-19 en países" height="480" width="600">
+  </p>
 
-    <p><img src="../img/covid-19/covid-19-muertes-ccaa-1.svg" alt="Muertes declaradas por Covid-19" height="480" width="600"></p>
+  <p>Las gráficas siguientes muestran el número diario y acumulado de muertes por Covid-19 en las Comunidades Autónomas españolas más afectadas:</p>
 
-
-    <p>La gráfica siguiente muestra las muertes declaradas por Covid-19 en las comunidades autónomas que actualmente tienen un número de muertos por Covid-19 por millón de habitantes mayores de 65 años superior a la media nacional:</p>
-
-    <p><img src="../img/covid-19/covid-19-muertes-ccaa-2.svg" alt="Muertes declaradas por Covid-19 por millón de habitantes mayor de 65 años" height="480" width="600"></p>
-
-    <p>La gráfica siguiente muestra en porcentaje el número total de muertes declaradas por Covid-19 en las comunidades autónomas:</p>
-
-    <p><img src="../img/covid-19/covid-19-muertes-ccaa-3.svg" alt="Porcentaje de muertes declaradas por Covid-19" height="480" width="720"></p>
+  <p>
+    <img src="../img/covid-19/covid-19-25-a-muertes-diarios-ccaa.svg" alt="Muertes diarias por Covid-19 en comunidades autónomas españolas" height="480" width="600">
+    <img src="../img/covid-19/covid-19-26-a-muertes-acumulados-ccaa.svg" alt="Muertes acumuladas por Covid-19 en comunidades autónomas españolas" height="480" width="600">
+  </p>
   </section>
 
   <section id="muertes-casos">
@@ -97,7 +113,7 @@
 
     <p>En este caso la relación no es exponencial, por lo que la escala vertical no es logarítmica, sino lineal.</p>
 
-    <p><img src="../img/covid-19/covid-19-muertes-casos.svg" alt="Porcentaje de muertes por Covid-19 sobre casos declarados" height="480" width="600"></p>
+    <p><img src="../img/covid-19/covid-19-31-muertes-casos.svg" alt="Porcentaje de muertes por Covid-19 sobre casos declarados" height="480" width="600"></p>
 
     <p><strong>Nota</strong>: España declaró la primera muerte por Covid-19 el 4 de marzo, aunque se trataba de un paciente fallecido el 13 de febrero. Para la elaboración de la gráfica anterior se ha considerado ese caso desde el 26 de febrero, el día siguiente a la aparición oficial de infectados por Covid-19.</p>
   </section>
@@ -109,9 +125,12 @@
 
     <p>La gráfica siguiente muestra las principales medidas en Italia y en España, indicadas sobre el gráfico de muertes por Covid-19 por cada millón de habitantes mayor de 65 años ya comentado anteriormente.</p>
 
-    <p><img src="../img/covid-19/covid-19-muertes-medidas.svg" alt="Medidas tomadas y Muertes declaradas por Covid-19 por millón de habitantes mayor de 65 años" height="500" width="750"></p>
+    <p>
+      <img src="../img/covid-19/covid-19-32-muertes-diarias-medidas.svg" alt="Medidas tomadas y Muertes diarias por Covid-19 por millón de habitantes mayor de 65 años" height="500" width="750">
+      <img src="../img/covid-19/covid-19-33-muertes-acumuladas-medidas.svg" alt="Medidas tomadas y Muertes acumuladas por Covid-19 por millón de habitantes mayor de 65 años" height="500" width="750">
+    </p>
 
-    <p>Estas son las evaluaciones de riesgo publicadas en los boletines informativos del Ministerio de Sanidad (cita literal):</p>
+    <p>Estas fueron las evaluaciones de riesgo publicadas en los meses de enero y febrero de 2020 en los boletines informativos del Ministerio de Sanidad (cita literal):</p>
     <ul>
       <li>Actualización nº 1, 15/01/2020:<br>
         La transmisión persona a persona no se ha documentado de momento, por lo que el impacto para la salud pública en caso de introducirse el virus en nuestro país, sería muy bajo.
@@ -144,11 +163,9 @@
 
     <p>La gráfica siguiente muestra el número de muertes por Covid-19 en España en diferentes fechas, comparándolo con el total de muertes de mayores de 65 años ocurridas en 2018 (último año para el que en INE ofrece datos). Las enfermedades están agrupadas por categorías.</p>
 
-    <p>Para mostrar la evolución del Covid-19, se muestra el número de muertes por Covid-19 en diferentes fechas (lunes 1 de marzo, lunes 8 de marzo y el último día para los que se dispone de datos oficiales).</p>
+    <p>Para mostrar la evolución del Covid-19, se muestra el número de muertes por Covid-19 en diferentes fechas (lunes posteriores al 1 de marzo y el último día para los que se dispone de datos oficiales). En este caso la escala horizontal es logarítmica. De esta manera se pueden representar tanto números grandes como números pequeños.</p>
 
-    <p>En este caso la escala horizontal es logarítmica. De esta manera se pueden representar tanto números grandes como números pequeños.</p>
-
-    <p><img src="../img/covid-19/covid-19-otras-enfermedades.svg" alt="Muertes por Covid-19 frente a otras causas de muerte en mayores de 65 años" height="960" width="880"></p>
+    <p><img src="../img/covid-19/covid-19-34-otras-enfermedades.svg" alt="Muertes por Covid-19 frente a otras causas de muerte en mayores de 65 años" height="880" width="960"></p>
   </section>
 
   <section id="preguntas">
@@ -267,7 +284,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 27 de marzo de 2020</p>
+    <p class="ultmod">Última modificación de esta página: 28 de marzo de 2020</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

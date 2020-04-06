@@ -36,15 +36,6 @@
   <section id="ejercicio-1">
     <h2>Ejercicio 1 - Reconocer sucesiones aritméticas</h2>
 
-    <p>Los valores siguientes son los primeros valores de una sucesión:</p>
-
-    <table style="border: black 1px solid; text-align: center">
-      <tbody id="e01-sucesion">
-      </tbody>
-    </table>
-
-    <p>¿La sucesión es aritmética? <button onclick="e01_comprueba(true)">Sí</button> - <button onclick="e01_comprueba(false)">No</button> <span id="e01-resultado"></span></p>
-
     <table>
       <tbody>
         <tr>
@@ -70,37 +61,19 @@
         </tr>
       </tbody>
     </table>
+
+    <p>Los valores siguientes son los primeros valores de una sucesión:</p>
+
+    <table style="border: black 1px solid; text-align: center">
+      <tbody id="e01-sucesion">
+      </tbody>
+    </table>
+
+    <p>¿La sucesión es aritmética? <button onclick="e01_comprueba(true)">Sí</button> - <button onclick="e01_comprueba(false)">No</button> <span id="e01-resultado"></span></p>
   </section>
 
   <section id="ejercicio-2">
     <h2>Ejercicio 2 - Escribir fórmulas</h2>
-
-    <p>Seleccione la dificultad del ejercicio:
-      <input type="radio" name="e02-dificultad" value="1" checked> Fácil -
-      <input type="radio" name="e02-dificultad" value="2"> Medio -
-      <input type="radio" name="e02-dificultad" value="3"> Difícil - </p>
-
-    <p>Los valores siguientes son algunos valores de una sucesión aritmética:</p>
-
-    <table style="border: black 1px solid; text-align: center">
-      <tbody id="e02-sucesion">
-      </tbody>
-    </table>
-
-    <p>Escriba una fórmula (en función de <i>i</i>) que se ajuste a los valores anteriores:</p>
-
-    <table>
-      <tbody>
-        <tr>
-          <td style="vertical-align: middle"><input type="text" id="e02-expresion" size="30" value="i" style="font-size: 1.5em"></td>
-          <td>
-            <button onclick="e02_pasar()">Nueva sucesión</button><br>
-            <button onclick="e02_comprueba()">Evaluar</button>
-            <span id="e02-resultado"></span></td>
-        </tr>
-      </tbody>
-    </table>
-    <div id="e02-ayuda"></div>
 
     <table>
       <tbody>
@@ -127,6 +100,38 @@
         </tr>
       </tbody>
     </table>
+
+    <p>Seleccione la dificultad del ejercicio:
+      <input type="radio" name="e02-dificultad" value="1" checked> Fácil -
+      <input type="radio" name="e02-dificultad" value="2"> Medio -
+      <input type="radio" name="e02-dificultad" value="3"> Difícil
+    </p>
+
+    <p>Los valores siguientes son algunos valores de una sucesión aritmética:</p>
+
+    <table style="border: black 1px solid; text-align: center">
+      <tbody id="e02-sucesion">
+      </tbody>
+    </table>
+
+    <p>Escriba una fórmula (en función de <i>i</i>) que se ajuste a los valores anteriores:</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td style="vertical-align: middle"><input type="text" id="e02-expresion" size="30" value="i" style="font-size: 1.5em"></td>
+          <td>
+            <button onclick="e02_pasar()">Nueva sucesión</button><br>
+            <button onclick="e02_comprueba()">Evaluar</button>
+            <span id="e02-resultado"></span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><button onclick="e02_solucion()">Mostrar solución</button></p>
+
+    <div id="e02-ayuda"></div>
+
   </section>
 
   <script>
@@ -248,24 +253,25 @@
     var inicial, diferencia, indiceInicial;
     var n = 4;
     var indicesSucesion = [];
+    var valoresSucesion = [];
 
     function e02_generaSucesion() {
       e02_dificultad = getRadioVal("e02-dificultad");
       if (e02_dificultad == 3) {                          // Difícil
-        inicial = Math.round(Math.random() * 100);
+        inicial = Math.round(Math.random() * 100) - 20;   // El 20% tendrá un valor inicial negativo
         diferencia = Math.round(Math.random() * 10 - 5);
         indiceInicial = Math.round(Math.random() * 10);
-      } else if (e02_dificultad == 2) {                    // Medio
-        inicial = Math.round(Math.random() * 100);
+      } else if (e02_dificultad == 2) {                   // Medio
+        inicial = Math.round(Math.random() * 100) - 20;   // El 20% tendrá un valor inicial negativo
         diferencia = Math.round(Math.random() * 100 - 50);
-        indiceInicial = Math.round(Math.random());
+        indiceInicial = 1 + Math.round(Math.random());
       } else {                                            // Fácil
         inicial = Math.round(Math.random() * 100);
         diferencia = Math.round(Math.random() * 10 - 5);
         indiceInicial = 0;
       }
       indicesSucesion = [];
-      var valoresSucesion = []
+      valoresSucesion = []
       tmp = 0
       for (var i = 0; i < n; i++) {
         if (e02_dificultad == 3) {                          // Difícil
@@ -278,6 +284,7 @@
         }
       }
 
+      e02_expresion.value = "i";  // vuelve a poner i como fórmula
       e02_sucesion.innerHTML = "";  // borra el contenido
       var actual = inicial;
       var fila = e02_sucesion.insertRow(0);
@@ -298,6 +305,7 @@
         celda.setAttribute("style", "border: black 1px solid;");
         celda.innerHTML = valoresSucesion[i];
       }
+      e02_ayuda.innerHTML = ""
     }
 
     function e02_comprueba() {
@@ -326,9 +334,23 @@
         e02_generaSucesion(4);
         e02_expresion.value = "";
       } else {
-        e02_resultado.textContent = "¡Has fallado!";
+        e02_resultado.textContent = "¡No es correcto!";
         e02_nIncorrectas++;
-        e02_ayuda.textContent = "La fórmula " + expresion + " no es correcta. Esa fórmula da los siguientes valores:";
+
+        var parrafo = document.createElement('p')
+        var tmp = document.createElement('strong')
+        tmp.innerHTML = "Ayuda";
+        parrafo.appendChild(tmp);
+        e02_ayuda.appendChild(parrafo);
+
+        var tmp = document.createElement('strong')
+        tmp.innerHTML = expresion;
+        var parrafo = document.createElement('p')
+        parrafo.innerHTML = "La fórmula ";
+        parrafo.appendChild(tmp);
+        parrafo.innerHTML += " no es correcta, porque da unos valores que no coinciden con los deseados:";
+        e02_ayuda.appendChild(parrafo);
+
         var tabla = document.createElement('table');
         tabla.setAttribute("style", "border: black 1px solid;");
         var fila = tabla.insertRow(0);
@@ -361,6 +383,150 @@
       e02_generaSucesion(4);
     }
 
+    function e02_solucion() {
+      var expresion = e02_expresion.value;
+
+      var i = indiceInicial;
+      e02_ayuda.innerHTML = ""
+      e02_resultado.textContent = "";
+      e02_nIncorrectas++;
+      var dif = (valoresSucesion[1] - valoresSucesion[0]) / (indicesSucesion[1] - indicesSucesion[0]);
+      if (dif == 0) {
+        var ini = valoresSucesion[0];
+      } else {
+        var ini = valoresSucesion[0] - (valoresSucesion[1] - valoresSucesion[0]) / (indicesSucesion[1] - indicesSucesion[0]) * indicesSucesion[0];
+      }
+
+      var parrafo = document.createElement('p')
+      var tmp = document.createElement('strong')
+      tmp.innerHTML = "Solución";
+      parrafo.appendChild(tmp);
+      e02_ayuda.appendChild(parrafo);
+
+      if (valoresSucesion[1] == valoresSucesion[0] ) {
+        var parrafo = document.createElement('p')
+        parrafo.innerHTML = "Como todos los valores son iguales, la fórmula es simplemente ese valor, sin necesidad de que aparezca el índice i.";
+        e02_ayuda.appendChild(parrafo);
+        var parrafo = document.createElement('p')
+        parrafo.innerHTML = "Es decir, la fórmula es ";
+        var tmp = document.createElement('strong')
+        tmp.innerHTML = ini;
+        parrafo.appendChild(tmp)
+        e02_ayuda.appendChild(parrafo);
+      } else {
+        var parrafo = document.createElement('p')
+        parrafo.innerHTML = "Vamos a calcular la diferencia y el término inicial a partir de los dos primeros valores de la tabla.";
+        e02_ayuda.appendChild(parrafo);
+
+        var tabla = document.createElement('table');
+        tabla.setAttribute("style", "border: black 1px solid;");
+        var fila = tabla.insertRow(0);
+        var celda = fila.insertCell(-1);
+        celda.setAttribute("style", "border: black 1px solid; font-weight: bold; font-style: oblique; width: 50px;");
+        celda.innerHTML = "i";
+        for (var i = 0; i < 2; i++) {
+          var celda = fila.insertCell(-1);
+          celda.setAttribute("style", "border: black 1px solid; width: 50px;");
+          celda.innerHTML = indicesSucesion[i];
+        }
+        fila = tabla.insertRow(1);
+        var celda = fila.insertCell(-1);
+        celda.setAttribute("style", "border: black 1px solid; font-weight: bold; font-style: oblique;");
+        celda.innerHTML = "f(i)";
+        for (var j = 0; j < 2; j++) {
+          var celda = fila.insertCell(-1);
+          celda.setAttribute("style", "border: black 1px solid;");
+          celda.innerHTML = valoresSucesion[j];
+        }
+        e02_ayuda.appendChild(tabla);
+
+        var parrafo = document.createElement('p')
+        parrafo.innerHTML = "Primero calculamos la diferencia:";
+        e02_ayuda.appendChild(parrafo);
+
+        if (indicesSucesion[1] - indicesSucesion[0] == 1) {
+          var tmp = document.createElement('strong')
+          tmp.innerHTML = dif
+          var parrafo = document.createElement('p')
+          parrafo.innerHTML = "Como los términos de la tabla son consecutivos, la diferencia es la diferencia entre los valores, en este caso " + valoresSucesion[0] + " y " + valoresSucesion[1] + ", es decir, ";
+          parrafo.appendChild(tmp)
+          e02_ayuda.appendChild(parrafo);
+        } else {
+          var parrafo = document.createElement('p')
+          parrafo.innerHTML = "Desde i = " + indicesSucesion[0] + " hasta i = " + indicesSucesion[1] + " hay " + (indicesSucesion[1] - indicesSucesion[0]);
+          if (indicesSucesion[1] - indicesSucesion[0] == 1) {
+            parrafo.innerHTML +=  " término."
+          } else {
+            parrafo.innerHTML +=  " términos."
+          }
+          e02_ayuda.appendChild(parrafo);
+          var parrafo = document.createElement('p')
+          parrafo.innerHTML = "Entre esos dos términos, la sucesión pasa de valer " + valoresSucesion[0] + " a valer " + valoresSucesion[1] + ", es decir, cambia en " + (valoresSucesion[1] - valoresSucesion[0]) + ".";
+          e02_ayuda.appendChild(parrafo);
+
+          var tmp = document.createElement('strong')
+          tmp.innerHTML = dif
+          var parrafo = document.createElement('p')
+          parrafo.innerHTML = "Por tanto la diferencia de un término al siguiente es " + (valoresSucesion[1] - valoresSucesion[0]) + " / " + (indicesSucesion[1] - indicesSucesion[0]) + ", es decir, ";
+          parrafo.appendChild(tmp)
+          e02_ayuda.appendChild(parrafo);
+        }
+
+        var parrafo = document.createElement('p')
+        parrafo.innerHTML = "Después calculamos el término inicial:";
+        e02_ayuda.appendChild(parrafo);
+
+        if (indicesSucesion[0] == 0) {
+          var tmp = document.createElement('strong')
+          tmp.innerHTML = ini
+          var parrafo = document.createElement('p')
+          parrafo.innerHTML = "En este caso el término inicial de la sucesión no hace falta calcularlo puesto que se encuentra en la tabla y es ";
+          parrafo.appendChild(tmp)
+          e02_ayuda.appendChild(parrafo);
+        } else {
+          var parrafo = document.createElement('p')
+          parrafo.innerHTML = "Desde el primer término de la tabla (i = " + indicesSucesion[0] + ") hasta el primer término de la sucesión (i = 0) hay " + indicesSucesion[0];
+          if (indicesSucesion[0] == 1) {
+            parrafo.innerHTML +=  " término."
+          } else {
+            parrafo.innerHTML +=  " términos."
+          }
+          e02_ayuda.appendChild(parrafo);
+
+          var tmp = document.createElement('strong')
+          tmp.innerHTML = ini
+          var parrafo = document.createElement('p')
+          if (dif < 0) {
+            parrafo.innerHTML += "Por tanto el término inicial es " + valoresSucesion[0] + " - " + indicesSucesion[0] + " * (" + dif + "), es decir, ";
+          } else {
+            parrafo.innerHTML += "Por tanto el término inicial es " + valoresSucesion[0] + " - " + indicesSucesion[0] + " * " + dif + ", es decir, ";
+          }
+          parrafo.appendChild(tmp)
+          e02_ayuda.appendChild(parrafo);
+        }
+
+        var parrafo = document.createElement('p')
+        parrafo.innerHTML += "Por tanto la fórmula es: ";
+
+        var tmp = document.createElement('strong')
+        if (dif == 1) {
+          tmp.innerHTML = "i ";
+        } else {
+          tmp.innerHTML = dif + " * i ";
+        }
+        if (ini > 0) {
+          tmp.innerHTML += " + " + ini;
+        } else if (ini < 0) {
+          tmp.innerHTML += " - " + (-ini);
+        }
+        parrafo.appendChild(tmp)
+
+        e02_ayuda.appendChild(parrafo);
+      }
+      dibujaContador(e02_nCorrectas, e02_tCorrectas, e02_lCorrectas, e02_nIncorrectas, e02_tIncorrectas, e02_lIncorrectas);
+    }
+
+
     function e02_reinicia_contador() {
       e02_nCorrectas = e02_nIncorrectas = 0;
       dibujaContador(e02_nCorrectas, e02_tCorrectas, e02_lCorrectas, e02_nIncorrectas, e02_tIncorrectas, e02_lIncorrectas);
@@ -368,7 +534,7 @@
   </script>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 14 de octubre de 2016</p>
+    <p class="ultmod">Última modificación de esta página: 6 de abril de 2020</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

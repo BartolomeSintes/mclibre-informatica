@@ -1,713 +1,728 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="150mm" height="120mm" viewBox="0 0 15000 12000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke-width="28.222" stroke-linejoin="round" xml:space="preserve">
- <path fill="rgb(255,255,255)" stroke="none" d="M 7500,12000 L 0,12000 0,0 15000,0 15000,12000 7500,12000 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7941,11163 L 1197,11163 1197,1028 14685,1028 14685,11163 7941,11163 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14685,11162 L 1197,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14685,9472 L 1197,9472"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14685,7783 L 1197,7783"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14685,6094 L 1197,6094"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14685,4405 L 1197,4405"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14685,2716 L 1197,2716"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14685,1027 L 1197,1027"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1197,11312 L 1197,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1197,11312 L 1197,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 2695,11312 L 2695,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 2695,11312 L 2695,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 4194,11312 L 4194,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 4194,11312 L 4194,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 5693,11312 L 5693,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 5693,11312 L 5693,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7192,11312 L 7192,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7192,11312 L 7192,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8689,11312 L 8689,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8689,11312 L 8689,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10188,11312 L 10188,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10188,11312 L 10188,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11687,11312 L 11687,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11687,11312 L 11687,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 13186,11312 L 13186,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 13186,11312 L 13186,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14685,11312 L 14685,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14685,11312 L 14685,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1197,11162 L 14685,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,11162 L 1197,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,11162 L 1197,11162"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,9472 L 1197,9472"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,9472 L 1197,9472"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,7783 L 1197,7783"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,7783 L 1197,7783"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,6094 L 1197,6094"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,6094 L 1197,6094"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,4405 L 1197,4405"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,4405 L 1197,4405"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,2716 L 1197,2716"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,2716 L 1197,2716"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,1027 L 1197,1027"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1047,1027 L 1197,1027"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1197,11162 L 1197,1027"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-width="50" stroke-linejoin="round" d="M 6228,11145 L 6442,11111 6656,11102 6870,11069 7085,11001 7299,10967 7512,10908 7726,10824 7940,10765 8154,10672 8368,10427 8582,10207 8796,10030 9011,9945 9225,9683 9439,9413 9653,9168 9867,9067 10081,8560 10295,8264 10509,7986 10723,7563 10938,7192 11152,7014 11366,6702 11580,6051 11794,5655 12008,5326 12222,4937 12436,4414 12650,4278 12865,4101 13079,3856 13293,3459 13507,3223 13721,2995 13935,2775 14149,2606 14363,2572 14577,2294"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 6128,11145 L 6228,11245 6328,11145 6228,11045 6128,11145 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6128,11145 L 6228,11245 6328,11145 6228,11045 6128,11145 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 6342,11111 L 6442,11211 6542,11111 6442,11011 6342,11111 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6342,11111 L 6442,11211 6542,11111 6442,11011 6342,11111 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 6556,11102 L 6656,11202 6756,11102 6656,11002 6556,11102 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6556,11102 L 6656,11202 6756,11102 6656,11002 6556,11102 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 6770,11069 L 6870,11169 6970,11069 6870,10969 6770,11069 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6770,11069 L 6870,11169 6970,11069 6870,10969 6770,11069 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 6985,11001 L 7085,11101 7185,11001 7085,10901 6985,11001 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6985,11001 L 7085,11101 7185,11001 7085,10901 6985,11001 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 7199,10967 L 7299,11067 7399,10967 7299,10867 7199,10967 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7199,10967 L 7299,11067 7399,10967 7299,10867 7199,10967 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 7413,10908 L 7512,11008 7612,10908 7512,10808 7413,10908 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7413,10908 L 7512,11008 7612,10908 7512,10808 7413,10908 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 7626,10824 L 7726,10924 7826,10824 7726,10724 7626,10824 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7626,10824 L 7726,10924 7826,10824 7726,10724 7626,10824 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 7840,10765 L 7940,10865 8040,10765 7940,10665 7840,10765 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7840,10765 L 7940,10865 8040,10765 7940,10665 7840,10765 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 8054,10672 L 8154,10772 8254,10672 8154,10572 8054,10672 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8054,10672 L 8154,10772 8254,10672 8154,10572 8054,10672 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 8268,10427 L 8368,10527 8468,10427 8368,10327 8268,10427 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8268,10427 L 8368,10527 8468,10427 8368,10327 8268,10427 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 8482,10207 L 8582,10307 8682,10207 8582,10107 8482,10207 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8482,10207 L 8582,10307 8682,10207 8582,10107 8482,10207 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 8696,10030 L 8796,10130 8896,10030 8796,9930 8696,10030 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8696,10030 L 8796,10130 8896,10030 8796,9930 8696,10030 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 8911,9945 L 9011,10045 9111,9945 9011,9845 8911,9945 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8911,9945 L 9011,10045 9111,9945 9011,9845 8911,9945 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 9125,9683 L 9225,9783 9325,9683 9225,9583 9125,9683 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 9125,9683 L 9225,9783 9325,9683 9225,9583 9125,9683 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 9339,9413 L 9439,9513 9539,9413 9439,9313 9339,9413 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 9339,9413 L 9439,9513 9539,9413 9439,9313 9339,9413 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 9553,9168 L 9653,9268 9753,9168 9653,9068 9553,9168 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 9553,9168 L 9653,9268 9753,9168 9653,9068 9553,9168 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 9767,9067 L 9867,9167 9967,9067 9867,8967 9767,9067 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 9767,9067 L 9867,9167 9967,9067 9867,8967 9767,9067 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 9981,8560 L 10081,8660 10181,8560 10081,8460 9981,8560 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 9981,8560 L 10081,8660 10181,8560 10081,8460 9981,8560 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 10195,8264 L 10295,8364 10395,8264 10295,8164 10195,8264 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10195,8264 L 10295,8364 10395,8264 10295,8164 10195,8264 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 10409,7986 L 10509,8086 10609,7986 10509,7886 10409,7986 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10409,7986 L 10509,8086 10609,7986 10509,7886 10409,7986 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 10623,7563 L 10723,7663 10823,7563 10723,7463 10623,7563 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10623,7563 L 10723,7663 10823,7563 10723,7463 10623,7563 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 10838,7192 L 10938,7292 11038,7192 10938,7092 10838,7192 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10838,7192 L 10938,7292 11038,7192 10938,7092 10838,7192 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 11052,7014 L 11152,7114 11252,7014 11152,6914 11052,7014 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11052,7014 L 11152,7114 11252,7014 11152,6914 11052,7014 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 11266,6702 L 11366,6802 11466,6702 11366,6602 11266,6702 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11266,6702 L 11366,6802 11466,6702 11366,6602 11266,6702 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 11480,6051 L 11580,6151 11680,6051 11580,5952 11480,6051 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11480,6051 L 11580,6151 11680,6051 11580,5952 11480,6051 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 11694,5655 L 11794,5755 11894,5655 11794,5555 11694,5655 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11694,5655 L 11794,5755 11894,5655 11794,5555 11694,5655 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 11908,5326 L 12008,5426 12108,5326 12008,5226 11908,5326 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11908,5326 L 12008,5426 12108,5326 12008,5226 11908,5326 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 12122,4937 L 12222,5037 12322,4937 12222,4837 12122,4937 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12122,4937 L 12222,5037 12322,4937 12222,4837 12122,4937 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 12336,4414 L 12436,4514 12536,4414 12436,4314 12336,4414 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12336,4414 L 12436,4514 12536,4414 12436,4314 12336,4414 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 12550,4278 L 12650,4378 12750,4278 12650,4178 12550,4278 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12550,4278 L 12650,4378 12750,4278 12650,4178 12550,4278 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 12765,4101 L 12865,4201 12965,4101 12865,4001 12765,4101 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12765,4101 L 12865,4201 12965,4101 12865,4001 12765,4101 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 12979,3856 L 13079,3956 13179,3856 13079,3756 12979,3856 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12979,3856 L 13079,3956 13179,3856 13079,3756 12979,3856 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 13193,3459 L 13293,3559 13393,3459 13293,3359 13193,3459 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 13193,3459 L 13293,3559 13393,3459 13293,3359 13193,3459 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 13407,3223 L 13507,3323 13607,3223 13507,3123 13407,3223 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 13407,3223 L 13507,3323 13607,3223 13507,3123 13407,3223 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 13621,2995 L 13721,3095 13821,2995 13721,2895 13621,2995 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 13621,2995 L 13721,3095 13821,2995 13721,2895 13621,2995 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 13835,2775 L 13935,2875 14035,2775 13935,2675 13835,2775 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 13835,2775 L 13935,2875 14035,2775 13935,2675 13835,2775 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 14049,2606 L 14149,2706 14249,2606 14149,2506 14049,2606 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14049,2606 L 14149,2706 14249,2606 14149,2506 14049,2606 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 14263,2572 L 14363,2672 14463,2572 14363,2472 14263,2572 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14263,2572 L 14363,2672 14463,2572 14363,2472 14263,2572 Z"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 14477,2294 L 14577,2394 14677,2294 14577,2194 14477,2294 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14477,2294 L 14577,2394 14677,2294 14577,2194 14477,2294 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-width="50" stroke-linejoin="round" d="M 4515,11153 L 4729,11153 4943,11153 5158,11153 5372,11136 5586,11128 5800,11111 6014,11102 6228,11102 6442,11102 6656,11069 6870,11060 7085,11052 7299,11035 7512,11018 7726,10976 7940,10959 8154,10891 8368,10849 8582,10824 8796,10756 9011,10672 9225,10672 9439,10376 9653,10266 9867,9996 10081,9734 10295,9472 10509,9269 10723,9041 10938,8881 11152,8763 11366,8526 11580,8214 11794,7910 12008,7707 12222,7572 12436,7361 12650,7242 12865,7006 13079,6820 13293,6575 13507,6414 13721,6085 13935,5934 14149,5782 14363,5731 14577,5621"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 4415,11153 L 4515,11253 4615,11153 4515,11053 4415,11153 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 4415,11153 L 4515,11253 4615,11153 4515,11053 4415,11153 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 4629,11153 L 4729,11253 4829,11153 4729,11053 4629,11153 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 4629,11153 L 4729,11253 4829,11153 4729,11053 4629,11153 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 4843,11153 L 4943,11253 5043,11153 4943,11053 4843,11153 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 4843,11153 L 4943,11253 5043,11153 4943,11053 4843,11153 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 5058,11153 L 5158,11253 5258,11153 5158,11053 5058,11153 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 5058,11153 L 5158,11253 5258,11153 5158,11053 5058,11153 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 5272,11136 L 5372,11236 5472,11136 5372,11036 5272,11136 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 5272,11136 L 5372,11236 5472,11136 5372,11036 5272,11136 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 5486,11128 L 5586,11228 5686,11128 5586,11028 5486,11128 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 5486,11128 L 5586,11228 5686,11128 5586,11028 5486,11128 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 5700,11111 L 5800,11211 5900,11111 5800,11011 5700,11111 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 5700,11111 L 5800,11211 5900,11111 5800,11011 5700,11111 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 5914,11102 L 6014,11202 6114,11102 6014,11002 5914,11102 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 5914,11102 L 6014,11202 6114,11102 6014,11002 5914,11102 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 6128,11102 L 6228,11202 6328,11102 6228,11002 6128,11102 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 6128,11102 L 6228,11202 6328,11102 6228,11002 6128,11102 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 6342,11102 L 6442,11202 6542,11102 6442,11002 6342,11102 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 6342,11102 L 6442,11202 6542,11102 6442,11002 6342,11102 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 6556,11069 L 6656,11169 6756,11069 6656,10969 6556,11069 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 6556,11069 L 6656,11169 6756,11069 6656,10969 6556,11069 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 6770,11060 L 6870,11160 6970,11060 6870,10960 6770,11060 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 6770,11060 L 6870,11160 6970,11060 6870,10960 6770,11060 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 6985,11052 L 7085,11152 7185,11052 7085,10952 6985,11052 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 6985,11052 L 7085,11152 7185,11052 7085,10952 6985,11052 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 7199,11035 L 7299,11135 7399,11035 7299,10935 7199,11035 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 7199,11035 L 7299,11135 7399,11035 7299,10935 7199,11035 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 7413,11018 L 7512,11118 7612,11018 7512,10918 7413,11018 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 7413,11018 L 7512,11118 7612,11018 7512,10918 7413,11018 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 7626,10976 L 7726,11076 7826,10976 7726,10876 7626,10976 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 7626,10976 L 7726,11076 7826,10976 7726,10876 7626,10976 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 7840,10959 L 7940,11059 8040,10959 7940,10859 7840,10959 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 7840,10959 L 7940,11059 8040,10959 7940,10859 7840,10959 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 8054,10891 L 8154,10991 8254,10891 8154,10791 8054,10891 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 8054,10891 L 8154,10991 8254,10891 8154,10791 8054,10891 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 8268,10849 L 8368,10949 8468,10849 8368,10749 8268,10849 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 8268,10849 L 8368,10949 8468,10849 8368,10749 8268,10849 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 8482,10824 L 8582,10924 8682,10824 8582,10724 8482,10824 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 8482,10824 L 8582,10924 8682,10824 8582,10724 8482,10824 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 8696,10756 L 8796,10856 8896,10756 8796,10656 8696,10756 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 8696,10756 L 8796,10856 8896,10756 8796,10656 8696,10756 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 8911,10672 L 9011,10772 9111,10672 9011,10572 8911,10672 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 8911,10672 L 9011,10772 9111,10672 9011,10572 8911,10672 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 9125,10672 L 9225,10772 9325,10672 9225,10572 9125,10672 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 9125,10672 L 9225,10772 9325,10672 9225,10572 9125,10672 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 9339,10376 L 9439,10476 9539,10376 9439,10276 9339,10376 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 9339,10376 L 9439,10476 9539,10376 9439,10276 9339,10376 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 9553,10266 L 9653,10366 9753,10266 9653,10166 9553,10266 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 9553,10266 L 9653,10366 9753,10266 9653,10166 9553,10266 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 9767,9996 L 9867,10096 9967,9996 9867,9896 9767,9996 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 9767,9996 L 9867,10096 9967,9996 9867,9896 9767,9996 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 9981,9734 L 10081,9834 10181,9734 10081,9634 9981,9734 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 9981,9734 L 10081,9834 10181,9734 10081,9634 9981,9734 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 10195,9472 L 10295,9572 10395,9472 10295,9372 10195,9472 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 10195,9472 L 10295,9572 10395,9472 10295,9372 10195,9472 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 10409,9269 L 10509,9369 10609,9269 10509,9169 10409,9269 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 10409,9269 L 10509,9369 10609,9269 10509,9169 10409,9269 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 10623,9041 L 10723,9141 10823,9041 10723,8941 10623,9041 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 10623,9041 L 10723,9141 10823,9041 10723,8941 10623,9041 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 10838,8881 L 10938,8981 11038,8881 10938,8781 10838,8881 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 10838,8881 L 10938,8981 11038,8881 10938,8781 10838,8881 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 11052,8763 L 11152,8863 11252,8763 11152,8663 11052,8763 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 11052,8763 L 11152,8863 11252,8763 11152,8663 11052,8763 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 11266,8526 L 11366,8626 11466,8526 11366,8426 11266,8526 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 11266,8526 L 11366,8626 11466,8526 11366,8426 11266,8526 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 11480,8214 L 11580,8314 11680,8214 11580,8114 11480,8214 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 11480,8214 L 11580,8314 11680,8214 11580,8114 11480,8214 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 11694,7910 L 11794,8010 11894,7910 11794,7810 11694,7910 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 11694,7910 L 11794,8010 11894,7910 11794,7810 11694,7910 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 11908,7707 L 12008,7807 12108,7707 12008,7607 11908,7707 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 11908,7707 L 12008,7807 12108,7707 12008,7607 11908,7707 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 12122,7572 L 12222,7672 12322,7572 12222,7472 12122,7572 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 12122,7572 L 12222,7672 12322,7572 12222,7472 12122,7572 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 12336,7361 L 12436,7461 12536,7361 12436,7261 12336,7361 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 12336,7361 L 12436,7461 12536,7361 12436,7261 12336,7361 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 12550,7242 L 12650,7342 12750,7242 12650,7142 12550,7242 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 12550,7242 L 12650,7342 12750,7242 12650,7142 12550,7242 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 12765,7006 L 12865,7106 12965,7006 12865,6906 12765,7006 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 12765,7006 L 12865,7106 12965,7006 12865,6906 12765,7006 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 12979,6820 L 13079,6920 13179,6820 13079,6720 12979,6820 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 12979,6820 L 13079,6920 13179,6820 13079,6720 12979,6820 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 13193,6575 L 13293,6675 13393,6575 13293,6475 13193,6575 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 13193,6575 L 13293,6675 13393,6575 13293,6475 13193,6575 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 13407,6414 L 13507,6514 13607,6414 13507,6314 13407,6414 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 13407,6414 L 13507,6514 13607,6414 13507,6314 13407,6414 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 13621,6085 L 13721,6185 13821,6085 13721,5986 13621,6085 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 13621,6085 L 13721,6185 13821,6085 13721,5986 13621,6085 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 13835,5934 L 13935,6033 14035,5934 13935,5834 13835,5934 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 13835,5934 L 13935,6033 14035,5934 13935,5834 13835,5934 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 14049,5782 L 14149,5882 14249,5782 14149,5682 14049,5782 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 14049,5782 L 14149,5882 14249,5782 14149,5682 14049,5782 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 14263,5731 L 14363,5831 14463,5731 14363,5631 14263,5731 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 14263,5731 L 14363,5831 14463,5731 14363,5631 14263,5731 Z"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 14477,5621 L 14577,5721 14677,5621 14577,5521 14477,5621 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 14477,5621 L 14577,5721 14677,5621 14577,5521 14477,5621 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-width="50" stroke-linejoin="round" d="M 4087,11153 L 4301,11153 4515,11153 4729,11153 4943,11153 5158,11153 5372,11153 5586,11153 5800,11153 6014,11153 6228,11128 6442,11119 6656,11119 6870,11052 7085,10976 7299,10959 7512,10883 7726,10739 7940,10579 8154,10368 8368,10190 8582,9954 8796,9751 9011,9489 9225,9185 9439,8906 9653,8543 9867,8298 10081,7825 10295,7420 10509,6845 10723,6338 10938,5985 11152,5782 11366,5486 11580,5047 11794,4684 12008,4439 12222,4253 12436,4084 12650,3763 12865,3501 13079,3180 13293,2952 13507,2724 13721,2361 13935,2167 14149,2049 14363,1964 14577,1820"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 3987,11053 L 4087,11253 4187,11053 3987,11053 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 3987,11053 L 4087,11253 4187,11053 3987,11053 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 4201,11053 L 4301,11253 4401,11053 4201,11053 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 4201,11053 L 4301,11253 4401,11053 4201,11053 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 4415,11053 L 4515,11253 4615,11053 4415,11053 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 4415,11053 L 4515,11253 4615,11053 4415,11053 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 4629,11053 L 4729,11253 4829,11053 4629,11053 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 4629,11053 L 4729,11253 4829,11053 4629,11053 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 4843,11053 L 4943,11253 5043,11053 4843,11053 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 4843,11053 L 4943,11253 5043,11053 4843,11053 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 5058,11053 L 5158,11253 5258,11053 5058,11053 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 5058,11053 L 5158,11253 5258,11053 5058,11053 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 5272,11053 L 5372,11253 5472,11053 5272,11053 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 5272,11053 L 5372,11253 5472,11053 5272,11053 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 5486,11053 L 5586,11253 5686,11053 5486,11053 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 5486,11053 L 5586,11253 5686,11053 5486,11053 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 5700,11053 L 5800,11253 5900,11053 5700,11053 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 5700,11053 L 5800,11253 5900,11053 5700,11053 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 5914,11053 L 6014,11253 6114,11053 5914,11053 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 5914,11053 L 6014,11253 6114,11053 5914,11053 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 6128,11028 L 6228,11228 6328,11028 6128,11028 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 6128,11028 L 6228,11228 6328,11028 6128,11028 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 6342,11019 L 6442,11219 6542,11019 6342,11019 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 6342,11019 L 6442,11219 6542,11019 6342,11019 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 6556,11019 L 6656,11219 6756,11019 6556,11019 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 6556,11019 L 6656,11219 6756,11019 6556,11019 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 6770,10952 L 6870,11152 6970,10952 6770,10952 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 6770,10952 L 6870,11152 6970,10952 6770,10952 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 6985,10876 L 7085,11076 7185,10876 6985,10876 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 6985,10876 L 7085,11076 7185,10876 6985,10876 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 7199,10859 L 7299,11059 7399,10859 7199,10859 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 7199,10859 L 7299,11059 7399,10859 7199,10859 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 7413,10783 L 7512,10983 7612,10783 7413,10783 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 7413,10783 L 7512,10983 7612,10783 7413,10783 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 7626,10639 L 7726,10839 7826,10639 7626,10639 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 7626,10639 L 7726,10839 7826,10639 7626,10639 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 7840,10479 L 7940,10679 8040,10479 7840,10479 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 7840,10479 L 7940,10679 8040,10479 7840,10479 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 8054,10268 L 8154,10468 8254,10268 8054,10268 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 8054,10268 L 8154,10468 8254,10268 8054,10268 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 8268,10090 L 8368,10290 8468,10090 8268,10090 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 8268,10090 L 8368,10290 8468,10090 8268,10090 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 8482,9854 L 8582,10054 8682,9854 8482,9854 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 8482,9854 L 8582,10054 8682,9854 8482,9854 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 8696,9651 L 8796,9851 8896,9651 8696,9651 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 8696,9651 L 8796,9851 8896,9651 8696,9651 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 8911,9389 L 9011,9589 9111,9389 8911,9389 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 8911,9389 L 9011,9589 9111,9389 8911,9389 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 9125,9085 L 9225,9285 9325,9085 9125,9085 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 9125,9085 L 9225,9285 9325,9085 9125,9085 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 9339,8806 L 9439,9006 9539,8806 9339,8806 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 9339,8806 L 9439,9006 9539,8806 9339,8806 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 9553,8443 L 9653,8643 9753,8443 9553,8443 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 9553,8443 L 9653,8643 9753,8443 9553,8443 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 9767,8198 L 9867,8398 9967,8198 9767,8198 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 9767,8198 L 9867,8398 9967,8198 9767,8198 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 9981,7725 L 10081,7925 10181,7725 9981,7725 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 9981,7725 L 10081,7925 10181,7725 9981,7725 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 10195,7320 L 10295,7520 10395,7320 10195,7320 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 10195,7320 L 10295,7520 10395,7320 10195,7320 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 10409,6745 L 10509,6945 10609,6745 10409,6745 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 10409,6745 L 10509,6945 10609,6745 10409,6745 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 10623,6238 L 10723,6438 10823,6238 10623,6238 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 10623,6238 L 10723,6438 10823,6238 10623,6238 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 10838,5885 L 10938,6084 11038,5885 10838,5885 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 10838,5885 L 10938,6084 11038,5885 10838,5885 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 11052,5682 L 11152,5882 11252,5682 11052,5682 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 11052,5682 L 11152,5882 11252,5682 11052,5682 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 11266,5386 L 11366,5586 11466,5386 11266,5386 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 11266,5386 L 11366,5586 11466,5386 11266,5386 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 11480,4947 L 11580,5147 11680,4947 11480,4947 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 11480,4947 L 11580,5147 11680,4947 11480,4947 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 11694,4584 L 11794,4784 11894,4584 11694,4584 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 11694,4584 L 11794,4784 11894,4584 11694,4584 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 11908,4339 L 12008,4539 12108,4339 11908,4339 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 11908,4339 L 12008,4539 12108,4339 11908,4339 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 12122,4153 L 12222,4353 12322,4153 12122,4153 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 12122,4153 L 12222,4353 12322,4153 12122,4153 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 12336,3984 L 12436,4184 12536,3984 12336,3984 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 12336,3984 L 12436,4184 12536,3984 12336,3984 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 12550,3663 L 12650,3863 12750,3663 12550,3663 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 12550,3663 L 12650,3863 12750,3663 12550,3663 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 12765,3401 L 12865,3601 12965,3401 12765,3401 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 12765,3401 L 12865,3601 12965,3401 12765,3401 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 12979,3080 L 13079,3280 13179,3080 12979,3080 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 12979,3080 L 13079,3280 13179,3080 12979,3080 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 13193,2852 L 13293,3052 13393,2852 13193,2852 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 13193,2852 L 13293,3052 13393,2852 13193,2852 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 13407,2624 L 13507,2824 13607,2624 13407,2624 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 13407,2624 L 13507,2824 13607,2624 13407,2624 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 13621,2261 L 13721,2461 13821,2261 13621,2261 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 13621,2261 L 13721,2461 13821,2261 13621,2261 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 13835,2067 L 13935,2267 14035,2067 13835,2067 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 13835,2067 L 13935,2267 14035,2067 13835,2067 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 14049,1949 L 14149,2149 14249,1949 14049,1949 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 14049,1949 L 14149,2149 14249,1949 14049,1949 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 14263,1864 L 14363,2064 14463,1864 14263,1864 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 14263,1864 L 14363,2064 14463,1864 14263,1864 Z"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 14477,1720 L 14577,1920 14677,1720 14477,1720 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 14477,1720 L 14577,1920 14677,1720 14477,1720 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-width="50" stroke-linejoin="round" d="M 5800,11153 L 6014,11153 6228,11145 6442,11145 6656,11145 6870,11136 7085,11111 7299,11094 7512,11077 7726,11060 7940,11043 8154,11009 8368,10942 8582,10832 8796,10672 9011,10579 9225,10418 9439,10317 9653,10266 9867,10038 10081,9878 10295,9633 10509,9472 10723,9405 10938,9320 11152,9236 11366,8982 11580,8872 11794,8771 12008,8729 12222,8602 12436,8526 12650,8450 12865,8340 13079,8273 13293,8129 13507,8019 13721,7952 13935,7918 14149,7876 14363,7808 14577,7749"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 5700,11253 L 5900,11253 5800,11053 5700,11253 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 5700,11253 L 5900,11253 5800,11053 5700,11253 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 5914,11253 L 6114,11253 6014,11053 5914,11253 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 5914,11253 L 6114,11253 6014,11053 5914,11253 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 6128,11245 L 6328,11245 6228,11045 6128,11245 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 6128,11245 L 6328,11245 6228,11045 6128,11245 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 6342,11245 L 6542,11245 6442,11045 6342,11245 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 6342,11245 L 6542,11245 6442,11045 6342,11245 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 6556,11245 L 6756,11245 6656,11045 6556,11245 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 6556,11245 L 6756,11245 6656,11045 6556,11245 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 6770,11236 L 6970,11236 6870,11036 6770,11236 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 6770,11236 L 6970,11236 6870,11036 6770,11236 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 6985,11211 L 7185,11211 7085,11011 6985,11211 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 6985,11211 L 7185,11211 7085,11011 6985,11211 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 7199,11194 L 7399,11194 7299,10994 7199,11194 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 7199,11194 L 7399,11194 7299,10994 7199,11194 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 7413,11177 L 7612,11177 7512,10977 7413,11177 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 7413,11177 L 7612,11177 7512,10977 7413,11177 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 7626,11160 L 7826,11160 7726,10960 7626,11160 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 7626,11160 L 7826,11160 7726,10960 7626,11160 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 7840,11143 L 8040,11143 7940,10943 7840,11143 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 7840,11143 L 8040,11143 7940,10943 7840,11143 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 8054,11109 L 8254,11109 8154,10909 8054,11109 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 8054,11109 L 8254,11109 8154,10909 8054,11109 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 8268,11042 L 8468,11042 8368,10842 8268,11042 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 8268,11042 L 8468,11042 8368,10842 8268,11042 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 8482,10932 L 8682,10932 8582,10732 8482,10932 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 8482,10932 L 8682,10932 8582,10732 8482,10932 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 8696,10772 L 8896,10772 8796,10572 8696,10772 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 8696,10772 L 8896,10772 8796,10572 8696,10772 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 8911,10679 L 9111,10679 9011,10479 8911,10679 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 8911,10679 L 9111,10679 9011,10479 8911,10679 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 9125,10518 L 9325,10518 9225,10318 9125,10518 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 9125,10518 L 9325,10518 9225,10318 9125,10518 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 9339,10417 L 9539,10417 9439,10217 9339,10417 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 9339,10417 L 9539,10417 9439,10217 9339,10417 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 9553,10366 L 9753,10366 9653,10166 9553,10366 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 9553,10366 L 9753,10366 9653,10166 9553,10366 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 9767,10138 L 9967,10138 9867,9938 9767,10138 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 9767,10138 L 9967,10138 9867,9938 9767,10138 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 9981,9978 L 10181,9978 10081,9778 9981,9978 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 9981,9978 L 10181,9978 10081,9778 9981,9978 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 10195,9733 L 10395,9733 10295,9533 10195,9733 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 10195,9733 L 10395,9733 10295,9533 10195,9733 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 10409,9572 L 10609,9572 10509,9372 10409,9572 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 10409,9572 L 10609,9572 10509,9372 10409,9572 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 10623,9505 L 10823,9505 10723,9305 10623,9505 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 10623,9505 L 10823,9505 10723,9305 10623,9505 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 10838,9420 L 11038,9420 10938,9220 10838,9420 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 10838,9420 L 11038,9420 10938,9220 10838,9420 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 11052,9336 L 11252,9336 11152,9136 11052,9336 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 11052,9336 L 11252,9336 11152,9136 11052,9336 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 11266,9082 L 11466,9082 11366,8882 11266,9082 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 11266,9082 L 11466,9082 11366,8882 11266,9082 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 11480,8972 L 11680,8972 11580,8772 11480,8972 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 11480,8972 L 11680,8972 11580,8772 11480,8972 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 11694,8871 L 11894,8871 11794,8671 11694,8871 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 11694,8871 L 11894,8871 11794,8671 11694,8871 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 11908,8829 L 12108,8829 12008,8629 11908,8829 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 11908,8829 L 12108,8829 12008,8629 11908,8829 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 12122,8702 L 12322,8702 12222,8502 12122,8702 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 12122,8702 L 12322,8702 12222,8502 12122,8702 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 12336,8626 L 12536,8626 12436,8426 12336,8626 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 12336,8626 L 12536,8626 12436,8426 12336,8626 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 12550,8550 L 12750,8550 12650,8350 12550,8550 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 12550,8550 L 12750,8550 12650,8350 12550,8550 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 12765,8440 L 12965,8440 12865,8240 12765,8440 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 12765,8440 L 12965,8440 12865,8240 12765,8440 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 12979,8373 L 13179,8373 13079,8173 12979,8373 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 12979,8373 L 13179,8373 13079,8173 12979,8373 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 13193,8229 L 13393,8229 13293,8029 13193,8229 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 13193,8229 L 13393,8229 13293,8029 13193,8229 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 13407,8119 L 13607,8119 13507,7919 13407,8119 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 13407,8119 L 13607,8119 13507,7919 13407,8119 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 13621,8052 L 13821,8052 13721,7852 13621,8052 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 13621,8052 L 13821,8052 13721,7852 13621,8052 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 13835,8018 L 14035,8018 13935,7818 13835,8018 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 13835,8018 L 14035,8018 13935,7818 13835,8018 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 14049,7976 L 14249,7976 14149,7776 14049,7976 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 14049,7976 L 14249,7976 14149,7776 14049,7976 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 14263,7908 L 14463,7908 14363,7708 14263,7908 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 14263,7908 L 14463,7908 14363,7708 14263,7908 Z"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 14477,7849 L 14677,7849 14577,7649 14477,7849 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 14477,7849 L 14677,7849 14577,7649 14477,7849 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-width="50" stroke-linejoin="round" d="M 6442,11145 L 6656,11145 6870,11136 7085,11136 7299,11128 7512,11119 7726,11085 7940,11060 8154,11009 8368,10993 8582,10933 8796,10891 9011,10798 9225,10765 9439,10655 9653,10604 9867,10452 10081,10291 10295,10148 10509,9996 10723,9818 10938,9692 11152,9557 11366,9438 11580,9362 11794,9210 12008,9109 12222,8957 12436,8847 12650,8763 12865,8712 13079,8636 13293,8543 13507,8459 13721,8340 13935,8239 14149,8188 14363,8121 14577,8053"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 6342,11045 L 6342,11245 6542,11145 6342,11045 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 6342,11045 L 6342,11245 6542,11145 6342,11045 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 6556,11045 L 6556,11245 6756,11145 6556,11045 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 6556,11045 L 6556,11245 6756,11145 6556,11045 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 6770,11036 L 6770,11236 6970,11136 6770,11036 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 6770,11036 L 6770,11236 6970,11136 6770,11036 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 6985,11036 L 6985,11236 7185,11136 6985,11036 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 6985,11036 L 6985,11236 7185,11136 6985,11036 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 7199,11028 L 7199,11228 7399,11128 7199,11028 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 7199,11028 L 7199,11228 7399,11128 7199,11028 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 7413,11019 L 7413,11219 7612,11119 7413,11019 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 7413,11019 L 7413,11219 7612,11119 7413,11019 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 7626,10985 L 7626,11185 7826,11085 7626,10985 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 7626,10985 L 7626,11185 7826,11085 7626,10985 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 7840,10960 L 7840,11160 8040,11060 7840,10960 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 7840,10960 L 7840,11160 8040,11060 7840,10960 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 8054,10909 L 8054,11109 8254,11009 8054,10909 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 8054,10909 L 8054,11109 8254,11009 8054,10909 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 8268,10893 L 8268,11093 8468,10993 8268,10893 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 8268,10893 L 8268,11093 8468,10993 8268,10893 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 8482,10833 L 8482,11033 8682,10933 8482,10833 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 8482,10833 L 8482,11033 8682,10933 8482,10833 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 8696,10791 L 8696,10991 8896,10891 8696,10791 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 8696,10791 L 8696,10991 8896,10891 8696,10791 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 8911,10698 L 8911,10898 9111,10798 8911,10698 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 8911,10698 L 8911,10898 9111,10798 8911,10698 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 9125,10665 L 9125,10865 9325,10765 9125,10665 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 9125,10665 L 9125,10865 9325,10765 9125,10665 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 9339,10555 L 9339,10755 9539,10655 9339,10555 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 9339,10555 L 9339,10755 9539,10655 9339,10555 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 9553,10504 L 9553,10704 9753,10604 9553,10504 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 9553,10504 L 9553,10704 9753,10604 9553,10504 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 9767,10352 L 9767,10552 9967,10452 9767,10352 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 9767,10352 L 9767,10552 9967,10452 9767,10352 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 9981,10191 L 9981,10391 10181,10291 9981,10191 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 9981,10191 L 9981,10391 10181,10291 9981,10191 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 10195,10048 L 10195,10248 10395,10148 10195,10048 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 10195,10048 L 10195,10248 10395,10148 10195,10048 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 10409,9896 L 10409,10096 10609,9996 10409,9896 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 10409,9896 L 10409,10096 10609,9996 10409,9896 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 10623,9718 L 10623,9918 10823,9818 10623,9718 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 10623,9718 L 10623,9918 10823,9818 10623,9718 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 10838,9592 L 10838,9792 11038,9692 10838,9592 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 10838,9592 L 10838,9792 11038,9692 10838,9592 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 11052,9457 L 11052,9657 11252,9557 11052,9457 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 11052,9457 L 11052,9657 11252,9557 11052,9457 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 11266,9338 L 11266,9538 11466,9438 11266,9338 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 11266,9338 L 11266,9538 11466,9438 11266,9338 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 11480,9262 L 11480,9462 11680,9362 11480,9262 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 11480,9262 L 11480,9462 11680,9362 11480,9262 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 11694,9110 L 11694,9310 11894,9210 11694,9110 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 11694,9110 L 11694,9310 11894,9210 11694,9110 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 11908,9009 L 11908,9209 12108,9109 11908,9009 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 11908,9009 L 11908,9209 12108,9109 11908,9009 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 12122,8857 L 12122,9057 12322,8957 12122,8857 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 12122,8857 L 12122,9057 12322,8957 12122,8857 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 12336,8747 L 12336,8947 12536,8847 12336,8747 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 12336,8747 L 12336,8947 12536,8847 12336,8747 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 12550,8663 L 12550,8863 12750,8763 12550,8663 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 12550,8663 L 12550,8863 12750,8763 12550,8663 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 12765,8612 L 12765,8812 12965,8712 12765,8612 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 12765,8612 L 12765,8812 12965,8712 12765,8612 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 12979,8536 L 12979,8736 13179,8636 12979,8536 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 12979,8536 L 12979,8736 13179,8636 12979,8536 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 13193,8443 L 13193,8643 13393,8543 13193,8443 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 13193,8443 L 13193,8643 13393,8543 13193,8443 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 13407,8359 L 13407,8559 13607,8459 13407,8359 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 13407,8359 L 13407,8559 13607,8459 13407,8359 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 13621,8240 L 13621,8440 13821,8340 13621,8240 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 13621,8240 L 13621,8440 13821,8340 13621,8240 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 13835,8139 L 13835,8339 14035,8239 13835,8139 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 13835,8139 L 13835,8339 14035,8239 13835,8139 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 14049,8088 L 14049,8288 14249,8188 14049,8088 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 14049,8088 L 14049,8288 14249,8188 14049,8088 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 14263,8021 L 14263,8221 14463,8121 14263,8021 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 14263,8021 L 14263,8221 14463,8121 14263,8021 Z"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 14477,7953 L 14477,8153 14677,8053 14477,7953 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 14477,7953 L 14477,8153 14677,8053 14477,7953 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-width="50" stroke-linejoin="round" d="M 6656,11153 L 6870,11145 7085,11136 7299,11128 7512,11119 7726,11085 7940,11043 8154,10959 8368,10900 8582,10883 8796,10748 9011,10672 9225,10570 9439,10452 9653,10300 9867,10207 10081,10063 10295,9971 10509,9886 10723,9717 10938,9658 11152,9582 11366,9455 11580,9421 11794,9354 12008,9320 12222,9244 12436,9202 12650,9143 12865,9058 13079,9033 13293,8957 13507,8307 13721,8171 13935,8045 14149,7910 14363,7808 14577,7774"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 6556,11153 L 6756,11253 6756,11053 6556,11153 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 6556,11153 L 6756,11253 6756,11053 6556,11153 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 6770,11145 L 6970,11245 6970,11045 6770,11145 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 6770,11145 L 6970,11245 6970,11045 6770,11145 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 6985,11136 L 7185,11236 7185,11036 6985,11136 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 6985,11136 L 7185,11236 7185,11036 6985,11136 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 7199,11128 L 7399,11228 7399,11028 7199,11128 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 7199,11128 L 7399,11228 7399,11028 7199,11128 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 7413,11119 L 7612,11219 7612,11019 7413,11119 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 7413,11119 L 7612,11219 7612,11019 7413,11119 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 7626,11085 L 7826,11185 7826,10985 7626,11085 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 7626,11085 L 7826,11185 7826,10985 7626,11085 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 7840,11043 L 8040,11143 8040,10943 7840,11043 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 7840,11043 L 8040,11143 8040,10943 7840,11043 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 8054,10959 L 8254,11059 8254,10859 8054,10959 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 8054,10959 L 8254,11059 8254,10859 8054,10959 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 8268,10900 L 8468,11000 8468,10800 8268,10900 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 8268,10900 L 8468,11000 8468,10800 8268,10900 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 8482,10883 L 8682,10983 8682,10783 8482,10883 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 8482,10883 L 8682,10983 8682,10783 8482,10883 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 8696,10748 L 8896,10848 8896,10648 8696,10748 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 8696,10748 L 8896,10848 8896,10648 8696,10748 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 8911,10672 L 9111,10772 9111,10572 8911,10672 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 8911,10672 L 9111,10772 9111,10572 8911,10672 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 9125,10570 L 9325,10670 9325,10470 9125,10570 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 9125,10570 L 9325,10670 9325,10470 9125,10570 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 9339,10452 L 9539,10552 9539,10352 9339,10452 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 9339,10452 L 9539,10552 9539,10352 9339,10452 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 9553,10300 L 9753,10400 9753,10200 9553,10300 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 9553,10300 L 9753,10400 9753,10200 9553,10300 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 9767,10207 L 9967,10307 9967,10107 9767,10207 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 9767,10207 L 9967,10307 9967,10107 9767,10207 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 9981,10063 L 10181,10163 10181,9963 9981,10063 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 9981,10063 L 10181,10163 10181,9963 9981,10063 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 10195,9971 L 10395,10071 10395,9871 10195,9971 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 10195,9971 L 10395,10071 10395,9871 10195,9971 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 10409,9886 L 10609,9986 10609,9786 10409,9886 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 10409,9886 L 10609,9986 10609,9786 10409,9886 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 10623,9717 L 10823,9817 10823,9617 10623,9717 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 10623,9717 L 10823,9817 10823,9617 10623,9717 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 10838,9658 L 11038,9758 11038,9558 10838,9658 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 10838,9658 L 11038,9758 11038,9558 10838,9658 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 11052,9582 L 11252,9682 11252,9482 11052,9582 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 11052,9582 L 11252,9682 11252,9482 11052,9582 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 11266,9455 L 11466,9555 11466,9355 11266,9455 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 11266,9455 L 11466,9555 11466,9355 11266,9455 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 11480,9421 L 11680,9521 11680,9321 11480,9421 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 11480,9421 L 11680,9521 11680,9321 11480,9421 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 11694,9354 L 11894,9454 11894,9254 11694,9354 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 11694,9354 L 11894,9454 11894,9254 11694,9354 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 11908,9320 L 12108,9420 12108,9220 11908,9320 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 11908,9320 L 12108,9420 12108,9220 11908,9320 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 12122,9244 L 12322,9344 12322,9144 12122,9244 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 12122,9244 L 12322,9344 12322,9144 12122,9244 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 12336,9202 L 12536,9302 12536,9102 12336,9202 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 12336,9202 L 12536,9302 12536,9102 12336,9202 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 12550,9143 L 12750,9243 12750,9043 12550,9143 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 12550,9143 L 12750,9243 12750,9043 12550,9143 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 12765,9058 L 12965,9158 12965,8958 12765,9058 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 12765,9058 L 12965,9158 12965,8958 12765,9058 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 12979,9033 L 13179,9133 13179,8933 12979,9033 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 12979,9033 L 13179,9133 13179,8933 12979,9033 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 13193,8957 L 13393,9057 13393,8857 13193,8957 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 13193,8957 L 13393,9057 13393,8857 13193,8957 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 13407,8307 L 13607,8407 13607,8207 13407,8307 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 13407,8307 L 13607,8407 13607,8207 13407,8307 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 13621,8171 L 13821,8271 13821,8071 13621,8171 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 13621,8171 L 13821,8271 13821,8071 13621,8171 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 13835,8045 L 14035,8145 14035,7945 13835,8045 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 13835,8045 L 14035,8145 14035,7945 13835,8045 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 14049,7910 L 14249,8010 14249,7810 14049,7910 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 14049,7910 L 14249,8010 14249,7810 14049,7910 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 14263,7808 L 14463,7908 14463,7708 14263,7808 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 14263,7808 L 14463,7908 14463,7708 14263,7808 Z"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 14477,7774 L 14677,7874 14677,7674 14477,7774 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 14477,7774 L 14677,7874 14677,7674 14477,7774 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-width="80" stroke-linejoin="round" d="M 4301,11153 L 4515,11153 4729,11145 4943,11119 5158,11119 5372,11111 5586,11111 5800,11069 6014,11043 6228,11043 6442,10967 6656,10967 6870,10857 7085,10824 7299,10714 7512,10562 7726,10444 7940,10342 8154,10148 8368,10038 8582,9852 8796,9641 9011,9413 9225,9295 9439,8923 9653,8653 9867,8416 10081,8045 10295,7681 10509,7411 10723,7132 10938,6811 11152,6533 11366,6212 11580,5799 11794,5343 12008,5005 12222,4701 12436,4371 12650,4143 12865,3907 13079,3544 13293,3087 13507,2783 13721,2547 13935,2192 14149,2032 14363,1846 14577,1668"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 4176,11028 L 4176,11278 4426,11028 4426,11278 4176,11028 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 4176,11028 L 4176,11278 4426,11028 4426,11278 4176,11028 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 4390,11028 L 4390,11278 4640,11028 4640,11278 4390,11028 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 4390,11028 L 4390,11278 4640,11028 4640,11278 4390,11028 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 4604,11020 L 4604,11270 4854,11020 4854,11270 4604,11020 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 4604,11020 L 4604,11270 4854,11020 4854,11270 4604,11020 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 4818,10994 L 4818,11244 5068,10994 5068,11244 4818,10994 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 4818,10994 L 4818,11244 5068,10994 5068,11244 4818,10994 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 5033,10994 L 5033,11244 5283,10994 5283,11244 5033,10994 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 5033,10994 L 5033,11244 5283,10994 5283,11244 5033,10994 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 5247,10986 L 5247,11236 5497,10986 5497,11236 5247,10986 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 5247,10986 L 5247,11236 5497,10986 5497,11236 5247,10986 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 5461,10986 L 5461,11236 5711,10986 5711,11236 5461,10986 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 5461,10986 L 5461,11236 5711,10986 5711,11236 5461,10986 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 5675,10944 L 5675,11194 5925,10944 5925,11194 5675,10944 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 5675,10944 L 5675,11194 5925,10944 5925,11194 5675,10944 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 5889,10918 L 5889,11168 6139,10918 6139,11168 5889,10918 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 5889,10918 L 5889,11168 6139,10918 6139,11168 5889,10918 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 6103,10918 L 6103,11168 6353,10918 6353,11168 6103,10918 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 6103,10918 L 6103,11168 6353,10918 6353,11168 6103,10918 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 6317,10842 L 6317,11092 6567,10842 6567,11092 6317,10842 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 6317,10842 L 6317,11092 6567,10842 6567,11092 6317,10842 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 6531,10842 L 6531,11092 6781,10842 6781,11092 6531,10842 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 6531,10842 L 6531,11092 6781,10842 6781,11092 6531,10842 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 6745,10732 L 6745,10982 6995,10732 6995,10982 6745,10732 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 6745,10732 L 6745,10982 6995,10732 6995,10982 6745,10732 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 6960,10699 L 6960,10949 7210,10699 7210,10949 6960,10699 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 6960,10699 L 6960,10949 7210,10699 7210,10949 6960,10699 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 7174,10589 L 7174,10839 7424,10589 7424,10839 7174,10589 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 7174,10589 L 7174,10839 7424,10589 7424,10839 7174,10589 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 7388,10437 L 7388,10687 7637,10437 7637,10687 7388,10437 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 7388,10437 L 7388,10687 7637,10437 7637,10687 7388,10437 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 7601,10319 L 7601,10569 7851,10319 7851,10569 7601,10319 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 7601,10319 L 7601,10569 7851,10319 7851,10569 7601,10319 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 7815,10217 L 7815,10467 8065,10217 8065,10467 7815,10217 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 7815,10217 L 7815,10467 8065,10217 8065,10467 7815,10217 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 8029,10023 L 8029,10273 8279,10023 8279,10273 8029,10023 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 8029,10023 L 8029,10273 8279,10023 8279,10273 8029,10023 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 8243,9913 L 8243,10163 8493,9913 8493,10163 8243,9913 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 8243,9913 L 8243,10163 8493,9913 8493,10163 8243,9913 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 8457,9727 L 8457,9977 8707,9727 8707,9977 8457,9727 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 8457,9727 L 8457,9977 8707,9727 8707,9977 8457,9727 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 8671,9516 L 8671,9766 8921,9516 8921,9766 8671,9516 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 8671,9516 L 8671,9766 8921,9516 8921,9766 8671,9516 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 8886,9288 L 8886,9538 9136,9288 9136,9538 8886,9288 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 8886,9288 L 8886,9538 9136,9288 9136,9538 8886,9288 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 9100,9170 L 9100,9420 9350,9170 9350,9420 9100,9170 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 9100,9170 L 9100,9420 9350,9170 9350,9420 9100,9170 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 9314,8798 L 9314,9048 9564,8798 9564,9048 9314,8798 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 9314,8798 L 9314,9048 9564,8798 9564,9048 9314,8798 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 9528,8528 L 9528,8778 9778,8528 9778,8778 9528,8528 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 9528,8528 L 9528,8778 9778,8528 9778,8778 9528,8528 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 9742,8291 L 9742,8541 9992,8291 9992,8541 9742,8291 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 9742,8291 L 9742,8541 9992,8291 9992,8541 9742,8291 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 9956,7920 L 9956,8170 10206,7920 10206,8170 9956,7920 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 9956,7920 L 9956,8170 10206,7920 10206,8170 9956,7920 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 10170,7556 L 10170,7806 10420,7556 10420,7806 10170,7556 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 10170,7556 L 10170,7806 10420,7556 10420,7806 10170,7556 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 10384,7286 L 10384,7536 10634,7286 10634,7536 10384,7286 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 10384,7286 L 10384,7536 10634,7286 10634,7536 10384,7286 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 10598,7007 L 10598,7257 10848,7007 10848,7257 10598,7007 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 10598,7007 L 10598,7257 10848,7007 10848,7257 10598,7007 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 10813,6686 L 10813,6936 11063,6686 11063,6936 10813,6686 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 10813,6686 L 10813,6936 11063,6686 11063,6936 10813,6686 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 11027,6408 L 11027,6658 11277,6408 11277,6658 11027,6408 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 11027,6408 L 11027,6658 11277,6408 11277,6658 11027,6408 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 11241,6087 L 11241,6337 11491,6087 11491,6337 11241,6087 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 11241,6087 L 11241,6337 11491,6087 11491,6337 11241,6087 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 11455,5674 L 11455,5924 11705,5674 11705,5924 11455,5674 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 11455,5674 L 11455,5924 11705,5674 11705,5924 11455,5674 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 11669,5218 L 11669,5468 11919,5218 11919,5468 11669,5218 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 11669,5218 L 11669,5468 11919,5218 11919,5468 11669,5218 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 11883,4880 L 11883,5130 12133,4880 12133,5130 11883,4880 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 11883,4880 L 11883,5130 12133,4880 12133,5130 11883,4880 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 12097,4576 L 12097,4826 12347,4576 12347,4826 12097,4576 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 12097,4576 L 12097,4826 12347,4576 12347,4826 12097,4576 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 12311,4246 L 12311,4496 12561,4246 12561,4496 12311,4246 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 12311,4246 L 12311,4496 12561,4246 12561,4496 12311,4246 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 12525,4018 L 12525,4268 12775,4018 12775,4268 12525,4018 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 12525,4018 L 12525,4268 12775,4018 12775,4268 12525,4018 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 12740,3782 L 12740,4032 12990,3782 12990,4032 12740,3782 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 12740,3782 L 12740,4032 12990,3782 12990,4032 12740,3782 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 12954,3419 L 12954,3669 13204,3419 13204,3669 12954,3419 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 12954,3419 L 12954,3669 13204,3419 13204,3669 12954,3419 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 13168,2962 L 13168,3212 13418,2962 13418,3212 13168,2962 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 13168,2962 L 13168,3212 13418,2962 13418,3212 13168,2962 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 13382,2658 L 13382,2908 13632,2658 13632,2908 13382,2658 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 13382,2658 L 13382,2908 13632,2658 13632,2908 13382,2658 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 13596,2422 L 13596,2672 13846,2422 13846,2672 13596,2422 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 13596,2422 L 13596,2672 13846,2422 13846,2672 13596,2422 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 13810,2067 L 13810,2317 14060,2067 14060,2317 13810,2067 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 13810,2067 L 13810,2317 14060,2067 14060,2317 13810,2067 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 14024,1907 L 14024,2157 14274,1907 14274,2157 14024,1907 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 14024,1907 L 14024,2157 14274,1907 14274,2157 14024,1907 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 14238,1721 L 14238,1971 14488,1721 14488,1971 14238,1721 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 14238,1721 L 14238,1971 14488,1721 14488,1971 14238,1721 Z"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 14452,1543 L 14452,1793 14702,1543 14702,1793 14452,1543 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 14452,1543 L 14452,1793 14702,1543 14702,1793 14452,1543 Z"/>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="880" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">20/02</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="2378" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">27/02</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="3877" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">05/03</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="5376" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">12/03</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="6875" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">19/03</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="8373" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">26/03</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9872" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">02/04</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="11371" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">09/04</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="12870" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">16/04</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="762" y="11283"><tspan fill="rgb(0,0,0)" stroke="none">0</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="391" y="9593"><tspan fill="rgb(0,0,0)" stroke="none">200</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="391" y="7904"><tspan fill="rgb(0,0,0)" stroke="none">400</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="391" y="6215"><tspan fill="rgb(0,0,0)" stroke="none">600</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="391" y="4525"><tspan fill="rgb(0,0,0)" stroke="none">800</tspan></tspan></tspan></text>
+ <path fill="rgb(255,255,255)" stroke="none" d="M 7486,12000 L 0,12000 0,0 14973,0 14973,12000 7486,12000 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7926,11163 L 1195,11163 1195,1028 14658,1028 14658,11163 7926,11163 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14658,11162 L 1195,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14658,9472 L 1195,9472"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14658,7783 L 1195,7783"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14658,6094 L 1195,6094"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14658,4405 L 1195,4405"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14658,2716 L 1195,2716"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14658,1027 L 1195,1027"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1195,11312 L 1195,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1195,11312 L 1195,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 2667,11312 L 2667,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 2667,11312 L 2667,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 4139,11312 L 4139,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 4139,11312 L 4139,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 5612,11312 L 5612,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 5612,11312 L 5612,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7085,11312 L 7085,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7085,11312 L 7085,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8557,11312 L 8557,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8557,11312 L 8557,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10030,11312 L 10030,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10030,11312 L 10030,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11502,11312 L 11502,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11502,11312 L 11502,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12974,11312 L 12974,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12974,11312 L 12974,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14448,11312 L 14448,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14448,11312 L 14448,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1195,11162 L 14658,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,11162 L 1195,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,11162 L 1195,11162"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,9472 L 1195,9472"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,9472 L 1195,9472"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,7783 L 1195,7783"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,7783 L 1195,7783"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,6094 L 1195,6094"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,6094 L 1195,6094"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,4405 L 1195,4405"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,4405 L 1195,4405"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,2716 L 1195,2716"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,2716 L 1195,2716"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,1027 L 1195,1027"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1045,1027 L 1195,1027"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 1195,11162 L 1195,1027"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-width="50" stroke-linejoin="round" d="M 6137,11145 L 6348,11111 6559,11102 6769,11069 6980,11001 7189,10967 7400,10908 7611,10824 7821,10765 8031,10672 8241,10427 8452,10207 8663,10030 8872,9945 9083,9683 9293,9413 9504,9168 9715,9067 9924,8560 10135,8264 10345,7986 10556,7563 10766,7192 10976,7014 11187,6702 11397,6051 11607,5655 11818,5326 12028,4937 12239,4414 12448,4278 12659,4101 12870,3856 13080,3459 13291,3223 13500,2995 13711,2775 13922,2606 14132,2572 14342,2294 14552,2049"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 6038,11145 L 6137,11245 6237,11145 6137,11045 6038,11145 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6038,11145 L 6137,11245 6237,11145 6137,11045 6038,11145 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 6248,11111 L 6348,11211 6448,11111 6348,11011 6248,11111 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6248,11111 L 6348,11211 6448,11111 6348,11011 6248,11111 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 6459,11102 L 6559,11202 6658,11102 6559,11002 6459,11102 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6459,11102 L 6559,11202 6658,11102 6559,11002 6459,11102 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 6669,11069 L 6769,11169 6869,11069 6769,10969 6669,11069 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6669,11069 L 6769,11169 6869,11069 6769,10969 6669,11069 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 6880,11001 L 6980,11101 7080,11001 6980,10901 6880,11001 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6880,11001 L 6980,11101 7080,11001 6980,10901 6880,11001 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 7090,10967 L 7189,11067 7289,10967 7189,10867 7090,10967 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7090,10967 L 7189,11067 7289,10967 7189,10867 7090,10967 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 7300,10908 L 7400,11008 7500,10908 7400,10808 7300,10908 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7300,10908 L 7400,11008 7500,10908 7400,10808 7300,10908 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 7511,10824 L 7611,10924 7710,10824 7611,10724 7511,10824 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7511,10824 L 7611,10924 7710,10824 7611,10724 7511,10824 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 7721,10765 L 7821,10865 7921,10765 7821,10665 7721,10765 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7721,10765 L 7821,10865 7921,10765 7821,10665 7721,10765 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 7931,10672 L 8031,10772 8131,10672 8031,10572 7931,10672 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 7931,10672 L 8031,10772 8131,10672 8031,10572 7931,10672 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 8142,10427 L 8241,10527 8341,10427 8241,10327 8142,10427 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8142,10427 L 8241,10527 8341,10427 8241,10327 8142,10427 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 8352,10207 L 8452,10307 8552,10207 8452,10107 8352,10207 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8352,10207 L 8452,10307 8552,10207 8452,10107 8352,10207 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 8563,10030 L 8663,10130 8762,10030 8663,9930 8563,10030 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8563,10030 L 8663,10130 8762,10030 8663,9930 8563,10030 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 8772,9945 L 8872,10045 8972,9945 8872,9845 8772,9945 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8772,9945 L 8872,10045 8972,9945 8872,9845 8772,9945 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 8983,9683 L 9083,9783 9183,9683 9083,9583 8983,9683 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8983,9683 L 9083,9783 9183,9683 9083,9583 8983,9683 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 9194,9413 L 9293,9513 9393,9413 9293,9313 9194,9413 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 9194,9413 L 9293,9513 9393,9413 9293,9313 9194,9413 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 9404,9168 L 9504,9268 9604,9168 9504,9068 9404,9168 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 9404,9168 L 9504,9268 9604,9168 9504,9068 9404,9168 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 9615,9067 L 9715,9167 9814,9067 9715,8967 9615,9067 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 9615,9067 L 9715,9167 9814,9067 9715,8967 9615,9067 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 9824,8560 L 9924,8660 10024,8560 9924,8460 9824,8560 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 9824,8560 L 9924,8660 10024,8560 9924,8460 9824,8560 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 10035,8264 L 10135,8364 10235,8264 10135,8164 10035,8264 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10035,8264 L 10135,8364 10235,8264 10135,8164 10035,8264 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 10246,7986 L 10345,8086 10445,7986 10345,7886 10246,7986 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10246,7986 L 10345,8086 10445,7986 10345,7886 10246,7986 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 10456,7563 L 10556,7663 10656,7563 10556,7463 10456,7563 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10456,7563 L 10556,7663 10656,7563 10556,7463 10456,7563 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 10666,7192 L 10766,7292 10865,7192 10766,7092 10666,7192 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10666,7192 L 10766,7292 10865,7192 10766,7092 10666,7192 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 10876,7014 L 10976,7114 11076,7014 10976,6914 10876,7014 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 10876,7014 L 10976,7114 11076,7014 10976,6914 10876,7014 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 11087,6702 L 11187,6802 11287,6702 11187,6602 11087,6702 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11087,6702 L 11187,6802 11287,6702 11187,6602 11087,6702 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 11298,6051 L 11397,6151 11497,6051 11397,5952 11298,6051 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11298,6051 L 11397,6151 11497,6051 11397,5952 11298,6051 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 11507,5655 L 11607,5755 11707,5655 11607,5555 11507,5655 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11507,5655 L 11607,5755 11707,5655 11607,5555 11507,5655 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 11718,5326 L 11818,5426 11917,5326 11818,5226 11718,5326 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11718,5326 L 11818,5426 11917,5326 11818,5226 11718,5326 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 11928,4937 L 12028,5037 12128,4937 12028,4837 11928,4937 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 11928,4937 L 12028,5037 12128,4937 12028,4837 11928,4937 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 12139,4414 L 12239,4514 12339,4414 12239,4314 12139,4414 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12139,4414 L 12239,4514 12339,4414 12239,4314 12139,4414 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 12349,4278 L 12448,4378 12548,4278 12448,4178 12349,4278 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12349,4278 L 12448,4378 12548,4278 12448,4178 12349,4278 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 12559,4101 L 12659,4201 12759,4101 12659,4001 12559,4101 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12559,4101 L 12659,4201 12759,4101 12659,4001 12559,4101 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 12770,3856 L 12870,3956 12969,3856 12870,3756 12770,3856 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12770,3856 L 12870,3956 12969,3856 12870,3756 12770,3856 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 12980,3459 L 13080,3559 13180,3459 13080,3359 12980,3459 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12980,3459 L 13080,3559 13180,3459 13080,3359 12980,3459 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 13191,3223 L 13291,3323 13391,3223 13291,3123 13191,3223 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 13191,3223 L 13291,3323 13391,3223 13291,3123 13191,3223 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 13401,2995 L 13500,3095 13600,2995 13500,2895 13401,2995 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 13401,2995 L 13500,3095 13600,2995 13500,2895 13401,2995 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 13611,2775 L 13711,2875 13811,2775 13711,2675 13611,2775 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 13611,2775 L 13711,2875 13811,2775 13711,2675 13611,2775 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 13822,2606 L 13922,2706 14021,2606 13922,2506 13822,2606 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 13822,2606 L 13922,2706 14021,2606 13922,2506 13822,2606 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 14032,2572 L 14132,2672 14232,2572 14132,2472 14032,2572 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14032,2572 L 14132,2672 14232,2572 14132,2472 14032,2572 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 14242,2294 L 14342,2394 14442,2294 14342,2194 14242,2294 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14242,2294 L 14342,2394 14442,2294 14342,2194 14242,2294 Z"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 14453,2049 L 14552,2149 14652,2049 14552,1949 14453,2049 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 14453,2049 L 14552,2149 14652,2049 14552,1949 14453,2049 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-width="50" stroke-linejoin="round" d="M 4455,11153 L 4665,11153 4876,11153 5086,11153 5296,11136 5507,11128 5717,11111 5928,11102 6137,11102 6348,11102 6559,11069 6769,11060 6980,11052 7189,11035 7400,11018 7611,10976 7821,10959 8031,10891 8241,10849 8452,10824 8663,10756 8872,10672 9083,10672 9293,10376 9504,10266 9715,9996 9924,9734 10135,9472 10345,9269 10556,9041 10766,8881 10976,8763 11187,8526 11397,8214 11607,7910 11818,7707 12028,7572 12239,7361 12448,7242 12659,7006 12870,6820 13080,6575 13291,6414 13500,6085 13711,5934 13922,5782 14132,5731 14342,5621 14552,5410"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 4355,11153 L 4455,11253 4554,11153 4455,11053 4355,11153 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 4355,11153 L 4455,11253 4554,11153 4455,11053 4355,11153 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 4565,11153 L 4665,11253 4765,11153 4665,11053 4565,11153 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 4565,11153 L 4665,11253 4765,11153 4665,11053 4565,11153 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 4776,11153 L 4876,11253 4976,11153 4876,11053 4776,11153 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 4776,11153 L 4876,11253 4976,11153 4876,11053 4776,11153 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 4987,11153 L 5086,11253 5186,11153 5086,11053 4987,11153 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 4987,11153 L 5086,11253 5186,11153 5086,11053 4987,11153 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 5196,11136 L 5296,11236 5396,11136 5296,11036 5196,11136 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 5196,11136 L 5296,11236 5396,11136 5296,11036 5196,11136 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 5407,11128 L 5507,11228 5606,11128 5507,11028 5407,11128 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 5407,11128 L 5507,11228 5606,11128 5507,11028 5407,11128 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 5617,11111 L 5717,11211 5817,11111 5717,11011 5617,11111 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 5617,11111 L 5717,11211 5817,11111 5717,11011 5617,11111 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 5828,11102 L 5928,11202 6028,11102 5928,11002 5828,11102 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 5828,11102 L 5928,11202 6028,11102 5928,11002 5828,11102 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 6038,11102 L 6137,11202 6237,11102 6137,11002 6038,11102 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 6038,11102 L 6137,11202 6237,11102 6137,11002 6038,11102 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 6248,11102 L 6348,11202 6448,11102 6348,11002 6248,11102 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 6248,11102 L 6348,11202 6448,11102 6348,11002 6248,11102 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 6459,11069 L 6559,11169 6658,11069 6559,10969 6459,11069 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 6459,11069 L 6559,11169 6658,11069 6559,10969 6459,11069 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 6669,11060 L 6769,11160 6869,11060 6769,10960 6669,11060 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 6669,11060 L 6769,11160 6869,11060 6769,10960 6669,11060 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 6880,11052 L 6980,11152 7080,11052 6980,10952 6880,11052 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 6880,11052 L 6980,11152 7080,11052 6980,10952 6880,11052 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 7090,11035 L 7189,11135 7289,11035 7189,10935 7090,11035 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 7090,11035 L 7189,11135 7289,11035 7189,10935 7090,11035 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 7300,11018 L 7400,11118 7500,11018 7400,10918 7300,11018 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 7300,11018 L 7400,11118 7500,11018 7400,10918 7300,11018 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 7511,10976 L 7611,11076 7710,10976 7611,10876 7511,10976 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 7511,10976 L 7611,11076 7710,10976 7611,10876 7511,10976 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 7721,10959 L 7821,11059 7921,10959 7821,10859 7721,10959 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 7721,10959 L 7821,11059 7921,10959 7821,10859 7721,10959 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 7931,10891 L 8031,10991 8131,10891 8031,10791 7931,10891 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 7931,10891 L 8031,10991 8131,10891 8031,10791 7931,10891 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 8142,10849 L 8241,10949 8341,10849 8241,10749 8142,10849 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 8142,10849 L 8241,10949 8341,10849 8241,10749 8142,10849 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 8352,10824 L 8452,10924 8552,10824 8452,10724 8352,10824 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 8352,10824 L 8452,10924 8552,10824 8452,10724 8352,10824 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 8563,10756 L 8663,10856 8762,10756 8663,10656 8563,10756 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 8563,10756 L 8663,10856 8762,10756 8663,10656 8563,10756 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 8772,10672 L 8872,10772 8972,10672 8872,10572 8772,10672 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 8772,10672 L 8872,10772 8972,10672 8872,10572 8772,10672 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 8983,10672 L 9083,10772 9183,10672 9083,10572 8983,10672 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 8983,10672 L 9083,10772 9183,10672 9083,10572 8983,10672 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 9194,10376 L 9293,10476 9393,10376 9293,10276 9194,10376 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 9194,10376 L 9293,10476 9393,10376 9293,10276 9194,10376 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 9404,10266 L 9504,10366 9604,10266 9504,10166 9404,10266 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 9404,10266 L 9504,10366 9604,10266 9504,10166 9404,10266 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 9615,9996 L 9715,10096 9814,9996 9715,9896 9615,9996 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 9615,9996 L 9715,10096 9814,9996 9715,9896 9615,9996 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 9824,9734 L 9924,9834 10024,9734 9924,9634 9824,9734 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 9824,9734 L 9924,9834 10024,9734 9924,9634 9824,9734 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 10035,9472 L 10135,9572 10235,9472 10135,9372 10035,9472 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 10035,9472 L 10135,9572 10235,9472 10135,9372 10035,9472 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 10246,9269 L 10345,9369 10445,9269 10345,9169 10246,9269 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 10246,9269 L 10345,9369 10445,9269 10345,9169 10246,9269 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 10456,9041 L 10556,9141 10656,9041 10556,8941 10456,9041 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 10456,9041 L 10556,9141 10656,9041 10556,8941 10456,9041 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 10666,8881 L 10766,8981 10865,8881 10766,8781 10666,8881 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 10666,8881 L 10766,8981 10865,8881 10766,8781 10666,8881 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 10876,8763 L 10976,8863 11076,8763 10976,8663 10876,8763 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 10876,8763 L 10976,8863 11076,8763 10976,8663 10876,8763 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 11087,8526 L 11187,8626 11287,8526 11187,8426 11087,8526 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 11087,8526 L 11187,8626 11287,8526 11187,8426 11087,8526 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 11298,8214 L 11397,8314 11497,8214 11397,8114 11298,8214 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 11298,8214 L 11397,8314 11497,8214 11397,8114 11298,8214 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 11507,7910 L 11607,8010 11707,7910 11607,7810 11507,7910 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 11507,7910 L 11607,8010 11707,7910 11607,7810 11507,7910 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 11718,7707 L 11818,7807 11917,7707 11818,7607 11718,7707 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 11718,7707 L 11818,7807 11917,7707 11818,7607 11718,7707 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 11928,7572 L 12028,7672 12128,7572 12028,7472 11928,7572 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 11928,7572 L 12028,7672 12128,7572 12028,7472 11928,7572 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 12139,7361 L 12239,7461 12339,7361 12239,7261 12139,7361 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 12139,7361 L 12239,7461 12339,7361 12239,7261 12139,7361 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 12349,7242 L 12448,7342 12548,7242 12448,7142 12349,7242 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 12349,7242 L 12448,7342 12548,7242 12448,7142 12349,7242 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 12559,7006 L 12659,7106 12759,7006 12659,6906 12559,7006 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 12559,7006 L 12659,7106 12759,7006 12659,6906 12559,7006 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 12770,6820 L 12870,6920 12969,6820 12870,6720 12770,6820 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 12770,6820 L 12870,6920 12969,6820 12870,6720 12770,6820 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 12980,6575 L 13080,6675 13180,6575 13080,6475 12980,6575 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 12980,6575 L 13080,6675 13180,6575 13080,6475 12980,6575 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 13191,6414 L 13291,6514 13391,6414 13291,6314 13191,6414 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 13191,6414 L 13291,6514 13391,6414 13291,6314 13191,6414 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 13401,6085 L 13500,6185 13600,6085 13500,5986 13401,6085 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 13401,6085 L 13500,6185 13600,6085 13500,5986 13401,6085 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 13611,5934 L 13711,6033 13811,5934 13711,5834 13611,5934 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 13611,5934 L 13711,6033 13811,5934 13711,5834 13611,5934 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 13822,5782 L 13922,5882 14021,5782 13922,5682 13822,5782 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 13822,5782 L 13922,5882 14021,5782 13922,5682 13822,5782 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 14032,5731 L 14132,5831 14232,5731 14132,5631 14032,5731 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 14032,5731 L 14132,5831 14232,5731 14132,5631 14032,5731 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 14242,5621 L 14342,5721 14442,5621 14342,5521 14242,5621 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 14242,5621 L 14342,5721 14442,5621 14342,5521 14242,5621 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 14453,5410 L 14552,5510 14652,5410 14552,5310 14453,5410 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 14453,5410 L 14552,5510 14652,5410 14552,5310 14453,5410 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-width="50" stroke-linejoin="round" d="M 4034,11153 L 4245,11153 4455,11153 4665,11153 4876,11153 5086,11153 5296,11153 5507,11153 5717,11153 5928,11153 6137,11128 6348,11119 6559,11119 6769,11052 6980,10976 7189,10959 7400,10883 7611,10739 7821,10579 8031,10368 8241,10190 8452,9954 8663,9751 8872,9489 9083,9185 9293,8906 9504,8543 9715,8298 9924,7825 10135,7420 10345,6845 10556,6338 10766,5985 10976,5782 11187,5486 11397,5047 11607,4684 11818,4439 12028,4253 12239,4084 12448,3763 12659,3501 12870,3180 13080,2952 13291,2724 13500,2361 13711,2167 13922,2049 14132,1964 14342,1820 14552,1668"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 3935,11053 L 4034,11253 4134,11053 3935,11053 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 3935,11053 L 4034,11253 4134,11053 3935,11053 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 4145,11053 L 4245,11253 4345,11053 4145,11053 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 4145,11053 L 4245,11253 4345,11053 4145,11053 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 4355,11053 L 4455,11253 4554,11053 4355,11053 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 4355,11053 L 4455,11253 4554,11053 4355,11053 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 4565,11053 L 4665,11253 4765,11053 4565,11053 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 4565,11053 L 4665,11253 4765,11053 4565,11053 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 4776,11053 L 4876,11253 4976,11053 4776,11053 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 4776,11053 L 4876,11253 4976,11053 4776,11053 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 4987,11053 L 5086,11253 5186,11053 4987,11053 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 4987,11053 L 5086,11253 5186,11053 4987,11053 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 5196,11053 L 5296,11253 5396,11053 5196,11053 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 5196,11053 L 5296,11253 5396,11053 5196,11053 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 5407,11053 L 5507,11253 5606,11053 5407,11053 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 5407,11053 L 5507,11253 5606,11053 5407,11053 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 5617,11053 L 5717,11253 5817,11053 5617,11053 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 5617,11053 L 5717,11253 5817,11053 5617,11053 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 5828,11053 L 5928,11253 6028,11053 5828,11053 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 5828,11053 L 5928,11253 6028,11053 5828,11053 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 6038,11028 L 6137,11228 6237,11028 6038,11028 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 6038,11028 L 6137,11228 6237,11028 6038,11028 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 6248,11019 L 6348,11219 6448,11019 6248,11019 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 6248,11019 L 6348,11219 6448,11019 6248,11019 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 6459,11019 L 6559,11219 6658,11019 6459,11019 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 6459,11019 L 6559,11219 6658,11019 6459,11019 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 6669,10952 L 6769,11152 6869,10952 6669,10952 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 6669,10952 L 6769,11152 6869,10952 6669,10952 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 6880,10876 L 6980,11076 7080,10876 6880,10876 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 6880,10876 L 6980,11076 7080,10876 6880,10876 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 7090,10859 L 7189,11059 7289,10859 7090,10859 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 7090,10859 L 7189,11059 7289,10859 7090,10859 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 7300,10783 L 7400,10983 7500,10783 7300,10783 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 7300,10783 L 7400,10983 7500,10783 7300,10783 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 7511,10639 L 7611,10839 7710,10639 7511,10639 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 7511,10639 L 7611,10839 7710,10639 7511,10639 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 7721,10479 L 7821,10679 7921,10479 7721,10479 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 7721,10479 L 7821,10679 7921,10479 7721,10479 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 7931,10268 L 8031,10468 8131,10268 7931,10268 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 7931,10268 L 8031,10468 8131,10268 7931,10268 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 8142,10090 L 8241,10290 8341,10090 8142,10090 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 8142,10090 L 8241,10290 8341,10090 8142,10090 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 8352,9854 L 8452,10054 8552,9854 8352,9854 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 8352,9854 L 8452,10054 8552,9854 8352,9854 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 8563,9651 L 8663,9851 8762,9651 8563,9651 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 8563,9651 L 8663,9851 8762,9651 8563,9651 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 8772,9389 L 8872,9589 8972,9389 8772,9389 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 8772,9389 L 8872,9589 8972,9389 8772,9389 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 8983,9085 L 9083,9285 9183,9085 8983,9085 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 8983,9085 L 9083,9285 9183,9085 8983,9085 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 9194,8806 L 9293,9006 9393,8806 9194,8806 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 9194,8806 L 9293,9006 9393,8806 9194,8806 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 9404,8443 L 9504,8643 9604,8443 9404,8443 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 9404,8443 L 9504,8643 9604,8443 9404,8443 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 9615,8198 L 9715,8398 9814,8198 9615,8198 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 9615,8198 L 9715,8398 9814,8198 9615,8198 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 9824,7725 L 9924,7925 10024,7725 9824,7725 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 9824,7725 L 9924,7925 10024,7725 9824,7725 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 10035,7320 L 10135,7520 10235,7320 10035,7320 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 10035,7320 L 10135,7520 10235,7320 10035,7320 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 10246,6745 L 10345,6945 10445,6745 10246,6745 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 10246,6745 L 10345,6945 10445,6745 10246,6745 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 10456,6238 L 10556,6438 10656,6238 10456,6238 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 10456,6238 L 10556,6438 10656,6238 10456,6238 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 10666,5885 L 10766,6084 10865,5885 10666,5885 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 10666,5885 L 10766,6084 10865,5885 10666,5885 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 10876,5682 L 10976,5882 11076,5682 10876,5682 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 10876,5682 L 10976,5882 11076,5682 10876,5682 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 11087,5386 L 11187,5586 11287,5386 11087,5386 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 11087,5386 L 11187,5586 11287,5386 11087,5386 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 11298,4947 L 11397,5147 11497,4947 11298,4947 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 11298,4947 L 11397,5147 11497,4947 11298,4947 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 11507,4584 L 11607,4784 11707,4584 11507,4584 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 11507,4584 L 11607,4784 11707,4584 11507,4584 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 11718,4339 L 11818,4539 11917,4339 11718,4339 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 11718,4339 L 11818,4539 11917,4339 11718,4339 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 11928,4153 L 12028,4353 12128,4153 11928,4153 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 11928,4153 L 12028,4353 12128,4153 11928,4153 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 12139,3984 L 12239,4184 12339,3984 12139,3984 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 12139,3984 L 12239,4184 12339,3984 12139,3984 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 12349,3663 L 12448,3863 12548,3663 12349,3663 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 12349,3663 L 12448,3863 12548,3663 12349,3663 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 12559,3401 L 12659,3601 12759,3401 12559,3401 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 12559,3401 L 12659,3601 12759,3401 12559,3401 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 12770,3080 L 12870,3280 12969,3080 12770,3080 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 12770,3080 L 12870,3280 12969,3080 12770,3080 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 12980,2852 L 13080,3052 13180,2852 12980,2852 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 12980,2852 L 13080,3052 13180,2852 12980,2852 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 13191,2624 L 13291,2824 13391,2624 13191,2624 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 13191,2624 L 13291,2824 13391,2624 13191,2624 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 13401,2261 L 13500,2461 13600,2261 13401,2261 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 13401,2261 L 13500,2461 13600,2261 13401,2261 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 13611,2067 L 13711,2267 13811,2067 13611,2067 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 13611,2067 L 13711,2267 13811,2067 13611,2067 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 13822,1949 L 13922,2149 14021,1949 13822,1949 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 13822,1949 L 13922,2149 14021,1949 13822,1949 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 14032,1864 L 14132,2064 14232,1864 14032,1864 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 14032,1864 L 14132,2064 14232,1864 14032,1864 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 14242,1720 L 14342,1920 14442,1720 14242,1720 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 14242,1720 L 14342,1920 14442,1720 14242,1720 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 14453,1568 L 14552,1768 14652,1568 14453,1568 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 14453,1568 L 14552,1768 14652,1568 14453,1568 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-width="50" stroke-linejoin="round" d="M 5717,11153 L 5928,11153 6137,11145 6348,11145 6559,11145 6769,11136 6980,11111 7189,11094 7400,11077 7611,11060 7821,11043 8031,11009 8241,10942 8452,10832 8663,10672 8872,10579 9083,10418 9293,10317 9504,10266 9715,10038 9924,9878 10135,9633 10345,9472 10556,9405 10766,9320 10976,9236 11187,8982 11397,8872 11607,8771 11818,8729 12028,8602 12239,8526 12448,8450 12659,8340 12870,8273 13080,8129 13291,8019 13500,7952 13711,7918 13922,7876 14132,7808 14342,7749 14552,7724"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 5617,11253 L 5817,11253 5717,11053 5617,11253 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 5617,11253 L 5817,11253 5717,11053 5617,11253 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 5828,11253 L 6028,11253 5928,11053 5828,11253 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 5828,11253 L 6028,11253 5928,11053 5828,11253 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 6038,11245 L 6237,11245 6137,11045 6038,11245 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 6038,11245 L 6237,11245 6137,11045 6038,11245 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 6248,11245 L 6448,11245 6348,11045 6248,11245 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 6248,11245 L 6448,11245 6348,11045 6248,11245 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 6459,11245 L 6658,11245 6559,11045 6459,11245 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 6459,11245 L 6658,11245 6559,11045 6459,11245 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 6669,11236 L 6869,11236 6769,11036 6669,11236 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 6669,11236 L 6869,11236 6769,11036 6669,11236 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 6880,11211 L 7080,11211 6980,11011 6880,11211 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 6880,11211 L 7080,11211 6980,11011 6880,11211 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 7090,11194 L 7289,11194 7189,10994 7090,11194 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 7090,11194 L 7289,11194 7189,10994 7090,11194 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 7300,11177 L 7500,11177 7400,10977 7300,11177 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 7300,11177 L 7500,11177 7400,10977 7300,11177 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 7511,11160 L 7710,11160 7611,10960 7511,11160 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 7511,11160 L 7710,11160 7611,10960 7511,11160 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 7721,11143 L 7921,11143 7821,10943 7721,11143 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 7721,11143 L 7921,11143 7821,10943 7721,11143 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 7931,11109 L 8131,11109 8031,10909 7931,11109 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 7931,11109 L 8131,11109 8031,10909 7931,11109 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 8142,11042 L 8341,11042 8241,10842 8142,11042 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 8142,11042 L 8341,11042 8241,10842 8142,11042 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 8352,10932 L 8552,10932 8452,10732 8352,10932 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 8352,10932 L 8552,10932 8452,10732 8352,10932 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 8563,10772 L 8762,10772 8663,10572 8563,10772 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 8563,10772 L 8762,10772 8663,10572 8563,10772 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 8772,10679 L 8972,10679 8872,10479 8772,10679 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 8772,10679 L 8972,10679 8872,10479 8772,10679 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 8983,10518 L 9183,10518 9083,10318 8983,10518 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 8983,10518 L 9183,10518 9083,10318 8983,10518 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 9194,10417 L 9393,10417 9293,10217 9194,10417 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 9194,10417 L 9393,10417 9293,10217 9194,10417 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 9404,10366 L 9604,10366 9504,10166 9404,10366 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 9404,10366 L 9604,10366 9504,10166 9404,10366 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 9615,10138 L 9814,10138 9715,9938 9615,10138 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 9615,10138 L 9814,10138 9715,9938 9615,10138 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 9824,9978 L 10024,9978 9924,9778 9824,9978 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 9824,9978 L 10024,9978 9924,9778 9824,9978 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 10035,9733 L 10235,9733 10135,9533 10035,9733 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 10035,9733 L 10235,9733 10135,9533 10035,9733 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 10246,9572 L 10445,9572 10345,9372 10246,9572 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 10246,9572 L 10445,9572 10345,9372 10246,9572 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 10456,9505 L 10656,9505 10556,9305 10456,9505 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 10456,9505 L 10656,9505 10556,9305 10456,9505 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 10666,9420 L 10865,9420 10766,9220 10666,9420 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 10666,9420 L 10865,9420 10766,9220 10666,9420 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 10876,9336 L 11076,9336 10976,9136 10876,9336 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 10876,9336 L 11076,9336 10976,9136 10876,9336 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 11087,9082 L 11287,9082 11187,8882 11087,9082 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 11087,9082 L 11287,9082 11187,8882 11087,9082 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 11298,8972 L 11497,8972 11397,8772 11298,8972 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 11298,8972 L 11497,8972 11397,8772 11298,8972 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 11507,8871 L 11707,8871 11607,8671 11507,8871 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 11507,8871 L 11707,8871 11607,8671 11507,8871 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 11718,8829 L 11917,8829 11818,8629 11718,8829 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 11718,8829 L 11917,8829 11818,8629 11718,8829 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 11928,8702 L 12128,8702 12028,8502 11928,8702 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 11928,8702 L 12128,8702 12028,8502 11928,8702 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 12139,8626 L 12339,8626 12239,8426 12139,8626 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 12139,8626 L 12339,8626 12239,8426 12139,8626 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 12349,8550 L 12548,8550 12448,8350 12349,8550 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 12349,8550 L 12548,8550 12448,8350 12349,8550 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 12559,8440 L 12759,8440 12659,8240 12559,8440 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 12559,8440 L 12759,8440 12659,8240 12559,8440 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 12770,8373 L 12969,8373 12870,8173 12770,8373 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 12770,8373 L 12969,8373 12870,8173 12770,8373 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 12980,8229 L 13180,8229 13080,8029 12980,8229 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 12980,8229 L 13180,8229 13080,8029 12980,8229 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 13191,8119 L 13391,8119 13291,7919 13191,8119 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 13191,8119 L 13391,8119 13291,7919 13191,8119 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 13401,8052 L 13600,8052 13500,7852 13401,8052 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 13401,8052 L 13600,8052 13500,7852 13401,8052 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 13611,8018 L 13811,8018 13711,7818 13611,8018 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 13611,8018 L 13811,8018 13711,7818 13611,8018 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 13822,7976 L 14021,7976 13922,7776 13822,7976 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 13822,7976 L 14021,7976 13922,7776 13822,7976 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 14032,7908 L 14232,7908 14132,7708 14032,7908 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 14032,7908 L 14232,7908 14132,7708 14032,7908 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 14242,7849 L 14442,7849 14342,7649 14242,7849 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 14242,7849 L 14442,7849 14342,7649 14242,7849 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 14453,7824 L 14652,7824 14552,7624 14453,7824 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 14453,7824 L 14652,7824 14552,7624 14453,7824 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-width="50" stroke-linejoin="round" d="M 6348,11145 L 6559,11145 6769,11136 6980,11136 7189,11128 7400,11119 7611,11085 7821,11060 8031,11009 8241,10993 8452,10933 8663,10891 8872,10798 9083,10765 9293,10655 9504,10604 9715,10452 9924,10291 10135,10148 10345,9996 10556,9818 10766,9692 10976,9557 11187,9438 11397,9362 11607,9210 11818,9109 12028,8957 12239,8847 12448,8763 12659,8712 12870,8636 13080,8543 13291,8459 13500,8340 13711,8239 13922,8188 14132,8121 14342,8053 14552,7994"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 6248,11045 L 6248,11245 6448,11145 6248,11045 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 6248,11045 L 6248,11245 6448,11145 6248,11045 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 6459,11045 L 6459,11245 6658,11145 6459,11045 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 6459,11045 L 6459,11245 6658,11145 6459,11045 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 6669,11036 L 6669,11236 6869,11136 6669,11036 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 6669,11036 L 6669,11236 6869,11136 6669,11036 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 6880,11036 L 6880,11236 7080,11136 6880,11036 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 6880,11036 L 6880,11236 7080,11136 6880,11036 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 7090,11028 L 7090,11228 7289,11128 7090,11028 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 7090,11028 L 7090,11228 7289,11128 7090,11028 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 7300,11019 L 7300,11219 7500,11119 7300,11019 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 7300,11019 L 7300,11219 7500,11119 7300,11019 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 7511,10985 L 7511,11185 7710,11085 7511,10985 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 7511,10985 L 7511,11185 7710,11085 7511,10985 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 7721,10960 L 7721,11160 7921,11060 7721,10960 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 7721,10960 L 7721,11160 7921,11060 7721,10960 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 7931,10909 L 7931,11109 8131,11009 7931,10909 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 7931,10909 L 7931,11109 8131,11009 7931,10909 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 8142,10893 L 8142,11093 8341,10993 8142,10893 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 8142,10893 L 8142,11093 8341,10993 8142,10893 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 8352,10833 L 8352,11033 8552,10933 8352,10833 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 8352,10833 L 8352,11033 8552,10933 8352,10833 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 8563,10791 L 8563,10991 8762,10891 8563,10791 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 8563,10791 L 8563,10991 8762,10891 8563,10791 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 8772,10698 L 8772,10898 8972,10798 8772,10698 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 8772,10698 L 8772,10898 8972,10798 8772,10698 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 8983,10665 L 8983,10865 9183,10765 8983,10665 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 8983,10665 L 8983,10865 9183,10765 8983,10665 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 9194,10555 L 9194,10755 9393,10655 9194,10555 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 9194,10555 L 9194,10755 9393,10655 9194,10555 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 9404,10504 L 9404,10704 9604,10604 9404,10504 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 9404,10504 L 9404,10704 9604,10604 9404,10504 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 9615,10352 L 9615,10552 9814,10452 9615,10352 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 9615,10352 L 9615,10552 9814,10452 9615,10352 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 9824,10191 L 9824,10391 10024,10291 9824,10191 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 9824,10191 L 9824,10391 10024,10291 9824,10191 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 10035,10048 L 10035,10248 10235,10148 10035,10048 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 10035,10048 L 10035,10248 10235,10148 10035,10048 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 10246,9896 L 10246,10096 10445,9996 10246,9896 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 10246,9896 L 10246,10096 10445,9996 10246,9896 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 10456,9718 L 10456,9918 10656,9818 10456,9718 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 10456,9718 L 10456,9918 10656,9818 10456,9718 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 10666,9592 L 10666,9792 10865,9692 10666,9592 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 10666,9592 L 10666,9792 10865,9692 10666,9592 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 10876,9457 L 10876,9657 11076,9557 10876,9457 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 10876,9457 L 10876,9657 11076,9557 10876,9457 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 11087,9338 L 11087,9538 11287,9438 11087,9338 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 11087,9338 L 11087,9538 11287,9438 11087,9338 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 11298,9262 L 11298,9462 11497,9362 11298,9262 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 11298,9262 L 11298,9462 11497,9362 11298,9262 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 11507,9110 L 11507,9310 11707,9210 11507,9110 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 11507,9110 L 11507,9310 11707,9210 11507,9110 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 11718,9009 L 11718,9209 11917,9109 11718,9009 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 11718,9009 L 11718,9209 11917,9109 11718,9009 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 11928,8857 L 11928,9057 12128,8957 11928,8857 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 11928,8857 L 11928,9057 12128,8957 11928,8857 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 12139,8747 L 12139,8947 12339,8847 12139,8747 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 12139,8747 L 12139,8947 12339,8847 12139,8747 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 12349,8663 L 12349,8863 12548,8763 12349,8663 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 12349,8663 L 12349,8863 12548,8763 12349,8663 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 12559,8612 L 12559,8812 12759,8712 12559,8612 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 12559,8612 L 12559,8812 12759,8712 12559,8612 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 12770,8536 L 12770,8736 12969,8636 12770,8536 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 12770,8536 L 12770,8736 12969,8636 12770,8536 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 12980,8443 L 12980,8643 13180,8543 12980,8443 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 12980,8443 L 12980,8643 13180,8543 12980,8443 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 13191,8359 L 13191,8559 13391,8459 13191,8359 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 13191,8359 L 13191,8559 13391,8459 13191,8359 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 13401,8240 L 13401,8440 13600,8340 13401,8240 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 13401,8240 L 13401,8440 13600,8340 13401,8240 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 13611,8139 L 13611,8339 13811,8239 13611,8139 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 13611,8139 L 13611,8339 13811,8239 13611,8139 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 13822,8088 L 13822,8288 14021,8188 13822,8088 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 13822,8088 L 13822,8288 14021,8188 13822,8088 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 14032,8021 L 14032,8221 14232,8121 14032,8021 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 14032,8021 L 14032,8221 14232,8121 14032,8021 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 14242,7953 L 14242,8153 14442,8053 14242,7953 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 14242,7953 L 14242,8153 14442,8053 14242,7953 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 14453,7894 L 14453,8094 14652,7994 14453,7894 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 14453,7894 L 14453,8094 14652,7994 14453,7894 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-width="50" stroke-linejoin="round" d="M 6559,11153 L 6769,11145 6980,11136 7189,11128 7400,11119 7611,11085 7821,11043 8031,10959 8241,10900 8452,10883 8663,10748 8872,10672 9083,10570 9293,10452 9504,10300 9715,10207 9924,10063 10135,9971 10345,9886 10556,9717 10766,9658 10976,9582 11187,9455 11397,9421 11607,9354 11818,9320 12028,9244 12239,9202 12448,9143 12659,9058 12870,9033 13080,8957 13291,8307 13500,8171 13711,8045 13922,7910 14132,7808 14342,7774 14552,7707"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 6459,11153 L 6658,11253 6658,11053 6459,11153 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 6459,11153 L 6658,11253 6658,11053 6459,11153 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 6669,11145 L 6869,11245 6869,11045 6669,11145 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 6669,11145 L 6869,11245 6869,11045 6669,11145 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 6880,11136 L 7080,11236 7080,11036 6880,11136 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 6880,11136 L 7080,11236 7080,11036 6880,11136 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 7090,11128 L 7289,11228 7289,11028 7090,11128 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 7090,11128 L 7289,11228 7289,11028 7090,11128 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 7300,11119 L 7500,11219 7500,11019 7300,11119 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 7300,11119 L 7500,11219 7500,11019 7300,11119 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 7511,11085 L 7710,11185 7710,10985 7511,11085 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 7511,11085 L 7710,11185 7710,10985 7511,11085 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 7721,11043 L 7921,11143 7921,10943 7721,11043 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 7721,11043 L 7921,11143 7921,10943 7721,11043 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 7931,10959 L 8131,11059 8131,10859 7931,10959 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 7931,10959 L 8131,11059 8131,10859 7931,10959 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 8142,10900 L 8341,11000 8341,10800 8142,10900 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 8142,10900 L 8341,11000 8341,10800 8142,10900 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 8352,10883 L 8552,10983 8552,10783 8352,10883 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 8352,10883 L 8552,10983 8552,10783 8352,10883 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 8563,10748 L 8762,10848 8762,10648 8563,10748 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 8563,10748 L 8762,10848 8762,10648 8563,10748 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 8772,10672 L 8972,10772 8972,10572 8772,10672 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 8772,10672 L 8972,10772 8972,10572 8772,10672 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 8983,10570 L 9183,10670 9183,10470 8983,10570 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 8983,10570 L 9183,10670 9183,10470 8983,10570 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 9194,10452 L 9393,10552 9393,10352 9194,10452 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 9194,10452 L 9393,10552 9393,10352 9194,10452 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 9404,10300 L 9604,10400 9604,10200 9404,10300 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 9404,10300 L 9604,10400 9604,10200 9404,10300 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 9615,10207 L 9814,10307 9814,10107 9615,10207 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 9615,10207 L 9814,10307 9814,10107 9615,10207 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 9824,10063 L 10024,10163 10024,9963 9824,10063 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 9824,10063 L 10024,10163 10024,9963 9824,10063 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 10035,9971 L 10235,10071 10235,9871 10035,9971 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 10035,9971 L 10235,10071 10235,9871 10035,9971 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 10246,9886 L 10445,9986 10445,9786 10246,9886 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 10246,9886 L 10445,9986 10445,9786 10246,9886 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 10456,9717 L 10656,9817 10656,9617 10456,9717 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 10456,9717 L 10656,9817 10656,9617 10456,9717 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 10666,9658 L 10865,9758 10865,9558 10666,9658 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 10666,9658 L 10865,9758 10865,9558 10666,9658 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 10876,9582 L 11076,9682 11076,9482 10876,9582 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 10876,9582 L 11076,9682 11076,9482 10876,9582 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 11087,9455 L 11287,9555 11287,9355 11087,9455 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 11087,9455 L 11287,9555 11287,9355 11087,9455 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 11298,9421 L 11497,9521 11497,9321 11298,9421 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 11298,9421 L 11497,9521 11497,9321 11298,9421 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 11507,9354 L 11707,9454 11707,9254 11507,9354 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 11507,9354 L 11707,9454 11707,9254 11507,9354 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 11718,9320 L 11917,9420 11917,9220 11718,9320 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 11718,9320 L 11917,9420 11917,9220 11718,9320 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 11928,9244 L 12128,9344 12128,9144 11928,9244 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 11928,9244 L 12128,9344 12128,9144 11928,9244 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 12139,9202 L 12339,9302 12339,9102 12139,9202 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 12139,9202 L 12339,9302 12339,9102 12139,9202 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 12349,9143 L 12548,9243 12548,9043 12349,9143 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 12349,9143 L 12548,9243 12548,9043 12349,9143 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 12559,9058 L 12759,9158 12759,8958 12559,9058 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 12559,9058 L 12759,9158 12759,8958 12559,9058 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 12770,9033 L 12969,9133 12969,8933 12770,9033 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 12770,9033 L 12969,9133 12969,8933 12770,9033 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 12980,8957 L 13180,9057 13180,8857 12980,8957 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 12980,8957 L 13180,9057 13180,8857 12980,8957 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 13191,8307 L 13391,8407 13391,8207 13191,8307 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 13191,8307 L 13391,8407 13391,8207 13191,8307 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 13401,8171 L 13600,8271 13600,8071 13401,8171 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 13401,8171 L 13600,8271 13600,8071 13401,8171 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 13611,8045 L 13811,8145 13811,7945 13611,8045 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 13611,8045 L 13811,8145 13811,7945 13611,8045 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 13822,7910 L 14021,8010 14021,7810 13822,7910 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 13822,7910 L 14021,8010 14021,7810 13822,7910 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 14032,7808 L 14232,7908 14232,7708 14032,7808 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 14032,7808 L 14232,7908 14232,7708 14032,7808 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 14242,7774 L 14442,7874 14442,7674 14242,7774 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 14242,7774 L 14442,7874 14442,7674 14242,7774 Z"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 14453,7707 L 14652,7807 14652,7607 14453,7707 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 14453,7707 L 14652,7807 14652,7607 14453,7707 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-width="80" stroke-linejoin="round" d="M 4245,11153 L 4455,11153 4665,11145 4876,11119 5086,11119 5296,11111 5507,11111 5717,11069 5928,11043 6137,11043 6348,10967 6559,10967 6769,10857 6980,10824 7189,10714 7400,10562 7611,10444 7821,10342 8031,10148 8241,10038 8452,9852 8663,9641 8872,9413 9083,9295 9293,8923 9504,8653 9715,8416 9924,8045 10135,7681 10345,7411 10556,7132 10766,6811 10976,6533 11187,6212 11397,5799 11607,5343 11818,5005 12028,4701 12239,4371 12448,4143 12659,3907 12870,3544 13080,3087 13291,2783 13500,2547 13711,2192 13922,2032 14132,1846 14342,1668 14552,1305"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 4120,11028 L 4120,11278 4370,11028 4370,11278 4120,11028 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 4120,11028 L 4120,11278 4370,11028 4370,11278 4120,11028 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 4330,11028 L 4330,11278 4579,11028 4579,11278 4330,11028 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 4330,11028 L 4330,11278 4579,11028 4579,11278 4330,11028 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 4540,11020 L 4540,11270 4790,11020 4790,11270 4540,11020 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 4540,11020 L 4540,11270 4790,11020 4790,11270 4540,11020 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 4751,10994 L 4751,11244 5000,10994 5000,11244 4751,10994 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 4751,10994 L 4751,11244 5000,10994 5000,11244 4751,10994 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 4962,10994 L 4962,11244 5211,10994 5211,11244 4962,10994 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 4962,10994 L 4962,11244 5211,10994 5211,11244 4962,10994 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 5171,10986 L 5171,11236 5421,10986 5421,11236 5171,10986 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 5171,10986 L 5171,11236 5421,10986 5421,11236 5171,10986 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 5382,10986 L 5382,11236 5631,10986 5631,11236 5382,10986 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 5382,10986 L 5382,11236 5631,10986 5631,11236 5382,10986 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 5592,10944 L 5592,11194 5842,10944 5842,11194 5592,10944 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 5592,10944 L 5592,11194 5842,10944 5842,11194 5592,10944 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 5803,10918 L 5803,11168 6053,10918 6053,11168 5803,10918 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 5803,10918 L 5803,11168 6053,10918 6053,11168 5803,10918 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 6013,10918 L 6013,11168 6262,10918 6262,11168 6013,10918 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 6013,10918 L 6013,11168 6262,10918 6262,11168 6013,10918 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 6223,10842 L 6223,11092 6473,10842 6473,11092 6223,10842 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 6223,10842 L 6223,11092 6473,10842 6473,11092 6223,10842 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 6434,10842 L 6434,11092 6683,10842 6683,11092 6434,10842 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 6434,10842 L 6434,11092 6683,10842 6683,11092 6434,10842 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 6644,10732 L 6644,10982 6894,10732 6894,10982 6644,10732 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 6644,10732 L 6644,10982 6894,10732 6894,10982 6644,10732 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 6855,10699 L 6855,10949 7105,10699 7105,10949 6855,10699 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 6855,10699 L 6855,10949 7105,10699 7105,10949 6855,10699 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 7065,10589 L 7065,10839 7314,10589 7314,10839 7065,10589 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 7065,10589 L 7065,10839 7314,10589 7314,10839 7065,10589 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 7275,10437 L 7275,10687 7525,10437 7525,10687 7275,10437 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 7275,10437 L 7275,10687 7525,10437 7525,10687 7275,10437 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 7486,10319 L 7486,10569 7735,10319 7735,10569 7486,10319 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 7486,10319 L 7486,10569 7735,10319 7735,10569 7486,10319 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 7696,10217 L 7696,10467 7946,10217 7946,10467 7696,10217 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 7696,10217 L 7696,10467 7946,10217 7946,10467 7696,10217 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 7906,10023 L 7906,10273 8156,10023 8156,10273 7906,10023 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 7906,10023 L 7906,10273 8156,10023 8156,10273 7906,10023 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 8117,9913 L 8117,10163 8366,9913 8366,10163 8117,9913 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 8117,9913 L 8117,10163 8366,9913 8366,10163 8117,9913 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 8327,9727 L 8327,9977 8577,9727 8577,9977 8327,9727 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 8327,9727 L 8327,9977 8577,9727 8577,9977 8327,9727 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 8538,9516 L 8538,9766 8787,9516 8787,9766 8538,9516 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 8538,9516 L 8538,9766 8787,9516 8787,9766 8538,9516 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 8747,9288 L 8747,9538 8997,9288 8997,9538 8747,9288 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 8747,9288 L 8747,9538 8997,9288 8997,9538 8747,9288 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 8958,9170 L 8958,9420 9208,9170 9208,9420 8958,9170 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 8958,9170 L 8958,9420 9208,9170 9208,9420 8958,9170 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 9169,8798 L 9169,9048 9418,8798 9418,9048 9169,8798 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 9169,8798 L 9169,9048 9418,8798 9418,9048 9169,8798 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 9379,8528 L 9379,8778 9629,8528 9629,8778 9379,8528 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 9379,8528 L 9379,8778 9629,8528 9629,8778 9379,8528 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 9590,8291 L 9590,8541 9839,8291 9839,8541 9590,8291 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 9590,8291 L 9590,8541 9839,8291 9839,8541 9590,8291 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 9799,7920 L 9799,8170 10049,7920 10049,8170 9799,7920 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 9799,7920 L 9799,8170 10049,7920 10049,8170 9799,7920 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 10010,7556 L 10010,7806 10260,7556 10260,7806 10010,7556 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 10010,7556 L 10010,7806 10260,7556 10260,7806 10010,7556 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 10221,7286 L 10221,7536 10470,7286 10470,7536 10221,7286 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 10221,7286 L 10221,7536 10470,7286 10470,7536 10221,7286 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 10431,7007 L 10431,7257 10681,7007 10681,7257 10431,7007 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 10431,7007 L 10431,7257 10681,7007 10681,7257 10431,7007 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 10641,6686 L 10641,6936 10890,6686 10890,6936 10641,6686 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 10641,6686 L 10641,6936 10890,6686 10890,6936 10641,6686 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 10851,6408 L 10851,6658 11101,6408 11101,6658 10851,6408 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 10851,6408 L 10851,6658 11101,6408 11101,6658 10851,6408 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 11062,6087 L 11062,6337 11312,6087 11312,6337 11062,6087 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 11062,6087 L 11062,6337 11312,6087 11312,6337 11062,6087 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 11273,5674 L 11273,5924 11522,5674 11522,5924 11273,5674 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 11273,5674 L 11273,5924 11522,5674 11522,5924 11273,5674 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 11482,5218 L 11482,5468 11732,5218 11732,5468 11482,5218 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 11482,5218 L 11482,5468 11732,5218 11732,5468 11482,5218 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 11693,4880 L 11693,5130 11942,4880 11942,5130 11693,4880 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 11693,4880 L 11693,5130 11942,4880 11942,5130 11693,4880 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 11903,4576 L 11903,4826 12153,4576 12153,4826 11903,4576 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 11903,4576 L 11903,4826 12153,4576 12153,4826 11903,4576 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 12114,4246 L 12114,4496 12364,4246 12364,4496 12114,4246 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 12114,4246 L 12114,4496 12364,4246 12364,4496 12114,4246 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 12324,4018 L 12324,4268 12573,4018 12573,4268 12324,4018 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 12324,4018 L 12324,4268 12573,4018 12573,4268 12324,4018 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 12534,3782 L 12534,4032 12784,3782 12784,4032 12534,3782 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 12534,3782 L 12534,4032 12784,3782 12784,4032 12534,3782 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 12745,3419 L 12745,3669 12994,3419 12994,3669 12745,3419 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 12745,3419 L 12745,3669 12994,3419 12994,3669 12745,3419 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 12955,2962 L 12955,3212 13205,2962 13205,3212 12955,2962 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 12955,2962 L 12955,3212 13205,2962 13205,3212 12955,2962 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 13166,2658 L 13166,2908 13416,2658 13416,2908 13166,2658 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 13166,2658 L 13166,2908 13416,2658 13416,2908 13166,2658 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 13376,2422 L 13376,2672 13625,2422 13625,2672 13376,2422 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 13376,2422 L 13376,2672 13625,2422 13625,2672 13376,2422 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 13586,2067 L 13586,2317 13836,2067 13836,2317 13586,2067 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 13586,2067 L 13586,2317 13836,2067 13836,2317 13586,2067 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 13797,1907 L 13797,2157 14046,1907 14046,2157 13797,1907 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 13797,1907 L 13797,2157 14046,1907 14046,2157 13797,1907 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 14007,1721 L 14007,1971 14257,1721 14257,1971 14007,1721 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 14007,1721 L 14007,1971 14257,1721 14257,1971 14007,1721 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 14217,1543 L 14217,1793 14467,1543 14467,1793 14217,1543 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 14217,1543 L 14217,1793 14467,1543 14467,1793 14217,1543 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 14428,1180 L 14428,1430 14677,1180 14677,1430 14428,1180 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 14428,1180 L 14428,1430 14677,1180 14677,1430 14428,1180 Z"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="877" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">20/02</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="2349" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">27/02</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="3822" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">05/03</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="5294" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">12/03</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="6767" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">19/03</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="8240" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">26/03</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9712" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">02/04</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="11184" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">09/04</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="12657" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">16/04</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="14130" y="11730"><tspan fill="rgb(0,0,0)" stroke="none">23/04</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="761" y="11283"><tspan fill="rgb(0,0,0)" stroke="none">0</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="390" y="9593"><tspan fill="rgb(0,0,0)" stroke="none">200</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="390" y="7904"><tspan fill="rgb(0,0,0)" stroke="none">400</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="390" y="6215"><tspan fill="rgb(0,0,0)" stroke="none">600</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="390" y="4525"><tspan fill="rgb(0,0,0)" stroke="none">800</tspan></tspan></tspan></text>
  <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="100" y="2836"><tspan fill="rgb(0,0,0)" stroke="none">1.000</tspan></tspan></tspan></text>
  <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="100" y="1147"><tspan fill="rgb(0,0,0)" stroke="none">1.200</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="459px" font-weight="400"><tspan class="TextPosition" x="3991" y="631"><tspan fill="rgb(0,0,0)" stroke="none">Covid-19. Muertes acumuladas CCAA (2)</tspan></tspan></tspan></text>
- <path fill="none" stroke="rgb(0,0,0)" stroke-width="50" stroke-linejoin="round" d="M 6435,2216 L 7235,2216"/>
- <path fill="rgb(0,0,0)" stroke="none" d="M 6729,2216 L 6835,2322 6940,2216 6835,2111 6729,2216 Z"/>
- <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6729,2216 L 6835,2322 6940,2216 6835,2111 6729,2216 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-width="50" stroke-linejoin="round" d="M 6435,3088 L 7235,3088"/>
- <path fill="rgb(255,66,14)" stroke="none" d="M 6729,3088 L 6835,3194 6940,3088 6835,2983 6729,3088 Z"/>
- <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 6729,3088 L 6835,3194 6940,3088 6835,2983 6729,3088 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-width="50" stroke-linejoin="round" d="M 6435,3960 L 7235,3960"/>
- <path fill="rgb(255,211,32)" stroke="none" d="M 6729,3855 L 6835,4066 6940,3855 6729,3855 Z"/>
- <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 6729,3855 L 6835,4066 6940,3855 6729,3855 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-width="50" stroke-linejoin="round" d="M 6435,4832 L 7235,4832"/>
- <path fill="rgb(87,157,28)" stroke="none" d="M 6729,4938 L 6940,4938 6835,4727 6729,4938 Z"/>
- <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 6729,4938 L 6940,4938 6835,4727 6729,4938 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-width="50" stroke-linejoin="round" d="M 6435,5704 L 7235,5704"/>
- <path fill="rgb(126,0,33)" stroke="none" d="M 6729,5599 L 6729,5810 6940,5704 6729,5599 Z"/>
- <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 6729,5599 L 6729,5810 6940,5704 6729,5599 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-width="50" stroke-linejoin="round" d="M 6435,6575 L 7235,6575"/>
- <path fill="rgb(131,202,255)" stroke="none" d="M 6729,6575 L 6940,6681 6940,6470 6729,6575 Z"/>
- <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 6729,6575 L 6940,6681 6940,6470 6729,6575 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-width="80" stroke-linejoin="round" d="M 6435,7447 L 7235,7447"/>
- <path fill="rgb(49,64,4)" stroke="none" d="M 6729,7342 L 6729,7553 6940,7342 6940,7553 6729,7342 Z"/>
- <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 6729,7342 L 6729,7553 6940,7342 6940,7553 6729,7342 Z"/>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7335" y="2336"><tspan fill="rgb(0,0,0)" stroke="none">Andalucía</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7335" y="3208"><tspan fill="rgb(0,0,0)" stroke="none">Aragón</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7335" y="4080"><tspan fill="rgb(0,0,0)" stroke="none">Comunidad Valenciana</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7335" y="4952"><tspan fill="rgb(0,0,0)" stroke="none">Extremadura</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7335" y="5824"><tspan fill="rgb(0,0,0)" stroke="none">Galicia</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7335" y="6695"><tspan fill="rgb(0,0,0)" stroke="none">Navarra</tspan></tspan></tspan></text>
- <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7335" y="7567"><tspan fill="rgb(0,0,0)" stroke="none">País Vasco</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="459px" font-weight="400"><tspan class="TextPosition" x="3986" y="631"><tspan fill="rgb(0,0,0)" stroke="none">Covid-19. Muertes acumuladas CCAA (2)</tspan></tspan></tspan></text>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-width="50" stroke-linejoin="round" d="M 6423,2216 L 7221,2216"/>
+ <path fill="rgb(0,0,0)" stroke="none" d="M 6716,2216 L 6822,2322 6927,2216 6822,2111 6716,2216 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6716,2216 L 6822,2322 6927,2216 6822,2111 6716,2216 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-width="50" stroke-linejoin="round" d="M 6423,3088 L 7221,3088"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 6716,3088 L 6822,3194 6927,3088 6822,2983 6716,3088 Z"/>
+ <path fill="none" stroke="rgb(255,66,14)" stroke-linejoin="round" d="M 6716,3088 L 6822,3194 6927,3088 6822,2983 6716,3088 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-width="50" stroke-linejoin="round" d="M 6423,3960 L 7221,3960"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 6716,3855 L 6822,4066 6927,3855 6716,3855 Z"/>
+ <path fill="none" stroke="rgb(255,211,32)" stroke-linejoin="round" d="M 6716,3855 L 6822,4066 6927,3855 6716,3855 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-width="50" stroke-linejoin="round" d="M 6423,4832 L 7221,4832"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 6716,4938 L 6927,4938 6822,4727 6716,4938 Z"/>
+ <path fill="none" stroke="rgb(87,157,28)" stroke-linejoin="round" d="M 6716,4938 L 6927,4938 6822,4727 6716,4938 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-width="50" stroke-linejoin="round" d="M 6423,5704 L 7221,5704"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 6716,5599 L 6716,5810 6927,5704 6716,5599 Z"/>
+ <path fill="none" stroke="rgb(126,0,33)" stroke-linejoin="round" d="M 6716,5599 L 6716,5810 6927,5704 6716,5599 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-width="50" stroke-linejoin="round" d="M 6423,6575 L 7221,6575"/>
+ <path fill="rgb(131,202,255)" stroke="none" d="M 6716,6575 L 6927,6681 6927,6470 6716,6575 Z"/>
+ <path fill="none" stroke="rgb(131,202,255)" stroke-linejoin="round" d="M 6716,6575 L 6927,6681 6927,6470 6716,6575 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-width="80" stroke-linejoin="round" d="M 6423,7447 L 7221,7447"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 6716,7342 L 6716,7553 6927,7342 6927,7553 6716,7342 Z"/>
+ <path fill="none" stroke="rgb(49,64,4)" stroke-linejoin="round" d="M 6716,7342 L 6716,7553 6927,7342 6927,7553 6716,7342 Z"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7321" y="2336"><tspan fill="rgb(0,0,0)" stroke="none">Andalucía</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7321" y="3208"><tspan fill="rgb(0,0,0)" stroke="none">Aragón</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7321" y="4080"><tspan fill="rgb(0,0,0)" stroke="none">Comunidad Valenciana</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7321" y="4952"><tspan fill="rgb(0,0,0)" stroke="none">Extremadura</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7321" y="5824"><tspan fill="rgb(0,0,0)" stroke="none">Galicia</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7321" y="6695"><tspan fill="rgb(0,0,0)" stroke="none">Navarra</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7321" y="7567"><tspan fill="rgb(0,0,0)" stroke="none">País Vasco</tspan></tspan></tspan></text>
 </svg>

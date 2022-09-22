@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instalación en LliureX. Visual Studio Code. Informática. Bartolomé Sintes Marco. www.mclibre.org</title>
+  <link rel="stylesheet" href="../varios/informatica.css" title="mclibre">
+  <link rel="icon" href="../varios/favicon.svg">
+  <link rel="stylesheet" href="../varios/prism.css">
+  <script src="../varios/prism.js"></script>
+</head>
+
+<body>
+  <h1>Visual Studio Code. Instalación en LliureX</h1>
+
+  <nav>
+    <p>
+      <a href="../index.html"><img src="../varios/iconos/icono-informatica.svg" alt="Índice de Temas de Informática" title="Índice de Temas de Informática" height="48" width="48"></a>
+      <a href="#"><img src="../varios/iconos/icono-arrow-circle-up.svg" alt="Principio de la página" title="Principio de la página" width="36" height="36"></a>
+    </p>
+
+    <div class="toc">
+      <h2>
+        <a href="vsc-instalacion.html"><img src="../varios/iconos/icono-flecha-izquierda.svg" alt="Anterior" title="Anterior" width="15" height="18"></a>
+        <a href="vsc-personalizacion.html"><img src="../varios/iconos/icono-flecha-derecha.svg" alt="Siguiente" title="Siguiente" width="15" height="18"></a>
+        VSC: Instala LliureX
+      </h2>
+
+      <ul>
+        <li><a href="#vsc-conseguir">Conseguir</a></li>
+        <li><a href="#vsc-instalar-windows">Instalar</a></li>
+        <li><a href="#vsc-primera-vez">Primera ejecución</a></li>
+        <li><a href="#actualizar">Actualizar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <p>Visual Studio Code aparece tanto en la aplicación LliureX Store como en la aplicación Discover, pero su instalación desde ambas aplicaciones me ha dado problemas que no he sabido resolver. Por ese motivo, en esta lección se explica la instalación de Visual Studio Code a partir del paquete .deb proporcionado por Microsoft.</p>
+
+  <section id="vsc-conseguir">
+    <h2>Conseguir Visual Studio Code en LLiureX</h2>
+
+    <p>La página oficial de Visual Studio Code es <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>. Desde la página principal se puede descargar la última versión estable (mediante el botón azul grande situado a la izquierda) o acceder a la <a href="https://code.visualstudio.com/Download">página de descargas</a> (mediante el botón azul más pequeño situado arriba a la derecha):</p>
+
+    <p class="captura">
+      <img src="../img/vscode/instalacion-lliurex/vsc-lliurex-descargar-1.png" alt="Visual Studio Code. Descargar" width="800" height="450">
+    </p>
+
+    <hr class="corta">
+
+    <p>Desde <a href="https://code.visualstudio.com/Download">la página de descargas</a> se pueden descargar las versiones para diferentes sistemas operativos (32 / 64 bits, Windows / GNU/Linux / Mac). En Windows hay además disponibles versiones <i>System installer</i>, que se instalan en la carpeta de Archivos de programa, y versiones <i>User installer</i>, que se instalan en la carpeta de usuario. Desde el verano de 2018, Microsoft recomienda la versión <i>User installer</i>.</p>
+
+    <p>Enlace de descarga para LliureX: <a href="https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64">Visual Studio Code (.deb 64 bits)</a></p>
+
+    <p class="captura">
+      <img src="../img/vscode/instalacion-lliurex/vsc-lliurex-descargar-2.png" alt="Visual Studio Code. Descargar" width="800" height="450">
+    </p>
+  </section>
+
+  <section id="vsc-instalar-windows">
+    <h2>Instalar Visual Studio Code en LliureX</h2>
+
+    <ol>
+      <li>Descargue el paquete .deb:
+        <p class="captura">
+          <img src="../img/vscode/instalacion-lliurex/vsc-lliurex-instalar-1.png" alt="Visual Studio Code - Instalación 1" width="1024" height="576">
+        </p>
+      </li>
+      <li>Desde Firefox abra una ventana de Dolphin en el directorio de Descargas. Puede hacerlo haciendo clic en el icono del Proceso de descargas y a continuación en el icono de carpeta situado a la derecha del fichero descargado:
+        <p class="captura">
+          <img src="../img/vscode/instalacion-lliurex/vsc-lliurex-instalar-2.png" alt="Visual Studio Code - Instalación 2" width="1024" height="275">
+        </p>
+      </li>
+      <li>En Dolphin, haga doble clic en el fichero .deb descargado:
+        <p class="captura">
+          <img src="../img/vscode/instalacion-lliurex/vsc-lliurex-instalar-3.png" alt="Visual Studio Code - Instalación 3" width="1024" height="265">
+        </p>
+      </li>
+      <li>Se abrirá el instalador de paquetes EPI (tras pedirle en caso necesario la contraseña de sudo). Haga clic en Instalar para iniciar la instalación:
+        <p class="captura">
+          <img src="../img/vscode/instalacion-lliurex/vsc-lliurex-instalar-4.png" alt="Visual Studio Code - Instalación 4" width="683" height="575">
+        </p>
+      </li>
+      <li>Al finalizar la instalación, se mostrará el resultado. Cierre la ventana del instalador de paquetes EPI.
+        <p class="captura">
+          <img src="../img/vscode/instalacion-lliurex/vsc-lliurex-instalar-5.png" alt="Visual Studio Code - Instalación 4" width="683" height="584">
+        </p>
+      </li>
+    </ol>
+
+    <p><strong>Nota</strong>: Si al poner en marcha Visual Studio Code, el apartado Extensiones de la barra de actividades da un error de red y no puede conectarse con el marketplace, abra una ventana de terminal (Menú de aplicaciones &gt; Sistema &gt; Konsole) e instale el paquete gnome-keyring:</p>
+
+    <div class="terminal">
+      <pre>
+<code class="language-shell">sudo apt install gnome-keyring</code>
+</pre>
+    </div>
+  </section>
+
+  <section id="vsc-primera-vez">
+    <h2>Primera ejecución</h2>
+
+    <p>La primera vez que se abre Visual Studio Code tras la instalación, se muestra una página de bienvenida al programa:</p>
+
+    <p class="captura">
+      <img src="../img/vscode/vsc-interfaz-1.png" alt="Visual Studio Code. Interfaz inicial" width="1024" height="576">
+    </p>
+
+    <p>La personalización de Visual Studio Code se comenta en la siguiente lección, <a href="vsc-personalizacion.html">Visual Studio Code. Personalización</a>.</p>
+
+    <p><strong>Nota</strong>: Al detectar la presencia o ausencia de algunas aplicaciones (por ejemplo Git o Docker), Visual Studio Code se pueden mostrar distintos avisos.</p>
+  </section>
+
+  <section id="actualizar">
+    <h2>Actualizar Visual Studio Code en LliureX</h2>
+
+    <p>La instalación con el paquete .deb ha configurado el repositorio gestionado por Microsoft por los que la actualización de Visual Studio Code se puede realizar con los comandos habituales:</p>
+
+    <div class="codigo">
+      <pre>
+<code class="copy-language-shell">sudo apt update
+sudo apt upgrade
+sudo apt autoremove</code>
+</pre>
+    </div>
+  </section>
+
+  <footer>
+    <p class="ultmod">Última modificación de esta página: 22 de septiembre de 2022</p>
+
+    <p class="licencia">
+      <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>
+      Esta página forma parte del curso <strong><a href="https://www.mclibre.org/consultar/informatica/">Temas de Informática</a></strong> por <a href="https://www.mclibre.org/">Bartolomé Sintes Marco</a><br>
+      que se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">Licencia Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)</a>.
+    </p>
+  </footer>
+</body>
+</html>

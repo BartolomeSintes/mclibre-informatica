@@ -1,17 +1,17 @@
 /* TEMAS DE INFORMATICA                     */
 /* Bartolome Sintes Marco                   */
-/* https://www.mclibre.org                   */
+/* https://www.mclibre.org                  */
 /*                                          */
 /* CSS curso: Temas de informática          */
 /*                                          */
-/* 19 de agosto de 2018                     */
+/* 30 de septiembre de 2021                 */
 /*                                          */
 
 /* CSS comun */
 
 @font-face {
-  font-family: "Inconsolata";
-  src: url("fonts/inconsolata.woff");
+  font-family: "Consolas";
+  src: url("fonts/consolas.woff");
 }
 
 html {
@@ -62,9 +62,8 @@ h2, h3, h4 {
 pre, pre code {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Inconsolata", monospace;  /* Chrome user agent style sheet */
+  font-family: "Consolas", monospace;  /* Chrome user agent style sheet */
   line-height: 120%;
-  white-space: pre-wrap;
 }
 
 hr {
@@ -237,7 +236,7 @@ div.filaflex.nogrow h2, div.filaflex.nogrow h3 {
   margin: 0;
 }
 
-div.filaflex div:not([class="icono"]) {
+div.filaflex > div:not([class="icono"]) {
   width: 100px;
   flex-grow: 1;
 }
@@ -306,7 +305,7 @@ div.codigo, div[class^="resultado"], div[class^="enunciado"] {
 }
 
 div.codigo {
-  font-family: "Inconsolata", monospace;
+  font-family: "Consolas", monospace;
 }
 
 div.resultado-object {

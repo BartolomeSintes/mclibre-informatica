@@ -376,40 +376,38 @@
     <p>En el ejemplo definido en esta lección y que se muestra en las capturas, el nombre del proyecto es "mi-proyecto", el nombre de la carpeta enlazada es "mi-carpeta", se ha creado una carpeta "pruebas" y el fichero se llama "prueba-01.php". La dirección que genera Eclipse PHP es entonces: "<strong>http://localhost/mi-proyecto/mi-carpeta/pruebas/prueba-01.php</strong>", como muestra la tabla siguiente:</p>
 
     <table class="tabla-con-borde">
-      <tbody>
-        <tr>
-          <th></th>
-          <th>Servidor</th>
-          <th>Proyecto</th>
-          <th>Carpeta enlazada</th>
-          <th>Carpeta</th>
-          <th>Fichero</th>
-        </tr>
-        <tr>
-          <th>Elementos</th>
-          <td>
-            <pre>http://localhost/</pre>
-          </td>
-          <td>
-            <pre>mi-proyecto/</pre>
-          </td>
-          <td>
-            <pre>mi-carpeta/</pre>
-          </td>
-          <td>
-            <pre>pruebas/</pre>
-          </td>
-          <td>
-            <pre>prueba-01.php</pre>
-          </td>
-        </tr>
-        <tr>
-          <th>Dirección generada por Eclipse</th>
-          <td colspan="5">
-            <pre>http://localhost/mi-proyecto/mi-carpeta/pruebas/prueba-01.php</pre>
-          </td>
-        </tr>
-      </tbody>
+      <tr>
+        <th></th>
+        <th>Servidor</th>
+        <th>Proyecto</th>
+        <th>Carpeta enlazada</th>
+        <th>Carpeta</th>
+        <th>Fichero</th>
+      </tr>
+      <tr>
+        <th>Elementos</th>
+        <td>
+          <pre>http://localhost/</pre>
+        </td>
+        <td>
+          <pre>mi-proyecto/</pre>
+        </td>
+        <td>
+          <pre>mi-carpeta/</pre>
+        </td>
+        <td>
+          <pre>pruebas/</pre>
+        </td>
+        <td>
+          <pre>prueba-01.php</pre>
+        </td>
+      </tr>
+      <tr>
+        <th>Dirección generada por Eclipse</th>
+        <td colspan="5">
+          <pre>http://localhost/mi-proyecto/mi-carpeta/pruebas/prueba-01.php</pre>
+        </td>
+      </tr>
     </table>
 
     <p>A partir de esta dirección, Apache tiene que poder encontrar el documento en el disco. En el ejemplo definido en esta lección y que se muestra en las capturas, la ruta real del archivo es:</p>
@@ -420,48 +418,46 @@
     <p>La dirección generada por Eclipse y la ruta real del archivo deben comparase de derecha a izquierda. La parte final común y el inicio de la dirección (http://localhost/) se pueden descartar. El resto es lo que se utiliza para crear el alias. En el ejemplo definido en esta lección y que se muestra en las capturas el alias enlazaría "<strong>mi-proyecto/mi-carpeta/</strong>" con "<strong>C:\Users\Barto\Mis documentos\IAW Barto\PHP</strong>", como muestra la tabla siguiente:</p>
 
     <table class="tabla-con-borde">
-      <tbody>
-        <tr>
-          <th rowspan="3">Dirección generada por Eclipse</th>
-          <th>Servidor (se descarta)</th>
-          <th>Parte no común (alias)</th>
-          <th>Parte común (se descarta)</th>
-        </tr>
-        <tr>
-          <td>
-            <pre>http://localhost/</pre>
-          </td>
-          <td>
-            <pre>mi-proyecto/mi-carpeta/</pre>
-          </td>
-          <td>
-            <pre>pruebas/prueba-01.php</pre>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3">
-            <pre>http://localhost/mi-proyecto/mi-carpeta/pruebas/prueba-01.php</pre>
-          </td>
-        </tr>
-        <tr>
-          <th rowspan="3">Ruta real</th>
-          <td colspan="3">
-            <pre>C:\Users\Barto\Documents\IAW Barto\PHP\pruebas\prueba-01.php</pre>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <pre>C:\Users\Barto\Documents\IAW Barto\PHP\</pre>
-          </td>
-          <td>
-            <pre>pruebas\prueba-01.php</pre>
-          </td>
-        </tr>
-        <tr>
-          <th colspan="2">Parte no común (ruta en el disco)</th>
-          <th>Parte común (se descarta)</th>
-        </tr>
-      </tbody>
+      <tr>
+        <th rowspan="3">Dirección generada por Eclipse</th>
+        <th>Servidor (se descarta)</th>
+        <th>Parte no común (alias)</th>
+        <th>Parte común (se descarta)</th>
+      </tr>
+      <tr>
+        <td>
+          <pre>http://localhost/</pre>
+        </td>
+        <td>
+          <pre>mi-proyecto/mi-carpeta/</pre>
+        </td>
+        <td>
+          <pre>pruebas/prueba-01.php</pre>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <pre>http://localhost/mi-proyecto/mi-carpeta/pruebas/prueba-01.php</pre>
+        </td>
+      </tr>
+      <tr>
+        <th rowspan="3">Ruta real</th>
+        <td colspan="3">
+          <pre>C:\Users\Barto\Documents\IAW Barto\PHP\pruebas\prueba-01.php</pre>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <pre>C:\Users\Barto\Documents\IAW Barto\PHP\</pre>
+        </td>
+        <td>
+          <pre>pruebas\prueba-01.php</pre>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">Parte no común (ruta en el disco)</th>
+        <th>Parte común (se descarta)</th>
+      </tr>
     </table>
 
     <p>Así, en el ejemplo definido en esta lección y que se muestra en las capturas las líneas a añadir en el archivo httpd.conf serían las siguientes (resaltadas en negrita):</p>

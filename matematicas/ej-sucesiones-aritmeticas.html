@@ -37,36 +37,32 @@
     <h2>Ejercicio 1 - Reconocer sucesiones aritméticas</h2>
 
     <table>
-      <tbody>
-        <tr>
-          <td>Correctas:</td>
-          <td style="text-align: right;"><span id="e01-t-correctas"></span></td>
-          <td>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="10">
-              <rect x="0" y="0" rx="4" ry="4" width="1" height="10" fill="#22B14C" id="e01-l-correctas" />
-            </svg>
-          </td>
-        </tr>
-        <tr>
-          <td>Incorrectas:</td>
-          <td style="text-align: right;"><span id="e01-t-incorrectas"></span></td>
-          <td>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="10">
-              <rect x="0" y="0" rx="4" ry="4" width="1" height="10" fill="#ED1C24" id="e01-l-incorrectas" />
-            </svg>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3"><button onclick="e01_reinicia_contador()">Reiniciar contador</button></td>
-        </tr>
-      </tbody>
+      <tr>
+        <td>Correctas:</td>
+        <td style="text-align: right;"><span id="e01-t-correctas"></span></td>
+        <td>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="10">
+            <rect x="0" y="0" rx="4" ry="4" width="1" height="10" fill="#22B14C" id="e01-l-correctas" />
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td>Incorrectas:</td>
+        <td style="text-align: right;"><span id="e01-t-incorrectas"></span></td>
+        <td>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="10">
+            <rect x="0" y="0" rx="4" ry="4" width="1" height="10" fill="#ED1C24" id="e01-l-incorrectas" />
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3"><button onclick="e01_reinicia_contador()">Reiniciar contador</button></td>
+      </tr>
     </table>
 
     <p>Los valores siguientes son los primeros valores de una sucesión:</p>
 
-    <table style="border: black 1px solid; text-align: center">
-      <tbody id="e01-sucesion">
-      </tbody>
+    <table style="border: black 1px solid; text-align: center" id="e01-sucesion">
     </table>
 
     <p>¿La sucesión es aritmética? <button onclick="e01_comprueba(true)">Sí</button> - <button onclick="e01_comprueba(false)">No</button> <span id="e01-resultado"></span></p>
@@ -76,29 +72,27 @@
     <h2>Ejercicio 2 - Escribir fórmulas</h2>
 
     <table>
-      <tbody>
-        <tr>
-          <td>Correctas:</td>
-          <td style="text-align: right;"><span id="e02-t-correctas"></span></td>
-          <td>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="10">
-              <rect x="0" y="0" rx="4" ry="4" width="1" height="10" fill="#22B14C" id="e02-l-correctas" />
-            </svg>
-          </td>
-        </tr>
-        <tr>
-          <td>Incorrectas:</td>
-          <td style="text-align: right;"><span id="e02-t-incorrectas"></span></td>
-          <td>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="10">
-              <rect x="0" y="0" rx="4" ry="4" width="1" height="10" fill="#ED1C24" id="e02-l-incorrectas" />
-            </svg>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3"><button onclick="e02_reinicia_contador()">Reiniciar contador</button></td>
-        </tr>
-      </tbody>
+      <tr>
+        <td>Correctas:</td>
+        <td style="text-align: right;"><span id="e02-t-correctas"></span></td>
+        <td>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="10">
+            <rect x="0" y="0" rx="4" ry="4" width="1" height="10" fill="#22B14C" id="e02-l-correctas" />
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td>Incorrectas:</td>
+        <td style="text-align: right;"><span id="e02-t-incorrectas"></span></td>
+        <td>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="10">
+            <rect x="0" y="0" rx="4" ry="4" width="1" height="10" fill="#ED1C24" id="e02-l-incorrectas" />
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3"><button onclick="e02_reinicia_contador()">Reiniciar contador</button></td>
+      </tr>
     </table>
 
     <p>Seleccione la dificultad del ejercicio:
@@ -109,23 +103,19 @@
 
     <p>Los valores siguientes son algunos valores de una sucesión aritmética:</p>
 
-    <table style="border: black 1px solid; text-align: center">
-      <tbody id="e02-sucesion">
-      </tbody>
+    <table style="border: black 1px solid; text-align: center" id="e02-sucesion">
     </table>
 
     <p>Escriba una fórmula (en función de <i>i</i>) que se ajuste a los valores anteriores:</p>
 
     <table>
-      <tbody>
-        <tr>
-          <td style="vertical-align: middle"><input type="text" id="e02-expresion" size="30" value="i" style="font-size: 1.5em"></td>
-          <td>
-            <button onclick="e02_pasar()">Nueva sucesión</button><br>
-            <button onclick="e02_comprueba()">Evaluar</button>
-            <span id="e02-resultado"></span></td>
-        </tr>
-      </tbody>
+      <tr>
+        <td style="vertical-align: middle"><input type="text" id="e02-expresion" size="30" value="i" style="font-size: 1.5em"></td>
+        <td>
+          <button onclick="e02_pasar()">Nueva sucesión</button><br>
+          <button onclick="e02_comprueba()">Evaluar</button>
+          <span id="e02-resultado"></span></td>
+      </tr>
     </table>
 
     <p><button onclick="e02_solucion()">Mostrar solución</button></p>

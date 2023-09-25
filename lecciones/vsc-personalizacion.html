@@ -22,7 +22,7 @@
     <div class="toc">
       <h2>
         <a href="vsc-instalacion-linux.html"><img src="../varios/iconos/icono-flecha-izquierda.svg" alt="Anterior" title="Anterior" width="15" height="18"></a>
-        <a href="vsc-uso.html"><img src="../varios/iconos/icono-flecha-derecha.svg" alt="Siguiente" title="Siguiente" width="15" height="18"></a>
+        <a href="vsc-perfiles.html"><img src="../varios/iconos/icono-flecha-derecha.svg" alt="Siguiente" title="Siguiente" width="15" height="18"></a>
         VSC: Personalización
       </h2>
 
@@ -46,7 +46,8 @@
         </li>
         <li><a href="#tareas">Tareas</a>
           <ul>
-            <li><a href="#tarea-crear">Crear tarea</a></li>
+            <li><a href="#tarea-crear-global">Crear tarea global</a></li>
+            <li><a href="#tarea-crear-area">Crear tarea carpeta</a></li>
             <li><a href="#tarea-utilizar">Utilizar tarea</a></li>
           </ul>
         </li>
@@ -289,7 +290,6 @@
           <p class="captura">
             <img src="../img/vscode/vsc-perso-pref-como-2.png" alt="VSC. Modificar preferencias" width="1024" height="576">
           </p>
-          <p><strong>Nota</strong>. En las primeras versiones de Visual Studio Code esta ventana mostraba el contenido del fichero settings.json. Desde la <a href="https://code.visualstudio.com/updates/v1_27#_settings-editor">versión 1.27</a> (septiembre de 2018), esta ventana muestra las preferencias con el aspecto de una página web.</p>
         </li>
 
         <li>Si hemos abierto una carpeta o un área de trabajo, la pestaña permite elegir entre mostrar únicamente las preferencias globales (Usuario) o incluyendo las preferencias del área de trabajo o de la carpeta abierta:
@@ -387,7 +387,11 @@
 
     <p>Las tareas de Visual studio Code permiten automatizar el uso de programas ajenos al propio editor. Las tareas se definen por escrito en un archivo (<i>tasks.json</i>) y se pueden invocar a través del interfaz o mediante atajos de teclado. El resultado de la ejecución de las tareas se suele mostrar en la ventana de Terminal.</p>
 
-    <p>Las tareas van asociadas a las áreas de trabajo, por lo que es necesario abrir una carpeta o área de trabajo para poder crear tareas.</p>
+    <p>Visual Studio Code organiza las tareas en dos niveles:</p>
+    <ul>
+      <li>tareas de usuario: estas tareas se pueden utilizar siempre</li>
+      <li>tareas de áreas de trabajo: estas tareas se pueden utilizar únicamente cuando está abierta un área de trabajo o una determinada carpeta</li>
+    </ul>
 
     <hr class="corta">
 
@@ -396,30 +400,24 @@
       <li>Documentación de VSC: <a href="https://code.visualstudio.com/docs/editor/tasks">Tareas</a></li>
     </ul>
 
-    <section id="tarea-crear">
-      <h3>Crear una tarea</h3>
+    <section id="tarea-crear-global">
+      <h3>Crear una tarea global</h3>
 
-      <p>Estos son los pasos a realizar para crear una tarea en Visual Studio Code.</p>
-
+      <p>Estos son los pasos a realizar para crear una tarea global (Usuario) en Visual Studio Code.</p>
       <ol>
-        <li>Elija la opción de menú <span class="soft-menu">Terminal &gt; Configurar Tareas</span>.
+        <li>Haga clic en el icono Administrar (con forma de rueda dentada) situado en la esquina inferior izquierda y elija la opción de menú <span class="soft-menu">Tareas de usuario</span>, aunque si no ha abierto ningún espacio de trabajo ni ninguna carpeta, también puede elegir la opción de menú <span class="soft-menu">Terminal &gt; Configurar tareas</span>.
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-tareas-crear-1.png" alt="VSC. Crear tarea" width="1024" height="370">
+            <img src="../img/vscode/vsc-perso-tareas-crear-1.png" alt="VSC. Crear tarea" width="1024" height="360">
           </p>
         </li>
-        <li>Si el archivo <i>tasks.json</i> no existe, se mostrará la opción "Crear archivo tasks.json desde plantilla". Haga clic en esta opción:
+        <li>Se mostrará una lista de plantillas de tareas de ejemplo. Haga clic en la opción "Others":
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-tareas-crear-2.png" alt="VSC. Crear tarea" width="1024" height="170">
-          </p>
-        </li>
-        <li>Se mostrará una lista de plantillas de tareas. Haga clic en la opción "Others":
-          <p class="captura">
-            <img src="../img/vscode/vsc-perso-tareas-crear-3.png" alt="VSC. Crear tarea" width="1024" height="190">
+            <img src="../img/vscode/vsc-perso-tareas-crear-2.png" alt="VSC. Crear tarea" width="1024" height="180">
           </p>
         </li>
         <li>Se mostrará en una pestaña el archivo de tareas <i>tasks.json</i> con una tarea de ejemplo. Observe que el archivo <i>tasks.json</i> se ha creado en una carpeta <i>.vscode</i> en la raíz del área de trabajo.
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-tareas-crear-4.png" alt="VSC. Crear tarea" width="1024" height="340">
+            <img src="../img/vscode/vsc-perso-tareas-crear-3.png" alt="VSC. Crear tarea" width="1024" height="360">
           </p>
           <p>Al crearse, este fichero contiene un ejemplo de tarea que simplemente muestra el mensaje "Hello" en el terminal:</p>
           <div class="codigo">
@@ -439,18 +437,54 @@
 </pre>
           </div>
         </li>
-        <li>Modifique el contenido del archivo <i>tasks.json</i> con la(s) tarea(s) deseada(s) y guarde el archivo.
-          <p>En la captura siguiente se muestra una tarea que abriría el navegador Firefox, como se comenta en la lección <a href="https://www.mclibre.org/consultar/htmlcss/otros/vsc-htmlcss-configuracion.html#tareas">Tareas recomendadas en el curso de HTML y CSS</a>.</p>
+        <li>Modifique el contenido del archivo <i>tasks.json</i> con la(s) tarea(s) deseada(s) y guarde el archivo.</li>
+      </ol>
+</section>
+
+<section id="tarea-crear-area">
+  <h3>Crear una tarea de área de trabajo o carpeta</h3>
+
+      <p>Estos son los pasos a realizar para crear una tarea asociada a un área de trabajo o carpeta en Visual Studio Code.</p>
+      <ol>
+        <li>Abra un área de trabajo o carpeta.</li>
+        <li>Elija la opción de menú <span class="soft-menu">Terminal &gt; Configurar tareas</span>.
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-tareas-crear-5.png" alt="VSC. Crear tarea" width="1024" height="315">
+            <img src="../img/vscode/vsc-perso-tareas-crear-11.png" alt="VSC. Crear tarea" width="1024" height="576">
           </p>
         </li>
-        <li>
-          <p>El archivo <i>tasks.json</i> se crea en la carpeta <i>.vscode</i> que se crea en la raíz del área de trabajo. Esto permite utilizar la tarea en todos los archivos del área de trabajo. Pero si abrimos otro área de trabajo y queremos utilizar la misma tarea tendremos que crear de nuevo la tarea (o copiar el archivo <i>tasks.json</i>).</p>
+        <li>Si el archivo <i>tasks.json</i> no existe, se mostrará la opción "Crear archivo tasks.json desde plantilla". Haga clic en esta opción:
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-tareas-crear-6.png" alt="VSC. Crear tarea" width="1024" height="315">
+            <img src="../img/vscode/vsc-perso-tareas-crear-12.png" alt="VSC. Crear tarea" width="1024" height="170">
           </p>
         </li>
+        <li>Se mostrará una lista de plantillas de tareas de ejemplo. Haga clic en la opción "Others":
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-tareas-crear-13.png" alt="VSC. Crear tarea" width="1024" height="190">
+          </p>
+        </li>
+        <li>Se mostrará en una pestaña el archivo de tareas <i>tasks.json</i> con una tarea de ejemplo. Observe que el archivo <i>tasks.json</i> se ha creado en una carpeta <i>.vscode</i> en la raíz del área de trabajo.
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-tareas-crear-14.png" alt="VSC. Crear tarea" width="1024" height="360">
+          </p>
+          <p>Al crearse, este fichero contiene un ejemplo de tarea que simplemente muestra el mensaje "Hello" en el terminal:</p>
+          <div class="codigo">
+            <pre>
+<code class="language-json">{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        }
+    ]
+}</code>
+</pre>
+          </div>
+        </li>
+        <li>Modifique el contenido del archivo <i>tasks.json</i> con la(s) tarea(s) deseada(s) y guarde el archivo.</li>
       </ol>
     </section>
 
@@ -462,22 +496,22 @@
       <ol>
         <li>Abra en una pestaña la página web a la que quiera aplicar la tarea:
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-tareas-usar-1.png" alt="VSC. Utilizar tarea" width="1024" height="380">
+            <img src="../img/vscode/vsc-perso-tareas-usar-1.png" alt="VSC. Utilizar tarea" width="1024" height="375">
           </p>
         </li>
         <li>Elija la opción de menú <span class="soft-menu">Terminal &gt; Ejecutar tarea ...</span>.
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-tareas-usar-2.png" alt="VSC. Utilizar tarea" width="1024" height="360">
+            <img src="../img/vscode/vsc-perso-tareas-usar-2.png" alt="VSC. Utilizar tarea" width="1024" height="576">
           </p>
         </li>
-        <li>Se mostrará un cuadro con las tareas disponibles. Haga clic en la tarea que quiera aplicar:
+        <li>Se mostrará un cuadro con las tareas disponibles. Haga clic en la tarea que quiera aplicar. En el caso de la tarea de la imagen de ejemplo siguiente, se muestran las tareas incluidas en el perfil recomendado para el curso de HTML y CSS de estos apuntes.
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-tareas-usar-3.png" alt="VSC. Utilizar tarea" width="1024" height="190">
+            <img src="../img/vscode/vsc-perso-tareas-usar-3.png" alt="VSC. Utilizar tarea" width="1024" height="240">
           </p>
         </li>
-        <li>El resultado obtenido depende de la tarea elegida. En el caso de la tarea de ejemplo de las capturas, se abriría en el navegador elegido la página elegida:
+        <li>El resultado obtenido depende de la tarea elegida. En el caso de la tarea de la imagen de ejemplo siguiente, se abriría en el navegador elegido la página elegida:
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-tareas-usar-4.png" alt="VSC. Utilizar tarea" width="1024" height="150">
+            <img src="../img/vscode/vsc-perso-tareas-usar-4.png" alt="VSC. Utilizar tarea" width="1024" height="180">
           </p>
         </li>
       </ol>
@@ -585,7 +619,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 18 de septiembre de 2023</p>
+    <p class="ultmod">Última modificación de esta página: 25 de septiembre de 2023</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

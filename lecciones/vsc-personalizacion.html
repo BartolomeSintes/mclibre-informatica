@@ -54,6 +54,8 @@
         <li><a href="#atajos">Atajos de teclado</a>
           <ul>
             <li><a href="#atajos-crear">Crear atajo</a></li>
+            <li><a href="#atajos-modificar-borrar">Modificar o borrar</a></li>
+            <li><a href="#atajos-json">Archivo .json</a></li>
           </ul>
         </li>
         <li><a href="#otros">Otros</a></li>
@@ -415,7 +417,7 @@
             <img src="../img/vscode/vsc-perso-tareas-crear-2.png" alt="VSC. Crear tarea" width="1024" height="180">
           </p>
         </li>
-        <li>Se mostrará en una pestaña el archivo de tareas <i>tasks.json</i> con una tarea de ejemplo. Observe que el archivo <i>tasks.json</i> se ha creado en una carpeta <i>.vscode</i> en la raíz del área de trabajo.
+        <li>Se mostrará en una pestaña el archivo de tareas <i>tasks.json</i> con una tarea de ejemplo. Observe que el archivo <i>tasks.json</i> se ha creado en la carpeta Users de Windows.
           <p class="captura">
             <img src="../img/vscode/vsc-perso-tareas-crear-3.png" alt="VSC. Crear tarea" width="1024" height="360">
           </p>
@@ -439,10 +441,10 @@
         </li>
         <li>Modifique el contenido del archivo <i>tasks.json</i> con la(s) tarea(s) deseada(s) y guarde el archivo.</li>
       </ol>
-</section>
+    </section>
 
-<section id="tarea-crear-area">
-  <h3>Crear una tarea de área de trabajo o carpeta</h3>
+    <section id="tarea-crear-area">
+      <h3>Crear una tarea de área de trabajo o carpeta</h3>
 
       <p>Estos son los pasos a realizar para crear una tarea asociada a un área de trabajo o carpeta en Visual Studio Code.</p>
       <ol>
@@ -496,7 +498,7 @@
       <ol>
         <li>Abra en una pestaña la página web a la que quiera aplicar la tarea:
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-tareas-usar-1.png" alt="VSC. Utilizar tarea" width="1024" height="375">
+            <img src="../img/vscode/vsc-perso-tareas-usar-1.png" alt="VSC. Utilizar tarea" width="1024" height="380">
           </p>
         </li>
         <li>Elija la opción de menú <span class="soft-menu">Terminal &gt; Ejecutar tarea ...</span>.
@@ -504,12 +506,12 @@
             <img src="../img/vscode/vsc-perso-tareas-usar-2.png" alt="VSC. Utilizar tarea" width="1024" height="576">
           </p>
         </li>
-        <li>Se mostrará un cuadro con las tareas disponibles. Haga clic en la tarea que quiera aplicar. En el caso de la tarea de la imagen de ejemplo siguiente, se muestran las tareas incluidas en el perfil recomendado para el curso de HTML y CSS de estos apuntes.
+        <li>Se mostrará un cuadro con las tareas disponibles. Haga clic en la tarea que quiera aplicar. En el caso de la tarea de la imagen de ejemplo siguiente, se muestran las tareas recomendadas en el curso de <a href="https://www.mclibre.org/consultar/htmlcss/">Páginas web HTML y hojas de estilo CSS</a> de <a href="https://www.mclibre.org/">mclibre.org</a>.
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-tareas-usar-3.png" alt="VSC. Utilizar tarea" width="1024" height="240">
+            <img src="../img/vscode/vsc-perso-tareas-usar-3.png" alt="VSC. Utilizar tarea" width="1024" height="270">
           </p>
         </li>
-        <li>El resultado obtenido depende de la tarea elegida. En el caso de la tarea de la imagen de ejemplo siguiente, se abriría en el navegador elegido la página elegida:
+        <li>El resultado obtenido depende de la tarea elegida. En el caso de la tarea de la imagen de ejemplo siguiente, se abriría en Firefox la página web abierta en Visual Studio Code:
           <p class="captura">
             <img src="../img/vscode/vsc-perso-tareas-usar-4.png" alt="VSC. Utilizar tarea" width="1024" height="180">
           </p>
@@ -521,7 +523,7 @@
   <section id="atajos">
     <h2>Atajos de teclado de Visual Studio Code</h2>
 
-    <p>Visual Studio Code dispone de un gran número de atajos de teclado para acceder rápidamente a muchas de sus funciones, pero también se pueden crear nuevos atajos de teclado para optimizar los procesos de trabajo..</p>
+    <p>Visual Studio Code dispone de un gran número de atajos de teclado para acceder rápidamente a muchas de sus funciones, pero también se pueden crear nuevos atajos de teclado para optimizar los procesos de trabajo.</p>
 
     <hr class="corta">
 
@@ -532,24 +534,107 @@
     </ul>
 
     <section id="atajos-crear">
-      <h2>Crear o modificar atajos de teclado</h2>
+      <h2>Crear atajos de teclado</h2>
 
-      <p>Estos son los pasos a realizar para crear o modificar atajos de teclado en Visual Studio Code.</p>
+      <p>Estos son los pasos a realizar para crear atajos de teclado en Visual Studio Code. Lo ejemplificaremos con la vinculación del atajo de teclado <span class="soft-atajo-teclado">Ctrl+Alt+a</span> al comando que comprueba si existe una nueva versión de Visual Studio Code.</p>
 
       <ol>
         <li>Elija la opción de menú <span class="soft-menu">Archivo &gt; Preferencias &gt; Métodos abreviados de teclado</span>, o bien haga clic en el icono Administrar (con forma de rueda dentada) situado en la esquina inferior izquierda y elija la opción de menú <span class="soft-menu">Métodos abreviados de teclado</span>:
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-atajos-crear-1.png" alt="VSC. Crear atajo de teclado" width="1024" height="576">
+            <img src="../img/vscode/vsc-perso-atajos-crear-11.png" alt="VSC. Crear atajo de teclado" width="1024" height="350">
           </p>
         </li>
-        <li>Se mostrará en una pestaña el archivo de atajos de teclado predeterminados de Visual Studio Code. Haga clic en el icono de documento situado en la parte superior derecha :
+        <li>Se abrirá una pestaña con la lista de atajos de teclado disponibles:
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-atajos-crear-2.png" alt="VSC. Crear atajo de teclado" width="1024" height="290">
+            <img src="../img/vscode/vsc-perso-atajos-crear-12.png" alt="VSC. Crear atajo de teclado" width="1024" height="250">
+          </p>
+        </li>
+        <li>Escribiendo texto en el cuadro de texto de búsqueda se mostrarán los atajos relacionados. Si escribe la palabra "actualizacion" podrá ver que hay un comando que realiza la búsqueda de actualizaciones (de hecho hay uno para actualizaciones de la aplicación y otro para actualizaciones de las extensiones). Tenga en cuenta que el buscador distingue las vocales acentuadas de las no acentuadas.
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-13.png" alt="VSC. Crear atajo de teclado" width="1024" height="400">
+          </p>
+        </li>
+        <li>A continuación busque un atajo de teclado que no esté ya utilizado. Al escribir un atajo, la lista de atajos se filtra. Por ejemplo, al escribir "ctrl+alt" se muestran los atajos de teclados en los que se pulsan las teclas <kbd>Ctrl</kbd> y <kbd>Alt</kbd> simultáneamente:
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-14.png" alt="VSC. Crear atajo de teclado" width="1024" height="300">
+          </p>
+        </li>
+        <li>Puede comprobar que el atajo de teclado <span class="soft-atajo-teclado">Ctrl+Alt+a</span> está libre porque la lista está vacía.
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-15.png" alt="VSC. Crear atajo de teclado" width="1024" height="220">
+          </p>
+        </li>
+        <li>Vuelva a teclear el comando y haga doble clic en él:
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-16.png" alt="VSC. Crear atajo de teclado" width="1024" height="220">
+          </p>
+        </li>
+        <li>Se abrirá una ventana en la que podemos indicar la combinación de teclas deseada.
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-17.png" alt="VSC. Crear atajo de teclado" width="1024" height="390">
+          </p>
+        </li>
+        <li>En este caso, pulse la combinación de teclas <span class="soft-atajo-teclado">Ctrl+Alt+a</span> e <kbd>Intro</kbd>.
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-18.png" alt="VSC. Crear atajo de teclado" width="1024" height="420">
+          </p>
+        </li>
+        <li>La asociación del atajo con el comando se mostrará en la lista
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-19.png" alt="VSC. Crear atajo de teclado" width="1024" height="220">
+          </p>
+        </li>
+        <li>Puede probar el atajo y en este ejemplo comprobar que se realiza la comprobación de actualizaciones:
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-20.png" alt="VSC. Crear atajo de teclado" width="1024" height="450">
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="atajos-modificar-borrar">
+      <h2>Modificar o eliminar atajos de teclado</h2>
+
+      <p>Estos son los pasos a realizar para modificar o borrar atajos de teclado en Visual Studio Code.</p>
+
+      <ol>
+        <li>Elija la opción de menú <span class="soft-menu">Archivo &gt; Preferencias &gt; Métodos abreviados de teclado</span>, o bien haga clic en el icono Administrar (con forma de rueda dentada) situado en la esquina inferior izquierda y elija la opción de menú <span class="soft-menu">Métodos abreviados de teclado</span>:
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-11.png" alt="VSC. Modificar o borrar atajo de teclado" width="1024" height="350">
+          </p>
+        </li>
+        <li>Escriba el atajo que quiera modificar (escribiendo el atajo o el comando correspondiente). Por ejemplo, el atajo <span class="soft-atajo-teclado">Ctrl+Alt+a</span> creado en el apartado anterior. Si el atajo está definido, se mostrará en la lista filtrada
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-21.png" alt="VSC. Modificar o borrar atajo de teclado" width="1024" height="200">
+          </p>
+        </li>
+        <li>Haga clic derecho en la descripción del atajo y elija la opción deseada "Cambiar enlace de teclado...", "Quitar enlace de teclado" o incluso "Restablecer enlaces de teclado" para eliminarlos todos:
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-22.png" alt="VSC. Modificar o borrar atajo de teclado" width="1024" height="490">
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="atajos-json">
+      <h2>Archivo <i>keybindings.json</i> de atajo de teclado</h2>
+
+      <p>Para no tener que crear los atajos de teclado uno a uno, podemos crearlos directamente en el archivo <i>keybindings.json</i>.</p>
+
+      <ol>
+        <li>Elija la opción de menú <span class="soft-menu">Archivo &gt; Preferencias &gt; Métodos abreviados de teclado</span>, o bien haga clic en el icono Administrar (con forma de rueda dentada) situado en la esquina inferior izquierda y elija la opción de menú <span class="soft-menu">Métodos abreviados de teclado</span>:
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-11.png" alt="VSC. Archivo keybindings.json" width="1024" height="350">
+          </p>
+        </li>
+        <li>Se mostrará en una pestaña el archivo de atajos de teclado predeterminados de Visual Studio Code. Haga clic en el icono de documento situado en la parte superior derecha:
+          <p class="captura">
+            <img src="../img/vscode/vsc-perso-atajos-crear-31.png" alt="VSC. Archivo keybindings.json" width="1024" height="225">
           </p>
         </li>
         <li>Se abrirá una pestaña mostrando el fichero global de atajos de teclado <i>keybindings.json</i>. Como en el caso del archivo de configuración global (Usuario), este archivo se encuentra en Windows en la carpeta C:\Users\NombreDeUsuario\AppData\Roaming\Code\User\.
           <p class="captura">
-            <img src="../img/vscode/vsc-perso-atajos-crear-3.png" alt="VSC. Crear atajo de teclado" width="1024" height="230">
+            <img src="../img/vscode/vsc-perso-atajos-crear-32.png" alt="VSC. Archivo keybindings.json" width="1024" height="220">
           </p>
           <p>Inicialmente, este fichero no contiene ninguna definición:</p>
           <div class="codigo">
@@ -560,8 +645,8 @@
 </pre>
           </div>
         </li>
-        <li>Modifique el contenido del archivo <i>keybindings.json</i> con los atajos de teclado deseados y guarde el archivo:
-          <p>En la captura siguiente se muestran los atajos de teclado que abren ficheros en Firefox y Chrome, como se comenta en la lección <a href="https://www.mclibre.org/consultar/htmlcss/otros/vsc-htmlcss-configuracion.html#atajos-teclado">Configuración recomendada para el curso Páginas web HTML y hojas de estilo CSS</a>. Los atajos asociados serían:</p>
+        <li>Puede modificar el contenido del archivo <i>keybindings.json</i> con los atajos de teclado deseados y guardar el archivo:
+          <p>por ejemplo, en la captura siguiente se muestran los atajos de teclado que abren ficheros en Firefox y Chrome. Los atajos asociados serían:</p>
           <ul>
             <li><span class="soft-atajo-teclado">Ctrl+Alt+f</span>, para Abrir en Firefox</li>
             <li><span class="soft-atajo-teclado">Ctrl+Alt+c</span>, para Abrir en Chrome</li>
@@ -570,7 +655,7 @@
             <img src="../img/vscode/vsc-perso-atajos-crear-4.png" alt="VSC. Crear atajo de teclado" width="1024" height="370">
           </p>
         </li>
-        <li>Tenga en cuenta que el archivo <i>keybindings.json</i> se crea en la carpeta C:\Users\<i>Usuario</i>\AppData\Roaming\Code\User. Por tanto, los atajos de teclados se pueden utilizar en todas las áreas de trabajo o carpetas. Pero si un atajo ejecuta una tarea y la tarea no está definida definida en el área de trabajo, el atajo no producirá ningún resultado.</li>
+        <li>Tenga en cuenta que el archivo <i>keybindings.json</i> se crea en Windows en la carpeta C:\Users\<i>Usuario</i>\AppData\Roaming\Code\User. Por tanto, los atajos de teclados se pueden utilizar en todas las áreas de trabajo o carpetas. Pero si un atajo ejecuta una tarea y la tarea no está definida definida en el área de trabajo, el atajo no producirá ningún resultado.</li>
       </ol>
     </section>
   </section>
@@ -619,7 +704,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 25 de septiembre de 2023</p>
+    <p class="ultmod">Última modificación de esta página: 26 de septiembre de 2023</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

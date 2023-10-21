@@ -26,7 +26,7 @@
 
       <ul>
         <li><a href="#ff-about-about">about:about</a></li>
-        <li><a href="#ff-about-config">about: config</a></li>
+        <li><a href="#ff-about-config">about:config</a></li>
         <li><a href="#ff-familias-fuentes">Familias <span class="css-valor">cursive</span> y <span class="css-valor">fantasy</span></a></li>
         <li><a href="#ff-zoom-maxpercent">zoom.maxPercent</a></li>
       </ul>
@@ -43,7 +43,7 @@
     <p>Firefox ofrece mucha información interna en las páginas <strong>about:</strong>. Para mostrar la lista de páginas about: disponibles, hay que escribir en la barra de dirección de Firefox la dirección about:about.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-about.png" alt="Firefox. Configuración avanzada. about:about" width="1024" height="576">
+      <img src="../img/firefox/ff-about-about.png" alt="Firefox. Configuración avanzada. about:about" width="1024" height="400">
     </p>
 
     <p>La página about:about contiene enlaces a diferentes páginas about: (más información en la <a href="https://en.wikipedia.org/wiki/About:_URI_scheme">Wikipedia</a>) </p>
@@ -55,15 +55,11 @@
       </tr>
       <tr>
         <td>about:about</td>
-        <td>Lista de páginas about. Actualmente (septiembre de 2018) parece incompleta</td>
+        <td>Lista de páginas about.</td>
       </tr>
       <tr>
         <td>about:addons</td>
         <td>Administrador de complementos</td>
-      </tr>
-      <tr>
-        <td>about:blocked</td>
-        <td>Página que se muestra cuando la página es peligrosa (porque contiene <i>malware</i>)</td>
       </tr>
       <tr>
         <td>about:buildconfig</td>
@@ -74,12 +70,16 @@
         <td>Muestra información de Caché de memoria, de disco y de aplicaciones </td>
       </tr>
       <tr>
-        <td>about:certerror</td>
-        <td>Página que se muestra cuando el certificado de la página no es válido</td>
+        <td>about:certificate</td>
+        <td>Muestra los certificados de personas, servidores y autoridades almacenados</td>
       </tr>
       <tr>
         <td>about:checkerboard</td>
         <td>Información de registro de <i>checkerboard</i></td>
+      </tr>
+      <tr>
+        <td>about:compat</td>
+        <td>Muestra la lista de sitios en los que se modifica el agente de usuario para mejorar la compatibilidad</td>
       </tr>
       <tr>
         <td><a href="#ff-about-config">about:config</a></td>
@@ -98,28 +98,28 @@
         <td>Página de depuración de complementos</td>
       </tr>
       <tr>
-        <td>about:devtools</td>
-        <td>Página de activación de las herramientas de desarrollador</td>
-      </tr>
-      <tr>
         <td>about:downloads</td>
         <td>Página de descargas realizadas</td>
-      </tr>
-      <tr>
-        <td>about:feed</td>
-        <td>Página que se muestra cuando se hace clic en el icono de <i>feed RSS</i> de la barra de dirección</td>
       </tr>
       <tr>
         <td>about:home</td>
         <td>Página de inicio</td>
       </tr>
       <tr>
-        <td>about:library</td>
-        <td></td>
-      </tr>
-      <tr>
         <td>about:license</td>
         <td>Licencias de Firefox</td>
+      </tr>
+      <tr>
+        <td>about:logging</td>
+        <td>Administrador del módulo de registro (<i>logging</i>)</td>
+      </tr>
+      <tr>
+        <td>about:logins</td>
+        <td>Administrador de información de acceso a sitios web (cuentas de usuario almacenadas)</td>
+      </tr>
+      <tr>
+        <td>about:loginsimportreport</td>
+        <td>Inicios de sesión y contraseñas importados a Firefox</td>
       </tr>
       <tr>
         <td>about:logo</td>
@@ -131,7 +131,7 @@
       </tr>
       <tr>
         <td>about:mozilla</td>
-        <td>Cita del ficticio Libro de Mozilla que bromea sobre la falta de desarrollo de Internet Explorer (tras la derrota de Netscape en la guerra de los navegadores) y la aparición y éxito de Mozilla / Firefox</td>
+        <td>Cita del ficticio <a href="https://en.wikipedia.org/wiki/The_Book_of_Mozilla">Libro de Mozilla</a>, que ha ido cambiado con el paso de los años</td>
       </tr>
       <tr>
         <td>about:networking</td>
@@ -140,10 +140,6 @@
       <tr>
         <td>about:newtab</td>
         <td>Página de inicio de Firefox</td>
-      </tr>
-      <tr>
-        <td>about:performance</td>
-        <td>Información sobre el funcionamiento de las pestañas</td>
       </tr>
       <tr>
         <td>about:plugins</td>
@@ -158,8 +154,20 @@
         <td>Abre una ventana de navegación privada</td>
       </tr>
       <tr>
+        <td>about:processes</td>
+        <td>Información sobre rendimiento (pestañas, red, etc.)</td>
+      </tr>
+      <tr>
         <td>about:profiles</td>
         <td>Información sobre los perfiles de Firefox existentes en el ordenador</td>
+      </tr>
+      <tr>
+        <td>about:profiling</td>
+        <td>Ajustes del perfilador</td>
+      </tr>
+      <tr>
+        <td>about:protections</td>
+        <td>Panel de protecciones</td>
       </tr>
       <tr>
         <td>about:rights</td>
@@ -170,16 +178,8 @@
         <td>Saludo de los robots a los humanos</td>
       </tr>
       <tr>
-        <td>about:searchreset</td>
-        <td>Página de restauración de configuración de búsqueda</td>
-      </tr>
-      <tr>
         <td>about:serviceworkers</td>
         <td>Información sobre los Service Workers registrados</td>
-      </tr>
-      <tr>
-        <td>about:sessionrestore</td>
-        <td>Página de notificación de error al restaurar sesión</td>
       </tr>
       <tr>
         <td>about:studies</td>
@@ -194,10 +194,6 @@
         <td>Archivos <i>log</i> del servicio Sync</td>
       </tr>
       <tr>
-        <td>about:sync-tabs</td>
-        <td>Lista de pestañas sincronizadas (requiere Sync)</td>
-      </tr>
-      <tr>
         <td>about:tabcrashed</td>
         <td>Página de aviso de fallo de pestaña</td>
       </tr>
@@ -206,8 +202,16 @@
         <td>Información recopilada por Telemetry y enviada a Mozilla</td>
       </tr>
       <tr>
+        <td>about:third-party</td>
+        <td>Información de módulos de terceros</td>
+      </tr>
+      <tr>
+        <td>about:unloads</td>
+        <td>Listado de pestañas descargadas para evitar problemas de uso excesivo de memoria</td>
+      </tr>
+      <tr>
         <td>about:url-classifier</td>
-        <td>Información del clasificador de URL</td>
+        <td>Información del clasificador de URLs</td>
       </tr>
       <tr>
         <td>about:webrtc</td>
@@ -218,42 +222,46 @@
         <td>Página final de la instalación de Firefox</td>
       </tr>
       <tr>
-        <td>about:welcomeback</td>
-        <td>Página final del proceso de restauración de Firefox</td>
+        <td>about:windows-messages</td>
+        <td>Información de mensajes enviados por Windows a las ventanas de Firefox</td>
       </tr>
     </table>
   </section>
 
   <section id="ff-about-config">
-    <h2>about: config</h2>
+    <h2>about:config</h2>
 
     <p>Para ver una lista detallada de todas las opciones de configuración de Firefox, se debe escribir en la barra de dirección about:config y pulsar <kbd>Return</kbd>.</p>
 
-    <p>Salvo que se haya desactivado esta advertencia, Firefox muestra la siguiente advertencia, recordando al usuario que las opciones de configuración sólo deben realizarse con mucho cuidado y sabiendo qué se está cambiando y por qué se desea realizar el cambio.</p>
+    <p>Salvo que se haya desactivado la advertencia, Firefox muestra la siguiente advertencia, recordando al usuario que las opciones de configuración sólo deben realizarse con mucho cuidado y sabiendo qué se está cambiando y por qué se desea realizar el cambio.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-config-1.png" alt="Firefox. Configuración avanzada. about: config" width="1024" height="370">
+      <img src="../img/firefox/ff-about-config-1.png" alt="Firefox. Configuración avanzada. about:config" width="1024" height="400">
     </p>
 
-    <p>Si se hace clic en el botón "¡Tendré cuidado, lo prometo!" se muestra la página about:config.</p>
+    <p>Si se hace clic en el botón "¡Tendré cuidado, lo prometo!" se muestra una página con el cuadro de búsqueda de opciones de configuración:</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-config-2.png" alt="Firefox. Configuración avanzada. about: config" width="1024" height="576">
+      <img src="../img/firefox/ff-about-config-2.png" alt="Firefox. Configuración avanzada. about:config" width="1024" height="475">
     </p>
 
-    <p>Cada línea de esta ventana muestra el nombre de la preferencia, su estado, su tipo y su valor. Estas preferencias pueden modificarse o eliminarse y también se pueden añadir nuevas preferencias.</p>
+    <p>Si se hace clic en el botón "Mostrar todo", se muestra el listado completo de opciones de confirguración.</p>
+
+    <p class="captura">
+      <img src="../img/firefox/ff-about-config-3.png" alt="Firefox. Configuración avanzada. about:config" width="1024" height="350">
+    </p>
+
+    <p>Cada línea de esta ventana muestra el nombre de la preferencia y su valor. Estas preferencias pueden modificarse o eliminarse y también se pueden añadir nuevas preferencias.</p>
 
     <hr class="corta">
 
-    <p>Al escribir en el campo de texto Filtro alguna palabra, la ventana muestra únicamente las preferencias en las que aparece esa palabra (en el nombre o en el valor), como muestra la imagen siguiente:</p>
+    <p>Al escribir en el campo de texto Filtro alguna palabra, la ventana muestra únicamente las preferencias en las que aparece esa palabra (en el nombre o en el valor), como muestra la imagen siguiente. Además, se muestra un control con el que añadir una preferencia nueva con el nombre que hayamos escrito.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-config-3.png" alt="Firefox. Configuración avanzada. about: config" width="1024" height="230">
+      <img src="../img/firefox/ff-about-config-4.png" alt="Firefox. Configuración avanzada. about:config" width="1024" height="310">
     </p>
 
-    <hr class="corta">
-
-    <p class="incompleto">Falta contar que las preferencias modificadas y añadidas se añaden al archivo prefs.js que está en C:\Documents and Settings\nombre_de_usuario\Datos de programa\Mozilla\Firefox\Profiles\loquesea.default. [confirmar que es realmente así]</p>
+    <p><strong>Nota</strong>: Las preferencias modificadas y/o añadidas se guardan en el archivo user.js ubicado en la carpeta del perfil de Firefox (C:\Users\<i>Usuario</i>\AppData\Roaming\Mozilla\Firefox\Profiles\<i>perfil</i>.default-release).</p>
   </section>
 
   <section id="ff-familias-fuentes">
@@ -261,119 +269,123 @@
 
     <p>En Windows, la familia genérica <span class="css-valor">cursive</span> suele mostrarse con la fuente <a href="https://es.wikipedia.org/wiki/Comic_Sans">Comic Sans MS</a> (de Microsoft).</p>
 
+    <!-- <p style="font-family: cursive; font-size: 2.2rem; text-align: center; margin: 20px 0;">Este párrafo está en el tipo de letra <span style="color: orange">cursive</span>.</p> -->
+
     <p class="captura">
-      <img src="../img/firefox/ff-about-config-fuentes-1.png" alt="Firefox - Familias de fuentes 1" width="1022" height="60">
+      <img src="../img/firefox/ff-about-config-fuentes-1.png" alt="Firefox - Familias de fuentes 1" width="1022" height="100">
     </p>
 
-    <p>Para modificar esta preferencia, abra la página about:config y busque la cadena "cursive". La fuente <span class="css-valor">cursive</span> está definida en la preferencia font.name.list.cursive.x-western.</p>
+    <p>Para modificar esta preferencia, abra la página about:config y busque la cadena "cursive". La fuente <span class="css-valor">cursive</span> está definida en la preferencia font.name-list.cursive.x-western.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-config-fuentes-2.png" alt="Firefox - Familias de fuentes 2" width="1024" height="435">
+      <img src="../img/firefox/ff-about-config-fuentes-2.png" alt="Firefox - Familias de fuentes 2" width="1024" height="576">
     </p>
 
-    <p>Para modificar la fuente empleada, haga clic derecho sobre la preferencia y elija la opción Modificar:</p>
+    <p>Para modificar la fuente empleada, haga clic en el icono del lápiz correspondiente:</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-config-fuentes-3.png" alt="Firefox - Familias de fuentes 3" width="1024" height="240">
+      <img src="../img/firefox/ff-about-config-fuentes-3.png" alt="Firefox - Familias de fuentes 3" width="1024" height="310">
     </p>
 
-    <p>Se abrirá una ventana en la que aparece el nombre de la fuente que se emplea actualmente:</p>
+    <p>El nombre de la fuente se convertirá en un campo editable:</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-config-fuentes-4.png" alt="Firefox - Familias de fuentes 4" width="350" height="149">
+      <img src="../img/firefox/ff-about-config-fuentes-4.png" alt="Firefox - Familias de fuentes 4" width="1024" height="310">
     </p>
 
-    <p>Escriba el nombre de la fuente que desea emplear en su lugar y haga clic en el botón Aceptar. En este ejemplo se ha sustituido la fuente Comic Sans MS por la fuente <a href="https://es.wikipedia.org/wiki/Verdana">Verdana</a> (que realmente es una fuente de la familia <span class="css-valor">sans-serif</span>, pero se utiliza aquí como ejemplo porque está incluida en Windows).</p>
+    <p>Escriba el nombre de la fuente que desea emplear en su lugar y haga clic en el botón "Guardar". En este ejemplo se ha sustituido la fuente Comic Sans MS por la fuente <a href="https://es.wikipedia.org/wiki/Verdana">Verdana</a>, que realmente se puede considerar una fuente de la familia <span class="css-valor">sans-serif</span>, pero que se utiliza en este ejemplo porque está incluida en Windows.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-config-fuentes-5.png" alt="Firefox - Familias de fuentes 5" width="350" height="149">
+      <img src="../img/firefox/ff-about-config-fuentes-5.png" alt="Firefox - Familias de fuentes 5" width="1024" height="310">
     </p>
 
     <p>El cambio se muestra inmediatamente en la ventana about:config.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-config-fuentes-6.png" alt="Firefox - Familias de fuentes 6" width="1024" height="120">
+      <img src="../img/firefox/ff-about-config-fuentes-6.png" alt="Firefox - Familias de fuentes 6" width="1024" height="310">
     </p>
 
     <p>A partir de ese momento, la familia <span class="css-valor">cursive</span> se mostrará utilizando la nueva fuente (en este caso Verdana).</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-config-fuentes-7.png" alt="Firefox - Familias de fuentes 7" width="1022" height="60">
+      <img src="../img/firefox/ff-about-config-fuentes-7.png" alt="Firefox - Familias de fuentes 7" width="1022" height="100">
     </p>
 
-    <p>Para restablecer la fuente anterior, haga clic derecho sobre la preferencia y elija la opción restablecer:</p>
+    <p>Para restablecer la fuente anterior, haga clic en el botón "Restablecer":</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-config-fuentes-8.png" alt="Firefox - Familias de fuentes 8" width="1024" height="240">
+      <img src="../img/firefox/ff-about-config-fuentes-8.png" alt="Firefox - Familias de fuentes 8" width="1024" height="310">
     </p>
 
     <p>El cambio se muestra inmediatamente en la ventana about:config.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-config-fuentes-9.png" alt="Firefox - Familias de fuentes 9" width="1024" height="120">
+      <img src="../img/firefox/ff-about-config-fuentes-9.png" alt="Firefox - Familias de fuentes 9" width="1024" height="310">
     </p>
 
     <hr class="corta">
 
-    <p>Firefox no permite elegir la fuente correspondiente a la familia genérica <span class="css-valor">fantasy</span></p>
+    <p>Firefox no permite elegir la fuente correspondiente a la familia genérica <span class="css-valor">fantasy</span>.</p>
 
-    <hr class="corta">
+    <p class="captura">
+      <img src="../img/firefox/ff-about-config-fuentes-10.png" alt="Firefox - Familias de fuentes 9" width="1024" height="250">
+    </p>
   </section>
 
   <section id="ff-zoom-maxpercent">
     <h2>Preferencia zoom.maxPercent: zoom máximo</h2>
 
-    <p>Firefox permite ampliar una página hasta el 300%, pero ese valor puede aumentarse en la página about:config.</p>
+    <p>De forma predeterminada, Firefox permite ampliar una página hasta el 500%, pero ese valor puede modificarse en la página about:config.</p>
 
     <p>La imagen siguiente se muestra a su tamaño original:</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-zoom-1.png" alt="Firefox. about:config. Zoom" width="1024" height="180">
+      <img src="../img/firefox/ff-about-zoom-1.png" alt="Firefox. about:config. Zoom" width="1024" height="190">
     </p>
 
-    <p>El zoom máximo predeterminado de Firefox es 300%, lo que permite ampliar la imagen anterior al triple de su tamaño original:</p>
+    <p>El zoom máximo predeterminado de Firefox es 500%, lo que permite ampliar la imagen cinco veces con respecto a su tamaño original:</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-zoom-2.png" alt="Firefox. about:config. Zoom" width="1024" height="310">
+      <img src="../img/firefox/ff-about-zoom-2.png" alt="Firefox. about:config. Zoom" width="1024" height="475">
     </p>
 
     <p>Para aumentar el valor del zoom máximo, abra la página <strong>about:config</strong>.</p>
 
-    <p>La preferencia a modificar es <strong>zoom.maxPercent</strong>. Escribiendo su nombre en la caja de búsqueda, nos aparecerá en la lista de preferencias. En esa lista puede confirmarse que el valor actual es el valor predeterminado 300%.</p>
+    <p>La preferencia a modificar es <strong>zoom.maxPercent</strong>. Escribiendo su nombre en la caja de búsqueda, nos aparecerá en la lista de preferencias. En esa lista puede confirmarse que el valor actual es el valor predeterminado 500%.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-zoom-3.png" alt="Firefox. about:config. Zoom" width="1024" height="220">
+      <img src="../img/firefox/ff-about-zoom-3.png" alt="Firefox. about:config. Zoom" width="1024" height="300">
     </p>
 
-    <p>Haga clic derecho en la fila de la preferencia y en el menú contextual, elegir la opción Modificar.</p>
+    <p>Haga clic derecho en el icono del lápiz.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-zoom-4.png" alt="Firefox. about:config. Zoom" width="1024" height="310">
+      <img src="../img/firefox/ff-about-zoom-4.png" alt="Firefox. about:config. Zoom" width="1024" height="300">
     </p>
 
-    <p>En la ventana emergente escriba el valor máximo deseado, por ejemplo 500%, y haga clic en el botón Aceptar.</p>
+    <p>El valor del zoom se convertirá en un campo editable. Escriba el nuevo valor máximo deseado, por ejemplo 600%, y haga clic en el botón "Guardar".</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-zoom-5.png" alt="Firefox. about:config. Zoom" width="1024" height="360">
+      <img src="../img/firefox/ff-about-zoom-5.png" alt="Firefox. about:config. Zoom" width="1024" height="300">
     </p>
 
     <p>En la lista de preferencias se puede comprobar que el valor se ha modificado.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-zoom-6.png" alt="Firefox. about:config. Zoom" width="1024" height="220">
+      <img src="../img/firefox/ff-about-zoom-6.png" alt="Firefox. about:config. Zoom" width="1024" height="300">
     </p>
 
     <p>La imagen puede ahora ampliarse más de lo que se podía antes.</p>
 
     <p class="captura">
-      <img src="../img/firefox/ff-about-zoom-7.png" alt="Firefox. about:config. Zoom" width="1024" height="460">
+      <img src="../img/firefox/ff-about-zoom-7.png" alt="Firefox. about:config. Zoom" width="1024" height="576">
     </p>
 
-    <p><strong>Nota</strong>: Actualmente (septiembre de 2018), la ampliación hasta el nuevo valor se tiene que hacer con <kbd>Ctrl</kbd> y la rueda del ratón, pero no con el atajo de teclado <kbd>Ctrl + +</kbd>, que no puede superar el valor inicial de 300%.</p>
+    <p><strong>Nota</strong>: Actualmente (octubre de 2023), la ampliación hasta el nuevo valor se tiene que hacer con <kbd>Ctrl</kbd> y la rueda del ratón, pero no con el atajo de teclado <kbd>Ctrl + +</kbd>, que no puede superar el valor inicial de 500%.</p>
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 16 de septiembre de 2018</p>
+    <p class="ultmod">Última modificación de esta página: 21 de octubre de 2023</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

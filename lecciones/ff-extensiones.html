@@ -62,9 +62,9 @@
       <li><strong>extensiones</strong>, que amplian las funcionalidades del navegador.</li>
     </ul>
 
-    <p>La razón por la que las extensiones de Firefox podían ser tan potentes era que las extensiones podían acceder a cualquier componente interno de Firefox. Pero en agosto de 2015, Firefox <a href="https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/">anunció</a> que en noviembre de 2017 (como así fue, con la publicación de Firefox 57) cambiaría completamente la gestión de las extensiones, eliminando el acceso al interior de Firefox y obligando a las extensiones a acceder únicamente a través de la <a href="https://wiki.mozilla.org/WebExtensions/FAQ">API WebExtensions</a>. El objetivo era doble: por un lado, permitir que Firefox pudiera sufrir grandes cambios internos sin afectar a las extensiones y, por otro lado, facilitar el desarrollo de extensiones, puesto que la API WebExtensions es muy similar a la <a href="https://developer.chrome.com/docs/extensions/reference/">API de extensiones de Google Chrome</a>.</p>
+    <p>La razón por la que las extensiones de Firefox podían ser tan potentes era que las extensiones podían acceder a cualquier componente interno de Firefox. En agosto de 2015 Firefox <a href="https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/">anunció</a> que a partir de Firefox 57 (publicado en noviembre de 2017) cambiaría completamente la gestión de las extensiones, eliminando el acceso al interior de Firefox y obligando a las extensiones a acceder únicamente a través de la <a href="https://wiki.mozilla.org/WebExtensions/FAQ">API WebExtensions</a>. El objetivo era doble: por un lado, permitir que Firefox pudiera sufrir grandes cambios internos sin afectar a las extensiones y, por otro lado, facilitar el desarrollo de extensiones, puesto que la API WebExtensions es muy similar a la <a href="https://developer.chrome.com/docs/extensions/reference/">API de extensiones de Google Chrome</a>.</p>
 
-    <p>Por ello, a partir de Firefox 57, el número y potencia de las extensiones de Firefox se ha reducido enormemente, pero también es cierto que poco a poco, la API WebExtensions va ampliándose y dando nuevas posibilidades a los creadores de extensiones, como se comenta periódicamente en el <a href="https://addons.mozilla.org/blog/">blog de complementos de Mozilla</a>. El tiempo dirá si valió la pena el sacrificio realizado.</p>
+    <p>El número y potencia de las extensiones de Firefox se redujo enormemente, pero también es cierto que poco a poco, la API WebExtensions ha ido ampliándose y dando nuevas posibilidades a los creadores de extensiones, como se comenta periódicamente en el <a href="https://addons.mozilla.org/blog/">blog de complementos de Mozilla</a>. El tiempo dirá si valió la pena el sacrificio realizado.</p>
 
     <hr class="corta">
 
@@ -163,19 +163,19 @@
       <p>Por ello, en el menú <span class="soft-menu">Herramientas &gt; Opciones &gt; Privacidad y Seguridad</span> debe mantener marcada la opción "Advertirle cuando algún sitio intente instalar complementos". En ese caso, Firefox sólo permitirá la instalación de extensiones si el usuario autoriza previamente al sitio web.</p>
 
       <p class="captura">
-        <img src="../img/firefox/ff-extensiones-seguridad-1.png" alt="Menú Herramientas &gt; Opciones &gt; Privacidad y Seguridad" width="1024" height="150">
+        <img src="../img/firefox/ff-extensiones-seguridad-1.png" alt="Menú Herramientas &gt; Ajustes &gt; Privacidad y Seguridad" width="1024" height="130">
       </p>
 
       <p>Haga clic en el botón "Excepciones..." puede consultar la lista de sitios desde los que está permitido instalar excepciones.</p>
 
       <p class="captura">
-        <img src="../img/firefox/ff-extensiones-seguridad-2.png" alt="Menú Herramientas &gt; Opciones &gt; Privacidad y Seguridad" width="1024" height="150">
+        <img src="../img/firefox/ff-extensiones-seguridad-2.png" alt="Menú Herramientas &gt; Ajustes &gt; Privacidad y Seguridad" width="1024" height="130">
       </p>
 
-      <p>Los sitios web oficiales incluidos de forma predeterminada son <a href="https://addons.mozilla.org/es/firefox/">Firefox Add-ons</a> y la <a href="https://fpn.firefox.com/">extensión Firefox Private Network</a> (sólo disponible en EEUU) .</p>
+      <p>El sitio web oficial incluido de forma predeterminada es <a href="https://addons.mozilla.org/es/firefox/">Firefox Add-ons</a>.</p>
 
       <p class="captura">
-        <img src="../img/firefox/ff-extensiones-seguridad-3.png" alt="Menú Herramientas &gt; Opciones &gt; Privacidad y Seguridad" width="763" height="492">
+        <img src="../img/firefox/ff-extensiones-seguridad-3.png" alt="Menú Herramientas &gt; Ajustes &gt; Privacidad y Seguridad" width="1024" height="470">
       </p>
     </section>
 
@@ -192,7 +192,7 @@
         </li>
         <li>Se mostrará la lista de resultados de la búsqueda. Haga clic en la ficha de la extensión deseada:
           <p class="captura">
-            <img src="../img/firefox/ff-extensiones-instalar-2.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="490">
+            <img src="../img/firefox/ff-extensiones-instalar-2.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="525">
           </p>
         </li>
         <li>Se mostrará información detallada sobre la extensión. Para instalarla, haga clic en el botón "Agregar a Firefox":
@@ -200,22 +200,22 @@
             <img src="../img/firefox/ff-extensiones-instalar-3.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="530">
           </p>
         </li>
-        <li>Una vez descargada la extensión, Firefox pedirá permiso para instalar la extensión, indicando los requisitos de la extensión. Haga clic en "Añadir" si confía en el autor de la extensión para instalarla:
+        <li>Una vez descargada la extensión, Firefox pedirá permiso para instalar la extensión, indicando los requisitos de la extensión. Para permitir el uso de Colorzilla en pestañas privadas, marque la casilla "Ejecutar en ventanas privadas". Haga clic en "Añadir" si confía en el autor de la extensión para instalarla:
           <p class="captura">
-            <img src="../img/firefox/ff-extensiones-instalar-4.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="310">
+            <img src="../img/firefox/ff-extensiones-instalar-4.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="280">
           </p>
         </li>
-        <li>Una vez instalada, se abrirá una nueva pestaña con información sobre la nueva extensión y, en este caso, solicita permiso para ejecutar la extensión en pestañas privadas.
+        <li>Una vez instalada, se mostrará una ventana emergente informando del éxito de la instalación. Haga clic en Aceptar para ocultar la ventana emergente. Se abrirá también una nueva pestaña con información sobre la nueva extensión.
           <p class="captura">
-            <img src="../img/firefox/ff-extensiones-instalar-5.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="290">
+            <img src="../img/firefox/ff-extensiones-instalar-5.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="240">
           </p>
         </li>
-        <li>Esta página contiene información sobre la extensión:
+        <li>La página contiene información sobre la extensión:
           <p class="captura">
             <img src="../img/firefox/ff-extensiones-instalar-6.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="290">
           </p>
         </li>
-        <li>En el Administrador de Complementos, se muestra ahora la nueva extensión instalada:
+        <li>En el Administrador de Complementos, se mostrará ahora la nueva extensión instalada:
           <p class="captura">
             <img src="../img/firefox/ff-extensiones-instalar-7.png" alt="Instalación desde Administrador de complementos. ColorZilla" width="1024" height="370">
           </p>
@@ -251,10 +251,10 @@
 
       <hr class="corta">
 
-      <p>ColorZilla se instala en el extremo derecho de la barra de navegación de Firefox y de Chrome:</p>
+      <p>Para abrir ColorZilla, haga clic en el icono de Extensiones. Se mostrará la lista de extensiones instaladas. Haga clic en la ficha de Colorzilla:</p>
 
       <p class="captura">
-        <img src="../img/firefox/ff-extensiones-colorzilla-1.png" alt="Firefox. Extensión ColorZilla" width="1024" height="180">
+        <img src="../img/firefox/ff-extensiones-colorzilla-1.png" alt="Firefox. Extensión ColorZilla" width="1024" height="265">
       </p>
 
       <hr class="corta">
@@ -262,12 +262,12 @@
       <p>Para elegir el formato del código de color:</p>
 
       <ul>
-        <li>Haga clic en el icono de ColorZilla y en el menú que se abrirá, elija la opción Options:
+        <li>Al abrir Colorzilla, se abrirá el menú de Colorzilla. Elija la opción Options:
           <p class="captura">
-            <img src="../img/firefox/ff-extensiones-colorzilla-2.png" alt="Firefox. Extensión ColorZilla" width="1024" height="430">
+            <img src="../img/firefox/ff-extensiones-colorzilla-2.png" alt="Firefox. Extensión ColorZilla" width="1024" height="360">
           </p>
         </li>
-        <li>Se abrirá una nueva pestaña mostrando las opciones de ColorZilla. Despliegue el menú "Auto-copy color format", elija el formato del código de color deseado (en este curso se recomienda elegir el <a href="https://www.mclibre.org/consultar/htmlcss/css/css-color.html#hsl">formato hsl</a>) y haga clic en el botón Save. A continuación, puede cerrar la pestaña.
+        <li>Se abrirá una nueva pestaña mostrando las opciones de ColorZilla. Despliegue el menú "Auto-copy color format", elija el formato del código de color deseado (en este curso se recomienda utilizar el <a href="https://www.mclibre.org/consultar/htmlcss/css/css-color.html#hwb">formato HWB</a>, pero no está disponible en Colorzilla, por lo que se podría elegir el <a href="https://www.mclibre.org/consultar/htmlcss/css/css-color.html#hsl">formato HSL</a>) y haga clic en el botón Save. A continuación, puede cerrar la pestaña.
           <p class="captura">
             <img src="../img/firefox/ff-extensiones-colorzilla-3.png" alt="Firefox. Extensión ColorZilla" width="1024" height="576">
           </p>
@@ -278,19 +278,19 @@
 
       <p>Para copiar un color de la pantalla:</p>
       <ul>
-        <li>Haga clic en el icono de ColorZilla. Al mover el ratón a la página, el cursor se convierte en una cruz y se mostrará una ventana flotante:
+        <li>Tras abrir Colorzilla mediante el icono de extensiones, al mover el ratón sobre la página, el cursor se convertirá en una cruz y se mostrará una ventana flotante que indica el color del píxel situado bajo la cruz (en formato RGB):
           <p class="captura">
-            <img src="../img/firefox/ff-extensiones-colorzilla-4.png" alt="Firefox. Extensión ColorZilla" width="1024" height="265">
+            <img src="../img/firefox/ff-extensiones-colorzilla-4.png" alt="Firefox. Extensión ColorZilla" width="1024" height="300">
           </p>
         </li>
-        <li>Sitúe el cursor sobre el píxel cuyo color se quiere averiguar. La barra flotante de ColorZilla muestra en todo momento el color y el código de color del píxel sobre el que se encuentra el cursor (en formato RGB).
+        <li>Sitúe el cursor sobre el píxel cuyo color se quiere averiguar. La barra flotante de ColorZilla muestra en todo momento el color y el código de color del píxel sobre el que se encuentra el cursor (en <a href="https://www.mclibre.org/consultar/htmlcss/css/css-color.html#rgb">formato RGB</a>).
           <p class="captura">
-            <img src="../img/firefox/ff-extensiones-colorzilla-5.png" alt="Firefox. Extensión ColorZilla" width="1024" height="265">
+            <img src="../img/firefox/ff-extensiones-colorzilla-5.png" alt="Firefox. Extensión ColorZilla" width="1024" height="300">
           </p>
         </li>
-        <li>Haga clic en el píxel. El valor del color se mostrará durante unos segundos y después ColorZilla se cerrará. El valor del color estará copiado en el portapapeles de Windows.
+        <li>Haga clic en el píxel cuyo código de color quiera copiar. El valor del color se mostrará durante unos segundos (en el formato en el que se haya configurado Colorzilla) y después ColorZilla se cerrará. El valor del color se habrá copiado en el portapapeles de Windows.
           <p class="captura">
-            <img src="../img/firefox/ff-extensiones-colorzilla-6.png" alt="Firefox. Extensión ColorZilla" width="1024" height="265">
+            <img src="../img/firefox/ff-extensiones-colorzilla-6.png" alt="Firefox. Extensión ColorZilla" width="1024" height="300">
           </p>
         </li>
         <li>A continuación, ese valor se puede pegar en la hoja de estilo que estemos editando.</li>
@@ -422,7 +422,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 30 de septiembre de 2024</p>
+    <p class="ultmod">Última modificación de esta página: 14 de octubre de 2024</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

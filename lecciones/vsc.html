@@ -276,11 +276,13 @@
         <text x="1066" y="-15" text-anchor="middle" fill="#24a9f2" style="font-size: 75%; font-weight: bold">1.96</text>
         <circle cx="1093" cy="0" r="5" fill="#24a9f2" />
         <text x="1095" y="25" text-anchor="middle" fill="#24a9f2" style="font-size: 75%; font-weight: bold">1.97</text>
-         -->
         <circle cx="1102" cy="0" r="5" fill="#24a9f2" />
         <text x="1102" y="-15" text-anchor="middle" fill="#24a9f2" style="font-size: 75%; font-weight: bold">1.98</text>
-        <circle cx="1111" cy="0" r="5" fill="white" stroke="#24a9f2" stroke-width="2" />
+         -->
+        <circle cx="1111" cy="0" r="5" fill="#24a9f2" />
         <text x="1111" y="25" text-anchor="middle" fill="#24a9f2" style="font-size: 75%; font-weight: bold">1.99</text>
+        <circle cx="1120" cy="0" r="5" fill="white" stroke="#24a9f2" stroke-width="2" />
+        <text x="1120" y="-15" text-anchor="middle" fill="#24a9f2" style="font-size: 75%; font-weight: bold">1.100</text>
       </svg>
     </p>
 
@@ -387,7 +389,8 @@
       <a href="https://code.visualstudio.com/updates/v1_95">1.95</a> -
       <a href="https://code.visualstudio.com/updates/v1_96">1.96</a> -
       <a href="https://code.visualstudio.com/updates/v1_97">1.97</a> -
-      <a href="https://code.visualstudio.com/updates/v1_98">1.98</a>
+      <a href="https://code.visualstudio.com/updates/v1_98">1.98</a> -
+      <a href="https://code.visualstudio.com/updates/v1_99">1.99</a>
     </p>
 
     <p>Se pueden ampliar las funcionalidades de Visual Studio Code mediante las extensiones disponibles en el <a href="https://marketplace.visualstudio.com/vscode">Visual Studio Code Marketplace</a>.</p>
@@ -632,9 +635,11 @@
         <circle cx="2005" cy="10" r="5" fill="#24a9f2" />
         <text x="2000" y="40" text-anchor="middle" fill="#24a9f2" style="font-weight: bold">1.97</text>
         <circle cx="2023" cy="10" r="5" fill="#24a9f2" />
-        <text x="2023" y="-5" text-anchor="middle" fill="#24a9f2" style="font-weight: bold">1.98</text>
-        <circle cx="2042" cy="10" r="5" fill="white" stroke="#24a9f2" stroke-width="2" />
+        <text x="2021" y="-5" text-anchor="middle" fill="#24a9f2" style="font-weight: bold">1.98</text>
+        <circle cx="2042" cy="10" r="5" fill="#24a9f2" />
         <text x="2042" y="40" text-anchor="middle" fill="#24a9f2" style="font-weight: bold">1.99</text>
+        <circle cx="2060" cy="10" r="5" fill="white" stroke="#24a9f2" stroke-width="2" />
+        <text x="2060" y="-5" text-anchor="middle" fill="#24a9f2" style="font-weight: bold">1.100</text>
 
         <!-- Electron -->
         <line x1="35" y1="90" x2="2270" y2="90" stroke-width="3" stroke="hsl(228, 15%, 20%)" />
@@ -879,7 +884,7 @@
         <text x="2004" y="155" text-anchor="middle" fill="#396bd7" style="font-weight: bold">133</text>
         <circle cx="2022" cy="170" r="5" fill="#396bd7" />
         <text x="2022" y="200" text-anchor="middle" fill="#396bd7" style="font-weight: bold">134</text>
-        <circle cx="2040" cy="170" r="5" fill="white" stroke="#396bd7" stroke-width="2" />
+        <circle cx="2040" cy="170" r="5" fill="#396bd7" />
         <text x="2040" y="155" text-anchor="middle" fill="#396bd7" style="font-weight: bold">135</text>
         <circle cx="2059" cy="170" r="5" fill="white" stroke="#396bd7" stroke-width="2" />
         <text x="2059" y="200" text-anchor="middle" fill="#396bd7" style="font-weight: bold">136</text>
@@ -972,38 +977,40 @@
       </svg>
     </p>
 
-    <p>Visual Studio Code actualizaba sus componentes de una forma bastante irregular, dos o tres veces al año. Aunque en 2021 se anunció que la tienda de Microsoft solo permitiría aplicaciones que incluyeran alguna de las dos últimas versiones de Electron, VSCode no ha conseguido hasta 2024 actualizar de forma regular su versión de Electron. Desde 2024 Visual Studio Code actualiza cada dos meses la versión de Electron en la que está basado y por tanto actualiza sus componentes (Chromium y node.js). Electron incluye siempre la última versión de Chromium y una versión par de Node.js, ya que son las versiones LTS. La gráfica siguiente une con una línea de puntos las versiones de cada componente con la versión de Visual Studio Code que las incluyó por primera vez.</p>
+    <p>Visual Studio Code actualizaba sus componentes de una forma bastante irregular, dos o tres veces al año. Aunque en 2021 se anunció que la tienda de Microsoft solo permitiría aplicaciones que incluyeran alguna de las dos últimas versiones de Electron, VSCode no consiguió hasta 2024 actualizar de forma regular su versión de Electron. A principios de 2024 Visual Studio Code empezó a actualizar cada dos meses la versión de Electron y sus componentes (Chromium y node.js), aunque a finales de 2024 pasó a hacerlo cada cuatro meses.</p>
+
+    <p>Electron incluye siempre la última versión de Chromium y una versión par de Node.js, ya que son las versiones LTS. La gráfica siguiente une con una línea de puntos las versiones de cada componente con la versión de Visual Studio Code que las incluyó por primera vez.</p>
 
     <p class="mcl-svg-diagrama-temporal" title="VSCode, Electron, etc.">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1630" viewBox="630 -60 1630 460" style="font-size: 16px;">
-        <line x1="60" y1="-50" x2="60" y2="400" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1630" viewBox="630 -60 1630 480" style="font-size: 16px;">
+        <line x1="60" y1="-50" x2="60" y2="420" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
         <text x="180" y="-40" text-anchor="middle" fill="black">2017</text>
-        <text x="180" y="400" text-anchor="middle" fill="black">2017</text>
-        <line x1="300" y1="-50" x2="300" y2="400" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
+        <text x="180" y="420" text-anchor="middle" fill="black">2017</text>
+        <line x1="300" y1="-50" x2="300" y2="420" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
         <text x="420" y="-40" text-anchor="middle" fill="black">2018</text>
-        <text x="420" y="400" text-anchor="middle" fill="black">2018</text>
-        <line x1="540" y1="-50" x2="540" y2="400" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
+        <text x="420" y="420" text-anchor="middle" fill="black">2018</text>
+        <line x1="540" y1="-50" x2="540" y2="420" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
         <text x="660" y="-40" text-anchor="middle" fill="black">2019</text>
-        <text x="660" y="400" text-anchor="middle" fill="black">2019</text>
-        <line x1="780" y1="-50" x2="780" y2="400" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
+        <text x="660" y="420" text-anchor="middle" fill="black">2019</text>
+        <line x1="780" y1="-50" x2="780" y2="420" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
         <text x="900" y="-40" text-anchor="middle" fill="black">2020</text>
-        <text x="900" y="400" text-anchor="middle" fill="black">2020</text>
-        <line x1="1020" y1="-50" x2="1020" y2="400" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
+        <text x="900" y="420" text-anchor="middle" fill="black">2020</text>
+        <line x1="1020" y1="-50" x2="1020" y2="420" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
         <text x="1140" y="-40" text-anchor="middle" fill="black">2021</text>
-        <text x="1140" y="400" text-anchor="middle" fill="black">2021</text>
-        <line x1="1260" y1="-50" x2="1260" y2="400" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
+        <text x="1140" y="420" text-anchor="middle" fill="black">2021</text>
+        <line x1="1260" y1="-50" x2="1260" y2="420" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
         <text x="1380" y="-40" text-anchor="middle" fill="black">2022</text>
-        <text x="1380" y="400" text-anchor="middle" fill="black">2022</text>
-        <line x1="1500" y1="-50" x2="1500" y2="400" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
+        <text x="1380" y="420" text-anchor="middle" fill="black">2022</text>
+        <line x1="1500" y1="-50" x2="1500" y2="420" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
         <text x="1620" y="-40" text-anchor="middle" fill="black">2023</text>
-        <text x="1620" y="400" text-anchor="middle" fill="black">2023</text>
-        <line x1="1740" y1="-50" x2="1740" y2="400" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
+        <text x="1620" y="420" text-anchor="middle" fill="black">2023</text>
+        <line x1="1740" y1="-50" x2="1740" y2="420" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
         <text x="1860" y="-40" text-anchor="middle" fill="black">2024</text>
-        <text x="1860" y="400" text-anchor="middle" fill="black">2024</text>
-        <line x1="1980" y1="-50" x2="1980" y2="400" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
+        <text x="1860" y="420" text-anchor="middle" fill="black">2024</text>
+        <line x1="1980" y1="-50" x2="1980" y2="420" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
         <text x="2100" y="-40" text-anchor="middle" fill="black">2025</text>
-        <text x="2100" y="400" text-anchor="middle" fill="black">2025</text>
-        <line x1="2220" y1="-50" x2="2220" y2="400" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
+        <text x="2100" y="420" text-anchor="middle" fill="black">2025</text>
+        <line x1="2220" y1="-50" x2="2220" y2="420" stroke-width="2" stroke-dasharray="5,5" stroke="grey" />
 
         <line x1="35" y1="10" x2="2270" y2="10" stroke-width="3" stroke="#24a9f2" />
         <text x="-80" y="15" text-anchor="start" fill="#24a9f2" style="font-size: 130%; font-weight: bold">VS Code</text>
@@ -1011,7 +1018,7 @@
         <text x="-80" y="115" text-anchor="start" fill="hsl(228, 15%, 20%)" style="font-size: 130%; font-weight: bold">Electron</text>
         <line x1="35" y1="190" x2="2270" y2="190" stroke-width="3" stroke="#396bd7" />
         <text x="-80" y="195" text-anchor="start" fill="#396bd7" style="font-size: 130%; font-weight: bold">Chromium</text>
-        <line x1="35" y1="340" x2="2270" y2="340" stroke-width="3" stroke="#3e863d" />
+        <line x1="35" y1="360" x2="2270" y2="360" stroke-width="3" stroke="#3e863d" />
         <text x="-80" y="345" text-anchor="start" fill="#3e863d" style="font-size: 130%; font-weight: bold">Node.js</text>
 
         <!-- Visual Studio Code 1.12 -->
@@ -1199,9 +1206,9 @@
         <circle cx="1060" cy="190" r="5" fill="#396bd7" />
         <text x="1045" y="220" text-anchor="middle" fill="#396bd7" style="font-weight: bold">89</text>
 
-        <circle cx="853" cy="340" r="5" fill="#3e863d" />
-        <text x="853" y="370" text-anchor="middle" fill="#3e863d" style="font-weight: bold">14</text>
-        <polyline points="853,340 853,320 1075,320" stroke-width="3" stroke="#3e863d" fill="none" />
+        <circle cx="853" cy="360" r="5" fill="#3e863d" />
+        <text x="853" y="390" text-anchor="middle" fill="#3e863d" style="font-weight: bold">14</text>
+        <polyline points="853,360 853,320 1075,320" stroke-width="3" stroke="#3e863d" fill="none" />
         <circle cx="1056" cy="320" r="5" fill="#3e863d" />
         <text x="1052" y="310" text-anchor="end" fill="#3e863d" style="font-weight: bold">14.16</text>
 
@@ -1237,9 +1244,9 @@
         <circle cx="1281" cy="190" r="5" fill="#396bd7" />
         <text x="1290" y="220" text-anchor="middle" fill="#396bd7" style="font-weight: bold">98</text>
 
-        <circle cx="1092" cy="340" r="5" fill="#3e863d" />
-        <text x="1092" y="370" text-anchor="middle" fill="#3e863d" style="font-weight: bold">16</text>
-        <polyline points="1092,340 1092,270 1455,270" stroke-width="3" stroke="#3e863d" fill="none" />
+        <circle cx="1092" cy="360" r="5" fill="#3e863d" />
+        <text x="1092" y="390" text-anchor="middle" fill="#3e863d" style="font-weight: bold">16</text>
+        <polyline points="1092,360 1092,270 1455,270" stroke-width="3" stroke="#3e863d" fill="none" />
         <circle cx="1267" cy="270" r="5" fill="#3e863d" />
         <text x="1257" y="260" text-anchor="end" fill="#3e863d" style="font-weight: bold">16.13.2</text>
 
@@ -1313,9 +1320,9 @@
         <circle cx="1599" cy="190" r="5" fill="#396bd7" />
         <text x="1605" y="220" text-anchor="middle" fill="#396bd7" style="font-weight: bold">114</text>
 
-        <circle cx="1332" cy="340" r="5" fill="#3e863d" />
-        <text x="1332" y="370" text-anchor="middle" fill="#3e863d" style="font-weight: bold">18</text>
-        <polyline points="1332,340 1332,290 1715,290" stroke-width="3" stroke="#3e863d" fill="none" />
+        <circle cx="1332" cy="360" r="5" fill="#3e863d" />
+        <text x="1332" y="390" text-anchor="middle" fill="#3e863d" style="font-weight: bold">18</text>
+        <polyline points="1332,360 1332,290 1715,290" stroke-width="3" stroke="#3e863d" fill="none" />
         <circle cx="1543" cy="290" r="5" fill="#3e863d" />
         <text x="1543" y="280" text-anchor="end" fill="#3e863d" style="font-weight: bold">18.15</text>
 
@@ -1369,9 +1376,9 @@
         <circle cx="1774" cy="190" r="5" fill="#396bd7" />
         <text x="1774" y="220" text-anchor="middle" fill="#396bd7" style="font-weight: bold">122</text>
 
-        <circle cx="1571" cy="340" r="5" fill="#3e863d" />
-        <text x="1571" y="370" text-anchor="middle" fill="#3e863d" style="font-weight: bold">20</text>
-        <polyline points="1571,340 1571,320 2010,320" stroke-width="3" stroke="#3e863d" fill="none" />
+        <circle cx="1571" cy="360" r="5" fill="#3e863d" />
+        <text x="1571" y="390" text-anchor="middle" fill="#3e863d" style="font-weight: bold">20</text>
+        <polyline points="1571,360 1571,320 2010,320" stroke-width="3" stroke="#3e863d" fill="none" />
         <circle cx="1689" cy="320" r="5" fill="#3e863d" />
         <text x="1689" y="310" text-anchor="end" fill="#3e863d" style="font-weight: bold">20.9</text>
 
@@ -1412,7 +1419,7 @@
         <!-- Visual Studio Code 1.98 -->
         <polyline points="2023,10 2009,55 1990,190 1994,320" stroke-width="3" stroke-dasharray="5,5" stroke="red" fill="none" />
         <circle cx="2023" cy="10" r="5" fill="#24a9f2" />
-        <text x="2023" y="-5" text-anchor="middle" fill="#24a9f2" style="font-weight: bold">1.98</text>
+        <text x="2020" y="-5" text-anchor="middle" fill="#24a9f2" style="font-weight: bold">1.98</text>
 
         <circle cx="1990" cy="110" r="5" fill="hsl(228, 15%, 20%)" />
         <text x="1990" y="140" text-anchor="middle" fill="hsl(228, 15%, 20%)" style="font-weight: bold">34</text>
@@ -1428,8 +1435,10 @@
 
         <!-- Se usará en versiones futuras -->
 
-        <circle cx="2042" cy="10" r="5" fill="white" stroke="#24a9f2" stroke-width="2" />
-        <text x="2063" y="40" text-anchor="middle" fill="#24a9f2" style="font-weight: bold">1.99</text>
+        <circle cx="2042" cy="10" r="5" fill="#24a9f2" />
+        <text x="2042" y="31" text-anchor="middle" fill="#24a9f2" style="font-weight: bold">1.99</text>
+        <circle cx="2060" cy="10" r="5" fill="white" stroke="#24a9f2" stroke-width="2" />
+        <text x="2060" y="-5" text-anchor="middle" fill="#24a9f2" style="font-weight: bold">1.100</text>
 
         <circle cx="2022" cy="110" r="5" fill="hsl(228, 15%, 20%)" />
         <text x="2022" y="140" text-anchor="middle" fill="hsl(228, 15%, 20%)" style="font-weight: bold">35</text>
@@ -1449,24 +1458,24 @@
         <circle cx="2229" cy="190" r="5" fill="white" stroke="#396bd7" stroke-width="2" />
         <text x="2235" y="220" text-anchor="middle" fill="#396bd7" style="font-weight: bold">144</text>
 
-        <circle cx="1816" cy="340" r="5" fill="#3e863d" />
-        <text x="1816" y="370" text-anchor="middle" fill="#3e863d" style="font-weight: bold">22</text>
-        <circle cx="1929" cy="340" r="5" fill="#3e863d" />
-        <text x="1929" y="370" text-anchor="middle" fill="#3e863d" style="font-weight: bold">23</text>
-        <circle cx="2054" cy="340" r="5" fill="white" stroke="#3e863d" stroke-width="2" />
-        <text x="2054" y="370" text-anchor="middle" fill="#3e863d" style="font-weight: bold">24</text>
+        <circle cx="1816" cy="360" r="5" fill="#3e863d" />
+        <text x="1816" y="390" text-anchor="middle" fill="#3e863d" style="font-weight: bold">22</text>
+        <circle cx="1929" cy="360" r="5" fill="#3e863d" />
+        <text x="1929" y="390" text-anchor="middle" fill="#3e863d" style="font-weight: bold">23</text>
+        <circle cx="2054" cy="360" r="5" fill="white" stroke="#3e863d" stroke-width="2" />
+        <text x="2054" y="390" text-anchor="middle" fill="#3e863d" style="font-weight: bold">24</text>
 
 
         <!-- Para ocultar años anteriores -->
-        <rect x="370" y="-60" width="388" height="460" fill="white" />
+        <rect x="370" y="-60" width="388" height="480" fill="white" />
         <line x1="765" y1="10" x2="795" y2="10" stroke-width="3" stroke="#24a9f2" />
         <text x="650" y="15" text-anchor="start" fill="#24a9f2" style="font-size: 130%; font-weight: bold">VS Code</text>
         <line x1="765" y1="110" x2="795" y2="110" stroke-width="3" stroke="hsl(228, 15%, 20%)" />
         <text x="650" y="115" text-anchor="start" fill="hsl(228, 15%, 20%)" style="font-size: 130%; font-weight: bold">Electron</text>
         <line x1="765" y1="190" x2="795" y2="190" stroke-width="3" stroke="#396bd7" />
         <text x="650" y="195" text-anchor="start" fill="#396bd7" style="font-size: 130%; font-weight: bold">Chromium</text>
-        <line x1="765" y1="340" x2="795" y2="340" stroke-width="3" stroke="#3e863d" />
-        <text x="650" y="345" text-anchor="start" fill="#3e863d" style="font-size: 130%; font-weight: bold">Node.js</text>
+        <line x1="765" y1="360" x2="795" y2="360" stroke-width="3" stroke="#3e863d" />
+        <text x="650" y="365" text-anchor="start" fill="#3e863d" style="font-size: 130%; font-weight: bold">Node.js</text>
       </svg>
     </p>
   </section>
@@ -1503,7 +1512,7 @@
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 5 de marzo de 2025</p>
+    <p class="ultmod">Última modificación de esta página: 7 de abril de 2025</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

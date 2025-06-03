@@ -56,59 +56,59 @@
     <p>Para clonar localmente con Visual Studio Code un repositorio de GitHub:</p>
 
     <ol>
-      <li>Cree un directorio donde se guardarán los repositorios:
+      <li>Cree un directorio donde se guardarán los repositorios (por ejemplo el directorio GitHub):
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-clonar-01.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="194">
+          <img src="../img/vscode/vsc-repos-clonar-1.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="190">
         </p>
       </li>
 
       <li>Abra ese directorio en Visual Studio Code (menú <span class="soft-menu">Archivo &gt; Abrir carpeta ...</span>):
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-clonar-02.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="180">
+          <img src="../img/vscode/vsc-repos-clonar-2.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="180">
         </p>
       </li>
 
       <li>Para clonar el repositorio necesitará la URL de repositorio, que se puede copiar desde el propio repositorio haciendo clic en el botón "Code" y en el icono de copia situado a la derecha de la URL del repositorio.
-        <p>En la captura de ejemplo, la URL de origen es <strong>https://github.com/NumaNigerio/prueba-2022-05.git</strong></p>
+        <p>En la captura de ejemplo, la URL de origen es <strong>https://github.com/NumaNigerio/prueba-2025-05.git</strong></p>
         <p>Esta URL es la misma URL que aparece en el navegador pero terminada en .git.</p>
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-clonar-03.png" alt="Clonar repositorio GitHub con VSC" width="1190" height="625">
+          <img src="../img/vscode/vsc-repos-clonar-3.png" alt="Clonar repositorio GitHub con VSC" width="1200" height="630">
         </p>
       </li>
 
       <li>En Visual Studio abra la ventana de comandos con <span class="soft-atajo-teclado">Ctrl+Mayús+p</span> o con <span class="soft-atajo-teclado">F1</span>:
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-clonar-04.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="300">
+          <img src="../img/vscode/vsc-repos-clonar-4.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="285">
         </p>
       </li>
 
       <li>Escriba el comando <strong>git clone</strong> y pulse Intro:
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-clonar-05.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="175">
+          <img src="../img/vscode/vsc-repos-clonar-5.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="140">
         </p>
       </li>
 
       <li>Pegue la URL del repositorio de origen y pulse Intro:
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-clonar-06.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="175">
+          <img src="../img/vscode/vsc-repos-clonar-6.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="130">
         </p>
       </li>
 
-      <li>Seleccione el directorio que contendrá la copia del repositorio ( en este caso el directorio Documentos &gt; GitHub) y pulse "Seleccione la ubicación del repositorio":
+      <li>Seleccione el directorio que contendrá la copia del repositorio (en este caso el directorio Documentos &gt; LMSGI &gt; GitHub) y pulse "Seleccionar como destino del repositorio":
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-clonar-07.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="360">
+          <img src="../img/vscode/vsc-repos-clonar-7.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="370">
         </p>
       </li>
 
       <li>En unos segundos Visual Studio Code ofrecerá la posibilidad de abrir la carpeta del repositorio clonado. Haga clic en "Abrir".
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-clonar-08.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="190">
+          <img src="../img/vscode/vsc-repos-clonar-8.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="430">
         </p>
       </li>
 
-      <li>Visual Studio Code abrirá la carpeta del repositorio clonado, mostrando su contenido (en el ejemplo, el repositorio contiene únicamente el archivo README.md.
+      <li>Visual Studio Code abrirá la carpeta del repositorio clonado, mostrando su contenido (en el ejemplo, el repositorio contiene únicamente el archivo README.md).
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-clonar-09.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="180">
+          <img src="../img/vscode/vsc-repos-clonar-9.png" alt="Clonar repositorio GitHub con VSC" width="1024" height="150">
         </p>
       </li>
     </ol>
@@ -126,7 +126,8 @@
 <code class="language-shell"># https://git-scm.com/docs/gitignore
 # https://help.github.com/articles/ignoring-files
 # Example .gitignore files: https://github.com/github/gitignore
-/.vscode/</code>
+/.vscode/
+/tmp/</code>
 </pre>
         </div>
       </li>
@@ -149,15 +150,15 @@
     <p>El proceso en Visual Studio Code sería el siguiente:</p>
 
     <ul>
-      <li>Abra una ventana de Terminal e indique a git su nombre de usuario en GitHub y la dirección de correo del usuario vinculada a su cuenta en GitHub:
+      <li>Abra una ventana de Terminal e indique a git su nombre de usuario en GitHub (entre comillas si contuviera espacios) y la dirección de correo del usuario vinculada a su cuenta en GitHub:
         <div class="codigo">
           <pre>
 <code class="language-configuracion">git config --global user.email SU-CORREO-ELECTRONICO
-git config --global user.name "SU-NOMBRE-DE-USUARIO-DE-GITUHUB"
+git config --global user.name SU-NOMBRE-DE-USUARIO-DE-GITUHUB
 </code></pre>
         </div>
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-commit-01.png" alt="Realizar commits en GitHub con VSC" width="979" height="180">
+          <img src="../img/vscode/vsc-repos-commit-01.png" alt="Realizar commits en GitHub con VSC" width="1024" height="180">
         </p>
         <p>En Windows, esta información se guarda en el archivo C:\Users\UsuarioDeWindows\.gitconfig.</p>
       </li>
@@ -173,22 +174,22 @@ git config --global user.name "SU-NOMBRE-DE-USUARIO-DE-GITUHUB"
       </li>
       <li>Abra la barra lateral de Control de código fuente haciendo clic en el icono correspondiente. Se mostrará la lista de archivos con cambios:
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-commit-03.png" alt="Realizar commits en GitHub con VSC" width="1024" height="250">
+          <img src="../img/vscode/vsc-repos-commit-03.png" alt="Realizar commits en GitHub con VSC" width="1024" height="230">
         </p>
       </li>
-      <li>Seleccione los archivos cuyos cambios formarán parte del commit (puede elegir todos los archivos modificados o sólo una parte) haciendo clic en el icono +:
+      <li>Seleccione cada uno de los archivos cuyos cambios formarán parte del commit (puede elegir todos los archivos modificados o sólo una parte) haciendo clic en el icono +:
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-commit-04.png" alt="Realizar commits en GitHub con VSC" width="1024" height="240">
+          <img src="../img/vscode/vsc-repos-commit-04.png" alt="Realizar commits en GitHub con VSC" width="1024" height="250">
         </p>
       </li>
       <li>Los archivos seleccionados se muestran en un apartado "Cambios almacenados provisionalmente" ("staged").
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-commit-05.png" alt="Realizar commits en GitHub con VSC" width="1024" height="240">
+          <img src="../img/vscode/vsc-repos-commit-05.png" alt="Realizar commits en GitHub con VSC" width="1024" height="250">
         </p>
       </li>
-      <li>Escriba el mensaje descriptivo del commit en la caja superior y pulse <span class="soft-atajo-teclado">Ctrl+Intro</span>
+      <li>Escriba el mensaje descriptivo del commit en la caja superior y pulse <span class="soft-atajo-teclado">Ctrl+Intro</span> (o haga clic en el botón Confirmación):
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-commit-06.png" alt="Realizar commits en GitHub con VSC" width="1024" height="220">
+          <img src="../img/vscode/vsc-repos-commit-06.png" alt="Realizar commits en GitHub con VSC" width="1024" height="250">
         </p>
       </li>
       <li>Los archivos incluidos en el commit dejan de mostrarse en la barra lateral y en el contador del icono Control de código fuente:
@@ -214,28 +215,33 @@ git config --global user.name "SU-NOMBRE-DE-USUARIO-DE-GITUHUB"
       </li>
       <li>Visual Studio Code mostrará un aviso indicando que al sincronizar se producirán cambios en el repositorio remoto. Para no volver a ver este aviso, haga clic en "De acuerdo, no volver a ver este mensaje":
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-commit-10.png" alt="Realizar commits en GitHub con VSC" width="1024" height="360">
+          <img src="../img/vscode/vsc-repos-commit-10.png" alt="Realizar commits en GitHub con VSC" width="1024" height="315">
         </p>
       </li>
-      <li>Para poder modificar el repositorio remoto, debemos identificarnos. En Windows, a través del navegador GitHub nos solicita nuestro nombre y contraseña de usuario y los guarda en las credenciales de Windows para no tener que estar continuamente identificándonos.</li>
+      <li>Para poder modificar el repositorio remoto, debemos identificarnos. En Windows, a través del navegador, GitHub nos solicita nuestro nombre y contraseña de usuario y los guarda en las credenciales de Windows para no tener que estar continuamente identificándonos.</li>
       <li>Se abrirá una ventana que nos da opción de realizar este proceso. Haga clic en "Sign in with your browser".
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-commit-11.png" alt="Realizar commits en GitHub con VSC" width="414" height="383">
+          <img src="../img/vscode/vsc-repos-commit-11.png" alt="Realizar commits en GitHub con VSC" width="420" height="363">
         </p>
       </li>
       <li>El gestor de credenciales de Git nos muestra el nombre y correo electrónico del usuario. Haga clic en "Authorize GitCredentialManager":
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-commit-12.png" alt="Realizar commits en GitHub con VSC" width="1171" height="520">
+          <img src="../img/vscode/vsc-repos-commit-12.png" alt="Realizar commits en GitHub con VSC" width="1181" height="630">
         </p>
       </li>
-      <li>Confirme la contraseña del usuario de GitHub:
+      <li>Confirme la contraseña del usuario de GitHub (en la captura de ejemplo se indica que ya tenemos sesión abierta en GitHub, en este caso en otra pestaña del navegador, pero eso no afecta al procedimiento que estamos realizando):
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-commit-13.png" alt="Realizar commits en GitHub con VSC" width="1188" height="360">
+          <img src="../img/vscode/vsc-repos-commit-13.png" alt="Realizar commits en GitHub con VSC" width="1200" height="390">
         </p>
       </li>
       <li>Si todo funciona correctamente, se mostrará el mensaje correspondiente (la pestaña del navegador se puede cerrar).
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-commit-14.png" alt="Realizar commits en GitHub con VSC" width="1188" height="160">
+          <img src="../img/vscode/vsc-repos-commit-14.png" alt="Realizar commits en GitHub con VSC" width="1198" height="240">
+        </p>
+      </li>
+      <li>En Visual Studio el icono de Control de código fuente ya no muestra el indicador de archivos con cambios y la barra lateral no contiene ningún fichero con cambios respecto al repositorio de GitHub.
+        <p class="captura">
+          <img src="../img/vscode/vsc-repos-commit-15.png" alt="Realizar commits en GitHub con VSC" width="1024" height="280">
         </p>
       </li>
       <li>Puede comprobar visitando el repositorio remoto en el navegador que se han realizado los cambios.
@@ -244,12 +250,12 @@ git config --global user.name "SU-NOMBRE-DE-USUARIO-DE-GITUHUB"
           <li>El contador de commits aumenta.</li>
         </ul>
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-commit-15.png" alt="Realizar commits en GitHub con VSC" width="1098" height="370">
+          <img src="../img/vscode/vsc-repos-commit-16.png" alt="Realizar commits en GitHub con VSC" width="1200" height="385">
         </p>
       </li>
       <li>Haciendo clic en el contador de commits se pueden ver todos los commits realizados en el repositorio (su fecha de realización, ficheros afectados, etc.)
         <p class="captura">
-          <img src="../img/vscode/vsc-repos-commit-16.png" alt="Realizar commits en GitHub con VSC" width="1098" height="450">
+          <img src="../img/vscode/vsc-repos-commit-17.png" alt="Realizar commits en GitHub con VSC" width="1200" height="470">
         </p>
       </li>
     </ul>
@@ -297,7 +303,7 @@ git config --global user.name "SU-NOMBRE-DE-USUARIO-DE-GITUHUB"
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 20 de mayo de 2022</p>
+    <p class="ultmod">Última modificación de esta página: 3 de junio de 2025</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

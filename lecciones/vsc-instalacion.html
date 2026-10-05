@@ -112,15 +112,21 @@
   <section id="vsc-primera-vez">
     <h2>Primera ejecución</h2>
 
-    <p>La primera vez que se abre Visual Studio Code tras la instalación, se muestra una página de bienvenida al programa:</p>
+    <p>La primera vez que se abre Visual Studio Code tras la instalación, se muestra una página de bienvenida al programa que invita a identificarse con GitHub. Haga clic en "Continue without Signing In" si no desea hacerlo en este momento:</p>
 
     <p class="captura">
       <img src="../img/vscode/vsc-interfaz-1.png" alt="Visual Studio Code. Interfaz inicial" width="1024" height="576">
     </p>
 
+    <p>Se mostrará la interfaz habitual de Visual Studio Code:</p>
+
+    <p class="captura">
+      <img src="../img/vscode/vsc-interfaz-2.png" alt="Visual Studio Code. Interfaz inicial" width="1026" height="577">
+    </p>
+
     <p>La personalización de Visual Studio Code se comenta en la siguiente lección, <a href="vsc-personalizacion.html">Visual Studio Code. Personalización</a>.</p>
 
-    <p><strong>Nota</strong>: Al detectar la presencia o ausencia de algunas aplicaciones (por ejemplo Git o Docker), Visual Studio Code puede mostrar distintos avisos.</p>
+    <p><strong>Nota</strong>: Al detectar la presencia o ausencia de algunas aplicaciones instaladas en el sistema (por ejemplo Git o Docker), Visual Studio Code puede mostrar distintos avisos aconsejando determinadas extensiones.</p>
   </section>
 
   <section id="actualizar">
@@ -131,34 +137,46 @@
     <p><strong>Nota</strong>: Las capturas siguientes corresponden a la actualización de Visual Studio Code 1.82.1 a Visual Studio Code 1.82.2 "Restart to Update" / en Windows 10 de 64 bits. Versiones posteriores pueden ser ligeramente diferentes.</p>
 
     <ol>
-      <li>Cuando hay una actualización disponible, Visual Studio Code muestra un número en el icono de la rueda dentada situado en la parte inferior izquierda:
+      <li>En cualquier momento, al hacer clic en el icono de la rueda dentada situado en la parte inferior izquierda y elegir la opción "Check for updates" ("Buscar actualizaciones"), Visual Studio Code buscará si hay una actualización disponible:
         <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-automatica-1.png" alt="Visual Studio Code - Actualización automática" width="1024" height="80">
+          <img src="../img/vscode/vsc-actualizar-automatica-1.png" alt="Visual Studio Code - Actualización automática" width="1024" height="360">
         </p>
       </li>
 
-      <li>Haga clic en el icono de la rueda dentada y elija la opción "Restart to Update" / "Reiniciar para actualizar":
+      <li>Realmente no es necesario buscar actualizaciones manualmente porque Visual Studio Code lo hace automáticamente de forma periódica. Si hay una actualización, mientras se descarga se muestra un distintivo en el icono de la rueda dentada situado en la parte inferior izquierda:
         <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-automatica-2.png" alt="Visual Studio Code - Actualización automática" width="1024" height="345">
+          <img src="../img/vscode/vsc-actualizar-automatica-2.png" alt="Visual Studio Code - Actualización automática" width="1024" height="85">
+        </p>
+      </li>
+
+      <li>Cuando se haya descargado la actualización disponible, Visual Studio Code mostrará un número 1 en el icono de la rueda dentada situado en la parte inferior izquierda:
+        <p class="captura">
+          <img src="../img/vscode/vsc-actualizar-automatica-3.png" alt="Visual Studio Code - Actualización automática" width="1024" height="85">
+        </p>
+      </li>
+
+      <li>para instalar la actualización, haga clic en el icono de la rueda dentada y elija la opción "Restart to Update" / "Reiniciar para actualizar" (aunque la actualización se instalará automáticamente si se cierra y vuelve a abrir Visual Studio Code):
+        <p class="captura">
+          <img src="../img/vscode/vsc-actualizar-automatica-4.png" alt="Visual Studio Code - Actualización automática" width="1024" height="380">
         </p>
       </li>
 
       <li>Visual Studio Code instalará la actualización:
         <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-automatica-3.png" alt="Visual Studio Code - Actualización automática" width="283" height="121">
+          <img src="../img/vscode/vsc-actualizar-automatica-5.png" alt="Visual Studio Code - Actualización automática" width="283" height="121">
         </p>
       </li>
 
-      <li>Al reiniciarse, se mostrarán en una nueva pestaña las notas de la versión instalada y el icono de la rueda dentada ya no mostrará el número:
+      <li>Al reiniciarse, se mostrarán en una nueva pestaña las notas de la versión instalada y el icono de la rueda dentada ya no mostrará ningún distintivo:
         <p class="captura">
-          <img src="../img/vscode/vsc-actualizar-automatica-4.png" alt="Visual Studio Code - Actualización automática" width="1024" height="576">
+          <img src="../img/vscode/vsc-actualizar-automatica-6.png" alt="Visual Studio Code - Actualización automática" width="1024" height="576">
         </p>
       </li>
     </ol>
   </section>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 16 de septiembre de 2023</p>
+    <p class="ultmod">Última modificación de esta página: 5 de octubre de 2026</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

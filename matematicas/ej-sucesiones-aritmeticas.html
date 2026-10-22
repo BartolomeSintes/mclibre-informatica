@@ -56,7 +56,7 @@
         </td>
       </tr>
       <tr>
-        <td colspan="3"><button onclick="e01_reinicia_contador()">Reiniciar contador</button></td>
+        <td colspan="3"><button type="button" onclick="e01_reinicia_contador()">Reiniciar contador</button></td>
       </tr>
     </table>
 
@@ -65,7 +65,7 @@
     <table style="border: black 1px solid; text-align: center" id="e01-sucesion">
     </table>
 
-    <p>¿La sucesión es aritmética? <button onclick="e01_comprueba(true)">Sí</button> - <button onclick="e01_comprueba(false)">No</button> <span id="e01-resultado"></span></p>
+    <p>¿La sucesión es aritmética? <button type="button" onclick="e01_comprueba(true)">Sí</button> - <button type="button" onclick="e01_comprueba(false)">No</button> <span id="e01-resultado"></span></p>
   </section>
 
   <section id="ejercicio-2">
@@ -91,7 +91,7 @@
         </td>
       </tr>
       <tr>
-        <td colspan="3"><button onclick="e02_reinicia_contador()">Reiniciar contador</button></td>
+        <td colspan="3"><button type="button" onclick="e02_reinicia_contador()">Reiniciar contador</button></td>
       </tr>
     </table>
 
@@ -106,19 +106,19 @@
     <table style="border: black 1px solid; text-align: center" id="e02-sucesion">
     </table>
 
-    <p>Escriba una fórmula (en función de <i>i</i>) que se ajuste a los valores anteriores:</p>
+    <p>Escriba una fórmula (en función de <i>i</i>) que se ajuste a los valores anteriores. La fórmula puede ser de la forma <i>a * i + b</i>, donde <i>a</i> y <i>b</i> son números, aunque puede utilizar las cuatro operaciones básicas y paréntesis:</p>
 
     <table>
       <tr>
         <td style="vertical-align: middle"><input type="text" id="e02-expresion" size="30" value="i" style="font-size: 1.5em"></td>
         <td>
-          <button onclick="e02_pasar()">Nueva sucesión</button><br>
-          <button onclick="e02_comprueba()">Evaluar</button>
+          <button type="button" onclick="e02_pasar()">Nueva sucesión</button><br>
+          <button type="button" onclick="e02_comprueba()">Evaluar</button>
           <span id="e02-resultado"></span></td>
       </tr>
     </table>
 
-    <p><button onclick="e02_solucion()">Mostrar solución</button></p>
+    <p><button type="button" onclick="e02_solucion()">Mostrar solución</button></p>
 
     <div id="e02-ayuda"></div>
 
@@ -128,86 +128,164 @@
     ///////////////////////
     // Funciones comunes //
     ///////////////////////
-    var anchoContador = 200;
+    const anchoContador = 200;
 
     function dibujaContador(correctas, tCorrectas, lCorrectas, incorrectas, tIncorrectas, lIncorrectas) {
       tCorrectas.textContent = correctas;
       tIncorrectas.textContent = incorrectas;
-      var total = correctas + incorrectas;
-      if (total == 0) {
-        total = 1;
-      }
-      lCorrectas.setAttribute("width", Math.max(anchoContador * correctas / total, 1))
-      lIncorrectas.setAttribute("width", Math.max(anchoContador * incorrectas / total, 1))
+      const total = Math.max(correctas + incorrectas, 1);
+      lCorrectas.setAttribute("width", Math.max(anchoContador * correctas / total, 1));
+      lIncorrectas.setAttribute("width", Math.max(anchoContador * incorrectas / total, 1));
     }
 
     function getRadioVal(name) {
-      var val;
-      var radios = document.getElementsByName(name);
-
-      for (var i = 0, len = radios.length; i < len; i++) {
-        if (radios[i].checked) {
-          return radios[i].value;
+      const radios = document.getElementsByName(name);
+      for (const radio of radios) {
+        if (radio.checked) {
+          return Number(radio.value);
         }
       }
+      return null;
+    }
+
+    function añadeFila(tabla, valores, estilos) {
+      const fila = tabla.insertRow(-1);
+      valores.forEach(function (valor, indice) {
+        const celda = fila.insertCell(-1);
+        if (estilos && estilos[indice]) {
+          celda.style.cssText = estilos[indice];
+        }
+        celda.textContent = valor;
+      });
+      return fila;
+    }
+
+    function evaluaExpresion(expresion, indice) {
+      const expresionCompacta = expresion.replace(/\s/g, "");
+      const tokens = expresion.match(/\d+(?:\.\d*)?|\.\d+|i|[()+\-*/]/g) || [];
+      if (!expresionCompacta || tokens.join("") !== expresionCompacta) {
+        throw new SyntaxError("La fórmula contiene caracteres no admitidos.");
+      }
+
+      let posicion = 0;
+
+      function parseaPrimario() {
+        const token = tokens[posicion++];
+        if (token === "(") {
+          const termino = parseaSuma();
+          if (tokens[posicion++] !== ")") {
+            throw new SyntaxError("Falta un paréntesis de cierre.");
+          }
+          return termino;
+        }
+        if (token === "i") {
+          return [1, 0];
+        }
+        if ((token !== undefined && /^\d/.test(token)) || (token && /^\.\d/.test(token))) {
+          return [0, Number(token)];
+        }
+        throw new SyntaxError("Se esperaba un número, i o un paréntesis.");
+      }
+
+      function parseaUnario() {
+        if (tokens[posicion] === "+") {
+          posicion++;
+          return parseaUnario();
+        }
+        if (tokens[posicion] === "-") {
+          posicion++;
+          const termino = parseaUnario();
+          return [-termino[0], -termino[1]];
+        }
+        return parseaPrimario();
+      }
+
+      function parseaProducto() {
+        let termino = parseaUnario();
+        while (tokens[posicion] === "*" || tokens[posicion] === "/") {
+          const operador = tokens[posicion++];
+          const siguiente = parseaUnario();
+          if (operador === "*") {
+            if (termino[0] !== 0 && siguiente[0] !== 0) {
+              throw new SyntaxError("La fórmula debe ser lineal, de la forma a * i + b.");
+            }
+            termino = [
+              termino[0] * siguiente[1] + siguiente[0] * termino[1],
+              termino[1] * siguiente[1]
+            ];
+          } else {
+            if (siguiente[0] !== 0 || siguiente[1] === 0) {
+              throw new SyntaxError("Solo se puede dividir por un número distinto de cero.");
+            }
+            termino = [termino[0] / siguiente[1], termino[1] / siguiente[1]];
+          }
+        }
+        return termino;
+      }
+
+      function parseaSuma() {
+        let termino = parseaProducto();
+        while (tokens[posicion] === "+" || tokens[posicion] === "-") {
+          const operador = tokens[posicion++];
+          const siguiente = parseaProducto();
+          const signo = operador === "+" ? 1 : -1;
+          termino = [termino[0] + signo * siguiente[0], termino[1] + signo * siguiente[1]];
+        }
+        return termino;
+      }
+
+      const [coeficiente, terminoIndependiente] = parseaSuma();
+      if (posicion !== tokens.length || !Number.isFinite(coeficiente) || !Number.isFinite(terminoIndependiente)) {
+        throw new SyntaxError("La fórmula no es válida o no produce números finitos.");
+      }
+      return coeficiente * indice + terminoIndependiente;
     }
 
     ////////////////////////////////////////////////
     // Ejercicio 1: Reconocer sucesión aritmética //
     ////////////////////////////////////////////////
 
-    var e01_sucesion = document.getElementById("e01-sucesion");
-    var e01_resultado = document.getElementById("e01-resultado");
-    var e01_tCorrectas = document.getElementById("e01-t-correctas");
-    var e01_lCorrectas = document.getElementById("e01-l-correctas");
-    var e01_tIncorrectas = document.getElementById("e01-t-incorrectas");
-    var e01_lIncorrectas = document.getElementById("e01-l-incorrectas");
-    var e01_respuesta = true;
-    var e01_nCorrectas = 0;
-    var e01_nIncorrectas = 0;
-    var valoresMostrados = "";
+    const e01_sucesion = document.getElementById("e01-sucesion");
+    const e01_resultado = document.getElementById("e01-resultado");
+    const e01_tCorrectas = document.getElementById("e01-t-correctas");
+    const e01_lCorrectas = document.getElementById("e01-l-correctas");
+    const e01_tIncorrectas = document.getElementById("e01-t-incorrectas");
+    const e01_lIncorrectas = document.getElementById("e01-l-incorrectas");
+    let e01_respuesta = true;
+    let e01_nCorrectas = 0;
+    let e01_nIncorrectas = 0;
+    let valoresMostrados = "";
 
     function e01_generaSucesion(n) {
-      var porcentaje = 1 - Math.pow(0.5, 1 / n);
-      var inicial = Math.round(Math.random() * 100);
-      var diferencia = Math.round(Math.random() * 100) - 50;
-      var actual = inicial;
-      e01_sucesion.innerHTML = "";  // borra el contenido
-      var fila = e01_sucesion.insertRow(0);
-      var celda = fila.insertCell(-1);
-      celda.setAttribute("style", "border: black 1px solid; width: 50px;");
-      celda.innerHTML = actual;
-      valoresMostrados = actual;
+      const porcentaje = 1 - Math.pow(0.5, 1 / n);
+      const diferencia = Math.round(Math.random() * 100) - 50;
+      let actual = Math.round(Math.random() * 100);
+      const valores = [actual];
       e01_respuesta = true;
-      //          e01_sucesion.textContent = actual ;
-      for (var i = 2; i <= n + 1; i++) {
+      for (let i = 2; i <= n + 1; i++) {
         if (Math.random() > porcentaje) {
           actual += diferencia;
         } else {
           actual += Math.round(Math.random() * 100);
           e01_respuesta = false;
         }
-        //          e01_sucesion.textContent += " - " + actual;
-        var celda = fila.insertCell(-1);
-        celda.setAttribute("style", "border: black 1px solid; width: 50px;");
-        celda.innerHTML = actual;
-        valoresMostrados += " " + actual;
+        valores.push(actual);
       }
-      //        e01_sucesion.textContent += " - ...";
-      var celda = fila.insertCell(-1);
-      celda.setAttribute("style", "border: black 1px solid; width: 50px;");
-      celda.innerHTML = ". . .";
-      valoresMostrados += ". . . ";
+      e01_sucesion.textContent = "";
+      añadeFila(e01_sucesion, valores.concat(". . ."), valores.map(function () {
+        return "border: black 1px solid; width: 50px;";
+      }).concat("border: black 1px solid; width: 50px;"));
+      valoresMostrados = valores.join(" ") + " . . . ";
     }
 
     function e01_comprueba(respuesta) {
-      if (respuesta == e01_respuesta) {
+      if (respuesta === e01_respuesta) {
         e01_resultado.textContent = "¡Correcto!";
         e01_nCorrectas++;
       } else {
         e01_resultado.textContent = "¡Has fallado!";
         e01_nIncorrectas++;
-        if (e01_respuesta == true) {
+        if (e01_respuesta === true) {
           e01_resultado.textContent += " La sucesión " + valoresMostrados + " sí es una sucesión aritmética";
         } else {
           e01_resultado.textContent += " La sucesión " + valoresMostrados + " no es una sucesión aritmética";
@@ -228,30 +306,30 @@
     // Ejercicio 2: Fórmula de sucesión aritmética //
     /////////////////////////////////////////////////
 
-    //      var e02_dificultad = document.getElementById("e02-dificultad");
-    var e02_dificultad = getRadioVal("e02-dificultad");
-    var e02_sucesion = document.getElementById("e02-sucesion");
-    var e02_expresion = document.getElementById("e02-expresion");
-    var e02_resultado = document.getElementById("e02-resultado");
-    var e02_ayuda = document.getElementById("e02-ayuda");
-    var e02_tCorrectas = document.getElementById("e02-t-correctas");
-    var e02_lCorrectas = document.getElementById("e02-l-correctas");
-    var e02_tIncorrectas = document.getElementById("e02-t-incorrectas");
-    var e02_lIncorrectas = document.getElementById("e02-l-incorrectas");
-    var e02_nCorrectas = 0;
-    var e02_nIncorrectas = 0;
-    var inicial, diferencia, indiceInicial;
-    var n = 4;
-    var indicesSucesion = [];
-    var valoresSucesion = [];
+    const e02_sucesion = document.getElementById("e02-sucesion");
+    const e02_expresion = document.getElementById("e02-expresion");
+    const e02_resultado = document.getElementById("e02-resultado");
+    const e02_ayuda = document.getElementById("e02-ayuda");
+    const e02_tCorrectas = document.getElementById("e02-t-correctas");
+    const e02_lCorrectas = document.getElementById("e02-l-correctas");
+    const e02_tIncorrectas = document.getElementById("e02-t-incorrectas");
+    const e02_lIncorrectas = document.getElementById("e02-l-incorrectas");
+    let e02_nCorrectas = 0;
+    let e02_nIncorrectas = 0;
+    let inicial;
+    let diferencia;
+    let indiceInicial;
+    const n = 4;
+    let indicesSucesion = [];
+    let valoresSucesion = [];
 
     function e02_generaSucesion() {
-      e02_dificultad = getRadioVal("e02-dificultad");
-      if (e02_dificultad == 3) {                          // Difícil
+      const dificultad = getRadioVal("e02-dificultad");
+      if (dificultad === 3) {                             // Difícil
         inicial = Math.round(Math.random() * 100) - 20;   // El 20% tendrá un valor inicial negativo
         diferencia = Math.round(Math.random() * 10 - 5);
         indiceInicial = Math.round(Math.random() * 10);
-      } else if (e02_dificultad == 2) {                   // Medio
+      } else if (dificultad === 2) {                      // Medio
         inicial = Math.round(Math.random() * 100) - 20;   // El 20% tendrá un valor inicial negativo
         diferencia = Math.round(Math.random() * 100 - 50);
         indiceInicial = 1 + Math.round(Math.random());
@@ -261,13 +339,13 @@
         indiceInicial = 0;
       }
       indicesSucesion = [];
-      valoresSucesion = []
-      tmp = 0
-      for (var i = 0; i < n; i++) {
-        if (e02_dificultad == 3) {                          // Difícil
-          tmp += 2 + Math.round(Math.random() * 10);
-          indicesSucesion.push(tmp + indiceInicial);
-          valoresSucesion.push(inicial + tmp * diferencia);
+      valoresSucesion = [];
+      let incrementoIndice = 0;
+      for (let i = 0; i < n; i++) {
+        if (dificultad === 3) {                            // Difícil
+          incrementoIndice += 2 + Math.round(Math.random() * 10);
+          indicesSucesion.push(incrementoIndice + indiceInicial);
+          valoresSucesion.push(inicial + incrementoIndice * diferencia);
         } else {                                            // Medio y fácil
           indicesSucesion.push(i + indiceInicial);
           valoresSucesion.push(inicial + i * diferencia);
@@ -275,94 +353,76 @@
       }
 
       e02_expresion.value = "i";  // vuelve a poner i como fórmula
-      e02_sucesion.innerHTML = "";  // borra el contenido
-      var actual = inicial;
-      var fila = e02_sucesion.insertRow(0);
-      var celda = fila.insertCell(-1);
-      celda.setAttribute("style", "border: black 1px solid; font-weight: bold; font-style: oblique; width: 50px;");
-      celda.innerHTML = "i";
-      for (var i = 0; i < n; i++) {
-        var celda = fila.insertCell(-1);
-        celda.setAttribute("style", "border: black 1px solid; width: 50px;");
-        celda.innerHTML = indicesSucesion[i];
-      }
-      fila = e02_sucesion.insertRow(1);
-      var celda = fila.insertCell(-1);
-      celda.setAttribute("style", "border: black 1px solid; font-weight: bold; font-style: oblique;");
-      celda.innerHTML = "f(i)";
-      for (var i = 0; i < n; i++) {
-        var celda = fila.insertCell(-1);
-        celda.setAttribute("style", "border: black 1px solid;");
-        celda.innerHTML = valoresSucesion[i];
-      }
+      e02_sucesion.textContent = "";
+      añadeFila(e02_sucesion, ["i"].concat(indicesSucesion), [
+        "border: black 1px solid; font-weight: bold; font-style: oblique; width: 50px;",
+        ...indicesSucesion.map(function () { return "border: black 1px solid; width: 50px;"; })
+      ]);
+      añadeFila(e02_sucesion, ["f(i)"].concat(valoresSucesion), [
+        "border: black 1px solid; font-weight: bold; font-style: oblique;",
+        ...valoresSucesion.map(function () { return "border: black 1px solid;"; })
+      ]);
       e02_ayuda.innerHTML = "";
     }
 
     function e02_comprueba() {
-      var expresion = e02_expresion.value;
+      const expresion = e02_expresion.value;
+      const indicesPrueba = [indiceInicial];
+      indicesPrueba.push(indicesPrueba[0] + 5 + Math.round(Math.random() * 100));
+      indicesPrueba.push(indicesPrueba[1] + 5 + Math.round(Math.random() * 100));
+      let expresionCorrecta;
+      try {
+        expresionCorrecta = indicesPrueba.every(function (indice) {
+          return inicial + (indice - indiceInicial) * diferencia === evaluaExpresion(expresion, indice);
+        });
+      } catch (error) {
+        if (!(error instanceof SyntaxError)) {
+          throw error;
+        }
+        e02_resultado.textContent = "La fórmula no es válida. Debe ser lineal, de la forma a * i + b o i / a - b, y puede incluir las cuatro operaciones básicas y paréntesis.";
+        e02_nIncorrectas++;
+        e02_ayuda.textContent = "";
+        dibujaContador(e02_nCorrectas, e02_tCorrectas, e02_lCorrectas, e02_nIncorrectas, e02_tIncorrectas, e02_lIncorrectas);
+        return;
+      }
 
-      var expresionCorrecta = true;
-      var i = indiceInicial;
-      // e02_resultado.textContent += " T1: " + indiceInicial + ": " + inicial + " - " + eval(expresion) + " - ";
-      if (inicial != eval(expresion)) {
-        expresionCorrecta = false;
-      }
-      i += 5 + Math.round(Math.random() * 100);
-      if (inicial + (i - indiceInicial) * diferencia != eval(expresion)) {
-        expresionCorrecta = false;
-      }
-      // e02_resultado.textContent += " T2: " + i + ": " + (inicial + (i - indiceInicial) * diferencia) + " - " + eval(expresion) + " - ";
-      i += 5 + Math.round(Math.random() * 100);
-      if (inicial + (i - indiceInicial) * diferencia != eval(expresion)) {
-        expresionCorrecta = false;
-      }
-      // e02_resultado.textContent += " T3: " + i + ": " + (inicial + (i - indiceInicial) * diferencia) + " - " + eval(expresion) + " - ";
       if (expresionCorrecta) {
         e02_resultado.textContent = "¡Correcto!";
         e02_ayuda.textContent = "";
         e02_nCorrectas++;
-        e02_generaSucesion(4);
+        e02_generaSucesion();
         e02_expresion.value = "";
       } else {
         e02_resultado.textContent = "¡No es correcto!";
         e02_nIncorrectas++;
 
-        e02_ayuda.innerHTML = ""
-        var parrafo = document.createElement('p')
-        var tmp = document.createElement('strong')
-        tmp.innerHTML = "Ayuda";
-        parrafo.appendChild(tmp);
-        e02_ayuda.appendChild(parrafo);
+        e02_ayuda.innerHTML = "";
+        const tituloAyuda = document.createElement("p");
+        const textoAyuda = document.createElement("strong");
+        textoAyuda.textContent = "Ayuda";
+        tituloAyuda.appendChild(textoAyuda);
+        e02_ayuda.appendChild(tituloAyuda);
 
-        var tmp = document.createElement('strong')
-        tmp.innerHTML = expresion;
-        var parrafo = document.createElement('p')
-        parrafo.innerHTML = "La fórmula ";
-        parrafo.appendChild(tmp);
-        parrafo.innerHTML += " no es correcta, porque da unos valores que no coinciden con los deseados:";
-        e02_ayuda.appendChild(parrafo);
+        const mensajeAyuda = document.createElement("p");
+        mensajeAyuda.append("La fórmula ");
+        const formula = document.createElement("strong");
+        formula.textContent = expresion;
+        mensajeAyuda.appendChild(formula);
+        mensajeAyuda.append(" no es correcta, porque da unos valores que no coinciden con los deseados:");
+        e02_ayuda.appendChild(mensajeAyuda);
 
-        var tabla = document.createElement('table');
+        const tabla = document.createElement("table");
         tabla.setAttribute("style", "border: black 1px solid;");
-        var fila = tabla.insertRow(0);
-        var celda = fila.insertCell(-1);
-        celda.setAttribute("style", "border: black 1px solid; font-weight: bold; font-style: oblique; width: 50px;");
-        celda.innerHTML = "i";
-        for (var i = 0; i < n; i++) {
-          var celda = fila.insertCell(-1);
-          celda.setAttribute("style", "border: black 1px solid; width: 50px;");
-          celda.innerHTML = indicesSucesion[i];
-        }
-        fila = tabla.insertRow(1);
-        var celda = fila.insertCell(-1);
-        celda.setAttribute("style", "border: black 1px solid; font-weight: bold; font-style: oblique;");
-        celda.innerHTML = "f(i)";
-        for (var j = 0; j < n; j++) {
-          var celda = fila.insertCell(-1);
-          celda.setAttribute("style", "border: black 1px solid;");
-          i = indicesSucesion[j];
-          celda.innerHTML = eval(expresion);
-        }
+        añadeFila(tabla, ["i"].concat(indicesSucesion), [
+          "border: black 1px solid; font-weight: bold; font-style: oblique; width: 50px;",
+          ...indicesSucesion.map(function () { return "border: black 1px solid; width: 50px;"; })
+        ]);
+        añadeFila(tabla, ["f(i)"].concat(indicesSucesion.map(function (indice) {
+          return evaluaExpresion(expresion, indice);
+        })), [
+          "border: black 1px solid; font-weight: bold; font-style: oblique;",
+          ...indicesSucesion.map(function () { return "border: black 1px solid;"; })
+        ]);
         e02_ayuda.appendChild(tabla);
       }
       dibujaContador(e02_nCorrectas, e02_tCorrectas, e02_lCorrectas, e02_nIncorrectas, e02_tIncorrectas, e02_lIncorrectas);
@@ -371,22 +431,15 @@
     function e02_pasar() {
       e02_nIncorrectas++;
       dibujaContador(e02_nCorrectas, e02_tCorrectas, e02_lCorrectas, e02_nIncorrectas, e02_tIncorrectas, e02_lIncorrectas);
-      e02_generaSucesion(4);
+      e02_generaSucesion();
     }
 
     function e02_solucion() {
-      var expresion = e02_expresion.value;
-
-      var i = indiceInicial;
-      e02_ayuda.innerHTML = ""
+      e02_ayuda.innerHTML = "";
       e02_resultado.textContent = "";
       e02_nIncorrectas++;
-      var dif = (valoresSucesion[1] - valoresSucesion[0]) / (indicesSucesion[1] - indicesSucesion[0]);
-      if (dif == 0) {
-        var ini = valoresSucesion[0];
-      } else {
-        var ini = valoresSucesion[0] - (valoresSucesion[1] - valoresSucesion[0]) / (indicesSucesion[1] - indicesSucesion[0]) * indicesSucesion[0];
-      }
+      const dif = (valoresSucesion[1] - valoresSucesion[0]) / (indicesSucesion[1] - indicesSucesion[0]);
+      const ini = valoresSucesion[0] - dif * indicesSucesion[0];
 
       var parrafo = document.createElement('p')
       var tmp = document.createElement('strong')
@@ -394,7 +447,7 @@
       parrafo.appendChild(tmp);
       e02_ayuda.appendChild(parrafo);
 
-      if (valoresSucesion[1] == valoresSucesion[0] ) {
+      if (valoresSucesion[1] === valoresSucesion[0]) {
         var parrafo = document.createElement('p')
         parrafo.innerHTML = "Como todos los valores son iguales, la fórmula es simplemente ese valor, sin necesidad de que aparezca el índice i.";
         e02_ayuda.appendChild(parrafo);
@@ -411,31 +464,23 @@
 
         var tabla = document.createElement('table');
         tabla.setAttribute("style", "border: black 1px solid;");
-        var fila = tabla.insertRow(0);
-        var celda = fila.insertCell(-1);
-        celda.setAttribute("style", "border: black 1px solid; font-weight: bold; font-style: oblique; width: 50px;");
-        celda.innerHTML = "i";
-        for (var i = 0; i < 2; i++) {
-          var celda = fila.insertCell(-1);
-          celda.setAttribute("style", "border: black 1px solid; width: 50px;");
-          celda.innerHTML = indicesSucesion[i];
-        }
-        fila = tabla.insertRow(1);
-        var celda = fila.insertCell(-1);
-        celda.setAttribute("style", "border: black 1px solid; font-weight: bold; font-style: oblique;");
-        celda.innerHTML = "f(i)";
-        for (var j = 0; j < 2; j++) {
-          var celda = fila.insertCell(-1);
-          celda.setAttribute("style", "border: black 1px solid;");
-          celda.innerHTML = valoresSucesion[j];
-        }
+        añadeFila(tabla, ["i"].concat(indicesSucesion.slice(0, 2)), [
+          "border: black 1px solid; font-weight: bold; font-style: oblique; width: 50px;",
+          "border: black 1px solid; width: 50px;",
+          "border: black 1px solid; width: 50px;"
+        ]);
+        añadeFila(tabla, ["f(i)"].concat(valoresSucesion.slice(0, 2)), [
+          "border: black 1px solid; font-weight: bold; font-style: oblique;",
+          "border: black 1px solid;",
+          "border: black 1px solid;"
+        ]);
         e02_ayuda.appendChild(tabla);
 
         var parrafo = document.createElement('p')
         parrafo.innerHTML = "Primero calculamos la diferencia:";
         e02_ayuda.appendChild(parrafo);
 
-        if (indicesSucesion[1] - indicesSucesion[0] == 1) {
+        if (indicesSucesion[1] - indicesSucesion[0] === 1) {
           var tmp = document.createElement('strong')
           tmp.innerHTML = dif
           var parrafo = document.createElement('p')
@@ -445,11 +490,7 @@
         } else {
           var parrafo = document.createElement('p')
           parrafo.innerHTML = "Desde i = " + indicesSucesion[0] + " hasta i = " + indicesSucesion[1] + " hay " + (indicesSucesion[1] - indicesSucesion[0]);
-          if (indicesSucesion[1] - indicesSucesion[0] == 1) {
-            parrafo.innerHTML +=  " término."
-          } else {
-            parrafo.innerHTML +=  " términos."
-          }
+          parrafo.innerHTML += " términos."
           e02_ayuda.appendChild(parrafo);
           var parrafo = document.createElement('p')
           parrafo.innerHTML = "Entre esos dos términos, la sucesión pasa de valer " + valoresSucesion[0] + " a valer " + valoresSucesion[1] + ", es decir, cambia en " + (valoresSucesion[1] - valoresSucesion[0]) + ".";
@@ -467,7 +508,7 @@
         parrafo.innerHTML = "Después calculamos el término inicial:";
         e02_ayuda.appendChild(parrafo);
 
-        if (indicesSucesion[0] == 0) {
+        if (indicesSucesion[0] === 0) {
           var tmp = document.createElement('strong')
           tmp.innerHTML = ini
           var parrafo = document.createElement('p')
@@ -477,7 +518,7 @@
         } else {
           var parrafo = document.createElement('p')
           parrafo.innerHTML = "Desde el primer término de la tabla (i = " + indicesSucesion[0] + ") hasta el primer término de la sucesión (i = 0) hay " + indicesSucesion[0];
-          if (indicesSucesion[0] == 1) {
+          if (indicesSucesion[0] === 1) {
             parrafo.innerHTML +=  " término."
           } else {
             parrafo.innerHTML +=  " términos."
@@ -500,7 +541,7 @@
         parrafo.innerHTML += "Por tanto la fórmula es: ";
 
         var tmp = document.createElement('strong')
-        if (dif == 1) {
+        if (dif === 1) {
           tmp.innerHTML = "i ";
         } else {
           tmp.innerHTML = dif + " * i ";
@@ -524,7 +565,7 @@
   </script>
 
   <footer>
-    <p class="ultmod">Última modificación de esta página: 6 de abril de 2020</p>
+    <p class="ultmod">Última modificación de esta página: 22 de octubre de 2026</p>
 
     <p class="licencia">
       <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"><img src="../varios/iconos/icono-cc-by-sa.svg" alt="Licencia Creative Commons" title="Licencia Creative Commons BY-SA" width="120" height="42"></a><br>

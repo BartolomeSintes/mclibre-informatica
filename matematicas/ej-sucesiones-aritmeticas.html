@@ -96,9 +96,9 @@
     </table>
 
     <p>Seleccione la dificultad del ejercicio:
-      <input type="radio" name="e02-dificultad" value="1" checked> Fácil -
-      <input type="radio" name="e02-dificultad" value="2"> Medio -
-      <input type="radio" name="e02-dificultad" value="3"> Difícil
+      <label><input type="radio" name="e02-dificultad" value="1" checked> Fácil</label> -
+      <label><input type="radio" name="e02-dificultad" value="2"> Medio</label> -
+      <label><input type="radio" name="e02-dificultad" value="3"> Difícil</label>
     </p>
 
     <p>Los valores siguientes son algunos valores de una sucesión aritmética:</p>
@@ -363,6 +363,10 @@
         ...valoresSucesion.map(function () { return "border: black 1px solid;"; })
       ]);
       e02_ayuda.innerHTML = "";
+    }
+
+    for (const radio of document.getElementsByName("e02-dificultad")) {
+      radio.addEventListener("change", e02_generaSucesion);
     }
 
     function e02_comprueba() {
